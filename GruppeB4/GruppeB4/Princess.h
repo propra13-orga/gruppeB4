@@ -22,7 +22,7 @@ private:
 public:
 
 
-	Princess(){p_s_Position = new s_Vector; p_s_Position->i_x = 0; p_s_Position->i_y = 0;}
+	Princess(){p_s_Position = new s_Vector; p_s_Position->i_x = 150; p_s_Position->i_y = 100;}
 	~Princess(){delete p_s_Position;}
 	
 
