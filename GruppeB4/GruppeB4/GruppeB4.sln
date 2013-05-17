@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 2012 for Windows Desktop
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{3C423682-CCF8-483F-A055-07E9D01DC4F4}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GruppeB4", "GruppeB4.vcxproj", "{3C423682-CCF8-483F-A055-07E9D01DC4F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
