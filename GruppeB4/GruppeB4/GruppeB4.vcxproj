@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Crazy_enemy.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="LevelSegment.h" />
@@ -89,9 +90,11 @@
     <ClInclude Include="Resourcemanager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vektor.h" />
+    <ClInclude Include="Verrückter.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Crazy_enemy.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
@@ -100,6 +103,7 @@
     <ClCompile Include="Princess.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
     <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Verrückter.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
