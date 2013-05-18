@@ -80,6 +80,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="LevelSegment.h" />
     <ClInclude Include="Menue.h" />
@@ -90,6 +91,7 @@
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menue.cpp" />

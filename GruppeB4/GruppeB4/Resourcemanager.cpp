@@ -27,12 +27,16 @@ void S_Resourcemanager::initialize()
 
 	  this->p_background = OptimizedImage;
 
+	  //SDL_FreeSurface(OptimizedImage);
+
 	if(p_background == NULL)
 	{
 		std::cout << "initzialisierung des Levels  ist fehlgeschlagen" << std::endl;
 	}
 
 	this->p_Menue = IMG_Load("mainmenu_raw.png");
+	this->p_crazy_Enemy = IMG_Load("patient.png");
+
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination)
 {
@@ -61,6 +65,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Menue")
 	{
 		return p_Menue;
+	}
+	else if(key == "Verrückter")
+	{
+		return this->p_crazy_Enemy;
 	}
 	else
 	{
