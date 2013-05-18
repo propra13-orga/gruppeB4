@@ -51,12 +51,11 @@ void Player::render()
 	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 }
 
-bool Player::collision_Detection(LevelSegmente * p_TempSegment)
+bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition)
 {
 	//für den ersten Quadranten
 	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)
 	{
-		cout << "Quadrant eins geladen" << endl;
 		if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x)
 		{
 			return true;
@@ -76,10 +75,15 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment)
 	}
 	if(this->get_Position()->i_x > 710 && this->get_Position()->i_y >= 400)
 	{
-		cout << "Quadrant zwei geladen" << endl;
 		if(this->get_Position()->i_x > p_TempSegment->SegmentRect12[0].x + p_TempSegment->SegmentRect12[0].w - PLAYER_WIDTH)
 		{
 			return true;
+		}
+		if(this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
+		{
+			this->health = 0;
+			cout << health << endl;
+			return false;
 		}
 	}
 	
