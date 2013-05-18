@@ -7,6 +7,8 @@ SDL_Event even;
 
 int counter = 0;
 
+
+
 int main(int argc ,char ** argv)
 {
 	//verschiedene Bools, die alle benötigt werden um die while schleife zu verwalten

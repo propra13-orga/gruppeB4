@@ -73,9 +73,22 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 			return true;
 		}
 	}
+	//für den zweiten Quadranten inklusive Gegner
 	if(this->get_Position()->i_x > 710 && this->get_Position()->i_y >= 400)
 	{
 		if(this->get_Position()->i_x > p_TempSegment->SegmentRect12[0].x + p_TempSegment->SegmentRect12[0].w - PLAYER_WIDTH)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect12[1].x && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= p_TempSegment->SegmentRect12[1].x + p_TempSegment->SegmentRect12[1].w && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
+		{
+			return true;
+			}
+		else if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect12[0].y + p_TempSegment->SegmentRect12[0].h)
 		{
 			return true;
 		}
@@ -83,24 +96,31 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		{
 			this->health = 0;
 			cout << health << endl;
+		
 			return false;
+			
 		}
 		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
 		{
 		this->health = 0;
 			cout << health << endl;
+			
 			return false;
+			
 		}
 		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y)
 		{
 			this->health = 0;
 			cout << health << endl;
+			
 			return false;
+			
 		}
 		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
 		{
 			this->health = 0;
 			cout << health << endl;
+			
 			return false;
 	}
 
