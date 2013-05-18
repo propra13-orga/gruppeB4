@@ -30,11 +30,11 @@ public:
 
 
 
-		s_Vektor* get_Position(){
+		s_Vector* get_Position(){
 	
 	
 	
-			return return this->p_s_Position;
+			 return this->p_s_Position;
 	
 	}
 

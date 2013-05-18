@@ -36,6 +36,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_Menue = IMG_Load("mainmenu_raw.png");
 	this->p_crazy_Enemy = IMG_Load("patient.png");
+	this->p_princess = IMG_Load("Prinzessin.png");
 
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination)
@@ -69,6 +70,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Verrückter")
 	{
 		return this->p_crazy_Enemy;
+	}
+	else if(key == "Prinzessin")
+	{
+		return p_princess;
 	}
 	else
 	{

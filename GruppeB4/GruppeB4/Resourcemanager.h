@@ -24,6 +24,7 @@ private:
 	SDL_Surface * p_background;
 	SDL_Surface * p_Menue;
 	SDL_Surface * p_crazy_Enemy;
+	SDL_Surface * p_princess;
 public:
 	static S_Resourcemanager * get_Resourcemanager();
 	
