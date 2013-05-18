@@ -32,3 +32,5 @@ void Menue::handle_imput(SDL_Event &even,bool * quitgame,bool * quitmenue,Player
 
 
 }
+
+//iuhasjdbqajw fkqjhwf qjlwe cdlqkns dclwefc lwcjhde flwje f
