@@ -45,9 +45,6 @@
     <ClInclude Include="Princess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Crazy_enemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Verrückter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -78,9 +75,6 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Princess.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Crazy_enemy.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Verrückter.cpp">

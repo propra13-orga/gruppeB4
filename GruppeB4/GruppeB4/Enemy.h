@@ -50,19 +50,6 @@ Enemy(){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i
 		this->p_s_Velocity->i_x = i_x;this->p_s_Velocity->i_y = i_y;
 	}
 
-	void render();
-	void update();
-
-	//void show_enemyStats();
-
-	
-	//void get_health();
-	//void set_health();
-
-	//void get_enemy();
-	//void set_enemy();
-
-
 
 
 };

@@ -9,14 +9,8 @@ using namespace std;
 
 
 
-void Enemy::update(){
 
-}
 
-void Enemy::render()
-{
-	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Verrückter"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-}
 
 
 
