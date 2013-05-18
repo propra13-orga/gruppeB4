@@ -79,12 +79,30 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		{
 			return true;
 		}
-		if(this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_y <= tempposition->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
 		{
 			this->health = 0;
 			cout << health << endl;
 			return false;
 		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
+		{
+		this->health = 0;
+			cout << health << endl;
+			return false;
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y)
+		{
+			this->health = 0;
+			cout << health << endl;
+			return false;
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
+		{
+			this->health = 0;
+			cout << health << endl;
+			return false;
 	}
-	
+
+}
 }
