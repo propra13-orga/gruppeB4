@@ -74,6 +74,7 @@ int main(int argc ,char ** argv)
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		p_world->render(&menueistoggled);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
 		if( ( cap == true ) && ( fps.Getticks() < 1000 / 100 ) ) 
 		{
 			//Sleep the remaining frame time

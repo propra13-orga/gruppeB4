@@ -104,6 +104,8 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		{
 			return true;
 		}
+
+		//Kollision für den Gegner
 		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_y <= tempposition->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
 		{
 			this->health = 0;
@@ -164,9 +166,35 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 				return true;
 			}
 		}
+		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x - 20 && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[3].y && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
+		{
+			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x)
+			{
+				return true;
+			}
+		}
+		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x - 20 && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y && this->get_Position()->i_y <= 285 + 10)
+		{
+			if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= 285 - PLAYER_HEIGHT )
+			{
+				return true;
+			}
+			else if (this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y + p_TempSegment->SegmentRect13[4].h - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x)
+			{
+				return true;
+			}
+		}
 		
 		
 	}
+	
+	//Quadrant 4
+
+	
 
 
 	
