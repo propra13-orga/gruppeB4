@@ -22,7 +22,7 @@ void S_Resourcemanager::initialize()
 	this->p_player = OptimizedImage1;
 
 	this->p_game_over = IMG_Load("game_over_raw.png");
-
+	this->p_win = IMG_Load("win_proto.png");
 
 
 	if(p_player == NULL)
@@ -49,13 +49,13 @@ void S_Resourcemanager::initialize()
 	this->p_princess = IMG_Load("Prinzessin.png");
 
 }
-void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination)
+void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip)
 {
 	SDL_Rect offset;
 	offset.x = i_x;
 	offset.y = i_y;
 
-	SDL_BlitSurface(source,NULL,destination,&offset);
+	SDL_BlitSurface(source,clip,destination,&offset);
 
 }
 
@@ -89,6 +89,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "game_over_raw")
 	{
 		return p_game_over;
+	}
+	else if(key == "Win")
+	{
+		return this->p_win;
 	}
 	else
 	{

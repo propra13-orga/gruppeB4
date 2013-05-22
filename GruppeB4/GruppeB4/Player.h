@@ -28,6 +28,7 @@ public:
 	void  set_Position(int i_x,int i_y){this->p_s_Position->i_x = i_x;this->p_s_Position->i_y = i_y;}
 	s_Vector * get_Velocity(){return  p_s_Velocity;}
 	void  set_Velocity(int i_x,int i_y){this->p_s_Velocity->i_x = i_x;this->p_s_Velocity->i_y = i_y;}
+	void set_Health(int health){this->health = health;}
 
 
 	//Funktionen die für die Bewegung und das Abbilden des Spielers erstellt sind

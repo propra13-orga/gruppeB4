@@ -26,6 +26,7 @@ private:
 	SDL_Surface * p_crazy_Enemy;
 	SDL_Surface * p_princess;
 	SDL_Surface * p_game_over;
+	SDL_Surface * p_win;
 public:
 	static S_Resourcemanager * get_Resourcemanager();
 	
@@ -34,7 +35,7 @@ public:
 	SDL_Surface * get_Surface(string key);
 };
 
-void apply_Image(int i_x,int i_y,SDL_Surface * source, SDL_Surface * destination);
+void apply_Image(int i_x,int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip = NULL);
 
 
 #endif

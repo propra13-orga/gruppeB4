@@ -4,6 +4,7 @@
 
 #include "Vektor.h"
 #include "Resourcemanager.h"
+#include "Player.h"
 
 
 
@@ -48,7 +49,7 @@ public:
 
 
 
-	void render();
+	bool render(bool * tempmenue,Player * tempplayer);
 
 };
 
