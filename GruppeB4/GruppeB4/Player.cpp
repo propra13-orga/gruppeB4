@@ -194,7 +194,33 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 	
 	//Quadrant 4
 
-	
+	if(this->get_Position()->i_x < 709 && this->get_Position()->i_y < 350)
+	{
+		if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
+		{cout << "1." << endl;
+			return true;
+		}
+		else if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y +p_TempSegment->SegmentRect13[4].h - PLAYER_WIDTH )
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect14[0].y)
+		{
+			cout << "2." << endl;
+				return true;
+			
+			
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect14[0].y + p_TempSegment->SegmentRect14[0].h - PLAYER_HEIGHT)
+		{
+			cout << "here" << endl;
+			return true;
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect14[0].x)
+		{
+			return true;
+		}
+	}
 
 
 	
