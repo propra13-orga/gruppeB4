@@ -14,10 +14,10 @@ void World::update()
 	}
 }
 
-void World::render()
+void World::render(bool * tempmenue)
 {
 	
 	p_Crazy_Enemy->render();
 	p_Princess->render();
-	p_Player1->render();
+	p_Player1->render(tempmenue);
 }

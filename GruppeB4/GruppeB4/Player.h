@@ -33,7 +33,7 @@ public:
 	//Funktionen die für die Bewegung und das Abbilden des Spielers erstellt sind
 	bool collision_Detection(LevelSegmente * p_TempSeg,s_Vector * tempposition);
 	void update();
-	void render();
+	void render(bool * tempmenue);
 	void handle_input(SDL_Event &even);
 };
 
