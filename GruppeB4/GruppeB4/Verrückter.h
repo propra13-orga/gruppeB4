@@ -11,6 +11,7 @@ private:
 public:
 	
 	Crazy_enemy():Enemy(){}
+	Crazy_enemy(int x, int y):Enemy(x,y){}
 	~Crazy_enemy(){}
 
 

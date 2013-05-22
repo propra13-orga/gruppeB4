@@ -63,7 +63,7 @@ void Player::render(bool * tempmenue)
 		*tempmenue = true;
 	}
 }
-bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition)
+bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition,s_Vector * tempposition2)
 {
 	//für den ersten Quadranten
 	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)
@@ -221,6 +221,39 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 			return true;
 		}
 	}
+
+	else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x && this->get_Position()->i_x <= tempposition2->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y && this->get_Position()->i_y <= tempposition2->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
+		{
+			this->health = 0;
+			cout << health << endl;
+		
+			return false;
+			
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x && this->get_Position()->i_x <= tempposition2->i_x && this->get_Position()->i_y <= tempposition2->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y + PLAYER_HEIGHT)
+		{
+		this->health = 0;
+			cout << health << endl;
+			
+			return false;
+			
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition2->i_y && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y)
+		{
+			this->health = 0;
+			cout << health << endl;
+			
+			return false;
+			
+		}
+		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition2->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y + PLAYER_HEIGHT)
+		{
+			this->health = 0;
+			cout << health << endl;
+			
+			return false;
+		}
+
 
 
 	

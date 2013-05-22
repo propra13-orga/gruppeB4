@@ -18,6 +18,7 @@ void World::render(bool * tempmenue)
 {
 	
 	p_Crazy_Enemy->render();
+	p_Crazy_Enemy2->render();
 	bool check = p_Princess->render(tempmenue,p_Player1);
 	if(check == false)
 	{

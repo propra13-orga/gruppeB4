@@ -22,6 +22,7 @@ public:
 
 Enemy(){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = 800; p_s_Position->i_y = 600; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;}
 	~Enemy(){delete p_s_Position;delete p_s_Velocity;}
+	Enemy(int x, int y){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = x; p_s_Position->i_y = y; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;}
 
 	
 
