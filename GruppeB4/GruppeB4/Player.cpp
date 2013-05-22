@@ -57,7 +57,7 @@ void Player::render(bool * tempmenue)
 	{
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("game_over_raw"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		SDL_Delay(3000);
+		SDL_Delay(5000);
 		this->health = 100;
 		this->set_Position(0,0);
 		*tempmenue = true;
