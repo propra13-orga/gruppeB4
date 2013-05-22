@@ -152,6 +152,14 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		{
 			return true;
 		}
+		else if((this->get_Position()->i_x >= p_TempSegment->SegmentRect13[2].x - PLAYER_WIDTH) && (this->get_Position()->i_x <= p_TempSegment->SegmentRect13[2].x + p_TempSegment->SegmentRect13[2].w - PLAYER_WIDTH) && (this->get_Position()->i_y >= p_TempSegment->SegmentRect13[2].y) && (this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y + p_TempSegment->SegmentRect13[2].h + 20))
+
+		{
+			if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect13[2].y + p_TempSegment->SegmentRect13[2].h)
+			{
+				return true;
+			}
+		}
 		
 		
 	}
