@@ -42,6 +42,8 @@ void Player::handle_input(SDL_Event &even)
 
 void Player::update()
 {
+	
+
 	this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
 	
 }
@@ -49,8 +51,14 @@ void Player::update()
 void Player::render()
 {
 	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-}
 
+
+	if(this->health == 0)
+	{
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("game_over_raw"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		SDL_Delay(200);
+	}
+}
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition)
 {
 	//für den ersten Quadranten
@@ -147,4 +155,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		
 		
 	}
+
+
+	
 }

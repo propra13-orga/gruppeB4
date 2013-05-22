@@ -19,8 +19,11 @@ void S_Resourcemanager::initialize()
 
 	OptimizedImage1 = SDL_DisplayFormatAlpha(LoadedImage1);
 
+	this->p_player = OptimizedImage1;
 
-	  this->p_player = OptimizedImage1;
+	this->p_game_over = IMG_Load("game_over_raw.png");
+
+
 
 	if(p_player == NULL)
 	{
@@ -81,6 +84,11 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Prinzessin")
 	{
 		return p_princess;
+	}
+
+	else if(key == "game_over_raw")
+	{
+		return p_game_over;
 	}
 	else
 	{

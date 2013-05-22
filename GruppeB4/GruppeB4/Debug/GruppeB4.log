@@ -1,11 +1,11 @@
-﻿Der Buildvorgang wurde am 22.05.2013 15:15:33 gestartet.
-     1>Projekt "C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" auf Knoten "2", Build Ziel(e).
+﻿Der Buildvorgang wurde am 22.05.2013 16:17:10 gestartet.
+     1>Projekt "C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\GruppeB4.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Resourcemanager.cpp
          Resourcemanager.cpp
-     1>c:\users\tilman\gruppeb4\gruppeb4\gruppeb4\resourcemanager.cpp(89): warning C4715: "S_Resourcemanager::get_Surface": Nicht alle Steuerelementpfade geben einen Wert zurück.
+     1>c:\users\brandy\desktop\neuer ordner (2)\gruppeb4\resourcemanager.cpp(97): warning C4715: "S_Resourcemanager::get_Surface": Nicht alle Steuerelementpfade geben einen Wert zurück.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.exe" /INCREMENTAL /NOLOGO SDL.lib SDLmain.lib SDL_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.lib" /MACHINE:X86 Debug\Enemy.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\Debug\GruppeB4.exe" /INCREMENTAL /NOLOGO SDL.lib SDLmain.lib SDL_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\Debug\GruppeB4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\Debug\GruppeB4.lib" /MACHINE:X86 Debug\Enemy.obj
          Debug\LevelSegment.obj
          Debug\main.obj
          Debug\Menue.obj
@@ -15,9 +15,9 @@
          Debug\Timer.obj
          "Debug\Verrückter.obj"
          Debug\World.obj
-         GruppeB4.vcxproj -> C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.exe
-     1>Die Erstellung des Projekts "C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" ist abgeschlossen, Build Ziel(e).
+         GruppeB4.vcxproj -> C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\Debug\GruppeB4.exe
+     1>Die Erstellung des Projekts "C:\Users\Brandy\Desktop\Neuer Ordner (2)\GruppeB4\GruppeB4.vcxproj" ist abgeschlossen, Build Ziel(e).
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:01.79
+Verstrichene Zeit 00:00:02.54

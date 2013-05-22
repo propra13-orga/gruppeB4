@@ -25,6 +25,7 @@ private:
 	SDL_Surface * p_Menue;
 	SDL_Surface * p_crazy_Enemy;
 	SDL_Surface * p_princess;
+	SDL_Surface * p_game_over;
 public:
 	static S_Resourcemanager * get_Resourcemanager();
 	

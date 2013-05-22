@@ -16,7 +16,8 @@ void World::update()
 
 void World::render()
 {
-	p_Player1->render();
+	
 	p_Crazy_Enemy->render();
 	p_Princess->render();
+	p_Player1->render();
 }
