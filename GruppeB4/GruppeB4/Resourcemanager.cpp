@@ -13,7 +13,14 @@ void S_Resourcemanager::initialize()
 
 	this->p_screen = SDL_SetVideoMode(1250,800,32,SDL_SWSURFACE);
 
-	this->p_player = IMG_Load("player.png");
+	SDL_Surface * LoadedImage1 = IMG_Load("player.png");
+
+	SDL_Surface * OptimizedImage1 = NULL;
+
+	OptimizedImage1 = SDL_DisplayFormatAlpha(LoadedImage1);
+
+
+	  this->p_player = OptimizedImage1;
 
 	if(p_player == NULL)
 	{
