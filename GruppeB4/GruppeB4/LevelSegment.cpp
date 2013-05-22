@@ -32,10 +32,10 @@ void LevelSegmente::init_Segmente()
 	SegmentRect13[1].w = 106;
 	SegmentRect13[1].h = 90;
 
-	SegmentRect13[2].x = 710;
+	SegmentRect13[2].x = 835;
 	SegmentRect13[2].y = 83;
-	SegmentRect13[2].w = 495;
-	SegmentRect13[2].h = 199;
+	SegmentRect13[2].w = 265;
+	SegmentRect13[2].h = 90;
 
 	SegmentRect13[3].x = 710;
 	SegmentRect13[3].y = 176;
