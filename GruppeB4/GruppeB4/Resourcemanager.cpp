@@ -109,6 +109,67 @@ void S_Resourcemanager::initialize()
 	this->PlayerUpClips[5].w = PLAYER_WIDTH;
 	this->PlayerUpClips[5].h = PLAYER_HEIGHT;
 
+
+	this->PlayerRightClips[0].x = 0;
+	this->PlayerRightClips[0].y = 0;
+	this->PlayerRightClips[0].w = PLAYER_WIDTH;
+	this->PlayerRightClips[0].h = PLAYER_HEIGHT;
+
+	this->PlayerRightClips[1].x = 60;
+	this->PlayerRightClips[1].y = 0;
+	this->PlayerRightClips[1].w = PLAYER_WIDTH;
+	this->PlayerRightClips[1].h = PLAYER_HEIGHT;
+
+	this->PlayerRightClips[2].x = 120;
+	this->PlayerRightClips[2].y = 0;
+	this->PlayerRightClips[2].w = PLAYER_WIDTH;
+	this->PlayerRightClips[2].h = PLAYER_HEIGHT;
+
+	this->PlayerRightClips[3].x = 180;
+	this->PlayerRightClips[3].y = 0;
+	this->PlayerRightClips[3].w = PLAYER_WIDTH;
+	this->PlayerRightClips[3].h = PLAYER_HEIGHT;
+
+	this->PlayerRightClips[4].x = 240;
+	this->PlayerRightClips[4].y = 0;
+	this->PlayerRightClips[4].w = PLAYER_WIDTH;
+	this->PlayerRightClips[4].h = PLAYER_HEIGHT;
+
+	this->PlayerRightClips[5].x = 300;
+	this->PlayerRightClips[5].y = 0;
+	this->PlayerRightClips[5].w = PLAYER_WIDTH;
+	this->PlayerRightClips[5].h = PLAYER_HEIGHT;
+
+
+	this->PlayerLeftClips[0].x = 0;
+	this->PlayerLeftClips[0].y = 0;
+	this->PlayerLeftClips[0].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[0].h = PLAYER_HEIGHT;
+
+	this->PlayerLeftClips[1].x = 60;
+	this->PlayerLeftClips[1].y = 0;
+	this->PlayerLeftClips[1].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[1].h = PLAYER_HEIGHT;
+
+	this->PlayerLeftClips[2].x = 120;
+	this->PlayerLeftClips[2].y = 0;
+	this->PlayerLeftClips[2].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[2].h = PLAYER_HEIGHT;
+
+	this->PlayerLeftClips[3].x = 180;
+	this->PlayerLeftClips[3].y = 0;
+	this->PlayerLeftClips[3].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[3].h = PLAYER_HEIGHT;
+
+	this->PlayerLeftClips[4].x = 240;
+	this->PlayerLeftClips[4].y = 0;
+	this->PlayerLeftClips[4].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[4].h = PLAYER_HEIGHT;
+
+	this->PlayerLeftClips[5].x = 300;
+	this->PlayerLeftClips[5].y = 0;
+	this->PlayerLeftClips[5].w = PLAYER_WIDTH;
+	this->PlayerLeftClips[5].h = PLAYER_HEIGHT;
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip)
 {
