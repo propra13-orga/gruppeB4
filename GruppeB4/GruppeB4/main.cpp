@@ -2,6 +2,7 @@
 #include "World.h"
 #include "Timer.h"
 #include "Menue.h"
+#include "MainMenue.h"
 
 SDL_Event even;
 
@@ -15,9 +16,19 @@ int main(int argc ,char ** argv)
 	bool quit = false;
 	bool cap = true;
 	bool menueistoggled = false;
-	
+	bool firstmenue = true;
+
+
+	//Instanz des Hauptmenues
+	Main_Menue StartMenue;
+	StartMenue.Initialize_Game();
+	while(firstmenue == true)
+	{
+		StartMenue.Menue_Loop(even,firstmenue,quit);
+	}
 	//Instanz des Resourcemanagers wird erzeugt
-	S_Resourcemanager::get_Resourcemanager()->initialize();
+	
+	//S_Resourcemanager::get_Resourcemanager()->initialize();
 	//erzeugung der Klassen 
 	World * p_world = new World(250,600);
 	p_world->get_LevelSegmente()->init_Segmente();

@@ -23,6 +23,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_game_over = IMG_Load("game_over_raw.png");
 	this->p_win = IMG_Load("win_proto.png");
+	this->p_MainMenue = IMG_Load("MainMenue.png");
 
 
 	if(p_player == NULL)
@@ -93,6 +94,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Win")
 	{
 		return this->p_win;
+	}
+	else if(key == "MainMenue")
+	{
+		return p_MainMenue;
 	}
 	else
 	{

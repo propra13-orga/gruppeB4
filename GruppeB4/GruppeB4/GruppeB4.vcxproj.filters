@@ -48,6 +48,9 @@
     <ClInclude Include="Verrückter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MainMenue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -78,6 +81,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Verrückter.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_Menue.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

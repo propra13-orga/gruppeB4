@@ -83,6 +83,7 @@
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="LevelSegment.h" />
+    <ClInclude Include="MainMenue.h" />
     <ClInclude Include="Menue.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Princess.h" />
@@ -96,6 +97,7 @@
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Main_Menue.cpp" />
     <ClCompile Include="Menue.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Princess.cpp" />
