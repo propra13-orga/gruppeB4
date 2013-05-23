@@ -14,7 +14,7 @@ void World::update()
 	}
 }
 
-void World::render(bool * tempmenue)
+void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	
 	p_Crazy_Enemy->render();
@@ -22,6 +22,6 @@ void World::render(bool * tempmenue)
 	bool check = p_Princess->render(tempmenue,p_Player1);
 	if(check == false)
 	{
-	p_Player1->render(tempmenue);
+	p_Player1->render(tempmenue,deltaTime);
 	}
 }

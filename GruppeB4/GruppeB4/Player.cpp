@@ -48,13 +48,19 @@ void Player::update()
 	
 }
 
-void Player::render(bool * tempmenue)
+void Player::render(bool * tempmenue, Timer* deltaTime)
 {
 	if(this->PlayerIsWalkingDown == true)
 	{
 		this->currentwalkstatus = PSY_DOWN;
 
+		cout << deltaTime->Getticks();
+		if(deltaTime->Getticks() >= 100)
+		{
+
 		frame++;
+		deltaTime->start();
+		}
 	}
 	else
 	{

@@ -19,6 +19,7 @@ int main(int argc ,char ** argv)
 	bool firstmenue = true;
 
 
+
 	//Instanz des Hauptmenues
 	Main_Menue StartMenue;
 	StartMenue.Initialize_Game();
@@ -37,6 +38,8 @@ int main(int argc ,char ** argv)
 	frames.start();
 	int counter = 0;
 	//Einstieg der while Schleife
+		Timer * deltaTime = new Timer();
+		deltaTime->start();
 	while(quit == false)
 	{
 		//nur temporär! überprüfung der Frames per Seconds
@@ -83,7 +86,7 @@ int main(int argc ,char ** argv)
 		p_world->update();
 		//SDL_FillRect(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->clip_rect,SDL_MapRGB(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->format,0,0xFF,0xFF));
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		p_world->render(&menueistoggled);
+		p_world->render(&menueistoggled,deltaTime);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
 		if( ( cap == true ) && ( fps.Getticks() < 1000 / 100 ) ) 
