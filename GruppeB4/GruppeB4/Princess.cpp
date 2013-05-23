@@ -18,7 +18,7 @@ apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_R
 
 
 bool Princess::render(bool * tempmenue, Player * tempplayer){
-	if(tempplayer->get_Position()->i_y >= 83 && tempplayer->get_Position()->i_y <= 448 && tempplayer->get_Position()->i_x <= 189)
+	if(tempplayer->get_Position()->i_y >= 78 && tempplayer->get_Position()->i_y <= 448 && tempplayer->get_Position()->i_x <= 189)
 	{
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));

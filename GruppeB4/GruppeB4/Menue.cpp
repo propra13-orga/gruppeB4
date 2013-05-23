@@ -28,6 +28,13 @@ void Menue::handle_imput(SDL_Event &even,bool * quitgame,bool * quitmenue,Player
 			}
 		}
 	}
+	if(even.type == SDL_KEYDOWN)
+	{
+		if(even.key.keysym.sym == SDLK_ESCAPE)
+		{
+			*quitmenue = false;
+		}
+	}
 	cout << even.button.x << endl;
 
 
