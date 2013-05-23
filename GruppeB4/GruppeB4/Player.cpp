@@ -87,7 +87,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime)
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
 		this->health = 100;
-		this->set_Position(0,0);
+		this->set_Position(250,600);
 		*tempmenue = true;
 	}
 }
