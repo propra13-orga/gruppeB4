@@ -17,7 +17,7 @@ void Player::handle_input(SDL_Event &even)
 		switch(even.key.keysym.sym)
 		{
 		case(SDLK_UP):this->set_Velocity(0,0);break;
-		case(SDLK_DOWN):this->set_Velocity(0,0);break;
+		case(SDLK_DOWN):this->set_Velocity(0,0);PlayerIsWalkingUp = false;PlayerIsWalkingDown = false;PlayerIsWalkingRight = false;PlayerIsWalkingLeft = false;break;
 		case(SDLK_RIGHT):this->set_Velocity(0,0);break;
 		case(SDLK_LEFT):this->set_Velocity(0,0);break;
 		}
@@ -50,7 +50,29 @@ void Player::update()
 
 void Player::render(bool * tempmenue)
 {
-	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	if(this->PlayerIsWalkingDown == true)
+	{
+		this->currentwalkstatus = PSY_DOWN;
+
+		frame++;
+	}
+	else
+	{
+		frame = 0;
+	}
+	if(frame >= 5)
+	{
+		frame = 0;
+	}
+
+	if(this->currentwalkstatus == PSY_DOWN)
+	{
+		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[frame]);
+	}
+	else
+	{
+	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[4]);
+	}
 
 
 	if(this->health == 0)

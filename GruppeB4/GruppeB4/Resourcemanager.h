@@ -6,6 +6,7 @@
 #include <map>
 #include <iostream>
 #include <SDL_image.h>
+#include "globals.h"
 
 using namespace std;
 
@@ -29,6 +30,7 @@ private:
 	SDL_Surface * p_win;
 	SDL_Surface * p_MainMenue;
 public:
+	SDL_Rect PlayerDownClips[6];
 	static S_Resourcemanager * get_Resourcemanager();
 	
 	void initialize();

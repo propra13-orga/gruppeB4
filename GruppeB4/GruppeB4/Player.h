@@ -5,6 +5,7 @@
 #include "Resourcemanager.h"
 #include "LevelSegment.h"
 #include "globals.h"
+enum status {PSY_RIGHT,PSY_LEFT,PSY_UP,PSY_DOWN};
 
 class Player
 {
@@ -16,11 +17,17 @@ private:
 	bool PlayerIsWalkingUp;
 	bool PlayerIsWalkingDown;
 	int health;
+
+	//Animationsdateien
+
+	int frame;
+	status currentwalkstatus;
+
 public:
 
 	//Konstruktoren
 
-	Player():health(100){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = 0; p_s_Position->i_y = 0; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;}
+	Player():health(100){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = 0; p_s_Position->i_y = 0; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;currentwalkstatus = PSY_DOWN;this->frame = 0;}
 	Player(int i_x,int i_y):health(100){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = i_x; p_s_Position->i_y = i_y; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;}
 	~Player(){delete p_s_Position;delete p_s_Velocity;}
 	// simple FUnktionen für den Zugriff auf den privaten Bereich

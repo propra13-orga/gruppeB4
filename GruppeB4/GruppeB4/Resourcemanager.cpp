@@ -13,7 +13,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_screen = SDL_SetVideoMode(1250,800,32,SDL_SWSURFACE);
 
-	SDL_Surface * LoadedImage1 = IMG_Load("player.png");
+	SDL_Surface * LoadedImage1 = IMG_Load("player_walk.png");
 
 	SDL_Surface * OptimizedImage1 = NULL;
 
@@ -48,6 +48,36 @@ void S_Resourcemanager::initialize()
 	this->p_Menue = IMG_Load("mainmenu_raw.png");
 	this->p_crazy_Enemy = IMG_Load("patient.png");
 	this->p_princess = IMG_Load("Prinzessin.png");
+
+	this->PlayerDownClips[0].x = 0;
+	this->PlayerDownClips[0].y = 0;
+	this->PlayerDownClips[0].w = PLAYER_WIDTH;
+	this->PlayerDownClips[0].h = PLAYER_HEIGHT;
+
+	this->PlayerDownClips[1].x = 60;
+	this->PlayerDownClips[1].y = 0;
+	this->PlayerDownClips[1].w = PLAYER_WIDTH;
+	this->PlayerDownClips[1].h = PLAYER_HEIGHT;
+
+	this->PlayerDownClips[2].x = 120;
+	this->PlayerDownClips[2].y = 0;
+	this->PlayerDownClips[2].w = PLAYER_WIDTH;
+	this->PlayerDownClips[2].h = PLAYER_HEIGHT;
+
+	this->PlayerDownClips[3].x = 180;
+	this->PlayerDownClips[3].y = 0;
+	this->PlayerDownClips[3].w = PLAYER_WIDTH;
+	this->PlayerDownClips[3].h = PLAYER_HEIGHT;
+
+	this->PlayerDownClips[4].x = 240;
+	this->PlayerDownClips[4].y = 0;
+	this->PlayerDownClips[4].w = PLAYER_WIDTH;
+	this->PlayerDownClips[4].h = PLAYER_HEIGHT;
+
+	this->PlayerDownClips[5].x = 300;
+	this->PlayerDownClips[5].y = 0;
+	this->PlayerDownClips[5].w = PLAYER_WIDTH;
+	this->PlayerDownClips[5].h = PLAYER_HEIGHT;
 
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip)
