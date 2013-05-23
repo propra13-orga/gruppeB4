@@ -16,10 +16,10 @@ void Player::handle_input(SDL_Event &even)
 	{
 		switch(even.key.keysym.sym)
 		{
-		case(SDLK_UP):this->set_Velocity(0,0);break;
+		case(SDLK_UP):this->set_Velocity(0,0);PlayerIsWalkingUp = false;PlayerIsWalkingDown = false;PlayerIsWalkingRight = false;PlayerIsWalkingLeft = false;break;
 		case(SDLK_DOWN):this->set_Velocity(0,0);PlayerIsWalkingUp = false;PlayerIsWalkingDown = false;PlayerIsWalkingRight = false;PlayerIsWalkingLeft = false;break;
-		case(SDLK_RIGHT):this->set_Velocity(0,0);break;
-		case(SDLK_LEFT):this->set_Velocity(0,0);break;
+		case(SDLK_RIGHT):this->set_Velocity(0,0);PlayerIsWalkingUp = false;PlayerIsWalkingDown = false;PlayerIsWalkingRight = false;PlayerIsWalkingLeft = false;break;
+		case(SDLK_LEFT):this->set_Velocity(0,0);PlayerIsWalkingUp = false;PlayerIsWalkingDown = false;PlayerIsWalkingRight = false;PlayerIsWalkingLeft = false;break;
 		}
 	}
 	if(PlayerIsWalkingUp == true)
@@ -62,6 +62,36 @@ void Player::render(bool * tempmenue, Timer* deltaTime)
 		deltaTime->start();
 		}
 	}
+	else if(this->PlayerIsWalkingUp == true)
+	{
+		this->currentwalkstatus = PSY_UP;
+
+		if(deltaTime->Getticks() >= 100)
+		{
+			frame++;
+			deltaTime->start();
+		}
+	}
+	else if(this->PlayerIsWalkingLeft == true)
+	{
+		this->currentwalkstatus = PSY_LEFT;
+
+		if(deltaTime->Getticks() >= 100)
+		{
+			frame++;
+			deltaTime->start();
+		}
+	}
+	else if(this->PlayerIsWalkingRight == true)
+	{
+		this->currentwalkstatus = PSY_RIGHT;
+
+		if(deltaTime->Getticks() >= 100)
+		{
+			frame++;
+			deltaTime->start();
+		}
+	}
 	else
 	{
 		frame = 0;
@@ -75,9 +105,17 @@ void Player::render(bool * tempmenue, Timer* deltaTime)
 	{
 		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[frame]);
 	}
-	else
+	else if(this->currentwalkstatus == PSY_UP)
 	{
-	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[4]);
+		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[0]);
+	}
+	else if(this->currentwalkstatus == PSY_LEFT)
+	{
+		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[0]);
+	}
+	else if(this->currentwalkstatus == PSY_RIGHT)
+	{
+	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[0]);
 	}
 
 

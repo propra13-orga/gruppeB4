@@ -79,6 +79,36 @@ void S_Resourcemanager::initialize()
 	this->PlayerDownClips[5].w = PLAYER_WIDTH;
 	this->PlayerDownClips[5].h = PLAYER_HEIGHT;
 
+	this->PlayerUpClips[0].x = 0;
+	this->PlayerUpClips[0].y = 0;
+	this->PlayerUpClips[0].w = PLAYER_WIDTH;
+	this->PlayerUpClips[0].h = PLAYER_HEIGHT;
+
+	this->PlayerUpClips[1].x = 60;
+	this->PlayerUpClips[1].y = 0;
+	this->PlayerUpClips[1].w = PLAYER_WIDTH;
+	this->PlayerUpClips[1].h = PLAYER_HEIGHT;
+
+	this->PlayerUpClips[2].x = 120;
+	this->PlayerUpClips[2].y = 0;
+	this->PlayerUpClips[2].w = PLAYER_WIDTH;
+	this->PlayerUpClips[2].h = PLAYER_HEIGHT;
+
+	this->PlayerUpClips[3].x = 180;
+	this->PlayerUpClips[3].y = 0;
+	this->PlayerUpClips[3].w = PLAYER_WIDTH;
+	this->PlayerUpClips[3].h = PLAYER_HEIGHT;
+
+	this->PlayerUpClips[4].x = 240;
+	this->PlayerUpClips[4].y = 0;
+	this->PlayerUpClips[4].w = PLAYER_WIDTH;
+	this->PlayerUpClips[4].h = PLAYER_HEIGHT;
+
+	this->PlayerUpClips[5].x = 300;
+	this->PlayerUpClips[5].y = 0;
+	this->PlayerUpClips[5].w = PLAYER_WIDTH;
+	this->PlayerUpClips[5].h = PLAYER_HEIGHT;
+
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip)
 {

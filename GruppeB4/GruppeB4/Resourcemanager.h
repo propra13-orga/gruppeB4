@@ -31,6 +31,7 @@ private:
 	SDL_Surface * p_MainMenue;
 public:
 	SDL_Rect PlayerDownClips[6];
+	SDL_Rect PlayerUpClips[6];
 	static S_Resourcemanager * get_Resourcemanager();
 	
 	void initialize();
