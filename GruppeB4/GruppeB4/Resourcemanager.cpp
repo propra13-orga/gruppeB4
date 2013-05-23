@@ -13,7 +13,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_screen = SDL_SetVideoMode(1250,800,32,SDL_SWSURFACE);
 
-	SDL_Surface * LoadedImage1 = IMG_Load("player_walk.png");
+	SDL_Surface * LoadedImage1 = IMG_Load("player_walk_down.png");
 
 	SDL_Surface * OptimizedImage1 = NULL;
 
@@ -24,7 +24,7 @@ void S_Resourcemanager::initialize()
 	this->p_game_over = IMG_Load("game_over_raw.png");
 	this->p_win = IMG_Load("win_proto.png");
 	this->p_MainMenue = IMG_Load("MainMenue.png");
-
+	this->p_player_up = IMG_Load("Player_walk_up.png");
 
 	if(p_player == NULL)
 	{
@@ -158,6 +158,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "MainMenue")
 	{
 		return p_MainMenue;
+	}
+	else if(key == "Player_Up")
+	{
+		return p_player_up;
 	}
 	else
 	{
