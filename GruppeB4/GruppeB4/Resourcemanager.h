@@ -23,6 +23,8 @@ private:
 	SDL_Surface * p_screen;
 	SDL_Surface * p_player;
 	SDL_Surface * p_player_up;
+	SDL_Surface * p_player_left;
+	SDL_Surface * p_player_right;
 	SDL_Surface * p_background;
 	SDL_Surface * p_Menue;
 	SDL_Surface * p_crazy_Enemy;

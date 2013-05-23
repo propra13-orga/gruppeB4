@@ -25,6 +25,8 @@ void S_Resourcemanager::initialize()
 	this->p_win = IMG_Load("win_proto.png");
 	this->p_MainMenue = IMG_Load("MainMenue.png");
 	this->p_player_up = IMG_Load("Player_walk_up.png");
+	this->p_player_right = IMG_Load("Player_walk_right.png");
+	this->p_player_left = IMG_Load("Player_walk_left.png");
 
 	if(p_player == NULL)
 	{
@@ -223,6 +225,14 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Player_Up")
 	{
 		return p_player_up;
+	}
+	else if(key == "Player Left")
+	{
+		return p_player_left;
+	}
+	else if(key == "Player Right")
+	{
+		return p_player_right;
 	}
 	else
 	{
