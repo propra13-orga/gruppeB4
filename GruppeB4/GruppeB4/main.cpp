@@ -13,39 +13,39 @@ int counter = 0;
 int main(int argc ,char ** argv)
 {
 	//verschiedene Bools, die alle benötigt werden um die while schleife zu verwalten
-	bool quit = false;
-	bool cap = true;
-	bool menueistoggled = false;
-	bool firstmenue = true;
+	bool b_quit = false;
+	bool b_cap = true;
+	bool b_menueistoggled = false;
+	bool b_firstmenue = true;
 
 
 
 	//Instanz des Hauptmenues
 	Main_Menue StartMenue;
-	StartMenue.Initialize_Game();
-	while(firstmenue == true)
+	StartMenue.initialize_Game();
+	while(b_firstmenue == true)
 	{
-		StartMenue.Menue_Loop(even,firstmenue,quit);
+		StartMenue.Menue_Loop(even,b_firstmenue,b_quit);
 	}
 	//Instanz des Resourcemanagers wird erzeugt
 	
 	//S_Resourcemanager::get_Resourcemanager()->initialize();
 	//erzeugung der Klassen 
-	World * p_world = new World(250,600);
-	p_world->get_LevelSegmente()->init_Segmente();
-	Timer fps;
-	Timer frames;
-	frames.start();
+	World * p_World = new World(250,600);
+	p_World->get_LevelSegmente()->init_Segmente();
+	Timer Fps;
+	Timer Frames;
+	Frames.start();
 	int counter = 0;
 	//Einstieg der while Schleife
 		Timer * deltaTime = new Timer();
 		deltaTime->start();
-	while(quit == false)
+	while(b_quit == false)
 	{
 		//nur temporär! überprüfung der Frames per Seconds
-		if(frames.Getticks() >= 1000)
+		if(Frames.Getticks() >= 1000)
 	{
-		frames.start();
+		Frames.start();
 		cout << counter << endl;
 		counter = 0;
 
@@ -56,45 +56,45 @@ int main(int argc ,char ** argv)
 			//Wenn der SPieler das Spiel beendet
 			if(even.type == SDL_QUIT)
 			{
-				quit = true;
+				b_quit = true;
 			}
 			//Wenn der Spieler Escape drückt
 			if(even.type == SDL_KEYDOWN)
 			{
 				if(even.key.keysym.sym == SDLK_ESCAPE)
 				{
-					menueistoggled = true;
+					b_menueistoggled = true;
 				}
 			}
 			//Der SPieler wird bewegt
-			p_world->handle_event(even);
+			p_World->handle_Event(even);
 		}
 		//Menue einschlaten, die geschiet, falls Escape gedrückt wurde. Die whileschleife wird erst wieder beendet, wenn der Spieler
 		//
-		if(menueistoggled == true)
+		if(b_menueistoggled == true)
 		{
-			while(menueistoggled == true)
+			while(b_menueistoggled == true)
 			{
 				apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Menue"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 				if(SDL_PollEvent(&even))
 				{
-				Menue::get_Menue().handle_imput(even,&quit,&menueistoggled,p_world->get_Player());
+				Menue::get_Menue().handle_Input(even,&b_quit,&b_menueistoggled,p_World->get_Player());
 				}
 				SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			}
 		}
-		p_world->update();
+		p_World->update();
 		//SDL_FillRect(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->clip_rect,SDL_MapRGB(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->format,0,0xFF,0xFF));
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		p_world->render(&menueistoggled,deltaTime);
+		p_World->render(&b_menueistoggled,deltaTime);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
-		if( ( cap == true ) && ( fps.Getticks() < 1000 / 100 ) ) 
+		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
 		{
 			//Sleep the remaining frame time
-			SDL_Delay( ( 1000 / 100) - fps.Getticks() ); 
+			SDL_Delay( ( 1000 / 100) - Fps.Getticks() ); 
 		}
-		fps.start();
+		Fps.start();
 		counter++;
 	}
 

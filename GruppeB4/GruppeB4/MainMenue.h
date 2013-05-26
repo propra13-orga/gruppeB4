@@ -8,8 +8,8 @@ class Main_Menue
 private:
 public:
 	void Menue_Loop(SDL_Event & even, bool &game,bool &menue);
-	void handle_events(SDL_Event & even,bool &game,bool &menue);
-	void Initialize_Game();
+	void handle_Events(SDL_Event & even,bool &game,bool &menue);
+	void initialize_Game();
 	void render();
 };
 

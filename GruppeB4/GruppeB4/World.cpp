@@ -1,8 +1,8 @@
 #include "World.h"
 
-void World::handle_event(SDL_Event & even)
+void World::handle_Event(SDL_Event & even)
 {
-	p_Player1->handle_input(even);
+	p_Player1->handle_Input(even);
 }
 
 void World::update()

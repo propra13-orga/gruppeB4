@@ -23,7 +23,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_game_over = IMG_Load("game_over_raw.png");
 	this->p_win = IMG_Load("win_proto.png");
-	this->p_MainMenue = IMG_Load("MainMenue.png");
+	this->p_main_menue = IMG_Load("MainMenue.png");
 	this->p_player_up = IMG_Load("Player_walk_up.png");
 	this->p_player_right = IMG_Load("Player_walk_right.png");
 	this->p_player_left = IMG_Load("Player_walk_left.png");
@@ -47,8 +47,8 @@ void S_Resourcemanager::initialize()
 		std::cout << "initzialisierung des Levels  ist fehlgeschlagen" << std::endl;
 	}
 
-	this->p_Menue = IMG_Load("mainmenu_raw.png");
-	this->p_crazy_Enemy = IMG_Load("patient.png");
+	this->p_menue = IMG_Load("mainmenu_raw.png");
+	this->p_crazy_enemy = IMG_Load("patient.png");
 	this->p_princess = IMG_Load("Prinzessin.png");
 
 	this->PlayerDownClips[0].x = 0;
@@ -199,11 +199,11 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	}
 	else if(key == "Menue")
 	{
-		return p_Menue;
+		return p_menue;
 	}
 	else if(key == "Verrückter")
 	{
-		return this->p_crazy_Enemy;
+		return this->p_crazy_enemy;
 	}
 	else if(key == "Prinzessin")
 	{
@@ -220,7 +220,7 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	}
 	else if(key == "MainMenue")
 	{
-		return p_MainMenue;
+		return p_main_menue;
 	}
 	else if(key == "Player_Up")
 	{

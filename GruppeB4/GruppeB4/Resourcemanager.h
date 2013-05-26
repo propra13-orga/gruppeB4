@@ -26,12 +26,12 @@ private:
 	SDL_Surface * p_player_left;
 	SDL_Surface * p_player_right;
 	SDL_Surface * p_background;
-	SDL_Surface * p_Menue;
-	SDL_Surface * p_crazy_Enemy;
+	SDL_Surface * p_menue;
+	SDL_Surface * p_crazy_enemy;
 	SDL_Surface * p_princess;
 	SDL_Surface * p_game_over;
 	SDL_Surface * p_win;
-	SDL_Surface * p_MainMenue;
+	SDL_Surface * p_main_menue;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

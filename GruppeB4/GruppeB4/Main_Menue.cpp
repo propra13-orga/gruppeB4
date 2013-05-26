@@ -1,11 +1,11 @@
 #include "MainMenue.h"
 
-void Main_Menue::Initialize_Game()
+void Main_Menue::initialize_Game()
 {
 	S_Resourcemanager::get_Resourcemanager()->initialize();
 }
 
-void Main_Menue::handle_events(SDL_Event & even,bool &game,bool & menue)
+void Main_Menue::handle_Events(SDL_Event & even,bool &game,bool & menue)
 {
 	if(even.type == SDL_MOUSEBUTTONDOWN)
 	{
@@ -40,7 +40,7 @@ void Main_Menue::Menue_Loop(SDL_Event & even, bool & game, bool & menue)
 {
 	if(SDL_PollEvent(&even))
 	{
-		this->handle_events(even,game,menue);
+		this->handle_Events(even,game,menue);
 	}
 	this->render();
 	SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));

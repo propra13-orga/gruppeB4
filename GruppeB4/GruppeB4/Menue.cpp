@@ -6,7 +6,7 @@ Menue & Menue::get_Menue()
 	return m;
 }
 
-void Menue::handle_imput(SDL_Event &even,bool * quitgame,bool * quitmenue,Player * temp)
+void Menue::handle_Input(SDL_Event &even,bool * quitgame,bool * quitmenue,Player * temp)
 {
 	if(even.type == SDL_MOUSEBUTTONDOWN)
 	{

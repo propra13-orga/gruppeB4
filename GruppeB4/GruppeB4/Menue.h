@@ -12,7 +12,7 @@ private:
 	Menue(const Menue &);
 public:
 	static Menue & get_Menue();
-	void handle_imput(SDL_Event &even,bool *,bool *,Player * temp);
+	void handle_Input(SDL_Event &even,bool *,bool *,Player * temp);
 };
 
 
