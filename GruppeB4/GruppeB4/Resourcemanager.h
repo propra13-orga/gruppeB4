@@ -31,12 +31,9 @@ private:
 	SDL_Surface * p_princess;
 	SDL_Surface * p_game_over;
 	SDL_Surface * p_win;
-<<<<<<< HEAD
 	SDL_Surface * p_MainMenue;
 	SDL_Surface * trans;
-=======
 	SDL_Surface * p_main_menue;
->>>>>>> 1c21c94b65c8f4f69558ab62a660e8548d795019
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

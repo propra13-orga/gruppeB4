@@ -11,7 +11,7 @@ void S_Resourcemanager::initialize()
 {
 	SDL_Init(SDL_INIT_EVERYTHING);
 
-	this->p_screen = SDL_SetVideoMode(1250,800,32,SDL_SWSURFACE);
+	this->p_screen = SDL_SetVideoMode(900,600,32,SDL_SWSURFACE);
 
 	SDL_Surface * LoadedImage1 = IMG_Load("player_walk_down.png");
 
@@ -34,7 +34,7 @@ void S_Resourcemanager::initialize()
 		std::cout << "Initialisierung des Players ist fehlgeschlagen" << std::endl;
 	}
 
-	SDL_Surface * LoadedImage = IMG_Load("level1.bmp");
+	SDL_Surface * LoadedImage = IMG_Load("map.png");
 	 SDL_Surface * OptimizedImage = NULL;
 
 	  OptimizedImage = SDL_DisplayFormat(LoadedImage);

@@ -48,7 +48,7 @@ void Player::update()
 	
 }
 
-void Player::render(bool * tempmenue, Timer* deltaTime)
+void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 {
 	if(this->b_PlayerIsWalkingDown == true)
 	{
@@ -103,19 +103,19 @@ void Player::render(bool * tempmenue, Timer* deltaTime)
 
 	if(this->e_currentwalkstatus == PSY_DOWN)
 	{
-		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
+		apply_Image(this->get_Position()->i_x - cam.x,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
 	}
 	else if(this->e_currentwalkstatus == PSY_UP)
 	{
-		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player_Up"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
+		apply_Image(this->get_Position()->i_x - cam.x,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player_Up"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
 	}
 	else if(this->e_currentwalkstatus == PSY_LEFT)
 	{
-		apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player Left"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
+		apply_Image(this->get_Position()->i_x - cam.x ,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player Left"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
 	}
 	else if(this->e_currentwalkstatus == PSY_RIGHT)
 	{
-	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player Right"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
+	apply_Image(this->get_Position()->i_x - cam.x,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Player Right"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerDownClips[i_frame]);
 	}
 
 
@@ -129,8 +129,8 @@ void Player::render(bool * tempmenue, Timer* deltaTime)
 		*tempmenue = true;
 	}
 }
-bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition,s_Vector * tempposition2)
-{
+bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition)
+{/*
 	//für den ersten Quadranten
 	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)
 	{
@@ -253,10 +253,11 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 			{
 				return true;
 			}
+			
 		}
+
 		
-		
-	}
+		}
 	
 	//Quadrant 4
 
@@ -319,7 +320,9 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 			
 			return false;
 		}
+		*/
 
+			return false;
 
 
 	
