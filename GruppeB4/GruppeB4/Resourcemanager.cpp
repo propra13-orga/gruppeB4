@@ -27,6 +27,7 @@ void S_Resourcemanager::initialize()
 	this->p_player_up = IMG_Load("Player_walk_up.png");
 	this->p_player_right = IMG_Load("Player_walk_right.png");
 	this->p_player_left = IMG_Load("Player_walk_left.png");
+	this->trans = IMG_Load("test.png");
 
 	if(p_player == NULL)
 	{
@@ -233,6 +234,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Player Right")
 	{
 		return p_player_right;
+	}
+	else if(key == "trans")
+	{
+		return trans;
 	}
 	else
 	{

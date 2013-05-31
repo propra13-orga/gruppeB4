@@ -17,11 +17,10 @@ void World::update()
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	
-	p_Crazy_Enemy->render();
-	p_Crazy_Enemy2->render();
-	bool check = p_Princess->render(tempmenue,p_Player1);
-	if(check == false)
+	BotManager->render();
+	if( p_Princess->render(tempmenue,p_Player1) == false)
 	{
 	p_Player1->render(tempmenue,deltaTime);
 	}
+	apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("trans"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 }
