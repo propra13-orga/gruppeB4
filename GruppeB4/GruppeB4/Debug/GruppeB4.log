@@ -1,12 +1,22 @@
-﻿Der Buildvorgang wurde am 31.05.2013 23:34:51 gestartet.
+﻿Der Buildvorgang wurde am 01.06.2013 13:02:09 gestartet.
      1>Projekt "C:\Users\TOOL\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Menue.cpp World.cpp main.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Enemy.cpp LevelSegment.cpp Main_Menue.cpp Menue.cpp Player.cpp Princess.cpp Resourcemanager.cpp "Verrückter.cpp" World.cpp main.cpp
          main.cpp
          World.cpp
+         Code wird generiert...
+     1>c:\users\tool\gruppeb4\gruppeb4\gruppeb4\world.h(27): warning C4715: "World::collision_Detection": Nicht alle Steuerelementpfade geben einen Wert zurück.
+         Kompilieren...
          Menue.cpp
          Code wird generiert...
-     1>c:\users\tool\gruppeb4\gruppeb4\gruppeb4\world.h(29): warning C4715: "World::collision_Detection": Nicht alle Steuerelementpfade geben einen Wert zurück.
+         Überspringen... (keine relevanten Änderungen gefunden)
+         Verrückter.cpp
+         Resourcemanager.cpp
+         Princess.cpp
+         Player.cpp
+         Main_Menue.cpp
+         LevelSegment.cpp
+         Enemy.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\TOOL\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.exe" /INCREMENTAL /NOLOGO SDL.lib SDLmain.lib SDL_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\TOOL\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\TOOL\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.lib" /MACHINE:X86 Debug\Enemy.obj
          Debug\LevelSegment.obj
@@ -24,4 +34,4 @@
 
 Build erfolgreich.
 
-Verstrichene Zeit 00:00:01.77
+Verstrichene Zeit 00:00:01.91

@@ -13,8 +13,6 @@ class World
 private:
 	Player * p_Player1;
 	LevelSegmente * p_Segmente;
-	Crazy_enemy * p_Crazy_Enemy;
-	Crazy_enemy * p_Crazy_Enemy2;
 	Princess * p_Princess;
 	AgentManager * BotManager;
 	SDL_Rect Camera;

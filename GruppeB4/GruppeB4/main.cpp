@@ -86,11 +86,9 @@ int main(int argc ,char ** argv)
 		}
 		p_World->update();
 		p_World->set_Camera();
-		//SDL_FillRect(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->clip_rect,SDL_MapRGB(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen")->format,0,0xFF,0xFF));
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
 		p_World->render(&b_menueistoggled,deltaTime);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		
 		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
 		{
 			//Sleep the remaining frame time
