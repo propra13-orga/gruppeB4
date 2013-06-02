@@ -7,6 +7,7 @@
 #include "Verrückter.h"
 #include "Princess.h"
 #include "AgentManager.h"
+#include "Overlay.h"
 
 class World
 {

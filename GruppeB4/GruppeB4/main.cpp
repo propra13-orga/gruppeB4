@@ -88,7 +88,6 @@ int main(int argc ,char ** argv)
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
 		
 		p_World->render(&b_menueistoggled,deltaTime);
-		apply_Image(71 - p_World->get_Camera().x,67 - p_World->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
 		{
