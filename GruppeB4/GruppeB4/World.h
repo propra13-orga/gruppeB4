@@ -24,7 +24,7 @@ public:
 	void update();
 	void handle_Event(SDL_Event &even);
 	void render(bool * tempmenue,Timer * deltaTime);
-	bool collision_Detection(){if(p_Player1->collision_Detection(this->p_Segmente,this->BotManager->p_Crazy_Enemy->get_Position())){return true;}}
+	bool collision_Detection(){if(p_Player1->collision_Detection(this->p_Segmente,this->BotManager->crazy_enemies[0]->get_Position())){return true;}BotManager->update(this->p_Player1);}
 	Player * get_Player(){return p_Player1;}
 	LevelSegmente * get_LevelSegmente(){return p_Segmente;}
 };

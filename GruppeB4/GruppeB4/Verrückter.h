@@ -16,7 +16,7 @@ public:
 
 
 
-	void render();
+	void render(SDL_Rect camera);
 	void update();
 
 	//void show_enemyStats(int ,int);

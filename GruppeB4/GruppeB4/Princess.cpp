@@ -17,7 +17,7 @@ apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_R
 
 
 
-bool Princess::render(bool * tempmenue, Player * tempplayer){
+bool Princess::render(bool * tempmenue, Player * tempplayer,SDL_Rect camera){
 	if(tempplayer->get_Position()->i_y >= 78 && tempplayer->get_Position()->i_y <= 448 && tempplayer->get_Position()->i_x <= 189)
 	{
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
@@ -31,7 +31,7 @@ bool Princess::render(bool * tempmenue, Player * tempplayer){
 	else
 	{
 
-apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Prinzessin"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"));
+apply_Image(this->get_Position()->i_x - camera.x,this->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Prinzessin"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 return false;
 	}
 

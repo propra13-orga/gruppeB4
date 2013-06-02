@@ -27,7 +27,8 @@ void S_Resourcemanager::initialize()
 	this->p_player_up = IMG_Load("Player_walk_up.png");
 	this->p_player_right = IMG_Load("Player_walk_right.png");
 	this->p_player_left = IMG_Load("Player_walk_left.png");
-	this->trans = IMG_Load("test.png");
+	this->p_trans = IMG_Load("Licht_Thronsaal.png");
+
 
 	if(p_player == NULL)
 	{
@@ -235,9 +236,9 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		return p_player_right;
 	}
-	else if(key == "trans")
+	else if(key == "Transthron")
 	{
-		return trans;
+		return this->p_trans;
 	}
 	else
 	{

@@ -23,11 +23,10 @@ int main(int argc ,char ** argv)
 	//Instanz des Hauptmenues
 	Main_Menue StartMenue;
 	StartMenue.initialize_Game();
-	/*while(b_firstmenue == true)
+	while(b_firstmenue == true)
 	{
 		StartMenue.Menue_Loop(even,b_firstmenue,b_quit);
 	}
-	*/
 	//Instanz des Resourcemanagers wird erzeugt
 	
 	//S_Resourcemanager::get_Resourcemanager()->initialize();
@@ -87,7 +86,9 @@ int main(int argc ,char ** argv)
 		p_World->update();
 		p_World->set_Camera();
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
+		
 		p_World->render(&b_menueistoggled,deltaTime);
+		apply_Image(71 - p_World->get_Camera().x,67 - p_World->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
 		{

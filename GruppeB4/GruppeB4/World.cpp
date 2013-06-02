@@ -17,8 +17,8 @@ void World::update()
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	
-	BotManager->render();
-	if( p_Princess->render(tempmenue,p_Player1) == false)
+	BotManager->render( Camera);
+	if( p_Princess->render(tempmenue,p_Player1,Camera) == false)
 	{
 	p_Player1->render(tempmenue,deltaTime,Camera);
 	}

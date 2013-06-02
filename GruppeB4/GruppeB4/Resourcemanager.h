@@ -32,8 +32,8 @@ private:
 	SDL_Surface * p_game_over;
 	SDL_Surface * p_win;
 	SDL_Surface * p_MainMenue;
-	SDL_Surface * trans;
 	SDL_Surface * p_main_menue;
+	SDL_Surface * p_trans;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

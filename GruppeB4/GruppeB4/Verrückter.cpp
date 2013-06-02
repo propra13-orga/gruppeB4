@@ -14,9 +14,9 @@ using namespace std;
 
 
 
-void Crazy_enemy::render()
+void Crazy_enemy::render(SDL_Rect camera)
 {
-	apply_Image(this->get_Position()->i_x,this->get_Position()->i_y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Verrückter"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"));
+	apply_Image(this->get_Position()->i_x - camera.x,this->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Verrückter"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 } 
 
 

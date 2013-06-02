@@ -49,7 +49,7 @@ public:
 
 
 
-	bool render(bool * tempmenue,Player * tempplayer);
+	bool render(bool * tempmenue,Player * tempplayer,SDL_Rect camera);
 
 };
 

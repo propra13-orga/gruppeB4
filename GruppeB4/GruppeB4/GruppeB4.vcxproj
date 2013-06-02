@@ -95,6 +95,7 @@
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Agentmanager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />

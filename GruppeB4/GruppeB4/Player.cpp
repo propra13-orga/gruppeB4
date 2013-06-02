@@ -173,7 +173,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 		*/
 		//Kollision für den Gegner
 		
-		/*else*/ if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_y <= tempposition->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
+		/*else*//* if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_y <= tempposition->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
 		{
 			this->i_health = 0;
 			cout << i_health << endl;
@@ -203,7 +203,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * temppo
 			cout << i_health << endl;
 			
 			return false;
-		}
+		}*/
 	/*
 	}
 	//Quadrant 3
