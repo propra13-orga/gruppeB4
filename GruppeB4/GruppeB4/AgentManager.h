@@ -13,7 +13,7 @@ public:
 	~AgentManager(){delete crazy_enemies[0];}
 	void render(SDL_Rect camera){for(int i = 0;i < crazy_enemies.size();i++){crazy_enemies[i]->render( camera);}}
 	void check_collision(Player * p_TempPlayer);
-	void update(Player * p_TempPlayer){check_collision(p_TempPlayer);crazy_enemies[0]->update();}
+	void update(Player * p_TempPlayer){for(int i = 0;i < crazy_enemies.size();i++){check_collision(p_TempPlayer);crazy_enemies[i]->update();}}
 };
 
 

@@ -21,6 +21,24 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	BotManager->render( Camera);
 	if( p_Princess->render(tempmenue,p_Player1,Camera) == false)
 	{
+		//Abfrage der Health und Auf den BIldschirmbringen der Gehirne
+		if(this->p_Player1->get_Health() >= 300)
+		{
+			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		else if (this->p_Player1->get_Health() >= 200 && this->p_Player1->get_Health() < 300)
+		{
+			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn2"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		else if (this->p_Player1->get_Health() >= 100 && this->p_Player1->get_Health() < 200)
+		{
+			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+
+		}
+		else
+		{
+			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn4"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
 	p_Player1->render(tempmenue,deltaTime,Camera);
 	}
 }

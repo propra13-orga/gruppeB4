@@ -27,6 +27,10 @@ void S_Resourcemanager::initialize()
 	this->p_player_up = IMG_Load("Player_walk_up.png");
 	this->p_player_right = IMG_Load("Player_walk_right.png");
 	this->p_player_left = IMG_Load("Player_walk_left.png");
+	this->p_hirn1 = IMG_Load("hirn1.png");
+	this->p_hirn2 = IMG_Load("hirn2.png");
+	this->p_hirn3 = IMG_Load("hirn3.png");
+	this->p_hirn4 = IMG_Load("hirn4.png");
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
 
@@ -247,6 +251,22 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Transthron")
 	{
 		return this->p_trans;
+	}
+	else if(key == "hirn1")
+	{
+		return this->p_hirn1;
+	}
+	else if(key == "hirn2")
+	{
+		return this->p_hirn2;
+	}
+	else if(key == "hirn3")
+	{
+		return this->p_hirn3;
+	}
+	else if(key == "hirn4")
+	{
+		return this->p_hirn4;
 	}
 	else
 	{

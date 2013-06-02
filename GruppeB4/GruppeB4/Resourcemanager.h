@@ -34,6 +34,10 @@ private:
 	SDL_Surface * p_MainMenue;
 	SDL_Surface * p_main_menue;
 	SDL_Surface * p_trans;
+	SDL_Surface * p_hirn1;
+	SDL_Surface * p_hirn2;
+	SDL_Surface * p_hirn3;
+	SDL_Surface * p_hirn4;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];
