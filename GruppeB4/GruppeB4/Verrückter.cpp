@@ -5,12 +5,28 @@ using namespace std;
 
 
 
-//void Crazy_enemy::update(){
+void Crazy_enemy::update(){
+	if(this->get_Position()->i_x <= 1035 && this->get_Position()->i_y <= 731)
+	{
+
+	this->set_Velocity(0,2);
+	}
+	else if(this->get_Position()->i_x <= 1035 && this->get_Position()->i_y >= 1015)
+	{
+		this->set_Velocity(2,0);
+	}
+	else if(this->get_Position()->i_x >= 1432 && this->get_Position()->i_y >= 1015)
+	{
+		this->set_Velocity(0,-2);
+	}
+	else if(this->get_Position()->i_x >= 1432 && this->get_Position()->i_y <= 731)
+	{
+		this->set_Velocity(-2,0);
+	}
 
 
-	//this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
-	//cout << "Position: " << this->get_Position()->i_y << "    " << this->get_Position()->i_x << endl;
-//}
+	this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
+}
 
 
 

@@ -129,7 +129,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 		*tempmenue = true;
 	}
 }
-bool Player::collision_Detection(LevelSegmente * p_TempSegment,s_Vector * tempposition)
+bool Player::collision_Detection(LevelSegmente * p_TempSegment)
 {/*
 	//für den ersten Quadranten
 	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)

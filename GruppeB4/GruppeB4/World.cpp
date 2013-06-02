@@ -7,6 +7,7 @@ void World::handle_Event(SDL_Event & even)
 
 void World::update()
 {
+	BotManager->update(this->p_Player1);
 	p_Player1->update();
 	if(collision_Detection() == true)
 	{
@@ -37,6 +38,4 @@ void World::set_Camera()
 	 { Camera.x = 2000 - Camera.w; } 
 	 if( Camera.y > 1280 - Camera.h ) 
 	 { Camera.y = 1280 - Camera.h; } 
-	 cout << Camera.x << endl; 
-	 cout << Camera.y << endl;
 }

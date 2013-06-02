@@ -2,6 +2,8 @@
 #ifndef CRAZY_ENEMY_H
 #define CRAZY_ENEMY_H
 
+#include "Timer.h"
+
 class Crazy_enemy: public Enemy{
 private:
 

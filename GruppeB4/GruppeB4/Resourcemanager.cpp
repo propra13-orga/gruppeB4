@@ -27,7 +27,15 @@ void S_Resourcemanager::initialize()
 	this->p_player_up = IMG_Load("Player_walk_up.png");
 	this->p_player_right = IMG_Load("Player_walk_right.png");
 	this->p_player_left = IMG_Load("Player_walk_left.png");
-	this->p_trans = IMG_Load("Licht_Thronsaal.png");
+
+	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
+
+	SDL_Surface * OptimizedImage2 = NULL;
+
+	OptimizedImage2 = SDL_DisplayFormatAlpha(LoadedImage2);
+
+	this->p_trans = OptimizedImage2;
+
 
 
 	if(p_player == NULL)
