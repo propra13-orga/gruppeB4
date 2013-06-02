@@ -1,27 +1,34 @@
-﻿Der Buildvorgang wurde am 02.06.2013 21:47:53 gestartet.
-     1>Projekt "C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" auf Knoten "2", Build Ziel(e).
+﻿Der Buildvorgang wurde am 02.06.2013 22:01:00 gestartet.
+     1>Projekt "C:\Users\huyen\Desktop\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" auf Knoten "2", Build Ziel(e).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt World.cpp
+         C:\Program Files\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Agentmanager.cpp Enemy.cpp LevelSegment.cpp main.cpp Main_Menue.cpp Menue.cpp Player.cpp Princess.cpp Resourcemanager.cpp Timer.cpp "Verrückter.cpp" World.cpp
          World.cpp
-     1>c:\users\tilman\gruppeb4\gruppeb4\gruppeb4\agentmanager.h(14): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
-     1>c:\users\tilman\gruppeb4\gruppeb4\gruppeb4\agentmanager.h(16): warning C4018: '<': Konflikt zwischen 'signed' und 'unsigned'
-     1>c:\users\tilman\gruppeb4\gruppeb4\gruppeb4\world.h(27): warning C4715: "World::collision_Detection": Nicht alle Steuerelementpfade geben einen Wert zurück.
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.exe" /INCREMENTAL /NOLOGO SDL.lib SDLmain.lib SDL_image.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.lib" /MACHINE:X86 Debug\Agentmanager.obj
-         Debug\Enemy.obj
-         Debug\LevelSegment.obj
-         Debug\main.obj
-         Debug\Main_Menue.obj
-         Debug\Menue.obj
-         Debug\Player.obj
-         Debug\Princess.obj
-         Debug\Resourcemanager.obj
-         Debug\Timer.obj
-         "Debug\Verrückter.obj"
-         Debug\World.obj
-         GruppeB4.vcxproj -> C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\Debug\GruppeB4.exe
-     1>Die Erstellung des Projekts "C:\Users\Tilman\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" ist abgeschlossen, Build Ziel(e).
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Verrückter.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Timer.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\timer.h(6): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Resourcemanager.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Princess.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Player.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Menue.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Main_Menue.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         main.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         LevelSegment.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Enemy.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Agentmanager.cpp
+     1>c:\users\huyen\desktop\gruppeb4\gruppeb4\gruppeb4\resourcemanager.h(4): fatal error C1083: Datei (Include) kann nicht geöffnet werden: "SDL.h": No such file or directory
+         Code wird generiert...
+     1>Die Erstellung des Projekts "C:\Users\huyen\Desktop\gruppeB4\GruppeB4\GruppeB4\GruppeB4.vcxproj" ist abgeschlossen, Build Ziel(e) -- FEHLER.
 
-Build erfolgreich.
+Fehler beim Buildvorgang.
 
-Verstrichene Zeit 00:00:01.79
+Verstrichene Zeit 00:00:12.85
