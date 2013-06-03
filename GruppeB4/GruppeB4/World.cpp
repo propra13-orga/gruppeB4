@@ -18,7 +18,7 @@ void World::update()
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	BotManager->render( Camera);
-	if( p_BossManager->render(tempmenue,p_Player1,Camera) == false)
+	if( p_BossManager->render(p_Player1,Camera) == false)
 	{
 		Overlay::get_Instance().render(this->p_Player1);
 		p_Player1->render(tempmenue,deltaTime,Camera);

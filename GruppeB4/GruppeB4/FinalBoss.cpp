@@ -17,7 +17,7 @@ apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_R
 
 
 
-bool FinalBoss::render(bool * tempmenue, Player * tempplayer,SDL_Rect camera){
+bool FinalBoss::render( Player * tempplayer,SDL_Rect camera){
 	if(tempplayer->get_Position()->i_y >= 78 && tempplayer->get_Position()->i_y <= 448 && tempplayer->get_Position()->i_x <= 189)
 	{
 		return true;

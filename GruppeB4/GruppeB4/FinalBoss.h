@@ -17,7 +17,7 @@ public:
 	~FinalBoss(){delete p_s_Position;}
 	s_Vector* get_Position(){return this->p_s_Position;}
 	void  set_Position(int i_x,int i_y){this->p_s_Position->i_x = i_x;this->p_s_Position->i_y = i_y;}
-	bool render(bool * tempmenue,Player * tempplayer,SDL_Rect camera);
+	bool render(Player * tempplayer,SDL_Rect camera);
 
 };
 
