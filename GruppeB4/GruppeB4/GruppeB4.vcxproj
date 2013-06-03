@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="AgentManager.h" />
+    <ClInclude Include="Armor.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="LevelSegment.h" />
@@ -93,10 +94,12 @@
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vektor.h" />
     <ClInclude Include="Verrückter.h" />
+    <ClInclude Include="Weapon.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Agentmanager.cpp" />
+    <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
@@ -108,6 +111,7 @@
     <ClCompile Include="Resourcemanager.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Verrückter.cpp" />
+    <ClCompile Include="Weapon.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
