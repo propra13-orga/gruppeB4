@@ -6,6 +6,8 @@
 #include "LevelSegment.h"
 #include "globals.h"
 #include "Timer.h"
+#include "ItemManager.h"
+
 enum status {PSY_RIGHT,PSY_LEFT,PSY_UP,PSY_DOWN};
 
 class Player
@@ -40,6 +42,11 @@ public:
 	void set_Health(int health){this->i_health = health;}
 	int get_Health() const {return i_health;}
 	void reinitialize();
+
+	//Itembenutzung
+
+	void heal();//Funktion Heilt den Spieler falls in der Liste der catchedItems des Itemmanagers ein heiltrank vorhanden ist
+	void loadMana();//Funktion läd mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist
 
 
 	//Funktionen die für die Bewegung und das Abbilden des Spielers erstellt sind

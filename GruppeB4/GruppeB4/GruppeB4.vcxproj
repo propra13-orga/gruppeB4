@@ -84,6 +84,7 @@
     <ClInclude Include="Armor.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
+    <ClInclude Include="ItemManager.h" />
     <ClInclude Include="LevelSegment.h" />
     <ClInclude Include="MainMenue.h" />
     <ClInclude Include="Menue.h" />

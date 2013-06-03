@@ -16,24 +16,21 @@
     <Filter Include="Header Files\Gegner">
       <UniqueIdentifier>{a7f5d772-76ba-412f-b950-6d009165b0fb}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Objekte">
+      <UniqueIdentifier>{1703dabc-0c24-44a2-88c0-08f0ec9cf6b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Menue">
+      <UniqueIdentifier>{71d39dea-0841-4805-b8cd-d85f0e50c2d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Engine">
+      <UniqueIdentifier>{e7f05f40-459d-41f9-be96-95c694954f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Manager">
+      <UniqueIdentifier>{f94212cf-074e-4dbb-9203-cfaa138eea36}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Timer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Resourcemanager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Player.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Vektor.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Menue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LevelSegment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="World.h">
@@ -42,29 +39,47 @@
     <ClInclude Include="globals.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="AgentManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Overlay.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Weapon.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Armor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Verrückter.h">
       <Filter>Header Files\Gegner</Filter>
     </ClInclude>
     <ClInclude Include="FinalBoss.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Gegner</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Header Files\Gegner</Filter>
+    </ClInclude>
+    <ClInclude Include="Armor.h">
+      <Filter>Header Files\Objekte</Filter>
+    </ClInclude>
+    <ClInclude Include="Weapon.h">
+      <Filter>Header Files\Objekte</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenue.h">
+      <Filter>Header Files\Menue</Filter>
+    </ClInclude>
+    <ClInclude Include="Menue.h">
+      <Filter>Header Files\Menue</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Vektor.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="LevelSegment.h">
+      <Filter>Header Files\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentManager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Resourcemanager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemManager.h">
+      <Filter>Header Files\Manager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

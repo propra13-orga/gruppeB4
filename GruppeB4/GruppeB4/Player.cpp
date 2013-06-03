@@ -51,6 +51,8 @@ void Player::update()
 	
 
 	this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
+
+	cout << this->i_health << endl;
 	
 }
 
@@ -328,9 +330,34 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment)
 			return false;
 		}
 		*/
-
 			return false;
 
 
 	
+}
+
+void Player::heal()
+{
+	if(ItemManager::get_ItemManager().find(/*ItemType*/) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
+	{
+		ItemManager::get_ItemManager().kill_Item(/*ItemType*/);//anschliesend muss das benutzte item wieder gelöscht werden
+		this->set_Health(this->get_Health() + 100);
+	}
+	else
+	{
+		return;
+	}
+}
+
+
+void Player::loadMana()
+{
+	if(ItemManager::get_ItemManager().find(/*ItemType*/) == true)// guckt ob Item da, wenn ja, dann wird das Mana um 100 gepushed, was einem die möglichkeit von einem drei sekündigem Sprint gibt
+	{
+		ItemManager::get_ItemManager().kill_Item(/*ItemType*/);//anschliesend muss das benutzte item wieder gelöscht werden
+	}
+	else
+	{
+		return;
+	}
 }
