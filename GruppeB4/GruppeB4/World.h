@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "LevelSegment.h"
 #include "Verrückter.h"
-#include "Princess.h"
+#include "FinalBoss.h"
 #include "AgentManager.h"
 #include "Overlay.h"
 
@@ -14,14 +14,15 @@ class World
 private:
 	Player * p_Player1;
 	LevelSegmente * p_Segmente;
-	Princess * p_Princess;
+	FinalBoss * p_BossManager;
 	AgentManager * BotManager;
 	SDL_Rect Camera;
 public:
-	World(int i_x,int i_y){p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();p_Princess = new Princess();BotManager = new AgentManager;Camera.w = 900; Camera.h = 600;}
-	~World(){delete p_Player1;delete p_Princess;}
+	World(int i_x,int i_y){p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();p_BossManager = new FinalBoss();BotManager = new AgentManager;Camera.w = 900; Camera.h = 600;}
+	~World(){delete p_Player1;delete p_BossManager;}
 	void set_Camera();
 	SDL_Rect get_Camera(){return Camera;}
+	void render_Win(bool * tempmenue);
 	void update();
 	void handle_Event(SDL_Event &even);
 	void render(bool * tempmenue,Timer * deltaTime);

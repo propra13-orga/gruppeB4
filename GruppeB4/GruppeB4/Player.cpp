@@ -1,5 +1,11 @@
 #include "Player.h"
 
+void Player::reinitialize()
+{
+	this->set_Position(600,900);
+	this->set_Health(400);
+}
+
 void Player::handle_Input(SDL_Event &even)
 {
 	if(even.type == SDL_KEYDOWN)

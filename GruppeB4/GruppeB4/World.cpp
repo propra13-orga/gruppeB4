@@ -18,12 +18,25 @@ void World::update()
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	BotManager->render( Camera);
-	if( p_Princess->render(tempmenue,p_Player1,Camera) == false)
+	if( p_BossManager->render(tempmenue,p_Player1,Camera) == false)
 	{
 		Overlay::get_Instance().render(this->p_Player1);
 		p_Player1->render(tempmenue,deltaTime,Camera);
 		apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
+	else
+	{
+		this->render_Win(tempmenue);
+		this->p_Player1->reinitialize();
+	}
+}
+
+void World::render_Win(bool * tempmenue)
+{
+	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	SDL_Delay(5000);
+	*tempmenue = true;
 }
 
 

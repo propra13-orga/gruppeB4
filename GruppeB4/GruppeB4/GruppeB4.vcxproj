@@ -89,7 +89,7 @@
     <ClInclude Include="Menue.h" />
     <ClInclude Include="Overlay.h" />
     <ClInclude Include="Player.h" />
-    <ClInclude Include="Princess.h" />
+    <ClInclude Include="FinalBoss.h" />
     <ClInclude Include="Resourcemanager.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vektor.h" />
@@ -107,7 +107,7 @@
     <ClCompile Include="Menue.cpp" />
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Player.cpp" />
-    <ClCompile Include="Princess.cpp" />
+    <ClCompile Include="FinalBoss.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Verrückter.cpp" />
