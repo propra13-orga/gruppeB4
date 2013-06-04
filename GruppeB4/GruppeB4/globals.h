@@ -4,4 +4,6 @@
 const int  PLAYER_HEIGHT = 60;
 const int  PLAYER_WIDTH  = 60;
 
+enum WEAPON_TYPE {KNIFE,PISTOL};
+
 #endif

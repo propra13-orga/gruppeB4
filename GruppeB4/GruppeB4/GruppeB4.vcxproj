@@ -89,9 +89,11 @@
     <ClInclude Include="MainMenue.h" />
     <ClInclude Include="Menue.h" />
     <ClInclude Include="Overlay.h" />
+    <ClInclude Include="Pfleger.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="FinalBoss.h" />
     <ClInclude Include="Resourcemanager.h" />
+    <ClInclude Include="Spritze.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vektor.h" />
     <ClInclude Include="Verrückter.h" />
@@ -107,6 +109,7 @@
     <ClCompile Include="Main_Menue.cpp" />
     <ClCompile Include="Menue.cpp" />
     <ClCompile Include="Overlay.cpp" />
+    <ClCompile Include="Pfleger.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="FinalBoss.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />

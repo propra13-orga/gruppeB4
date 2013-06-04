@@ -81,6 +81,12 @@
     <ClInclude Include="ItemManager.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="Pfleger.h">
+      <Filter>Header Files\Gegner</Filter>
+    </ClInclude>
+    <ClInclude Include="Spritze.h">
+      <Filter>Header Files\Gegner</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -126,6 +132,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="FinalBoss.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pfleger.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
