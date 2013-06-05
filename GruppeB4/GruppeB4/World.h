@@ -17,8 +17,10 @@ private:
 	FinalBoss * p_BossManager;
 	AgentManager * BotManager;
 	SDL_Rect Camera;
+	enum LEVEL_LOADED{LEVEL1,LEVEL2,LEVEL3};//Hier entsteht eine Enumeration die gesetzt wird um zu überprüfen, welches Level geladen ist
+	LEVEL_LOADED CURRENTLEVEL;
 public:
-	World(int i_x,int i_y){p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();p_BossManager = new FinalBoss();BotManager = new AgentManager;Camera.w = 900; Camera.h = 600;}
+	World(int i_x,int i_y){p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();p_BossManager = new FinalBoss();BotManager = new AgentManager;Camera.w = 900; Camera.h = 600;CURRENTLEVEL = LEVEL1;}
 	~World(){delete p_Player1;delete p_BossManager;}
 	void set_Camera();
 	SDL_Rect get_Camera(){return Camera;}
