@@ -1,9 +1,12 @@
 #include "Player.h"
 
-void Player::reinitialize()
+void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 {
-	this->set_Position(600,900);
-	this->set_Health(400);
+	if(CURRENTLEVEL == LEVEL1)
+	{
+		this->set_Position(600,900);
+		this->set_Health(400);
+	}
 }
 
 void Player::handle_Input(SDL_Event &even)
@@ -137,16 +140,20 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 		*tempmenue = true;
 	}
 }
-bool Player::collision_Detection(LevelSegmente * p_TempSegment)
+bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
-	if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
+	cout << sizeof(LevelSegmente) << endl;
+	if(CURRENTLEVEL == LEVEL1)
+	{
+		if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
 		{
 			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x )
 			{
 				return true;
 			}
-	}
+		}
 	return false;
+	}
 }
 				
 				

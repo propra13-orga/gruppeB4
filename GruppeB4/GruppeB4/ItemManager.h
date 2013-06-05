@@ -24,7 +24,7 @@ public:
 		static ItemManager Instance;
 		return Instance;
 	}
-	void set_Item(){}//Funktion wird vom Botmanager gebraucht um ein item nach Tötung zu setzen, hier wird lediglich die Position des verstorbenen Bots angegeben und schließlich nach einem random prinzip 
+	void set_Item(s_Vector * p_TempPosition){}//Funktion wird vom Botmanager gebraucht um ein item nach Tötung zu setzen, hier wird lediglich die Position des verstorbenen Bots angegeben und schließlich nach einem random prinzip 
 	//ein Item an die stelle gesetzt. Dies ist dann ein nicht eingefangenes Item (offensichtlich :) )
 	void render(){} //Rendert alle Items die nicht vom Spieler eingesammelt sind
 	void update(){} //Umfngreichste Funktion der Klasse, hier wird zunächst überprüft, ob der Spieler ein neues Item berührt hat.

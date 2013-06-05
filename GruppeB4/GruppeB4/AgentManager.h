@@ -11,7 +11,7 @@ class AgentManager
 public:
 	vector<Crazy_enemy*>crazy_enemies;
 	vector<Pfleger*>allPfleger;
-	AgentManager(){crazy_enemies.push_back( new Crazy_enemy(1035,731));allPfleger.push_back(new Pfleger(973,112));}
+	AgentManager(LEVEL_LOADED CURRENTLEVEL){if(CURRENTLEVEL == LEVEL1){crazy_enemies.push_back( new Crazy_enemy(1035,731));allPfleger.push_back(new Pfleger(973,112));}}
 	~AgentManager(){delete crazy_enemies[0];}
 	void render(SDL_Rect camera){for(int i = 0;i < crazy_enemies.size();i++){crazy_enemies[i]->render( camera);allPfleger[0]->render(camera);}}
 	void check_collision(Player * p_TempPlayer);

@@ -27,7 +27,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	else
 	{
 		this->render_Win(tempmenue);
-		this->p_Player1->reinitialize();
+		this->p_Player1->reinitialize(this->CURRENTLEVEL);
 	}
 }
 
