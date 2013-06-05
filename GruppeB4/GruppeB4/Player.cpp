@@ -2,11 +2,8 @@
 
 void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 {
-	if(CURRENTLEVEL == LEVEL1)
-	{
-		this->set_Position(600,900);
-		this->set_Health(400);
-	}
+	this->set_Position(600,900);
+	this->set_Health(400);
 }
 
 void Player::handle_Input(SDL_Event &even)
@@ -142,18 +139,24 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 }
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
-	cout << sizeof(LevelSegmente) << endl;
-	if(CURRENTLEVEL == LEVEL1)
-	{
-		if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
+	if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
 		{
 			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x )
 			{
 				return true;
 			}
+
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect11[0].y)
+			{
+			return true;
+			}
+		else if(this->get_Position()->i_y >= (p_TempSegment->SegmentRect11[0].y + 476 - PLAYER_HEIGHT))
+		{
+			return true;
 		}
-	return false;
+
 	}
+	return false;
 }
 				
 				
