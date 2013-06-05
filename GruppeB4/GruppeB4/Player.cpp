@@ -129,10 +129,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 
 	if(this->i_health <= 0)
 	{
-		
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("game_over_raw"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		//SDL_BlitSurface(S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),&cam,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),NULL);
-		apply_Image(this->get_Position()->i_x - cam.x - 10 ,this->get_Position()->i_y - cam.y - 30 ,S_Resourcemanager::get_Resourcemanager()->get_Surface("tot"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
 		this->i_health = 400;
@@ -142,103 +139,88 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 }
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
-	if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
+	//für den ersten Quadranten
+	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
 		{
 			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x )
 			{
 				return true;
 			}
-
+			
 			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect11[0].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= (p_TempSegment->SegmentRect11[0].y + 476 - PLAYER_HEIGHT))
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect11[0].x + p_TempSegment->SegmentRect11[0].w - PLAYER_HEIGHT && this->get_Position()->i_y <= p_TempSegment->SegmentRect11[1].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect11[0].x  + p_TempSegment->SegmentRect11[0].w - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect11[1].y + p_TempSegment->SegmentRect11[1].h - PLAYER_HEIGHT )
+			{
+				return true;
+			}
+		}
+	//für den zweiten Quadranten
+	if(this->get_Position()->i_x >=969 && this->get_Position()->i_y >= 630 - PLAYER_WIDTH)
+		{
+			if(this->get_Position()->i_x > p_TempSegment->SegmentRect12[0].x + p_TempSegment->SegmentRect12[0].w - PLAYER_WIDTH)
 			{
 			return true;
 			}
-		else if(this->get_Position()->i_y >= (p_TempSegment->SegmentRect11[0].y + 476 - PLAYER_HEIGHT))
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect12[1].x && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
+			{
+			return true;
+			}
+			else if(this->get_Position()->i_x + PLAYER_WIDTH >= p_TempSegment->SegmentRect12[1].x + p_TempSegment->SegmentRect12[1].w && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
+			{
+			return true;
+			}
+			else if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect12[0].y + p_TempSegment->SegmentRect12[0].h)
+			{
+			return true;
+			}
+		}
+	//Quadrant 4
+
+	if(this->get_Position()->i_x < 969 && this->get_Position()->i_y < 600)
+	{
+		if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
 		{
 			return true;
 		}
-
+		else if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y +p_TempSegment->SegmentRect13[4].h - PLAYER_WIDTH )
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect14[0].y)
+		{
+		
+				return true;
+			
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect14[0].y + p_TempSegment->SegmentRect14[0].h - PLAYER_HEIGHT)
+		{
+		
+			return true;
+		}
+		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect14[0].x)
+		{
+			return true;
+		}
 	}
 	return false;
+		
 }
 				
 				
 				
 				
-				/*
-	//für den ersten Quadranten
-	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)
-	{
-		if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect11[0].y)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_y >= (p_TempSegment->SegmentRect11[0].y + 173 - PLAYER_HEIGHT))
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect11[0].x + p_TempSegment->SegmentRect11[0].w - PLAYER_HEIGHT && this->get_Position()->i_y <= p_TempSegment->SegmentRect11[1].y)
-		{
-			return true;
-		}
-	}
-	//für den zweiten Quadranten inklusive Gegner
-	if(this->get_Position()->i_x > 710 && this->get_Position()->i_y >= 347 - PLAYER_WIDTH)
-	{
-		if(this->get_Position()->i_x > p_TempSegment->SegmentRect12[0].x + p_TempSegment->SegmentRect12[0].w - PLAYER_WIDTH)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect12[1].x && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= p_TempSegment->SegmentRect12[1].x + p_TempSegment->SegmentRect12[1].w && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
-		{
-			return true;
-			}
-		else if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect12[0].y + p_TempSegment->SegmentRect12[0].h)
-		{
-			return true;
-		}
-		*/
-		//Kollision für den Gegner
 		
-		/*else*//* if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_y <= tempposition->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
 		
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
-		{
-		this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y + PLAYER_HEIGHT)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-		}*/
 	/*
 	}
 	//Quadrant 3
@@ -294,70 +276,6 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 
 		
 		}
-	
-	//Quadrant 4
-
-	if(this->get_Position()->i_x < 709 && this->get_Position()->i_y < 350)
-	{
-		if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
-		{cout << "1." << endl;
-			return true;
-		}
-		else if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y +p_TempSegment->SegmentRect13[4].h - PLAYER_WIDTH )
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect14[0].y)
-		{
-			cout << "2." << endl;
-				return true;
-			
-			
-		}
-		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect14[0].y + p_TempSegment->SegmentRect14[0].h - PLAYER_HEIGHT)
-		{
-			cout << "here" << endl;
-			return true;
-		}
-		else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect14[0].x)
-		{
-			return true;
-		}
-	}
-
-	else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x && this->get_Position()->i_x <= tempposition2->i_x && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y && this->get_Position()->i_y <= tempposition2->i_y)//this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition->i_y && this->get_Position()->i_x + PLAYER_WIDTH > tempposition->i_x && this->get_Position()->i_x <= tempposition->i_x)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
-		
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x && this->get_Position()->i_x <= tempposition2->i_x && this->get_Position()->i_y <= tempposition2->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y + PLAYER_HEIGHT)
-		{
-		this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition2->i_y && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-			
-		}
-		else if(this->get_Position()->i_x + PLAYER_WIDTH >= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_x <= tempposition2->i_x + PLAYER_WIDTH && this->get_Position()->i_y <= tempposition2->i_y + PLAYER_HEIGHT && this->get_Position()->i_y + PLAYER_HEIGHT >= tempposition2->i_y + PLAYER_HEIGHT)
-		{
-			this->i_health = 0;
-			cout << i_health << endl;
-			
-			return false;
-		}
-
-
 	
 }*/
 
