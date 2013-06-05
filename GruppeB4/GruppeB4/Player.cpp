@@ -129,7 +129,10 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 
 	if(this->i_health <= 0)
 	{
+		
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("game_over_raw"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		//SDL_BlitSurface(S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),&cam,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),NULL);
+		apply_Image(this->get_Position()->i_x - cam.x - 10 ,this->get_Position()->i_y - cam.y - 30 ,S_Resourcemanager::get_Resourcemanager()->get_Surface("tot"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
 		this->i_health = 400;

@@ -39,6 +39,7 @@ private:
 	SDL_Surface * p_hirn3;
 	SDL_Surface * p_hirn4;
 	SDL_Surface * p_Pfleger;
+	SDL_Surface * p_tot;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];
