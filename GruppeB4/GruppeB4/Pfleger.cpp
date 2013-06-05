@@ -1,9 +1,10 @@
 #include "Pfleger.h"
 
-void Pfleger_H::update()
+void Pfleger::update()
 {
 }
 
-void Pfleger_H::render()
+void Pfleger::render(SDL_Rect camera)
 {
+	apply_Image(this->get_Position()->i_x - camera.x,this->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Pfleger"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 }

@@ -31,6 +31,7 @@ void S_Resourcemanager::initialize()
 	this->p_hirn2 = IMG_Load("hirn2.png");
 	this->p_hirn3 = IMG_Load("hirn3.png");
 	this->p_hirn4 = IMG_Load("hirn4.png");
+	this->p_Pfleger = IMG_Load("Pfleger.png");
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
 
@@ -267,6 +268,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "hirn4")
 	{
 		return this->p_hirn4;
+	}
+	else if(key == "Pfleger")
+	{
+		return this->p_Pfleger;
 	}
 	else
 	{

@@ -31,7 +31,7 @@ int main(int argc ,char ** argv)
 	
 	//S_Resourcemanager::get_Resourcemanager()->initialize();
 	//erzeugung der Klassen 
-	World * p_World = new World(320,200);
+	World * p_World = new World(648,795);
 	p_World->get_LevelSegmente()->init_Segmente();
 	Timer Fps;
 	Timer Frames;

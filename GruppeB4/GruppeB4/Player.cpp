@@ -138,7 +138,21 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 	}
 }
 bool Player::collision_Detection(LevelSegmente * p_TempSegment)
-{/*
+{
+	if(this->get_Position()->i_x <=965 && this->get_Position()->i_y >= 611)
+		{
+			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x )
+			{
+				return true;
+			}
+	}
+	return false;
+}
+				
+				
+				
+				
+				/*
 	//für den ersten Quadranten
 	if(this->get_Position()->i_x <=710 && this->get_Position()->i_y >= 400)
 	{
@@ -329,12 +343,10 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment)
 			
 			return false;
 		}
-		*/
-			return false;
 
 
 	
-}
+}*/
 
 void Player::heal()
 {
