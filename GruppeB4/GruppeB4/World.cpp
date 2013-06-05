@@ -20,9 +20,9 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	BotManager->render( Camera);
 	if( p_BossManager->render(p_Player1,Camera) == false)
 	{
-		Overlay::get_Instance().render(this->p_Player1);
 		p_Player1->render(tempmenue,deltaTime,Camera);
 		apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		Overlay::get_Instance().render(this->p_Player1);
 	}
 	else
 	{

@@ -33,6 +33,7 @@ void S_Resourcemanager::initialize()
 	this->p_hirn4 = IMG_Load("hirn4.png");
 	this->p_Pfleger = IMG_Load("Pfleger.png");
 	this->p_tot = IMG_Load("tot.png");
+	this->p_pille = IMG_Load("pille.png");
 
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
@@ -278,6 +279,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "tot")
 	{
 		return this->p_tot;
+	}
+	else if(key == "Pille")
+	{
+		return p_pille;
 	}
 	else
 	{

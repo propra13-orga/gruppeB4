@@ -3,7 +3,8 @@
 
 void Overlay::render(Player * p_TempPlayer)
 {
-	if(p_TempPlayer->get_Health() >= 300)
+	//Malen der Leben des Spielers auf den Bildschirm
+		if(p_TempPlayer->get_Health() >= 300)
 		{
 			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
@@ -20,6 +21,9 @@ void Overlay::render(Player * p_TempPlayer)
 		{
 			apply_Image(850,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("hirn4"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
+
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Pille"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	
 
 
 }
