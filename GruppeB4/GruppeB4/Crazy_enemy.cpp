@@ -2,6 +2,8 @@
 #ifndef CRAZY_ENEMY_H
 #define CRAZY_ENEMY_H
 
+//Klasse die einen gegner erstellt der im Viereck läuft
+
 class Crazy_enemy: public Enemy{
 private:
 
