@@ -3,3 +3,6 @@ GruppeB4/Debug/**
 GruppeB4/GruppeB4/GruppeB4.sdf
 GruppeB4/GruppeB4/GruppeB4.v11.suo
 GruppeB4/GruppeB4/GruppeB4.opensdf
+*.sdf
+*.v11.suo
+*.opensdf
