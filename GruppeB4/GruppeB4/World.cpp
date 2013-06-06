@@ -9,6 +9,7 @@ void World::update()
 {
 	BotManager->update(this->p_Player1);
 	p_Player1->update();
+	ItemManager::get_ItemManager().update(this->p_Player1->get_Position());
 	if(collision_Detection() == true)
 	{
 		p_Player1->set_Position(p_Player1->get_Position()->i_x - p_Player1->get_Velocity()->i_x , p_Player1->get_Position()->i_y - p_Player1->get_Velocity()->i_y);
@@ -18,6 +19,7 @@ void World::update()
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	BotManager->render( Camera);
+	ItemManager::get_ItemManager().render(Camera);
 	if( p_BossManager->render(p_Player1,Camera) == false)
 	{
 		p_Player1->render(tempmenue,deltaTime,Camera);

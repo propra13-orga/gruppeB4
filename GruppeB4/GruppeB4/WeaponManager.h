@@ -21,7 +21,7 @@ public:
 	}
 
 
-	bool find			
+	bool find();			
 	void render();			//Waffen auf den Boden rendern
 	void update();			//Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
 	void kill_weapon();		//Waffe zerstören

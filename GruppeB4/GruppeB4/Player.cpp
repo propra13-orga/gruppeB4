@@ -55,7 +55,7 @@ void Player::update()
 
 	this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
 
-	cout << this->i_health << endl;
+
 	
 }
 

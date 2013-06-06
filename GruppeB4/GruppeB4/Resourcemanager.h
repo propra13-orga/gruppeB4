@@ -28,6 +28,9 @@ private:
 	SDL_Surface * p_background;
 	SDL_Surface * p_menue;
 	SDL_Surface * p_crazy_enemy;
+	SDL_Surface * p_crazy_enemy_up;
+	SDL_Surface * p_crazy_enemy_left;
+	SDL_Surface * p_crazy_enemy_right;
 	SDL_Surface * p_princess;
 	SDL_Surface * p_game_over;
 	SDL_Surface * p_win;
@@ -41,6 +44,7 @@ private:
 	SDL_Surface * p_Pfleger;
 	SDL_Surface * p_tot;
 	SDL_Surface * p_pille;
+	SDL_Surface * p_heiltrank;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

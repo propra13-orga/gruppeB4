@@ -34,6 +34,10 @@ void S_Resourcemanager::initialize()
 	this->p_Pfleger = IMG_Load("Pfleger.png");
 	this->p_tot = IMG_Load("tot.png");
 	this->p_pille = IMG_Load("pille.png");
+	this->p_heiltrank = IMG_Load("healpot.png");
+	this->p_crazy_enemy_up = IMG_Load("PATIENToben.png");
+	this->p_crazy_enemy_right = IMG_Load("PATIENTrechts.png");
+	this->p_crazy_enemy_left = IMG_Load("PATIENTlinks.png");
 
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
@@ -66,7 +70,7 @@ void S_Resourcemanager::initialize()
 	}
 
 	this->p_menue = IMG_Load("mainmenu_raw.png");
-	this->p_crazy_enemy = IMG_Load("patient.png");
+	this->p_crazy_enemy = IMG_Load("patient_walk.png");
 	this->p_princess = IMG_Load("Prinzessin.png");
 
 	this->PlayerDownClips[0].x = 0;
@@ -283,6 +287,22 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Pille")
 	{
 		return p_pille;
+	}
+	else if(key == "Heiltrank")
+	{
+		return this->p_heiltrank;
+	}
+	else if(key == "Verrückter_Up")
+	{
+		return p_crazy_enemy_up;
+	}
+	else if(key == "Verrückter_Right")
+	{
+		return p_crazy_enemy_right;
+	}
+	else if(key == "Verrückter_Left")
+	{
+		return p_crazy_enemy_left;
 	}
 	else
 	{

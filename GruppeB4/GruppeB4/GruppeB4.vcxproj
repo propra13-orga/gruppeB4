@@ -84,6 +84,7 @@
     <ClInclude Include="Armor.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
+    <ClInclude Include="Item.h" />
     <ClInclude Include="ItemManager.h" />
     <ClInclude Include="LevelSegment.h" />
     <ClInclude Include="MainMenue.h" />
@@ -105,6 +106,7 @@
     <ClCompile Include="Agentmanager.cpp" />
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="ItemManager.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Main_Menue.cpp" />

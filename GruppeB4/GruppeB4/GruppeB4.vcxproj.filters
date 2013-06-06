@@ -90,6 +90,9 @@
     <ClInclude Include="WeaponManager.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>Header Files\Objekte</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -138,6 +141,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Pfleger.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

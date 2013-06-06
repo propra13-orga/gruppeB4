@@ -8,6 +8,7 @@
 #include "FinalBoss.h"
 #include "AgentManager.h"
 #include "Overlay.h"
+#include "ItemManager.h"
 
 class World
 {
