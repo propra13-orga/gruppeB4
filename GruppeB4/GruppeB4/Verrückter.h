@@ -6,14 +6,14 @@
 
 class Crazy_enemy: public Enemy{
 private:
-
+	s_Vector * p_S_SafePosition;
 	
 
 
 public:
 	
 	Crazy_enemy():Enemy(){}
-	Crazy_enemy(int x, int y):Enemy(x,y){}
+	Crazy_enemy(int x, int y):Enemy(x,y){p_S_SafePosition = new s_Vector; p_S_SafePosition->i_x = x;p_S_SafePosition->i_y = y;}
 	~Crazy_enemy(){}
 
 

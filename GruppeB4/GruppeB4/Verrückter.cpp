@@ -6,20 +6,20 @@ using namespace std;
 
 
 void Crazy_enemy::update(){
-	if(this->get_Position()->i_x <= 1035 && this->get_Position()->i_y <= 731)
+	if(this->get_Position()->i_x <= p_S_SafePosition->i_x && this->get_Position()->i_y <= p_S_SafePosition->i_y)
 	{
 
 	this->set_Velocity(0,2);
 	}
-	else if(this->get_Position()->i_x <= 1035 && this->get_Position()->i_y >= 1015)
+	else if(this->get_Position()->i_x <= p_S_SafePosition->i_x && this->get_Position()->i_y >= p_S_SafePosition->i_y + 284 )
 	{
 		this->set_Velocity(2,0);
 	}
-	else if(this->get_Position()->i_x >= 1432 && this->get_Position()->i_y >= 1015)
+	else if(this->get_Position()->i_x >= p_S_SafePosition->i_x + 397  && this->get_Position()->i_y >= p_S_SafePosition->i_y + 284)
 	{
 		this->set_Velocity(0,-2);
 	}
-	else if(this->get_Position()->i_x >= 1432 && this->get_Position()->i_y <= 731)
+	else if(this->get_Position()->i_x >= p_S_SafePosition->i_x + 397 && this->get_Position()->i_y <= p_S_SafePosition->i_y)
 	{
 		this->set_Velocity(-2,0);
 	}
