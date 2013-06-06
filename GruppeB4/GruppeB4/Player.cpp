@@ -4,7 +4,7 @@ void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 {
 	if(CURRENTLEVEL == LEVEL1)
 	{
-	this->set_Position(600,900);
+	this->set_Position(648,795);
 	this->set_Health(400);
 	}
 }
@@ -59,7 +59,7 @@ void Player::update()
 	
 }
 
-void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
+void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL)
 {
 	if(this->b_PlayerIsWalkingDown == true)
 	{
@@ -136,8 +136,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam)
 		apply_Image(this->get_Position()->i_x - cam.x,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("tot"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
-		this->i_health = 400;
-		this->set_Position(250,600);
+		this->reinitialize(CURRENTLEVEL);
 		*tempmenue = true;
 	}
 }

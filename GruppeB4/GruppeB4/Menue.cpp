@@ -23,7 +23,6 @@ void Menue::handle_Input(SDL_Event &even,bool * quitgame,bool * quitmenue,Player
 			{
 				*quitmenue = false;
 				cout << "start has been pressed" << endl;
-				temp->set_Position(250,600);
 				temp->set_Velocity(0,0);
 			}
 		}
