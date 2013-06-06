@@ -9,7 +9,7 @@
 class AgentManager
 {
 public:
-	vector<Crazy_enemy*>crazy_enemies;
+	vector<Crazy_enemy*>crazy_enemies;//Vektor der alle Crazy enemies speichert
 	vector<Pfleger*>allPfleger;
 	AgentManager(LEVEL_LOADED CURRENTLEVEL){if(CURRENTLEVEL == LEVEL1){crazy_enemies.push_back( new Crazy_enemy(1035,731));allPfleger.push_back(new Pfleger(973,112));}}
 	~AgentManager(){delete crazy_enemies[0];}
