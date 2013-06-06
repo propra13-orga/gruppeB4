@@ -87,6 +87,9 @@
     <ClInclude Include="Spritze.h">
       <Filter>Header Files\Gegner</Filter>
     </ClInclude>
+    <ClInclude Include="WeaponManager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
