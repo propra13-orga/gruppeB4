@@ -2,7 +2,7 @@
 #define OVERLAY_H_
 
 #include "Player.h"
-
+// Hier wird der gesamte status des Spielers auf den screen gebracht
 class Overlay
 {
 private:
