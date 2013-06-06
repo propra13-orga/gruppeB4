@@ -24,6 +24,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 		{
 			this->chatcheditems.push_back(Item(0,0,it->get_Item()));
 			uncatcheditems.erase(it);
+			this->anzeigen();
 			break;
 		}
 	} 
@@ -31,7 +32,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 
 void ItemManager::anzeigen()
 {
-	for(list<Item>::iterator at = this->chatcheditems.begin();at != this->chatcheditems.end();++ at)
+	for(list<Item>::iterator at = this->chatcheditems.begin();at != this->chatcheditems.end();++at)
 	{
 		if(at->get_Item() == HEAL)
 		{
