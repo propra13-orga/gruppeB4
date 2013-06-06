@@ -37,6 +37,7 @@ void ItemManager::anzeigen()
 		if(at->get_Item() == HEAL)
 		{
 			cout << "Heiltrank" << endl;
+			cout << "Gib mir Butter BABY BABY" << endl;
 		}
 	}
 }
