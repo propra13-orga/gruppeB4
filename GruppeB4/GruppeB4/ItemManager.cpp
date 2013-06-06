@@ -22,7 +22,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 	{
 		if(it->get_Position()->i_x - p_TempPosition->i_x <= 25 && it->get_Position()->i_x - p_TempPosition->i_x >= -25  && it->get_Position()->i_y - p_TempPosition->i_y <= 25 && it->get_Position()->i_y - p_TempPosition->i_y >= -25)
 		{
-			this->chatcheditems.push_back(Item(0,0,it->get_Item()));
+			this->catcheditems.push_back(Item(0,0,it->get_Item()));
 			uncatcheditems.erase(it);
 			this->anzeigen();
 			break;
@@ -32,7 +32,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 
 void ItemManager::anzeigen()
 {
-	for(list<Item>::iterator at = this->chatcheditems.begin();at != this->chatcheditems.end();++at)
+	for(list<Item>::iterator at = this->catcheditems.begin();at != this->catcheditems.end();++at)
 	{
 		if(at->get_Item() == HEAL)
 		{
