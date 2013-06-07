@@ -23,7 +23,7 @@ using namespace std;
 class ItemManager
 {
 private:
-	ItemManager(){this->uncatcheditems.push_back(Item(950,870,HEAL));this->uncatcheditems.push_back(Item(1200,870,HEAL));}
+	ItemManager(){this->uncatcheditems.push_back(Item(950,870,HEAL));this->uncatcheditems.push_back(Item(1200,870,HEAL));this->uncatcheditems.push_back(Item(1250,870,HEAL));}
 	~ItemManager(){}
 	//enthält zwei Listen die eine Liste ist gefüllt mit Objekten, die der Spieler noch nciht trägt, die aber im level vorhanden sind, 
 	//die andere Liste enthält Daten, die der Spieler bereits eingesammelt hat
@@ -41,9 +41,9 @@ public:
 	void update(s_Vector * p_Position);//Umfngreichste Funktion der Klasse, hier wird zunächst überprüft, ob der Spieler ein neues Item berührt hat.
 	//Danach wird das Item in die Liste der catchedItems aufgenommen, ist bereits eine bestimmte Anzahl dieser Items vorhanden, so wird das Item nicht aufgenommen und bleibt auf dem Boden liegen, es bleibt also in den
 	//uncatched items. Schliesslich soll am Ende alles sauber aufgeräumt sein und der Spieler bekommt auch alles, was er sich holt
-	bool find(/*ItemType*/){return false;} // Man hätte auch den Standard der STL nehmen können allerdings ist unser umgang damit doch sehr speziell.
+	bool find(ITEM_TYPE TEMPITEM); // Man hätte auch den Standard der STL nehmen können allerdings ist unser umgang damit doch sehr speziell.
 	//Falls die listen im privatebereich bleiben muss eine Funktion her, die nach dem element sucht und einen wahrheitswert zurückgibt, falls dieses Element vorhanden ist.
-	void kill_Item(/*ItemType*/){}//Funktion ist dafür da um ein item was benutzt wurde auch wieder zu löschen, dabei wird das Firt_Fit prinzip angewendet. Es ist ohne belang welche Position unser Item hat wichtig ist nur der richtige ItemType
+	void kill_Item(ITEM_TYPE TEMPITEM);//Funktion ist dafür da um ein item was benutzt wurde auch wieder zu löschen, dabei wird das Firt_Fit prinzip angewendet. Es ist ohne belang welche Position unser Item hat wichtig ist nur der richtige ItemType
 	void reinitialize(){catcheditems.clear();uncatcheditems.clear();}//Funktion um einfach alle Listen komplett zu leeren und neu zu erstellen
 	void anzeigen();
 

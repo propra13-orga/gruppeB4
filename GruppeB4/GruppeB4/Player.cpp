@@ -19,6 +19,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_DOWN):this->set_Velocity(0,2);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = true;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_RIGHT):this->set_Velocity(2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_LEFT):this->set_Velocity(-2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
+		case(SDLK_4):this->heal();cout << i_health << endl;
 		}
 	}
 	else if(even.type == SDL_KEYUP)
@@ -286,9 +287,9 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 
 void Player::heal()
 {
-	if(ItemManager::get_ItemManager().find(/*ItemType*/) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
+	if(ItemManager::get_ItemManager().find(HEAL) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
 	{
-		ItemManager::get_ItemManager().kill_Item(/*ItemType*/);//anschliesend muss das benutzte item wieder gelöscht werden
+		ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
 		this->set_Health(this->get_Health() + 100);
 	}
 	else
@@ -300,9 +301,9 @@ void Player::heal()
 
 void Player::loadMana()
 {
-	if(ItemManager::get_ItemManager().find(/*ItemType*/) == true)// guckt ob Item da, wenn ja, dann wird das Mana um 100 gepushed, was einem die möglichkeit von einem drei sekündigem Sprint gibt
+	if(ItemManager::get_ItemManager().find(MANA) == true)// guckt ob Item da, wenn ja, dann wird das Mana um 100 gepushed, was einem die möglichkeit von einem drei sekündigem Sprint gibt
 	{
-		ItemManager::get_ItemManager().kill_Item(/*ItemType*/);//anschliesend muss das benutzte item wieder gelöscht werden
+		ItemManager::get_ItemManager().kill_Item(MANA);//anschliesend muss das benutzte item wieder gelöscht werden
 	}
 	else
 	{

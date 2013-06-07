@@ -41,3 +41,27 @@ void ItemManager::anzeigen()
 		}
 	}
 }
+
+bool ItemManager::find(ITEM_TYPE  TEMPITEM)
+{
+	for(list<Item>::iterator myIter = this->catcheditems.begin();myIter != catcheditems.end();++myIter)
+	{
+		if(myIter->get_Item() == TEMPITEM)
+		{
+			return true;
+		}
+	}
+
+}
+
+void ItemManager::kill_Item(ITEM_TYPE TEMPITEM)
+{
+	for(list<Item>::iterator myIter = this->catcheditems.begin();myIter != catcheditems.end();++myIter)
+	{
+		if(myIter->get_Item() == TEMPITEM)
+		{
+			catcheditems.erase(myIter);
+			break;
+		}
+	}
+}
