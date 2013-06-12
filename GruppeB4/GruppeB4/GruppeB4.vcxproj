@@ -103,6 +103,7 @@
     <ClInclude Include="World.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\Desktop\sicherheitskopie\12.6(2)\gruppeB4\GruppeB4\GruppeB4\WeaponManager.cpp" />
     <ClCompile Include="Agentmanager.cpp" />
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="Enemy.cpp" />

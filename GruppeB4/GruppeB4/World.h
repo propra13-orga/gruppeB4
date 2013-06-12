@@ -9,6 +9,7 @@
 #include "AgentManager.h"
 #include "Overlay.h"
 #include "ItemManager.h"
+#include "WeaponManager.h"
 
 class World
 {

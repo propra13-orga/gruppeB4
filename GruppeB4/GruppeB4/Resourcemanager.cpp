@@ -38,7 +38,7 @@ void S_Resourcemanager::initialize()
 	this->p_crazy_enemy_up = IMG_Load("PATIENToben.png");
 	this->p_crazy_enemy_right = IMG_Load("PATIENTrechts.png");
 	this->p_crazy_enemy_left = IMG_Load("PATIENTlinks.png");
-
+	this->p_elektrode = IMG_Load("Elektrode.png");
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
 
@@ -303,6 +303,9 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Verrückter_Left")
 	{
 		return p_crazy_enemy_left;
+	}
+	else if(key == "Elektrode"){
+		return p_elektrode;
 	}
 	else
 	{

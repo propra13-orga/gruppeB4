@@ -45,6 +45,7 @@ private:
 	SDL_Surface * p_tot;
 	SDL_Surface * p_pille;
 	SDL_Surface * p_heiltrank;
+	SDL_Surface * p_elektrode;
 public:
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

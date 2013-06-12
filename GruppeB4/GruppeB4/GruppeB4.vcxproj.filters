@@ -146,5 +146,8 @@
     <ClCompile Include="ItemManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\Desktop\sicherheitskopie\12.6(2)\gruppeB4\GruppeB4\GruppeB4\WeaponManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
