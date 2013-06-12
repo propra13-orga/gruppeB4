@@ -8,7 +8,7 @@
 #include "Timer.h"
 #include "ItemManager.h"
 
-enum status {PSY_RIGHT,PSY_LEFT,PSY_UP,PSY_DOWN};
+
 
 class Player
 {
