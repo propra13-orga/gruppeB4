@@ -1,11 +1,10 @@
 #include "Resourcemanager.h"
 #include "Player.h"
+#include "globals.h"
 
 
 #ifndef ARMOR_H
 #define ARMOR_H
-
-enum ARMOR_TYPE{HEAVY,MID,WEAK}; //in globals einfügen!!!!!!!!!!!!!!!!!!!
 
 
 class Armor{
