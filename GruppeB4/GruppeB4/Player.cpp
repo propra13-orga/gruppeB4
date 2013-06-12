@@ -20,6 +20,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_RIGHT):this->set_Velocity(2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_LEFT):this->set_Velocity(-2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
 		case(SDLK_4):this->heal();cout << i_health << endl;
+		case(SDLK_3):MoneyManager::get_MoneyManager().show();
 		}
 	}
 	else if(even.type == SDL_KEYUP)

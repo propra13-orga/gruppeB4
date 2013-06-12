@@ -10,6 +10,7 @@
 #include "Overlay.h"
 #include "ItemManager.h"
 #include "WeaponManager.h"
+#include "MoneyManager.h"
 
 class World
 {

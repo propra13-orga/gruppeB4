@@ -7,6 +7,7 @@
 #include "globals.h"
 #include "Timer.h"
 #include "ItemManager.h"
+#include "MoneyManager.h"
 
 
 

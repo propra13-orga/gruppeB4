@@ -89,10 +89,12 @@
     <ClInclude Include="LevelSegment.h" />
     <ClInclude Include="MainMenue.h" />
     <ClInclude Include="Menue.h" />
+    <ClInclude Include="MoneyManager.h" />
     <ClInclude Include="Overlay.h" />
     <ClInclude Include="Pfleger.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="FinalBoss.h" />
+    <ClInclude Include="RendableObject.h" />
     <ClInclude Include="Resourcemanager.h" />
     <ClInclude Include="Spritze.h" />
     <ClInclude Include="Timer.h" />
@@ -111,6 +113,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Main_Menue.cpp" />
     <ClCompile Include="Menue.cpp" />
+    <ClCompile Include="MoneyManager.cpp" />
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Pfleger.cpp" />
     <ClCompile Include="Player.cpp" />

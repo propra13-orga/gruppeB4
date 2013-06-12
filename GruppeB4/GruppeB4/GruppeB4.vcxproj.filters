@@ -93,6 +93,12 @@
     <ClInclude Include="Item.h">
       <Filter>Header Files\Objekte</Filter>
     </ClInclude>
+    <ClInclude Include="RendableObject.h">
+      <Filter>Header Files\Objekte</Filter>
+    </ClInclude>
+    <ClInclude Include="MoneyManager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -147,6 +153,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="WeaponManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MoneyManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
