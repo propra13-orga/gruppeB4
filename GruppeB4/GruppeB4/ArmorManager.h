@@ -33,7 +33,7 @@ public:
 	bool find(ARMOR_TYPE CURRENT_ARMOR);			
 	void render(SDL_Rect camera);		//Rüstung auf den Boden rendern
 	void update(s_Vector * p_Position);			//Spieler kann Rüstung aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
-	void kill_weapon(ARMOR_TYPE CURRENT_ARMOR);		//Rüstung zerstören
+	void kill_armor(ARMOR_TYPE CURRENT_ARMOR);		//Rüstung zerstören
 	void reinitialize(){catchedarmors.clear();uncatchedarmors.clear();} //Clear
 	void show();
 
