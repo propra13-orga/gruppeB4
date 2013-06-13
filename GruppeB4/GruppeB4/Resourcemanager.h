@@ -7,6 +7,7 @@
 #include <iostream>
 #include <SDL_image.h>
 #include "globals.h"
+#include <SDL_ttf.h>
 
 using namespace std;
 
@@ -46,7 +47,11 @@ private:
 	SDL_Surface * p_pille;
 	SDL_Surface * p_heiltrank;
 	SDL_Surface * p_elektrode;
+	SDL_Surface * p_spritze;
 public:
+	TTF_Font * font;
+	SDL_Surface * MoneyDisplay;
+	SDL_Color TextColor;
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];
 	SDL_Rect PlayerRightClips[6];

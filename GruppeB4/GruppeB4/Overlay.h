@@ -2,6 +2,10 @@
 #define OVERLAY_H_
 
 #include "Player.h"
+#include "MoneyManager.h"
+#include <string>
+#include <sstream>
+
 // Hier wird der gesamte status des Spielers auf den screen gebracht
 class Overlay
 {

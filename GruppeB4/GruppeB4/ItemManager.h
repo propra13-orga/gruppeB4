@@ -23,7 +23,7 @@ using namespace std;
 class ItemManager
 {
 private:
-	ItemManager(){this->uncatcheditems.push_back(Item(950,870,HEAL));this->uncatcheditems.push_back(Item(1200,870,HEAL));this->uncatcheditems.push_back(Item(1250,870,HEAL));}
+	ItemManager(){this->uncatcheditems.push_back(Item(1027,702,HEAL));}
 	~ItemManager(){}
 	//enthält zwei Listen die eine Liste ist gefüllt mit Objekten, die der Spieler noch nciht trägt, die aber im level vorhanden sind, 
 	//die andere Liste enthält Daten, die der Spieler bereits eingesammelt hat

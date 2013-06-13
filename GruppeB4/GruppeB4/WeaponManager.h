@@ -14,7 +14,7 @@ class WeaponManager{
 
 private:
 
-	WeaponManager(){this->uncatchedweapons.push_back(Weapon(800,870,MELEE));}
+	WeaponManager(){this->uncatchedweapons.push_back(Weapon(400,400,MELEE));}
 	~WeaponManager(){}
 
 	list<Weapon> uncatchedweapons;

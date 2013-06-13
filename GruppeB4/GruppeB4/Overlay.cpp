@@ -23,7 +23,13 @@ void Overlay::render(Player * p_TempPlayer)
 		}
 
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Pille"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-	
 
+		std::stringstream money;
+
+		money << MoneyManager::get_MoneyManager().get_Money();
+
+		S_Resourcemanager::get_Resourcemanager()->MoneyDisplay = TTF_RenderText_Solid(S_Resourcemanager::get_Resourcemanager()->font,money.str().c_str(),S_Resourcemanager::get_Resourcemanager()->TextColor);
+	
+		apply_Image(50,0,S_Resourcemanager::get_Resourcemanager()->MoneyDisplay,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 }

@@ -10,6 +10,11 @@ S_Resourcemanager * S_Resourcemanager::get_Resourcemanager()
 void S_Resourcemanager::initialize()
 {
 	SDL_Init(SDL_INIT_EVERYTHING);
+	TTF_Init();
+
+	TextColor.r = 255;
+	TextColor.g = 255;
+	TextColor.b = 255;
 
 	this->p_screen = SDL_SetVideoMode(900,600,32,SDL_SWSURFACE);
 
@@ -18,6 +23,13 @@ void S_Resourcemanager::initialize()
 	SDL_Surface * OptimizedImage1 = NULL;
 
 	OptimizedImage1 = SDL_DisplayFormatAlpha(LoadedImage1);
+
+	font = TTF_OpenFont( "ZIPERHEA.ttf", 28 );
+
+	if(font == NULL)
+	{
+		cout << "Laden des Fonts fehlgeschlagen" << endl;
+	}
 
 	this->p_player = OptimizedImage1;
 
@@ -39,6 +51,12 @@ void S_Resourcemanager::initialize()
 	this->p_crazy_enemy_right = IMG_Load("PATIENTrechts.png");
 	this->p_crazy_enemy_left = IMG_Load("PATIENTlinks.png");
 	this->p_elektrode = IMG_Load("Elektrode.png");
+	this->p_spritze = IMG_Load("Spritze.png");
+
+	if(p_spritze == NULL)
+	{
+		cout << "keine SPritze" << endl;
+	}
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
 
@@ -306,6 +324,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	}
 	else if(key == "Elektrode"){
 		return p_elektrode;
+	}
+	else if(key == "Spritze")
+	{
+		return p_spritze;
 	}
 	else
 	{
