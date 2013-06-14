@@ -32,4 +32,9 @@ void Overlay::render(Player * p_TempPlayer)
 	
 		apply_Image(50,0,S_Resourcemanager::get_Resourcemanager()->MoneyDisplay,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
+		if(WeaponManager::get_WeaponManager().CURRENT_WEAPON2 == MELEE)
+		{
+			apply_Image(850,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("Elektrode"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+
 }
