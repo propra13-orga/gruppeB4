@@ -99,6 +99,9 @@
     <ClInclude Include="MoneyManager.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="Shop.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -159,6 +162,9 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="Spritze.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

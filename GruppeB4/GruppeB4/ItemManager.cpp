@@ -65,3 +65,13 @@ void ItemManager::kill_Item(ITEM_TYPE TEMPITEM)
 		}
 	}
 }
+
+
+void ItemManager::insert_item(ITEM_TYPE tempitem){
+	if(tempitem == HEAL)
+	{
+		this->catcheditems.push_back(Item(0,0,HEAL));
+	}
+
+
+}

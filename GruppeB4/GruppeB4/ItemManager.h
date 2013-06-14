@@ -29,6 +29,7 @@ private:
 	//die andere Liste enthält Daten, die der Spieler bereits eingesammelt hat
 	list<Item> uncatcheditems;
 	list<Item> catcheditems;
+	
 public:
 	static ItemManager & get_ItemManager()
 	{
@@ -47,7 +48,7 @@ public:
 	void reinitialize(){catcheditems.clear();uncatcheditems.clear();}//Funktion um einfach alle Listen komplett zu leeren und neu zu erstellen
 	void anzeigen();
 
-
+	void insert_item(ITEM_TYPE tempitem);
 };
 
 
