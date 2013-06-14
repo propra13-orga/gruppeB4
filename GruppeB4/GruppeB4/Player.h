@@ -56,6 +56,7 @@ public:
 	void update();
 	void render(bool * tempmenue,Timer * deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL);
 	void handle_Input(SDL_Event &even);
+	void attack();
 };
 
 #endif

@@ -46,7 +46,7 @@ void S_Resourcemanager::initialize()
 	this->p_Pfleger = IMG_Load("Pfleger.png");
 	this->p_tot = IMG_Load("tot.png");
 	this->p_pille = IMG_Load("pille.png");
-	this->p_heiltrank = IMG_Load("healpot.png");
+	this->p_heiltrank = IMG_Load("Heal_Spritze.png");
 	this->p_crazy_enemy_up = IMG_Load("PATIENToben.png");
 	this->p_crazy_enemy_right = IMG_Load("PATIENTrechts.png");
 	this->p_crazy_enemy_left = IMG_Load("PATIENTlinks.png");
