@@ -19,7 +19,8 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_DOWN):this->set_Velocity(0,2);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = true;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_RIGHT):this->set_Velocity(2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_LEFT):this->set_Velocity(-2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
-		case(SDLK_4):this->heal();cout << i_health << endl;
+		case(SDLK_4):this->heal();cout << i_health << endl;break;
+		case(SDLK_v):WeaponManager::get_WeaponManager().swap_weapon();WeaponManager::get_WeaponManager().show_currentWeapon();break;
 		
 		}
 	}

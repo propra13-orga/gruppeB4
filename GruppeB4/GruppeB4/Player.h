@@ -8,6 +8,7 @@
 #include "Timer.h"
 #include "ItemManager.h"
 #include "MoneyManager.h"
+#include "WeaponManager.h"
 
 
 

@@ -19,7 +19,7 @@ private:
 
 	list<Weapon> uncatchedweapons;
 	list<Weapon> catchedweapons;
-
+	WEAPON_TYPE CURRENT_WEAPON;
 public:
 
 
@@ -36,8 +36,19 @@ public:
 	void kill_weapon(WEAPON_TYPE CURRENT_WEAPON);		//Waffe zerstören
 	void reinitialize(){catchedweapons.clear();uncatchedweapons.clear();} //Clear
 	void show();
-
-
+	void swap_weapon();
+	void show_currentWeapon()
+		{
+		if(CURRENT_WEAPON == MELEE)
+		{
+			cout << "MELEE" << endl;
+		}
+		if(CURRENT_WEAPON == NONE)
+		{
+			cout << "NONE" << endl;
+		}
+	}
+	
 
 
 };
