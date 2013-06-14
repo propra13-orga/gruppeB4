@@ -1,6 +1,7 @@
 #ifndef GLOBALS_H_
 #define GLOBALS_H_
 
+
 //Eine Datei, die alle Global bekannten Daten enthält
 
 const int  PLAYER_HEIGHT = 60;

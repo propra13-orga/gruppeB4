@@ -7,7 +7,7 @@ void World::handle_Event(SDL_Event & even)
 
 void World::update()
 {
-	BotManager->update(this->p_Player1);
+	AgentManager::get_AgentManager().update(this->p_Player1);
 	p_Player1->update();
 	ItemManager::get_ItemManager().update(this->p_Player1->get_Position());
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
@@ -20,7 +20,7 @@ void World::update()
 
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
-	BotManager->render( Camera);
+	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);

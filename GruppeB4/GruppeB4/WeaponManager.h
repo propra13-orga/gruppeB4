@@ -19,8 +19,10 @@ private:
 
 	list<Weapon> uncatchedweapons;
 	list<Weapon> catchedweapons;
-	WEAPON_TYPE CURRENT_WEAPON;
 public:
+	WEAPON_TYPE CURRENT_WEAPON2;
+
+
 
 
 	static WeaponManager & get_WeaponManager()
@@ -39,11 +41,11 @@ public:
 	void swap_weapon();
 	void show_currentWeapon()
 		{
-		if(CURRENT_WEAPON == MELEE)
+		if(CURRENT_WEAPON2 == MELEE)
 		{
 			cout << "MELEE" << endl;
 		}
-		if(CURRENT_WEAPON == NONE)
+		if(CURRENT_WEAPON2 == NONE)
 		{
 			cout << "NONE" << endl;
 		}

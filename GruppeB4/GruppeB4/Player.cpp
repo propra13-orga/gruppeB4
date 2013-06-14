@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "AgentManager.h"
 
 void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 {
@@ -21,7 +22,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_LEFT):this->set_Velocity(-2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
 		case(SDLK_4):this->heal();cout << i_health << endl;break;
 		case(SDLK_v):WeaponManager::get_WeaponManager().swap_weapon();WeaponManager::get_WeaponManager().show_currentWeapon();break;
-		
+		case(SDLK_SPACE):this->attack();break;
 		}
 	}
 	else if(even.type == SDL_KEYUP)
@@ -311,4 +312,9 @@ void Player::loadMana()
 	{
 		return;
 	}
+}
+
+void Player::attack()
+{
+	AgentManager::get_AgentManager().weaken_Bots(this);
 }
