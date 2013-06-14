@@ -29,3 +29,15 @@ void AgentManager::check_collision(Player * p_TempPlayer,int durchlaufvariable)
 			
 		}
 	}
+
+void AgentManager::weaken_Bots(Player * p_tempPlayer)
+{
+	if(WeaponManager::get_WeaponManager().CURRENT_WEAPON2 == NONE)
+	{
+		cout << "Keine Attacke" << endl;
+	}
+	else if(WeaponManager::get_WeaponManager().CURRENT_WEAPON2 == MELEE)
+	{
+		cout << "ATTACK WUHHHUUUUUUU" << endl;
+	}
+}

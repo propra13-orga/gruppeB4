@@ -55,21 +55,21 @@ void WeaponManager::show()
 
 void WeaponManager::swap_weapon()
 {
-	if(CURRENT_WEAPON == NONE)
+	if(CURRENT_WEAPON2 == NONE)
 	{
 		
 		for(list<Weapon>::iterator it = this->catchedweapons.begin();it != this->catchedweapons.end();++it)
 		{
 			if(it->get_Weapon() == MELEE)
 			{
-				this->CURRENT_WEAPON = MELEE;
+				this->CURRENT_WEAPON2 = MELEE;
 			}
 		
 		}
 	}
-	else if(CURRENT_WEAPON == MELEE)
+	else if(CURRENT_WEAPON2 == MELEE)
 	{
 	
-		this->CURRENT_WEAPON = NONE;
+		this->CURRENT_WEAPON2 = NONE;
 	}
 }

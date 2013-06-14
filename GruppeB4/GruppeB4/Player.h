@@ -1,6 +1,8 @@
 #ifndef PLAYER_H_
 #define PLAYER_H_
 
+class AgentManager;
+
 #include "Vektor.h"
 #include "Resourcemanager.h"
 #include "LevelSegment.h"
@@ -10,6 +12,7 @@
 #include "MoneyManager.h"
 #include "WeaponManager.h"
 
+class AgentManager;
 
 
 class Player
@@ -50,13 +53,13 @@ public:
 	void heal();//Funktion Heilt den Spieler falls in der Liste der catchedItems des Itemmanagers ein heiltrank vorhanden ist
 	void loadMana();//Funktion läd mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist
 
+	void attack();
 
 	//Funktionen die für die Bewegung und das Abbilden des Spielers erstellt sind
 	bool collision_Detection(LevelSegmente * p_TempSeg,LEVEL_LOADED CURRENTLEVEL);
 	void update();
 	void render(bool * tempmenue,Timer * deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL);
 	void handle_Input(SDL_Event &even);
-	void attack();
 };
 
 #endif

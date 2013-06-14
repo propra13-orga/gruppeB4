@@ -7,6 +7,12 @@
 #include "Spritze.h"
 #include "Player.h"
 
+class Player;
+class S_Resourcemanager;
+class Timer;
+class Spritze;
+class Player;
+
 //Diese Klasse erstellt einen Spritzenschieﬂenden Gegner, die Spritze ist dabei ein eigenes Objekt und testet KOllision selbst
 
 class Pfleger
