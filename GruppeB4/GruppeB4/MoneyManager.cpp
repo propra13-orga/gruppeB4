@@ -20,3 +20,14 @@ void MoneyManager::update(s_Vector * p_TempPosition)
 		}
 	}
 }
+
+
+
+
+int MoneyManager::refreshMoney(int  i_bill){
+
+
+	money = money -i_bill ;
+
+	return money;
+}

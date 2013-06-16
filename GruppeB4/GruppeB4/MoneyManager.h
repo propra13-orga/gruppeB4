@@ -23,6 +23,7 @@ public:
 	void clear(){uncatchedmoney.clear();money = 0;}
 	void show(){cout << money << endl;}
 	int get_Money(){return money;}
+	int refreshMoney(int i_bill);
 };
 
 

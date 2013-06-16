@@ -17,6 +17,7 @@ int main(int argc ,char ** argv)
 	bool b_cap = true;
 	bool b_menueistoggled = false;
 	bool b_firstmenue = true;
+	bool b_shopisopen =false;
 
 
 
@@ -58,12 +59,75 @@ int main(int argc ,char ** argv)
 			{
 				b_quit = true;
 			}
+
+
+			//SHOP_______________________________________________Anfang________________________________________________________________
+
+			
+
+
+		if(even.type == SDL_KEYDOWN)
+			{
+				if(even.key.keysym.sym == SDLK_e)			//wird e gedrückt geht der shop auf(später nur wenn npc in range ist)
+				{
+					b_shopisopen = true;
+				}
+			}
+
+		
+
+	if(b_shopisopen == true)
+		{
+			cout << "Shop true" << endl;
+			while(b_shopisopen == true)
+			{
+				
+															//schleife zum rendern und zum kaufen so lange shop auf true ist
+				
+				apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("shop"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+				
+				if(SDL_PollEvent(&even))
+				{
+					Shop::get_Shop().handle_Input(even,&b_quit,&b_shopisopen,p_World->get_Player());
+					
+				}
+				SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+			}
+		}
+
+
+
+
+
+
+		p_World->update();
+		p_World->set_Camera();
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
+		p_World->render(&b_menueistoggled,deltaTime);
+		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
+		{
+			
+			SDL_Delay( ( 1000 / 100) - Fps.Getticks() ); 
+		}
+		Fps.start();
+		counter++;
+	
+//________________________________________Shop_Ende_________________________________________________________________
+
+
+
+
+		// MENUE_______________________________________________________________________
+
+
 			//Wenn der Spieler Escape drückt
-			if(even.type == SDL_KEYDOWN)
+		if(even.type == SDL_KEYDOWN )
 			{
 				if(even.key.keysym.sym == SDLK_ESCAPE)
 				{
 					b_menueistoggled = true;
+					
 				}
 			}
 			//Der SPieler wird bewegt
@@ -71,10 +135,12 @@ int main(int argc ,char ** argv)
 		}
 		//Menue einschlaten, die geschiet, falls Escape gedrückt wurde. Die whileschleife wird erst wieder beendet, wenn der Spieler
 		//
-		if(b_menueistoggled == true)
+		if(b_menueistoggled == true && b_shopisopen ==false)
 		{
 			while(b_menueistoggled == true)
 			{
+				
+
 				apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Menue"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 				if(SDL_PollEvent(&even))
 				{
@@ -97,6 +163,11 @@ int main(int argc ,char ** argv)
 		Fps.start();
 		counter++;
 	}
+
+
+
+
+
 
 	
 	return 0;

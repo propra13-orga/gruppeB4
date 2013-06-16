@@ -33,7 +33,7 @@ public:
 	bool collision_Detection(){if(p_Player1->collision_Detection(this->p_Segmente,this->CURRENTLEVEL)){return true;}}
 	Player * get_Player(){return p_Player1;}
 	LevelSegmente * get_LevelSegmente(){return p_Segmente;}
-	void open_shop();
+	
 };
 
 #endif
