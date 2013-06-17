@@ -13,16 +13,18 @@ private:
 	Timer * AnimationTimer;
 	int frames;
 	status WALK_STATUS;
+	int health;
 
 
 
 public:
 	
 	Crazy_enemy():Enemy(){}
-	Crazy_enemy(int x, int y):Enemy(x,y){p_S_SafePosition = new s_Vector; p_S_SafePosition->i_x = x;p_S_SafePosition->i_y = y;AnimationTimer = new Timer(); AnimationTimer->start();frames = 0;}
+	Crazy_enemy(int x, int y):Enemy(x,y){p_S_SafePosition = new s_Vector; p_S_SafePosition->i_x = x;p_S_SafePosition->i_y = y;AnimationTimer = new Timer(); AnimationTimer->start();frames = 0;health = 100;}
 	~Crazy_enemy(){}
 
-
+	int get_Health(){return health;}
+	void set_health(int t){health = t;}
 
 	void render(SDL_Rect camera);
 	void update();
