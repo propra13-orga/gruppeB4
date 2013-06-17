@@ -6,6 +6,7 @@
 #include "ItemManager.h"
 #include "WeaponManager.h"
 #include "ArmorManager.h"
+#include "Moneymanager.h"
 
 
 
@@ -14,11 +15,20 @@ class Shop {
 
 private:
 	
-
+	Shop(){}
+	~Shop(){}
+	
+	int money;
 public:
 
+	static Shop & get_Shop()
+	{
+		static Shop Instance;
+		return Instance;
+	}
+
 	void render();
-	void handle_Input(SDL_Event &even);
+	void handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Player * temp);
 
 	
 

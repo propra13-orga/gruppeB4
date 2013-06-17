@@ -48,6 +48,7 @@ private:
 	SDL_Surface * p_heiltrank;
 	SDL_Surface * p_elektrode;
 	SDL_Surface * p_spritze;
+	SDL_Surface * p_shop;
 public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;

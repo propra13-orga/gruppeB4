@@ -144,11 +144,12 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 		*tempmenue = true;
 	}
 }
+// Collision
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	if(CURRENTLEVEL == LEVEL1)
 	{
-	//für den ersten Quadranten
+	//für den ersten Quadranten:
 	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
 		{
 			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect11[0].x )
@@ -173,28 +174,68 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	//für den zweiten Quadranten
+	//für den zweiten Quadranten:
 	if(this->get_Position()->i_x >=969 && this->get_Position()->i_y >= 630 - PLAYER_WIDTH)
 		{
 			if(this->get_Position()->i_x > p_TempSegment->SegmentRect12[0].x + p_TempSegment->SegmentRect12[0].w - PLAYER_WIDTH)
 			{
-			return true;
+				return true;
 			}
 			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect12[1].x && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
 			{
-			return true;
+				return true;
 			}
 			else if(this->get_Position()->i_x + PLAYER_WIDTH >= p_TempSegment->SegmentRect12[1].x + p_TempSegment->SegmentRect12[1].w && this->get_Position()->i_y <= p_TempSegment->SegmentRect12[0].y)
 			{
-			return true;
+				return true;
 			}
 			else if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect12[0].y + p_TempSegment->SegmentRect12[0].h)
 			{
-			return true;
+				return true;
 			}
 		}
-	//Quadrant 4
+	//für den dritten Quadrant:
+	if(this->get_Position()->i_x >= 1203 - PLAYER_WIDTH && this->get_Position()->i_y <= 600 - PLAYER_WIDTH)
+	{
+		if(this->get_Position()->i_y >= p_TempSegment->SegmentRect13[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[0].x)
+		{
+			return true;
+		}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[1].x + p_TempSegment->SegmentRect13[1].w - PLAYER_WIDTH)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x <= 1330 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_x >= 1546 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
+		{
+			return true;
+		}
+		
+		else if(this->get_Position()->i_x <= 1677 && this->get_Position()->i_y >= 227 - PLAYER_HEIGHT && this->get_Position()->i_y <= 370)
+		{
+			return true;
+		}
+	}
+	if(this->get_Position()->i_x <= 1206 && this->get_Position()->i_y <= 500 - PLAYER_WIDTH)
+	{
+		if(this->get_Position()->i_x <= 1203 && this->get_Position()->i_y >= 489 - PLAYER_HEIGHT)
+		{
+			return true;
+		}
+		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
+		{
+			return true;
+		}
+	}
 
+	//für den vierten Quadrant:
 	if(this->get_Position()->i_x < 969 && this->get_Position()->i_y < 600)
 		{
 			if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
@@ -224,70 +265,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 	}
 		return false;
 }
-				
-				
-				
-				
-		
-		
-	/*
-	}
-	//Quadrant 3
-	if(this->get_Position()->i_x > 579 && this->get_Position()->i_y <= 346 - PLAYER_WIDTH)
-	{
-		if(this->get_Position()->i_y >= p_TempSegment->SegmentRect13[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[0].x)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[0].y && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[1].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[1].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect13[0].x)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[1].x + p_TempSegment->SegmentRect13[1].w - PLAYER_WIDTH)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
-		{
-			return true;
-		}
-		else if((this->get_Position()->i_x >= p_TempSegment->SegmentRect13[2].x - PLAYER_WIDTH) && (this->get_Position()->i_x <= p_TempSegment->SegmentRect13[2].x + p_TempSegment->SegmentRect13[2].w - PLAYER_WIDTH) && (this->get_Position()->i_y >= p_TempSegment->SegmentRect13[2].y) && (this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y + p_TempSegment->SegmentRect13[2].h + 20))
-
-		{
-			if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect13[2].y + p_TempSegment->SegmentRect13[2].h)
-			{
-				return true;
-			}
-		}
-		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x - 20 && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[3].y && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
-		{
-			if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x)
-			{
-				return true;
-			}
-		}
-		else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x - 20 && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y && this->get_Position()->i_y <= 285 + 10)
-		{
-			if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[3].x + p_TempSegment->SegmentRect13[3].w - PLAYER_WIDTH)
-			{
-				return true;
-			}
-			else if(this->get_Position()->i_y >= 285 - PLAYER_HEIGHT )
-			{
-				return true;
-			}
-			else if (this->get_Position()->i_y >= p_TempSegment->SegmentRect13[4].y + p_TempSegment->SegmentRect13[4].h - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[3].x)
-			{
-				return true;
-			}
-			
-		}
-
-		
-		}
 	
-}*/
-
 void Player::heal()
 {
 	if(ItemManager::get_ItemManager().find(HEAL) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
@@ -300,7 +278,6 @@ void Player::heal()
 		return;
 	}
 }
-
 
 void Player::loadMana()
 {

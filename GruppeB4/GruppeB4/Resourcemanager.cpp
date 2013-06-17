@@ -52,7 +52,7 @@ void S_Resourcemanager::initialize()
 	this->p_crazy_enemy_left = IMG_Load("PATIENTlinks.png");
 	this->p_elektrode = IMG_Load("Elektrode.png");
 	this->p_spritze = IMG_Load("Spritze.png");
-
+	this->p_shop = IMG_Load("shop.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -328,6 +328,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Spritze")
 	{
 		return p_spritze;
+	}
+	else if(key == "shop")
+	{
+		return p_shop;	
 	}
 	else
 	{
