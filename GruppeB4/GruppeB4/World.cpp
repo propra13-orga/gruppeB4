@@ -18,6 +18,7 @@ void World::update()
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
 	MoneyManager::get_MoneyManager().update(this->p_Player1->get_Position());
 	
+	
 	if(collision_Detection() == true)
 	{
 		p_Player1->set_Position(p_Player1->get_Position()->i_x - p_Player1->get_Velocity()->i_x , p_Player1->get_Position()->i_y - p_Player1->get_Velocity()->i_y);
@@ -30,6 +31,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);
+	NPC1::get_NPC1().render(Camera);
 	if( p_BossManager->render(p_Player1,Camera) == false)
 	{
 		p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL);

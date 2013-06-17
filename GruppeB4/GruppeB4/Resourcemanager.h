@@ -49,6 +49,7 @@ private:
 	SDL_Surface * p_elektrode;
 	SDL_Surface * p_spritze;
 	SDL_Surface * p_shop;
+	SDL_Surface *p_npc1;
 public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;

@@ -2,6 +2,7 @@
 #include "Player.h"
 #include "globals.h"
 #include "Vektor.h"
+#include "NPC1.h"
 
 
 #ifndef WEAPON_H
