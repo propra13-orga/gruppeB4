@@ -7,6 +7,7 @@ void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 	{
 	this->set_Position(648,795);
 	this->set_Health(400);
+	this->set_Mana(100);
 	}
 }
 
@@ -23,6 +24,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_4):this->heal();cout << i_health << endl;break;
 		case(SDLK_v):WeaponManager::get_WeaponManager().swap_weapon();WeaponManager::get_WeaponManager().show_currentWeapon();break;
 		case(SDLK_SPACE):this->attack();break;
+		case(SDLK_5):this->loadMana(); cout << i_mana << endl; break;
 		}
 	}
 	else if(even.type == SDL_KEYUP)
@@ -284,6 +286,8 @@ void Player::loadMana()
 	if(ItemManager::get_ItemManager().find(MANA) == true)// guckt ob Item da, wenn ja, dann wird das Mana um 100 gepushed, was einem die möglichkeit von einem drei sekündigem Sprint gibt
 	{
 		ItemManager::get_ItemManager().kill_Item(MANA);//anschliesend muss das benutzte item wieder gelöscht werden
+		this->set_Mana(this->get_Mana() + 50);
+			
 	}
 	else
 	{

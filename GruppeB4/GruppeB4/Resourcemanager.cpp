@@ -54,6 +54,7 @@ void S_Resourcemanager::initialize()
 	this->p_spritze = IMG_Load("Spritze.png");
 	this->p_shop = IMG_Load("shop.png");
 	this->p_npc1 = IMG_Load("npc1.png");
+	this->p_manaspritze = IMG_Load("Mana_Spritze.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -337,6 +338,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "npc1")
 	{
 		return p_npc1;
+	}
+	else if(key == "Mana_Spritze")
+	{
+		return p_manaspritze;
 	}
 	else
 	{

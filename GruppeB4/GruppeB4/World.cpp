@@ -76,13 +76,14 @@ void World::initialize_Level()
 	AgentManager::get_AgentManager().set_Bot(411,156,CRAZY_ENEMY);
 	AgentManager::get_AgentManager().set_Bot(973,112,PFLEGER);
 	ItemManager::get_ItemManager().set_Item(1027,702,HEAL);
+	ItemManager::get_ItemManager().set_Item(1300,440,MANA);
 	MoneyManager::get_MoneyManager().set_Coin(800,900);
 	MoneyManager::get_MoneyManager().set_Coin(1760,765);
 	MoneyManager::get_MoneyManager().set_Coin(1760,1025);
 	MoneyManager::get_MoneyManager().set_Coin(1260,413);
 	MoneyManager::get_MoneyManager().set_Coin(1260,542);
-	MoneyManager::get_MoneyManager().set_Coin(1807,116);
-	MoneyManager::get_MoneyManager().set_Coin(1172,443);
+	MoneyManager::get_MoneyManager().set_Coin(1763,152);
+	MoneyManager::get_MoneyManager().set_Coin(1140,436);
 	MoneyManager::get_MoneyManager().set_Coin(1020,448);
 	MoneyManager::get_MoneyManager().set_Coin(820,118);
 	MoneyManager::get_MoneyManager().set_Coin(842,544);

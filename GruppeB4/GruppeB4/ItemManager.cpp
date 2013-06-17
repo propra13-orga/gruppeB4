@@ -8,6 +8,11 @@ void ItemManager::render(SDL_Rect camera)
 		{
 			apply_Image(it->get_Position()->i_x - camera.x,it->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Heiltrank"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
+
+		else if(it->get_Item() == MANA)
+		{
+			apply_Image(it->get_Position()->i_x - camera.x,it->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Mana_Spritze"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
 		else
 		{
 			return;
@@ -38,6 +43,11 @@ void ItemManager::anzeigen()
 		{
 			cout << "Heiltrank" << endl;
 			cout << "Gib mir Butter YEAHHHHHHHHHH BABY" << endl;
+		}
+
+		if(at->get_Item() == MANA){
+		
+			cout << "Mana in liste" << endl;
 		}
 	}
 }
@@ -81,6 +91,11 @@ void ItemManager::insert_item(ITEM_TYPE tempitem){
 	if(tempitem == HEAL)
 	{
 		this->catcheditems.push_back(Item(0,0,HEAL));
+	}
+
+	if(tempitem == MANA)
+	{
+		this->catcheditems.push_back(Item(0,0,MANA));
 	}
 
 
