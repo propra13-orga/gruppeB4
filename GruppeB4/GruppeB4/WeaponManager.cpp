@@ -73,3 +73,8 @@ void WeaponManager::swap_weapon()
 		this->CURRENT_WEAPON2 = NONE;
 	}
 }
+
+void WeaponManager::set_Weapon(int x, int y, WEAPON_TYPE TEMPWEAPON)
+{
+	this->uncatchedweapons.push_back(Weapon(x,y,TEMPWEAPON));
+}

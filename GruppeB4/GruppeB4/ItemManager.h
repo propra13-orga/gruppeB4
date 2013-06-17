@@ -23,7 +23,7 @@ using namespace std;
 class ItemManager
 {
 private:
-	ItemManager(){this->uncatcheditems.push_back(Item(1027,702,HEAL));}
+	ItemManager(){}
 	~ItemManager(){}
 	//enthält zwei Listen die eine Liste ist gefüllt mit Objekten, die der Spieler noch nciht trägt, die aber im level vorhanden sind, 
 	//die andere Liste enthält Daten, die der Spieler bereits eingesammelt hat
@@ -36,8 +36,9 @@ public:
 		static ItemManager Instance;
 		return Instance;
 	}
-	void set_Item(s_Vector * p_TempPosition){}//Funktion wird vom Botmanager gebraucht um ein item nach Tötung zu setzen, hier wird lediglich die Position des verstorbenen Bots angegeben und schließlich nach einem random prinzip 
+	void set_Item(s_Vector * p_TempPosition,ITEM_TYPE TEMPITEM);//Funktion wird vom Botmanager gebraucht um ein item nach Tötung zu setzen, hier wird lediglich die Position des verstorbenen Bots angegeben und schließlich nach einem random prinzip 
 	//ein Item an die stelle gesetzt. Dies ist dann ein nicht eingefangenes Item (offensichtlich :) )
+	void set_Item(int x, int y,ITEM_TYPE TEMPITEM);
 	void render(SDL_Rect camera); //Rendert alle Items die nicht vom Spieler eingesammelt sind
 	void update(s_Vector * p_Position);//Umfngreichste Funktion der Klasse, hier wird zunächst überprüft, ob der Spieler ein neues Item berührt hat.
 	//Danach wird das Item in die Liste der catchedItems aufgenommen, ist bereits eine bestimmte Anzahl dieser Items vorhanden, so wird das Item nicht aufgenommen und bleibt auf dem Boden liegen, es bleibt also in den

@@ -14,7 +14,7 @@ class WeaponManager{
 
 private:
 
-	WeaponManager(){this->uncatchedweapons.push_back(Weapon(400,400,MELEE));}
+	WeaponManager(){}
 	~WeaponManager(){}
 
 	list<Weapon> uncatchedweapons;
@@ -37,6 +37,7 @@ public:
 	void update(s_Vector * p_Position);			//Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
 	void kill_weapon(WEAPON_TYPE CURRENT_WEAPON);		//Waffe zerstören
 	void reinitialize(){catchedweapons.clear();uncatchedweapons.clear();} //Clear
+	void set_Weapon(int x, int y,WEAPON_TYPE);
 	void show();
 	void swap_weapon();
 	void show_currentWeapon()

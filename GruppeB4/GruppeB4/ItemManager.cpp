@@ -66,6 +66,16 @@ void ItemManager::kill_Item(ITEM_TYPE TEMPITEM)
 	}
 }
 
+void ItemManager::set_Item(s_Vector * p_TempPosition, ITEM_TYPE TEMPITEM)
+{
+
+}
+
+void ItemManager::set_Item(int x, int y, ITEM_TYPE TEMPITEM)
+{
+	this->uncatcheditems.push_back(Item(x,y,TEMPITEM));
+}
+
 
 void ItemManager::insert_item(ITEM_TYPE tempitem){
 	if(tempitem == HEAL)

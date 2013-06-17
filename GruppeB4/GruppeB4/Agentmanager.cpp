@@ -74,3 +74,19 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 		}
 	}
 }
+
+void AgentManager::set_Bot(int x, int y,BOT_TYPE TEMPTYPE)
+{
+	if(TEMPTYPE == CRAZY_ENEMY)
+	{
+		this->crazy_enemies.push_back(new Crazy_enemy(x,y));
+	}
+	if(TEMPTYPE == PFLEGER)
+	{
+		this->allPfleger.push_back(new Pfleger(x,y));
+	}
+	else
+	{
+		return;
+	}
+}

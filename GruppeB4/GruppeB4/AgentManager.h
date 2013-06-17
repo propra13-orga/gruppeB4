@@ -12,7 +12,7 @@
 class AgentManager
 {
 private:
-	AgentManager(){crazy_enemies.push_back( new Crazy_enemy(1035,731));allPfleger.push_back(new Pfleger(973,112));crazy_enemies.push_back(new Crazy_enemy(411,156));}
+	AgentManager(){}
 	~AgentManager(){}
 	vector<Crazy_enemy*>crazy_enemies;//Vektor der alle Crazy enemies speichert
 	vector<Pfleger*>allPfleger;
@@ -23,6 +23,7 @@ public:
 	void check_collision(Player * p_TempPlayer,int durchlaufvariable);
 	void update(Player * p_TempPlayer);
 	void weaken_Bots(Player * p_TempPlayer);
+	void set_Bot(int x, int y,BOT_TYPE TEMPTYPE);
 };
 
 

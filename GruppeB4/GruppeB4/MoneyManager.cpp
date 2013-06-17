@@ -31,3 +31,8 @@ int MoneyManager::refreshMoney(int  i_bill){
 
 	return money;
 }
+
+void MoneyManager::set_Coin(int x, int y)
+{
+	this->uncatchedmoney.push_back(RenableObject(x,y,MONEY));
+}

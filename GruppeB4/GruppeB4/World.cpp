@@ -7,6 +7,11 @@ void World::handle_Event(SDL_Event & even)
 
 void World::update()
 {
+	if(this->LevelToSet == true)
+	{
+		this->initialize_Level();
+		LevelToSet = false;
+	}
 	AgentManager::get_AgentManager().update(this->p_Player1);
 	p_Player1->update();
 	ItemManager::get_ItemManager().update(this->p_Player1->get_Position());
@@ -59,4 +64,26 @@ void World::set_Camera()
 	 { Camera.x = 2000 - Camera.w; } 
 	 if( Camera.y > 1280 - Camera.h ) 
 	 { Camera.y = 1280 - Camera.h; } 
+}
+
+void World::initialize_Level()
+{
+	if (CURRENTLEVEL == LEVEL1)
+	{
+	AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
+	AgentManager::get_AgentManager().set_Bot(411,156,CRAZY_ENEMY);
+	AgentManager::get_AgentManager().set_Bot(973,112,PFLEGER);
+	ItemManager::get_ItemManager().set_Item(1027,702,HEAL);
+	MoneyManager::get_MoneyManager().set_Coin(800,900);
+	MoneyManager::get_MoneyManager().set_Coin(1760,765);
+	MoneyManager::get_MoneyManager().set_Coin(1760,1025);
+	MoneyManager::get_MoneyManager().set_Coin(1260,413);
+	MoneyManager::get_MoneyManager().set_Coin(1260,542);
+	MoneyManager::get_MoneyManager().set_Coin(1807,116);
+	MoneyManager::get_MoneyManager().set_Coin(1172,443);
+	MoneyManager::get_MoneyManager().set_Coin(1020,448);
+	MoneyManager::get_MoneyManager().set_Coin(820,118);
+	MoneyManager::get_MoneyManager().set_Coin(842,544);
+	WeaponManager::get_WeaponManager().set_Weapon(400,400,MELEE);
+	}
 }
