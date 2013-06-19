@@ -60,6 +60,7 @@ void S_Resourcemanager::initialize()
 	this->p_mana_voll = IMG_Load("mana_voll.png");
 	this->p_Aufforderung_e = IMG_Load("inter_aufforderung.png");
 	this->p_gekauft = IMG_Load("gekauft.png");
+	this->p_nichtgekauft = IMG_Load("nichtgekauft.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -389,6 +390,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Aufforderung_e")
 	{
 		return p_Aufforderung_e;
+	}
+	else if(key == "nichtgekauft")
+	{
+		return p_nichtgekauft;
 	}
 	else
 	{

@@ -39,6 +39,13 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 				BuyTimer->start();
 				cout << "Heiltrank gekauft" << endl;
 		}
+
+		 if(MoneyManager::get_MoneyManager().get_Money() <5)
+			{
+				nomoney = true;
+				NoMoneyTimer->start();
+			}
+
 		if(even.button.x >=278 && even.button.x <=350 && even.button.y >=82 && even.button.y <=117){
 		
 			if(MoneyManager::get_MoneyManager().get_Money()>= 5)
@@ -48,6 +55,13 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 			renderbuy = true;
 			BuyTimer->start();
 			cout << "Manatrank geklickt" << endl;
+		
+			}
+
+			if(MoneyManager::get_MoneyManager().get_Money() <5)
+			{
+				nomoney = true;
+				NoMoneyTimer->start();
 			}
 		}
 	}
@@ -67,6 +81,16 @@ void Shop::render(){
 		}
 	
 	apply_Image(450,300,S_Resourcemanager::get_Resourcemanager()->get_Surface("gekauft"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
+
+	if(nomoney == true)
+	{
+		if(NoMoneyTimer->Getticks() >= 500)
+		{
+			NoMoneyTimer->stop();
+			nomoney = false;
+		}
+		apply_Image(450,300,S_Resourcemanager::get_Resourcemanager()->get_Surface("nichtgekauft"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
 }
 
