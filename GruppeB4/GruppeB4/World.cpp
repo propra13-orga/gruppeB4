@@ -109,8 +109,27 @@ void World::initialize_Level()
 	{
 		AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
 		AgentManager::get_AgentManager().set_Bot(580,731,CRAZY_ENEMY);	
-		AgentManager::get_AgentManager().set_Bot(300,,CRAZY_ENEMY)
+		AgentManager::get_AgentManager().set_Bot(300,731,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(575,760,PFLEGER);
+		ItemManager::get_ItemManager().set_Item(202,624,HEAL);
+		ItemManager::get_ItemManager().set_Item(998,276,MANA);
+		MoneyManager::get_MoneyManager().set_Coin(1328,1139);
+		MoneyManager::get_MoneyManager().set_Coin(1013,787);
+		MoneyManager::get_MoneyManager().set_Coin(702,1158);
+		MoneyManager::get_MoneyManager().set_Coin(85,817);
+		MoneyManager::get_MoneyManager().set_Coin(71,1153);
+		MoneyManager::get_MoneyManager().set_Coin(816,291);
+		MoneyManager::get_MoneyManager().set_Coin(1152,642);
+		MoneyManager::get_MoneyManager().set_Coin(1782,307);
+        MoneyManager::get_MoneyManager().set_Coin(1328,1139);
+		MoneyManager::get_MoneyManager().set_Coin(1328,1139);
+		MoneyManager::get_MoneyManager().set_Coin(1328,1139);
+		MoneyManager::get_MoneyManager().set_Coin(1328,1139);
+		AgentManager::get_AgentManager().set_Bot(603,329,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(1010,329,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(1422,329,CRAZY_ENEMY);
 	}
+	
 }
 
 
