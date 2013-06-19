@@ -24,6 +24,7 @@ public:
 	void update(Player * p_TempPlayer);
 	void weaken_Bots(Player * p_TempPlayer);
 	void set_Bot(int x, int y,BOT_TYPE TEMPTYPE);
+	void reinitialize(){crazy_enemies.clear();allPfleger.clear();crazy_enemiesToDelete.clear();}
 };
 
 
