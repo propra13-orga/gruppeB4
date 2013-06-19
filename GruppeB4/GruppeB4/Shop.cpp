@@ -59,7 +59,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 		
 			}
 
-			if(MoneyManager::get_MoneyManager().get_Money() <5)
+			else if(MoneyManager::get_MoneyManager().get_Money() <5)
 			{
 				nomoney = true;
 				NoMoneyTimer->start();
