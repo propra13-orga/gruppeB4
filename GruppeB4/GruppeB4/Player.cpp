@@ -1,5 +1,6 @@
 #include "Player.h"
 #include "AgentManager.h"
+#include "World.h"
 
 void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 {
@@ -91,7 +92,7 @@ void Player::update()
 	
 }
 
-void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL)
+void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL,World * p_TempWorld)
 {
 	if(this->b_PlayerIsWalkingDown == true)
 	{
@@ -168,7 +169,10 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 		apply_Image(this->get_Position()->i_x - cam.x,this->get_Position()->i_y - cam.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("tot"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
+		AgentManager::get_AgentManager().reinitialize();
+		ItemManager::get_ItemManager().reinitialize();
 		this->reinitialize(CURRENTLEVEL);
+		p_TempWorld->initialize_Level();
 		*tempmenue = true;
 	}
 }

@@ -27,6 +27,7 @@ void World::update()
 
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
+	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
 	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
@@ -34,7 +35,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	NPC1::get_NPC1().render(Camera);
 	if( p_BossManager->render(p_Player1,Camera) == false)
 	{
-		p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL);
+		p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
 		apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		Overlay::get_Instance().render(this->p_Player1);
 	}
@@ -70,7 +71,7 @@ void World::set_Camera()
 
 void World::initialize_Level()
 {
-	if (CURRENTLEVEL == LEVEL1)
+	if (CURRENTLEVEL == LEVEL1 && LevelToSet == true)
 	{
 	AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
 	AgentManager::get_AgentManager().set_Bot(411,156,CRAZY_ENEMY);
@@ -88,5 +89,14 @@ void World::initialize_Level()
 	MoneyManager::get_MoneyManager().set_Coin(820,118);
 	MoneyManager::get_MoneyManager().set_Coin(842,544);
 	WeaponManager::get_WeaponManager().set_Weapon(400,400,MELEE);
+	}
+	else if(CURRENTLEVEL == LEVEL1 && LevelToSet == false)
+	{
+	AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
+	AgentManager::get_AgentManager().set_Bot(411,156,CRAZY_ENEMY);
+	AgentManager::get_AgentManager().set_Bot(973,112,PFLEGER);
+	ItemManager::get_ItemManager().set_Item(1027,702,HEAL);
+	ItemManager::get_ItemManager().set_Item(1300,440,MANA);
+
 	}
 }
