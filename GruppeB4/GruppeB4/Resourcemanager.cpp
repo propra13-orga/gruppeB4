@@ -84,11 +84,16 @@ void S_Resourcemanager::initialize()
 	 SDL_Surface * LoadedImageMap2 = IMG_Load("map2.png");
 	 SDL_Surface * OptimizedImageMap2 = NULL;
 
+	 SDL_Surface * LoadedImageMap3 = IMG_Load("map3.png");
+	 SDL_Surface * OptimizedImageMap3 = NULL;
+
 	  OptimizedImage = SDL_DisplayFormat(LoadedImage);
 	  OptimizedImageMap2 = SDL_DisplayFormat(LoadedImageMap2);
+	  OptimizedImageMap3 = SDL_DisplayFormat(LoadedImageMap3);
 
 	  this->p_background = OptimizedImage;
 	  this->p_map2 = OptimizedImageMap2;
+	  this->p_map3 = OptimizedImageMap3;
 
 	  //SDL_FreeSurface(OptimizedImage);
 
@@ -323,6 +328,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "Heiltrank")
 	{
 		return this->p_heiltrank;
+	}
+	else if(key == "Level3")
+	{
+		return p_map3;
 	}
 	else if(key == "Verrückter_Up")
 	{

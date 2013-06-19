@@ -39,8 +39,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	}
 	if(this->CURRENTLEVEL == LEVEL3)
 	{
-		cout << "LEVEL 3" << endl;
-		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level2"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
 	}
 	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
@@ -121,6 +120,7 @@ void World::try_swapLevel()
 			MoneyManager::get_MoneyManager().reinitialize();
 			ItemManager::get_ItemManager().reinitializeLevelSwap();
 			WeaponManager::get_WeaponManager().reinitializeLevelSwap();
+			this->p_Player1->set_Position(1800,960);
 			}
 		}
 		if(CURRENTLEVEL == LEVEL2)
@@ -133,6 +133,7 @@ void World::try_swapLevel()
 			MoneyManager::get_MoneyManager().reinitialize();
 			ItemManager::get_ItemManager().reinitializeLevelSwap();
 			WeaponManager::get_WeaponManager().reinitializeLevelSwap();
+			this->p_Player1->set_Position(80,250);
 			}
 		}
 		
