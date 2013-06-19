@@ -53,6 +53,8 @@ public:
 	void set_Mana(int mana){this->i_mana = mana;}
 	int get_Health() const {return i_health;}
 	int get_Mana() const {return i_mana;}
+	bool get_disable(){return disableallabilities;}
+	void set_disable(bool t){this->disableallabilities = t;}
 	status get_WalkStatus(){return e_currentwalkstatus;}
 	void reinitialize(LEVEL_LOADED CURRENTLEVEL);
 

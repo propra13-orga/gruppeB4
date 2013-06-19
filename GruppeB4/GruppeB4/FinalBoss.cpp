@@ -1,4 +1,6 @@
 #include "FinalBoss.h"
+#include "Player.h"
+
 
 
 
@@ -27,5 +29,32 @@ apply_Image(this->get_Position()->i_x - camera.x,this->get_Position()->i_y - cam
 
 }
 
-void FinalBoss::update()
+void FinalBoss::update(Player * p_Player)
 {
+	if(transformed == false)
+	{
+		p_Player->set_disable(true);
+		AnimationTimer->start();
+		while(AnimationTimer->Getticks() <= 3000)
+		{
+		
+		}
+		transformed = true;
+		p_Player->set_disable(false);
+	}
+	else
+	{
+	if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x >= 284)
+	{
+		this->p_s_Velocity->i_x = 2;
+		this->p_s_Velocity->i_y = 0;
+	}
+	else if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x <= -284)
+	{
+		this->p_s_Velocity->i_x = -2;
+		this->p_s_Velocity->i_y = 0;
+	}
+
+	this->p_s_Position->i_x += p_s_Velocity->i_x;this->p_s_Position->i_y += this->p_s_Velocity->i_y;
+	}
+}

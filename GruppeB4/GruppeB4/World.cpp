@@ -25,6 +25,12 @@ void World::update()
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
 	MoneyManager::get_MoneyManager().update(this->p_Player1->get_Position());
 	
+	if(CURRENTLEVEL == LEVEL3 && p_Player1->get_Position()->i_y - p_BossManager->get_Position()->i_y <= 300 && p_BossManager->get_Position()->i_x - p_Player1->get_Position()->i_x <= 284 && p_BossManager->get_Position()->i_x - p_Player1->get_Position()->i_x >= -400 || p_BossManager->get_isactivated() == true)
+	{
+		this->p_BossManager->update(this->p_Player1);
+		p_BossManager->set_isactivated(true);
+	}
+
 	
 	if(collision_Detection() == true)
 	{
