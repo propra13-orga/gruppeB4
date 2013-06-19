@@ -78,9 +78,14 @@ void S_Resourcemanager::initialize()
 	SDL_Surface * LoadedImage = IMG_Load("map.png");
 	 SDL_Surface * OptimizedImage = NULL;
 
+	 SDL_Surface * LoadedImageMap2 = IMG_Load("map2.png");
+	 SDL_Surface * OptimizedImageMap2 = NULL;
+
 	  OptimizedImage = SDL_DisplayFormat(LoadedImage);
+	  OptimizedImageMap2 = SDL_DisplayFormat(LoadedImageMap2);
 
 	  this->p_background = OptimizedImage;
+	  this->p_map2 = OptimizedImageMap2;
 
 	  //SDL_FreeSurface(OptimizedImage);
 
