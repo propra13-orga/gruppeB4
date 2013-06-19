@@ -15,10 +15,12 @@ class Shop {
 
 private:
 	
-	Shop(){}
+	Shop(){renderbuy = false;BuyTimer = new Timer();}
 	~Shop(){}
 	
 	int money;
+	bool renderbuy;
+	Timer * BuyTimer;
 public:
 
 	static Shop & get_Shop()

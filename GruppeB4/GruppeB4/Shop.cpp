@@ -13,6 +13,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 		if(even.key.keysym.sym == SDLK_e)
 		{
 			*b_shopisopen = false;
+			renderbuy = false;
 		}
 	
 	
@@ -34,7 +35,8 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 			
 				ItemManager::get_ItemManager().insert_item(HEAL);
 				MoneyManager::get_MoneyManager().refreshMoney(5);
-		
+				renderbuy = true;
+				BuyTimer->start();
 				cout << "Heiltrank gekauft" << endl;
 		}
 		if(even.button.x >=278 && even.button.x <=350 && even.button.y >=82 && even.button.y <=117){
@@ -43,7 +45,8 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 			{
 			ItemManager::get_ItemManager().insert_item(MANA);
 			MoneyManager::get_MoneyManager().refreshMoney(5);
-
+			renderbuy = true;
+			BuyTimer->start();
 			cout << "Manatrank geklickt" << endl;
 			}
 		}
@@ -53,7 +56,18 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 }
 void Shop::render(){
 
-	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Shop"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("shop"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+
+	if(renderbuy == true){
+	
+		if(BuyTimer->Getticks() >= 500)
+		{
+			BuyTimer->stop();
+			renderbuy = false;
+		}
+	
+	apply_Image(450,300,S_Resourcemanager::get_Resourcemanager()->get_Surface("gekauft"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
 }
 
 

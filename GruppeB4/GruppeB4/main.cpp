@@ -84,7 +84,7 @@ int main(int argc ,char ** argv)
 				
 															//schleife zum rendern und zum kaufen so lange shop auf true ist
 				
-				apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("shop"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+				Shop::get_Shop().render();
 				
 				if(SDL_PollEvent(&even))
 				{
