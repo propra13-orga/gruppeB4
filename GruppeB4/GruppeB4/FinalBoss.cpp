@@ -66,9 +66,11 @@ void FinalBoss::update(Player * p_Player)
 			{
 				this->p_s_Velocity->i_y = -5;
 			
-			if(this->p_s_Position <= p_s_StartPosition)
+				if(this->p_s_Position->i_y <= p_s_StartPosition->i_y)
 				{
+					
 					this->p_s_Velocity->i_y = 0;
+					this->p_s_Velocity->i_x = 2;
 					raged = false;
 					AttackTimer->start();
 				}
