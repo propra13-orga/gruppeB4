@@ -15,7 +15,7 @@ class Shop {
 
 private:
 	
-	Shop(){renderbuy = false;BuyTimer = new Timer();}
+	Shop(){renderbuy = false;nomoney = false; NoMoneyTimer = new Timer();BuyTimer = new Timer();}
 	~Shop(){}
 	
 	int money;

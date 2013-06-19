@@ -14,6 +14,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 		{
 			*b_shopisopen = false;
 			renderbuy = false;
+			nomoney = false;
 		}
 	
 	
@@ -40,7 +41,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 				cout << "Heiltrank gekauft" << endl;
 		}
 
-		 if(MoneyManager::get_MoneyManager().get_Money() <5)
+		else if(MoneyManager::get_MoneyManager().get_Money() <5)
 			{
 				nomoney = true;
 				NoMoneyTimer->start();
@@ -83,7 +84,7 @@ void Shop::render(){
 	apply_Image(450,300,S_Resourcemanager::get_Resourcemanager()->get_Surface("gekauft"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
 
-	if(nomoney == true)
+	 if(nomoney == true)
 	{
 		if(NoMoneyTimer->Getticks() >= 500)
 		{
