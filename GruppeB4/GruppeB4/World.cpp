@@ -133,7 +133,20 @@ void World::initialize_Level()
 		AgentManager::get_AgentManager().set_Bot(1010,329,CRAZY_ENEMY);
 		AgentManager::get_AgentManager().set_Bot(1422,329,CRAZY_ENEMY);
 	}
-	else if(CURRENTLEVEL == LEVEL3)
+	else if (CURRENTLEVEL == LEVEL2 && LevelToSet=false)
+	{
+		AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(580,731,CRAZY_ENEMY);	
+		AgentManager::get_AgentManager().set_Bot(300,731,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(575,760,PFLEGER);
+		ItemManager::get_ItemManager().set_Item(202,624,HEAL);
+		ItemManager::get_ItemManager().set_Item(998,276,MANA);
+		AgentManager::get_AgentManager().set_Bot(603,329,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(1010,329,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(1422,329,CRAZY_ENEMY);
+	}
+
+	else if(CURRENTLEVEL == LEVEL3 && LevelToSet = true)
 	{
 	AgentManager::get_AgentManager().set_Bot(338,109,CRAZY_ENEMY);
 	AgentManager::get_AgentManager().set_Bot(719,135,PFLEGER);
@@ -151,6 +164,15 @@ void World::initialize_Level()
 	MoneyManager::get_MoneyManager().set_Coin(1559,755);
 		
 	
+	}
+	else if (CURRENTLEVEL == LEVEL3 && LevelToSet = false)
+	{
+	AgentManager::get_AgentManager().set_Bot(338,109,CRAZY_ENEMY);
+	AgentManager::get_AgentManager().set_Bot(719,135,PFLEGER);
+	AgentManager::get_AgentManager().set_Bot(814,135,PFLEGER);
+	ItemManager::get_ItemManager().set_Item(1051,903,HEAL);
+	ItemManager::get_ItemManager().set_Item(1910,1055,HEAL);
+	ItemManager::get_ItemManager().set_Item(773,1155,MANA);
 	}
 	
 }
