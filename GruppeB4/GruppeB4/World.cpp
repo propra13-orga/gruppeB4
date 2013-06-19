@@ -7,6 +7,8 @@ void World::handle_Event(SDL_Event & even)
 
 void World::update()
 {
+	this->swap_Level();
+
 	if(this->LevelToSet == true)
 	{
 		this->initialize_Level();
@@ -27,23 +29,19 @@ void World::update()
 
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
+	if(this->CURRENTLEVEL == LEVEL1)
+	{
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
+	}
 	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);
 	NPC1::get_NPC1().render(Camera);
-	if( p_BossManager->render(p_Player1,Camera) == false)
-	{
-		p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
-		apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		Overlay::get_Instance().render(this->p_Player1);
-	}
-	else
-	{
-		this->render_Win(tempmenue);
-		this->p_Player1->reinitialize(this->CURRENTLEVEL);
-	}
+	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
+	apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	Overlay::get_Instance().render(this->p_Player1);
+	
 }
 
 void World::render_Win(bool * tempmenue)
@@ -99,4 +97,21 @@ void World::initialize_Level()
 	ItemManager::get_ItemManager().set_Item(1300,440,MANA);
 
 	}
+}
+
+
+void World::swap_Level()
+{
+		if(CURRENTLEVEL == LEVEL1)
+		{
+			if(this->get_Player()->get_Position()->i_x >= 800)
+			{
+			CURRENTLEVEL = LEVEL2;
+		
+			LevelToSet = true;
+			}
+		}
+	
+
+
 }

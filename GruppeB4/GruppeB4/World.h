@@ -38,6 +38,10 @@ public:
 	//initialisierungsfunktionen der einzelnen Level
 
 	void initialize_Level();
+
+	//Ändern desaktuellen Levels
+
+	void swap_Level();
 	
 };
 
