@@ -37,4 +37,18 @@ void Overlay::render(Player * p_TempPlayer)
 			apply_Image(850,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("Elektrode"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
 
+		if(p_TempPlayer->get_Mana() >= 100){
+		
+		apply_Image(850,100,S_Resourcemanager::get_Resourcemanager()->get_Surface("mana_voll"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+		else if(p_TempPlayer->get_Mana() >=50 && p_TempPlayer->get_Mana() <=100){
+		
+			apply_Image(850,100,S_Resourcemanager::get_Resourcemanager()->get_Surface("mana_halbvoll"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		else if(p_TempPlayer->get_Mana() >=0 &&p_TempPlayer->get_Mana() <=49)
+		{
+		
+		apply_Image(850,100,S_Resourcemanager::get_Resourcemanager()->get_Surface("mana_leer"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
 }

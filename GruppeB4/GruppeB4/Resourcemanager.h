@@ -53,6 +53,10 @@ private:
 	SDL_Surface * p_manaspritze;
 	SDL_Surface * p_map2;
 	SDL_Surface * p_map3;
+	SDL_Surface * p_mana_leer;
+	SDL_Surface * p_mana_halbvoll;
+	SDL_Surface * p_mana_voll;
+	
 public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;
