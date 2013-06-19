@@ -133,7 +133,7 @@ void World::initialize_Level()
 		AgentManager::get_AgentManager().set_Bot(1010,329,CRAZY_ENEMY);
 		AgentManager::get_AgentManager().set_Bot(1422,329,CRAZY_ENEMY);
 	}
-	else if (CURRENTLEVEL == LEVEL2 && LevelToSet=false)
+	else if (CURRENTLEVEL == LEVEL2 && LevelToSet == false)
 	{
 		AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
 		AgentManager::get_AgentManager().set_Bot(580,731,CRAZY_ENEMY);	
@@ -146,7 +146,7 @@ void World::initialize_Level()
 		AgentManager::get_AgentManager().set_Bot(1422,329,CRAZY_ENEMY);
 	}
 
-	else if(CURRENTLEVEL == LEVEL3 && LevelToSet = true)
+	else if(CURRENTLEVEL == LEVEL3 && LevelToSet == true)
 	{
 	AgentManager::get_AgentManager().set_Bot(338,109,CRAZY_ENEMY);
 	AgentManager::get_AgentManager().set_Bot(700,135,PFLEGER);
@@ -165,7 +165,7 @@ void World::initialize_Level()
 		
 	
 	}
-	else if (CURRENTLEVEL == LEVEL3 && LevelToSet = false)
+	else if (CURRENTLEVEL == LEVEL3 && LevelToSet == false)
 	{
 	AgentManager::get_AgentManager().set_Bot(338,109,CRAZY_ENEMY);
 	AgentManager::get_AgentManager().set_Bot(719,135,PFLEGER);
