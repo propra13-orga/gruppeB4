@@ -136,11 +136,11 @@ void World::initialize_Level()
 	else if(CURRENTLEVEL == LEVEL3)
 	{
 	AgentManager::get_AgentManager().set_Bot(338,109,CRAZY_ENEMY);
-	AgentManager::get_AgentManager().set_Bot(719,135,PFLEGER);
-	AgentManager::get_AgentManager().set_Bot(814,135,PFLEGER);
+	AgentManager::get_AgentManager().set_Bot(700,135,PFLEGER);
+	AgentManager::get_AgentManager().set_Bot(820,135,PFLEGER);
 	ItemManager::get_ItemManager().set_Item(1051,903,HEAL);
 	ItemManager::get_ItemManager().set_Item(1910,1055,HEAL);
-	ItemManager::get_ItemManager().set_Item(773,1155,MANA);
+	ItemManager::get_ItemManager().set_Item(773,1100,MANA);
 	MoneyManager::get_MoneyManager().set_Coin(610,484);
 	MoneyManager::get_MoneyManager().set_Coin(1088,90);
 	MoneyManager::get_MoneyManager().set_Coin(237,757);
