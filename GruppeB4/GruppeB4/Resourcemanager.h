@@ -57,6 +57,7 @@ private:
 	SDL_Surface * p_mana_halbvoll;
 	SDL_Surface * p_mana_voll;
 	SDL_Surface * p_Aufforderung_e;
+	SDL_Surface * p_gekauft;
 	
 public:
 	TTF_Font * font;
