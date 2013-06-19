@@ -70,7 +70,10 @@ int main(int argc ,char ** argv)
 			{
 				if(even.key.keysym.sym == SDLK_e)			//wird e gedrückt geht der shop auf(später nur wenn npc in range ist)
 				{
+					if(NPC1::get_NPC1().PlayCloseToBot(p_World->get_Player()) == true)
+					{
 					b_shopisopen = true;
+					}
 				}
 			}
 

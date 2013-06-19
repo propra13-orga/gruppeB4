@@ -12,6 +12,7 @@
 #include "WeaponManager.h"
 #include "MoneyManager.h"
 #include "Shop.h"
+#include "NPC1.h"
 
 class World
 {

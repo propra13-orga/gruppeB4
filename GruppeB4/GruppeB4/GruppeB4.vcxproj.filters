@@ -105,6 +105,9 @@
     <ClInclude Include="NPC1.h">
       <Filter>Header Files\Objekte</Filter>
     </ClInclude>
+    <ClInclude Include="NPCManager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">

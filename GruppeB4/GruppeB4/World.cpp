@@ -47,6 +47,10 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	WeaponManager::get_WeaponManager().render(Camera);
 	NPC1::get_NPC1().render(Camera);
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
+	if(NPC1::get_NPC1().PlayCloseToBot(this->get_Player()) == true)
+	{
+		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
 	apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	Overlay::get_Instance().render(this->p_Player1);
 	

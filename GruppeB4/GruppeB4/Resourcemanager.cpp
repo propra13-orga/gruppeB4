@@ -58,6 +58,7 @@ void S_Resourcemanager::initialize()
 	this->p_mana_leer = IMG_Load("mana_leer.png");
 	this->p_mana_halbvoll = IMG_Load("mana_halbvoll.png");
 	this->p_mana_voll = IMG_Load("mana_voll.png");
+	this->p_Aufforderung_e = IMG_Load("inter_aufforderung.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -380,8 +381,13 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 		return p_mana_leer;
 	
 	}
+	else if(key == "Aufforderung_e")
+	{
+		return p_Aufforderung_e;
+	}
 	else
 	{
 		std::cout << "Zugriff nicht möglich" << std::endl;
+		return NULL;
 	}
 }

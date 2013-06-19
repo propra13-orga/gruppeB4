@@ -3,6 +3,8 @@
 #ifndef NPC1_H
 #define NPC1_H
 
+class Player;
+
 class NPC1 {
 
 
@@ -37,6 +39,7 @@ public:
 
 
 	void render(SDL_Rect camera);
+	bool PlayCloseToBot(Player * p_TempPlayer);
 
 	
 };
