@@ -20,7 +20,9 @@ private:
 	
 	int money;
 	bool renderbuy;
+	bool nomoney;
 	Timer * BuyTimer;
+	Timer * NoMoneyTimer;
 public:
 
 	static Shop & get_Shop()
