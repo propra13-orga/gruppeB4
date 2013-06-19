@@ -151,7 +151,7 @@ int main(int argc ,char ** argv)
 		}
 		p_World->update();
 		p_World->set_Camera();
-		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
+		
 		
 		p_World->render(&b_menueistoggled,deltaTime);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
