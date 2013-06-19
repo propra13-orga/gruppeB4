@@ -108,6 +108,8 @@ void World::initialize_Level()
 	else if(CURRENTLEVEL == LEVEL2 && LevelToSet == true)
 	{
 		AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
+		AgentManager::get_AgentManager().set_Bot(580,731,CRAZY_ENEMY);	
+		AgentManager::get_AgentManager().set_Bot(300,,CRAZY_ENEMY)
 	}
 }
 
