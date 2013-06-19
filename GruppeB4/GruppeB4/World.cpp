@@ -5,6 +5,11 @@ void World::handle_Event(SDL_Event & even)
 	p_Player1->handle_Input(even);
 }
 
+
+
+
+
+
 void World::update()
 {
 	this->try_swapLevel();
@@ -27,6 +32,12 @@ void World::update()
 	}
 }
 
+
+
+
+
+
+
 void World::render(bool * tempmenue,Timer * deltaTime)
 {
 	if(this->CURRENTLEVEL == LEVEL1)
@@ -40,6 +51,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	if(this->CURRENTLEVEL == LEVEL3)
 	{
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
+		this->p_BossManager->render(Camera);
 	}
 	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
@@ -55,6 +67,12 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	Overlay::get_Instance().render(this->p_Player1);
 	
 }
+
+
+
+
+
+
 
 void World::render_Win(bool * tempmenue)
 {

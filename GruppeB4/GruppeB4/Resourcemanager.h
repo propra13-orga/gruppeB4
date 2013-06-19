@@ -63,6 +63,7 @@ public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;
 	SDL_Surface * HealDisplay;
+	SDL_Surface * ManaDisplay;
 	SDL_Color TextColor;
 	SDL_Rect PlayerDownClips[6];
 	SDL_Rect PlayerUpClips[6];

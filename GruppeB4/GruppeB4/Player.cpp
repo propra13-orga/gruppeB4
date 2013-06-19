@@ -26,6 +26,8 @@ void Player::handle_Input(SDL_Event &even)
 {
 	if(even.type == SDL_KEYDOWN)
 	{
+		if(this->disableallabilities == false)
+		{
 		switch(even.key.keysym.sym)
 		{
 		case(SDLK_UP):if(this->rageModeToggled == false){this->set_Velocity(0,-2);}else{this->set_Velocity(0,-3);}b_PlayerIsWalkingUp = true;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
@@ -37,6 +39,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_SPACE):this->attack();break;
 		case(SDLK_5):this->loadMana(); cout << i_mana << endl; break;
 		case(SDLK_r):this->setRageMode();break;
+		}
 		}
 	}
 	else if(even.type == SDL_KEYUP)

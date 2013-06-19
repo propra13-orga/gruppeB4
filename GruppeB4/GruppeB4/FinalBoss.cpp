@@ -17,19 +17,15 @@ apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_R
 
 
 
-bool FinalBoss::render( Player * tempplayer,SDL_Rect camera){
-	if(tempplayer->get_Position()->i_y >= 78 && tempplayer->get_Position()->i_y <= 448 && tempplayer->get_Position()->i_x <= 189)
-	{
-		return true;
-		//Gib an die Welt nur true zurück der rest muss in der welt gemacht werden -> reinitialize Player und render_Win
-	}
-	else
-	{
+void FinalBoss::render(SDL_Rect  camera){
+	
 
 apply_Image(this->get_Position()->i_x - camera.x,this->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Prinzessin"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-return false;
-	}
+	
 
 
 
 }
+
+void FinalBoss::update()
+{
