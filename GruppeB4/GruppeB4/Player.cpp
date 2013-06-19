@@ -10,6 +10,16 @@ void Player::reinitialize(LEVEL_LOADED CURRENTLEVEL)
 	this->set_Health(400);
 	this->set_Mana(100);
 	}
+	else if(CURRENTLEVEL == LEVEL2)
+	{
+		this->set_Health(400);
+		this->set_Position(1800,960);
+	}
+	else if(CURRENTLEVEL == LEVEL3)
+	{
+		this->set_Health(400);
+		this->set_Position(80,250);
+	}
 }
 
 void Player::handle_Input(SDL_Event &even)

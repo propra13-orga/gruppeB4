@@ -14,7 +14,7 @@ void S_Resourcemanager::initialize()
 
 	TextColor.r = 255;
 	TextColor.g = 255;
-	TextColor.b = 255;
+	TextColor.b = 100;
 
 	this->p_screen = SDL_SetVideoMode(900,600,32,SDL_SWSURFACE);
 

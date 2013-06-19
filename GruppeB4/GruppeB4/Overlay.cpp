@@ -23,14 +23,24 @@ void Overlay::render(Player * p_TempPlayer)
 		}
 
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Pille"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		apply_Image(125,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("Heiltrank"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
 
 		std::stringstream money;
 
 		money << MoneyManager::get_MoneyManager().get_Money();
 
+		std::stringstream heal;
+
+		heal << ItemManager::get_ItemManager().get_Amount(HEAL);
+
+		cout << ItemManager::get_ItemManager().get_Amount(HEAL) << endl;
+
+		S_Resourcemanager::get_Resourcemanager()->HealDisplay = TTF_RenderText_Solid(S_Resourcemanager::get_Resourcemanager()->font,heal.str().c_str(),S_Resourcemanager::get_Resourcemanager()->TextColor);
 		S_Resourcemanager::get_Resourcemanager()->MoneyDisplay = TTF_RenderText_Solid(S_Resourcemanager::get_Resourcemanager()->font,money.str().c_str(),S_Resourcemanager::get_Resourcemanager()->TextColor);
 	
 		apply_Image(50,0,S_Resourcemanager::get_Resourcemanager()->MoneyDisplay,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		apply_Image(150,550,S_Resourcemanager::get_Resourcemanager()->HealDisplay,S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 		if(WeaponManager::get_WeaponManager().CURRENT_WEAPON2 == MELEE)
 		{

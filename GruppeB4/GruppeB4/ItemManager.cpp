@@ -100,3 +100,21 @@ void ItemManager::insert_item(ITEM_TYPE tempitem){
 
 
 }
+
+int ItemManager::get_Amount(ITEM_TYPE TEMPITEM)
+{
+	int counter = 0;
+
+	for(list<Item>::iterator myIter = catcheditems.begin(); myIter != catcheditems.end();++myIter)
+	{
+		
+		
+		if(myIter->get_Item() == TEMPITEM)
+		{
+			counter++;
+		}
+	}
+	return counter;
+}
+
+

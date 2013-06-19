@@ -105,6 +105,10 @@ void World::initialize_Level()
 	ItemManager::get_ItemManager().set_Item(1300,440,MANA);
 
 	}
+	else if(CURRENTLEVEL == LEVEL2 && LevelToSet == true)
+	{
+		AgentManager::get_AgentManager().set_Bot(1035,731,CRAZY_ENEMY);
+	}
 }
 
 

@@ -48,6 +48,7 @@ public:
 	void kill_Item(ITEM_TYPE TEMPITEM);//Funktion ist dafür da um ein item was benutzt wurde auch wieder zu löschen, dabei wird das Firt_Fit prinzip angewendet. Es ist ohne belang welche Position unser Item hat wichtig ist nur der richtige ItemType
 	void reinitialize(){catcheditems.clear();uncatcheditems.clear();}//Funktion um einfach alle Listen komplett zu leeren und neu zu erstellen
 	void reinitializeLevelSwap(){uncatcheditems.clear();}
+	int get_Amount(ITEM_TYPE);
 	void anzeigen();
 
 	void insert_item(ITEM_TYPE tempitem);
