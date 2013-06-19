@@ -72,6 +72,54 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 				}
 			}
 		}
+		else if(p_tempPlayer->get_WalkStatus() == PSY_DOWN)
+		{
+			for(vector<Crazy_enemy*>::iterator i = crazy_enemies.begin();i != crazy_enemies.end();++i)
+			{
+				if((*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 <= 150 && (*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 >= 0 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 <= 100 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 >= -50 )
+				{
+					(*i)->set_health((*i)->get_Health() - 100);
+					if((*i)->get_Health() <= 0)
+					{
+						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						crazy_enemies.erase(i);
+						break;
+					}
+				}
+			}
+		}
+		else if(p_tempPlayer->get_WalkStatus() == PSY_RIGHT)
+		{
+			for(vector<Crazy_enemy*>::iterator i = crazy_enemies.begin();i != crazy_enemies.end();++i)
+			{
+				if((*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 <= 50 && (*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 >= -50 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 <= 150 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 >= 0 )
+				{
+					(*i)->set_health((*i)->get_Health() - 100);
+					if((*i)->get_Health() <= 0)
+					{
+						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						crazy_enemies.erase(i);
+						break;
+					}
+				}
+			}
+		}
+		else if(p_tempPlayer->get_WalkStatus() == PSY_LEFT)
+		{
+			for(vector<Crazy_enemy*>::iterator i = crazy_enemies.begin();i != crazy_enemies.end();++i)
+			{
+				if((*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 <= 50 && (*i)->get_Position()->i_y + 25 - p_tempPlayer->get_Position()->i_y + 25 >= -50 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 <= 0 && (*i)->get_Position()->i_x + 25 - p_tempPlayer->get_Position()->i_x + 25 >= -150 )
+				{
+					(*i)->set_health((*i)->get_Health() - 100);
+					if((*i)->get_Health() <= 0)
+					{
+						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						crazy_enemies.erase(i);
+						break;
+					}
+				}
+			}
+		}
 	}
 }
 

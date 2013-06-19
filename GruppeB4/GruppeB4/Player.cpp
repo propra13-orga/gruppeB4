@@ -17,14 +17,15 @@ void Player::handle_Input(SDL_Event &even)
 	{
 		switch(even.key.keysym.sym)
 		{
-		case(SDLK_UP):this->set_Velocity(0,-2);b_PlayerIsWalkingUp = true;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
-		case(SDLK_DOWN):this->set_Velocity(0,2);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = true;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
-		case(SDLK_RIGHT):this->set_Velocity(2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
-		case(SDLK_LEFT):this->set_Velocity(-2,0);b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
+		case(SDLK_UP):if(this->rageModeToggled == false){this->set_Velocity(0,-2);}else{this->set_Velocity(0,-3);}b_PlayerIsWalkingUp = true;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
+		case(SDLK_DOWN):if(this->rageModeToggled == false){this->set_Velocity(0,2);}else{this->set_Velocity(0,3);};b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = true;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
+		case(SDLK_RIGHT):if(this->rageModeToggled == false){this->set_Velocity(2,0);}else{this->set_Velocity(3,0);}b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
+		case(SDLK_LEFT):if(this->rageModeToggled == false){this->set_Velocity(-2,0);}else{this->set_Velocity(-3,0);}b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
 		case(SDLK_4):this->heal();cout << i_health << endl;break;
 		case(SDLK_v):WeaponManager::get_WeaponManager().swap_weapon();WeaponManager::get_WeaponManager().show_currentWeapon();break;
 		case(SDLK_SPACE):this->attack();break;
 		case(SDLK_5):this->loadMana(); cout << i_mana << endl; break;
+		case(SDLK_r):this->setRageMode();break;
 		}
 	}
 	else if(even.type == SDL_KEYUP)
@@ -61,6 +62,31 @@ void Player::update()
 
 	this->set_Position(this->get_Position()->i_x + this->get_Velocity()->i_x, this->get_Position()->i_y + get_Velocity()->i_y);
 
+	if(this->rageModeToggled == true)
+	{
+		if(this->RageModeTimer->Getticks() >= 3000)
+		{
+			this->rageModeToggled = false;
+			this->RageModeTimer->stop();
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,2);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-2);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(2,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-2,0);
+			}
+
+		}
+	}
 
 	
 }
@@ -298,4 +324,38 @@ void Player::loadMana()
 void Player::attack()
 {
 	AgentManager::get_AgentManager().weaken_Bots(this);
+}
+
+
+void Player::setRageMode()
+{
+	if(this->rageModeToggled == true)
+	{
+		return;
+	}
+	else
+	{
+		if(this->i_mana >= 100)
+		{
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,3);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-3);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(3,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-3,0);
+			}
+			this->i_mana -= 100;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+		}
+	}
 }
