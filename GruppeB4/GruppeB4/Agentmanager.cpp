@@ -2,7 +2,7 @@
 
 void AgentManager::update(Player * p_TempPlayer)
 {
-	for(unsigned int i = 0;i < crazy_enemies.size();i++){check_collision(p_TempPlayer,i);crazy_enemies[i]->update();}allPfleger[0]->update(p_TempPlayer);
+	for(unsigned int i = 0;i < crazy_enemies.size();i++){check_collision(p_TempPlayer,i);crazy_enemies[i]->update();}for(unsigned int i = 0;i < allPfleger.size();i++)allPfleger[i]->update(p_TempPlayer);
 
 }
 
@@ -10,7 +10,8 @@ void AgentManager::render(SDL_Rect camera)
 {
 	for(unsigned int i = 0;i < crazy_enemies.size();i++)
 	{crazy_enemies[i]->render( camera);}
-	allPfleger[0]->render(camera);
+	for(unsigned int i = 0;i < allPfleger.size();i++)
+	allPfleger[i]->render(camera);
 
 	for(vector<Crazy_enemy*>::iterator myIter = crazy_enemiesToDelete.begin();myIter != crazy_enemiesToDelete.end();myIter++)
 	{

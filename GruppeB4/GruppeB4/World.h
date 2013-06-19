@@ -41,7 +41,7 @@ public:
 
 	//Ändern desaktuellen Levels
 
-	void swap_Level();
+	void try_swapLevel();
 	
 };
 

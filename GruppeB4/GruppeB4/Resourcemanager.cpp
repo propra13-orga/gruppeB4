@@ -244,6 +244,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		return this->p_background;
 	}
+	else if(key == "Level2")
+	{
+		return this->p_map2;
+	}
 	else if(key == "Menue")
 	{
 		return p_menue;

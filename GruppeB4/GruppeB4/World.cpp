@@ -7,7 +7,7 @@ void World::handle_Event(SDL_Event & even)
 
 void World::update()
 {
-	this->swap_Level();
+	this->try_swapLevel();
 
 	if(this->LevelToSet == true)
 	{
@@ -32,6 +32,15 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	if(this->CURRENTLEVEL == LEVEL1)
 	{
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
+	}
+	if(this->CURRENTLEVEL == LEVEL2)
+	{
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level2"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
+	}
+	if(this->CURRENTLEVEL == LEVEL3)
+	{
+		cout << "LEVEL 3" << endl;
+		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level2"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
 	}
 	AgentManager::get_AgentManager().render( Camera);
 	MoneyManager::get_MoneyManager().render(Camera);
@@ -100,17 +109,33 @@ void World::initialize_Level()
 }
 
 
-void World::swap_Level()
+void World::try_swapLevel()
 {
 		if(CURRENTLEVEL == LEVEL1)
 		{
-			if(this->get_Player()->get_Position()->i_x >= 800)
+			if(this->get_Player()->get_Position()->i_x <= 400 && this->get_Player()->get_Position()->i_y <= 1000)
 			{
 			CURRENTLEVEL = LEVEL2;
-		
 			LevelToSet = true;
+			AgentManager::get_AgentManager().reinitialize();
+			MoneyManager::get_MoneyManager().reinitialize();
+			ItemManager::get_ItemManager().reinitializeLevelSwap();
+			WeaponManager::get_WeaponManager().reinitializeLevelSwap();
 			}
 		}
+		if(CURRENTLEVEL == LEVEL2)
+		{
+			if(this->get_Player()->get_Position()->i_x >= 1800 && this->get_Player()->get_Position()->i_y <= 800)
+			{
+				CURRENTLEVEL = LEVEL3;
+				LevelToSet = true;
+			AgentManager::get_AgentManager().reinitialize();
+			MoneyManager::get_MoneyManager().reinitialize();
+			ItemManager::get_ItemManager().reinitializeLevelSwap();
+			WeaponManager::get_WeaponManager().reinitializeLevelSwap();
+			}
+		}
+		
 	
 
 
