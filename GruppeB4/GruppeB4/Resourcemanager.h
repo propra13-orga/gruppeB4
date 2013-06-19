@@ -51,6 +51,8 @@ private:
 	SDL_Surface * p_shop;
 	SDL_Surface *p_npc1;
 	SDL_Surface * p_manaspritze;
+	SDL_Surface * p_map2;
+	SDL_Surface * p_map3;
 public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;
