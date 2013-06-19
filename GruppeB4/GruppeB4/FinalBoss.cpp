@@ -41,20 +41,54 @@ void FinalBoss::update(Player * p_Player)
 		}
 		transformed = true;
 		p_Player->set_disable(false);
+		AttackTimer->start();
+		AnimationTimer->start();
 	}
-	else
+	
+	if(transformed == true)
 	{
-	if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x >= 284)
-	{
-		this->p_s_Velocity->i_x = 2;
-		this->p_s_Velocity->i_y = 0;
-	}
-	else if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x <= -284)
-	{
-		this->p_s_Velocity->i_x = -2;
-		this->p_s_Velocity->i_y = 0;
-	}
+		if(raged == false && AttackTimer->Getticks() >= 3000)
+		{
+			this->p_s_Velocity->i_y = 5;
+			this->p_s_Velocity->i_x = 0;
+			raged = true;
+			AttackTimer->start();
+		}
+		if(raged == true)
+		{
+			this->p_s_Velocity->i_y = 5;
 
-	this->p_s_Position->i_x += p_s_Velocity->i_x;this->p_s_Position->i_y += this->p_s_Velocity->i_y;
-	}
+			if(p_s_Position->i_y - p_s_StartPosition->i_y >= 100)
+			{
+				this->p_s_Velocity->i_y = 0;
+			}
+			if(AttackTimer->Getticks() >= 2000)
+			{
+				this->p_s_Velocity->i_y = -5;
+			
+			if(this->p_s_Position <= p_s_StartPosition)
+				{
+					this->p_s_Velocity->i_y = 0;
+					raged = false;
+					AttackTimer->start();
+				}
+			}
+			}
+		}
+
+		if(raged == false)
+		{
+
+			if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x >= 284)
+			{
+				this->p_s_Velocity->i_x = 2;
+				this->p_s_Velocity->i_y = 0;
+			}
+			else if(this->p_s_StartPosition->i_x - this->p_s_Position->i_x <= -284)
+			{
+			this->p_s_Velocity->i_x = -2;
+			this->p_s_Velocity->i_y = 0;
+			}
+		}
+		this->p_s_Position->i_x += p_s_Velocity->i_x;this->p_s_Position->i_y += this->p_s_Velocity->i_y;
 }
