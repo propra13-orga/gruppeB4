@@ -1,4 +1,5 @@
 #include "Overlay.h"
+#include "ArmorManager.h"
 
 
 void Overlay::render(Player * p_TempPlayer)
@@ -26,6 +27,10 @@ void Overlay::render(Player * p_TempPlayer)
 		apply_Image(125,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("Heiltrank"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		apply_Image(225,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("Mana_Spritze"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
+		if(ArmorManager::get_ArmorManager().get_Armor())
+		{
+			apply_Image(800,550,S_Resourcemanager::get_Resourcemanager()->get_Surface("weak"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
 
 		std::stringstream money;
 

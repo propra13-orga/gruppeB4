@@ -102,8 +102,6 @@ void Player::update()
 
 		}
 	}
-
-	
 }
 
 void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL,World * p_TempWorld)
@@ -454,13 +452,36 @@ void Player::heal()
 {
 	if(ItemManager::get_ItemManager().find(HEAL) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
 	{
-		ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
+			
 		this->set_Health(this->get_Health() + 100);
-	}
-	else
-	{
+
+		if(ArmorManager::get_ArmorManager().get_Armor())
+		{
+			if(this->get_Health() > 500)
+			{
+				this->set_Health(this->get_Health() - 100);
+				return;
+			}
+			else
+			{
+				ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
+				return;
+			}
+		}
+
+		else if(this->get_Health() > this->health_cap())
+		{
+			this->set_Health(this->get_Health() - 100);
+			return;
+		}
+		else
+		{
+			
+		ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
 		return;
+		}
 	}
+
 }
 
 void Player::loadMana()

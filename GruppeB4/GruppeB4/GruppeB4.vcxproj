@@ -82,6 +82,7 @@
   <ItemGroup>
     <ClInclude Include="AgentManager.h" />
     <ClInclude Include="Armor.h" />
+    <ClInclude Include="ArmorManager.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="Item.h" />
@@ -110,6 +111,7 @@
   <ItemGroup>
     <ClCompile Include="Agentmanager.cpp" />
     <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="ArmorManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="ItemManager.cpp" />
     <ClCompile Include="LevelSegment.cpp" />

@@ -24,8 +24,7 @@ void World::update()
 	ItemManager::get_ItemManager().update(this->p_Player1->get_Position());
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
 	MoneyManager::get_MoneyManager().update(this->p_Player1->get_Position());
-	
-
+	ArmorManager::get_ArmorManager().update(this->p_Player1->get_Position());
 
 	
 	if(collision_Detection() == true)
@@ -57,6 +56,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	AgentManager::get_AgentManager().render( Camera,CURRENTLEVEL);
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
+	ArmorManager::get_ArmorManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);
 	NPC1::get_NPC1().render(Camera);
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
@@ -107,6 +107,7 @@ void World::initialize_Level()
 	AgentManager::get_AgentManager().set_Bot(973,112,PFLEGER);
 	ItemManager::get_ItemManager().set_Item(1027,702,HEAL);
 	ItemManager::get_ItemManager().set_Item(1300,440,MANA);
+	ArmorManager::get_ArmorManager().set_Armor(WEAK,500,1000);
 	MoneyManager::get_MoneyManager().set_Coin(800,900);
 	MoneyManager::get_MoneyManager().set_Coin(1760,765);
 	MoneyManager::get_MoneyManager().set_Coin(1760,1025);

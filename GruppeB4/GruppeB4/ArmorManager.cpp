@@ -5,16 +5,11 @@ void ArmorManager::render(SDL_Rect camera)
 {
 	for(list<Armor>::iterator it = this->uncatchedarmors.begin();it != this->uncatchedarmors.end(); ++it)
 	{
-		if( it->get_Armor() == WEAK)
-		{
-			
-			apply_Image(it->get_Position()->i_x - camera.x,it->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Rüstung"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
-		}
-			else
-		{
-				return;
-		}
+	
+		apply_Image(it->get_Position()->i_x - camera.x,it->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("weak"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		
 	}
 
 }
@@ -38,14 +33,21 @@ void ArmorManager::update(s_Vector * p_TempPosition)
 	} 
 }
 
-void ArmorManager::show()
-{
-	for(list<Armor>::iterator it = this->catchedarmors.begin();it != this->catchedarmors.end();++it)
+
+
+
+
+
+ARMOR_TYPE ArmorManager::get_Armor(){
+
+
+	for(list<Armor>::iterator myIter = catchedarmors.begin();myIter != catchedarmors.end();myIter++)
 	{
-		if(it->get_Armor() == WEAK)
+		if(myIter->get_Armor() == WEAK)
 		{
-			cout << "Rüstung AUFGEHOBEN!" << endl;
-			cout << "AWAHWHAHHHHHHAHAHAHAH" << endl;
+			return WEAK;
 		}
 	}
+
+
 }
