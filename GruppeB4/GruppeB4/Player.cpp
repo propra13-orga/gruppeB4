@@ -192,7 +192,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	//LVL1
-	if(CURRENTLEVEL == LEVEL1)
+	/*if(CURRENTLEVEL == LEVEL1)
 	{
 	//für den ersten Quadranten:
 	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
@@ -348,7 +348,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	}
+	}*/
 	// LVL3
 	if(CURRENTLEVEL == LEVEL3)
 	{
@@ -399,15 +399,19 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 			{
 				return true;
 			}
-			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[0].x + p_TempSegment->SegmentRect33[0].w - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[5].x)
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[0].x + p_TempSegment->SegmentRect33[0].w - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[5].x && this->get_Position()->i_y < p_TempSegment->SegmentRect33[3].y)
 			{
 				return true;
 			}
-			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x)
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x)
 			{
 				return true;
 			}
-			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[2].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[2].x + p_TempSegment->SegmentRect33[2].w - PLAYER_WIDTH)
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[2].y - PLAYER_HEIGHT && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[2].x + p_TempSegment->SegmentRect33[2].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x )
 			{
 				return true;
 			}
@@ -427,7 +431,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 			{
 				return true;
 			}
-			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[4].y + p_TempSegment->SegmentRect33[4].h - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x)
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[4].y + p_TempSegment->SegmentRect33[4].h - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[5].x)
 			{
 				return true;
 			}
