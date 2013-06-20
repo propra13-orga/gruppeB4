@@ -1,12 +1,17 @@
 #include "AgentManager.h"
 
-void AgentManager::update(Player * p_TempPlayer)
+void AgentManager::update(Player * p_TempPlayer,LEVEL_LOADED TEMPLEVEL,SDL_Rect camera)
 {
 	for(unsigned int i = 0;i < crazy_enemies.size();i++){check_collision(p_TempPlayer,i);crazy_enemies[i]->update();}for(unsigned int i = 0;i < allPfleger.size();i++)allPfleger[i]->update(p_TempPlayer);
+	if((TEMPLEVEL == LEVEL3 && p_TempPlayer->get_Position()->i_y - p_BossManager->get_Position()->i_y <= 250 && p_BossManager->get_Position()->i_x - p_TempPlayer->get_Position()->i_x <= 284 && p_BossManager->get_Position()->i_x - p_TempPlayer->get_Position()->i_x >= -400 || p_BossManager->get_isactivated() == true) && p_BossManager->get_isDead() == false)
+	{
+		this->p_BossManager->update(p_TempPlayer,camera);
+		p_BossManager->set_isactivated(true);
+	}
 
 }
 
-void AgentManager::render(SDL_Rect camera)
+void AgentManager::render(SDL_Rect camera,LEVEL_LOADED TEMPLEVEL)
 {
 	for(unsigned int i = 0;i < crazy_enemies.size();i++)
 	{crazy_enemies[i]->render( camera);}
@@ -16,6 +21,10 @@ void AgentManager::render(SDL_Rect camera)
 	for(vector<Crazy_enemy*>::iterator myIter = crazy_enemiesToDelete.begin();myIter != crazy_enemiesToDelete.end();myIter++)
 	{
 		apply_Image((*myIter)->get_Position()->i_x - camera.x,(*myIter)->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Verrückter_Up"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager()->PlayerUpClips[0]);
+	}
+	if(TEMPLEVEL == LEVEL3 && p_BossManager->get_isDead() == false)
+	{
+	this->p_BossManager->render(camera);
 	}
 }
 

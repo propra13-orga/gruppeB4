@@ -107,7 +107,7 @@ void S_Resourcemanager::initialize()
 
 	this->p_menue = IMG_Load("mainmenu_raw.png");
 	this->p_crazy_enemy = IMG_Load("patient_walk.png");
-	this->p_princess = IMG_Load("Prinzessin.png");
+	this->p_princess = IMG_Load("metamorphose.png");
 
 	this->PlayerDownClips[0].x = 0;
 	this->PlayerDownClips[0].y = 0;
@@ -230,6 +230,42 @@ void S_Resourcemanager::initialize()
 	this->PlayerLeftClips[5].y = 0;
 	this->PlayerLeftClips[5].w = PLAYER_WIDTH;
 	this->PlayerLeftClips[5].h = PLAYER_HEIGHT;
+
+	this->EndbossClips[0].x = 0;
+	this->EndbossClips[0].y = 0;
+	this->EndbossClips[0].w = 120;
+	this->EndbossClips[0].h = 120;
+
+	this->EndbossClips[1].x = 120;
+	this->EndbossClips[1].y = 0;
+	this->EndbossClips[1].w = 120;
+	this->EndbossClips[1].h = 120;
+
+	this->EndbossClips[2].x = 240;
+	this->EndbossClips[2].y = 0;
+	this->EndbossClips[2].w = 120;
+	this->EndbossClips[2].h = 120;
+
+	this->EndbossClips[3].x = 360;
+	this->EndbossClips[3].y = 0;
+	this->EndbossClips[3].w = 120;
+	this->EndbossClips[3].h = 120;
+
+	this->EndbossClips[4].x = 480;
+	this->EndbossClips[4].y = 0;
+	this->EndbossClips[4].w = 120;
+	this->EndbossClips[4].h = 120;
+
+	this->EndbossClips[5].x = 600;
+	this->EndbossClips[5].y = 0;
+	this->EndbossClips[5].w = 120;
+	this->EndbossClips[5].h = 120;
+
+	this->EndbossClips[6].x = 720;
+	this->EndbossClips[6].y = 0;
+	this->EndbossClips[6].w = 120;
+	this->EndbossClips[6].h = 120;
+
 }
 void apply_Image(int i_x, int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip)
 {

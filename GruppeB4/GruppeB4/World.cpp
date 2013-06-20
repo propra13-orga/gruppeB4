@@ -19,17 +19,13 @@ void World::update()
 		this->initialize_Level();
 		LevelToSet = false;
 	}
-	AgentManager::get_AgentManager().update(this->p_Player1);
+	AgentManager::get_AgentManager().update(this->p_Player1,CURRENTLEVEL,Camera);
 	p_Player1->update();
 	ItemManager::get_ItemManager().update(this->p_Player1->get_Position());
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
 	MoneyManager::get_MoneyManager().update(this->p_Player1->get_Position());
 	
-	if(CURRENTLEVEL == LEVEL3 && p_Player1->get_Position()->i_y - p_BossManager->get_Position()->i_y <= 300 && p_BossManager->get_Position()->i_x - p_Player1->get_Position()->i_x <= 284 && p_BossManager->get_Position()->i_x - p_Player1->get_Position()->i_x >= -400 || p_BossManager->get_isactivated() == true)
-	{
-		this->p_BossManager->update(this->p_Player1);
-		p_BossManager->set_isactivated(true);
-	}
+
 
 	
 	if(collision_Detection() == true)
@@ -57,9 +53,8 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	if(this->CURRENTLEVEL == LEVEL3)
 	{
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
-		this->p_BossManager->render(Camera);
 	}
-	AgentManager::get_AgentManager().render( Camera);
+	AgentManager::get_AgentManager().render( Camera,CURRENTLEVEL);
 	MoneyManager::get_MoneyManager().render(Camera);
 	ItemManager::get_ItemManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);

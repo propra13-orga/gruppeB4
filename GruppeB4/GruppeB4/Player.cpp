@@ -39,6 +39,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_SPACE):this->attack();break;
 		case(SDLK_5):this->loadMana(); cout << i_mana << endl; break;
 		case(SDLK_r):this->setRageMode();break;
+		case(SDLK_f):AgentManager::get_AgentManager().get_Boss()->weaken_Endboss(this);
 		}
 		}
 	}

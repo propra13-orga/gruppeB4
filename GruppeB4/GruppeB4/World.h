@@ -19,13 +19,12 @@ class World
 private:
 	Player * p_Player1;
 	LevelSegmente * p_Segmente;
-	FinalBoss * p_BossManager;
 	SDL_Rect Camera;
 	LEVEL_LOADED CURRENTLEVEL;//Hier entsteht eine Enumeration die gesetzt wird um zu überprüfen, welches Level geladen ist
 	bool LevelToSet;
 public:
-	World(int i_x,int i_y){CURRENTLEVEL = LEVEL3;p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();p_BossManager = new FinalBoss();Camera.w = 900; Camera.h = 600;LevelToSet = true;}
-	~World(){delete p_Player1;delete p_BossManager;}
+	World(int i_x,int i_y){CURRENTLEVEL = LEVEL1;p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();Camera.w = 900; Camera.h = 600;LevelToSet = true;}
+	~World(){delete p_Player1;}
 	void set_Camera();
 	SDL_Rect get_Camera(){return Camera;}
 	void render_Win(bool * tempmenue);

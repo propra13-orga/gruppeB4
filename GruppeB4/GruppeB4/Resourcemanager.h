@@ -70,6 +70,7 @@ public:
 	SDL_Rect PlayerUpClips[6];
 	SDL_Rect PlayerRightClips[6];
 	SDL_Rect PlayerLeftClips[6];
+	SDL_Rect EndbossClips[7];
 	static S_Resourcemanager * get_Resourcemanager();
 	
 	void initialize();
