@@ -10,6 +10,7 @@ class NPC1 {
 
 private:
 	s_Vector* p_s_Position;
+	s_Vector* p_s_SecondPosition;
 
 
 public:
