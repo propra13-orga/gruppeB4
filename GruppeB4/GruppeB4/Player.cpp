@@ -192,7 +192,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	//LVL1
-	/*if(CURRENTLEVEL == LEVEL1)
+	if(CURRENTLEVEL == LEVEL1)
 	{
 	//für den ersten Quadranten:
 	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
@@ -348,9 +348,9 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	}*/
+	}
 	// LVL3
-	if(CURRENTLEVEL == LEVEL3)
+		/* if(CURRENTLEVEL == LEVEL3)
 	{
 		//für den ersten Quadrant:
 		if(this->get_Position()->i_x < p_TempSegment->SegmentRect31[1].x + p_TempSegment->SegmentRect31[1].w && this->get_Position()->i_y <  p_TempSegment->SegmentRect31[0].y + p_TempSegment->SegmentRect31[0].h)
@@ -448,7 +448,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	}
+	}*/
 		return false;
 }
 	
