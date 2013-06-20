@@ -55,7 +55,7 @@ void LevelSegmente::init_Segmente()
 	SegmentRect21[0].x =   7;
 	SegmentRect21[0].y = 750;
 	SegmentRect21[0].w =1955;
-	SegmentRect21[0].h = 740;
+	SegmentRect21[0].h = 475;
 	
 	SegmentRect21[1].x = 325;
 	SegmentRect21[1].y = 705;

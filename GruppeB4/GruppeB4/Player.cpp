@@ -193,6 +193,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 // Collision
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
+	//LVL1
 	if(CURRENTLEVEL == LEVEL1)
 	{
 	//für den ersten Quadranten:
@@ -242,47 +243,47 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 		}
 	//für den dritten Quadrant:
 	if(this->get_Position()->i_x >= 1203 - PLAYER_WIDTH && this->get_Position()->i_y <= 600 - PLAYER_WIDTH)
-	{
-		if(this->get_Position()->i_y >= p_TempSegment->SegmentRect13[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[0].x)
 		{
-			return true;
-		}
-			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[1].x + p_TempSegment->SegmentRect13[1].w - PLAYER_WIDTH)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x <= 1330 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
-		{
-			return true;
-		}
-		else if(this->get_Position()->i_x >= 1546 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
-		{
-			return true;
-		}
+			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect13[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect13[0].x)
+			{
+				return true;
+			}
+				else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect13[1].x + p_TempSegment->SegmentRect13[1].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= 1330 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= 1546 && this->get_Position()->i_y >= 591 - PLAYER_HEIGHT)
+			{
+				return true;
+			}
 		
-		else if(this->get_Position()->i_x <= 1677 && this->get_Position()->i_y >= 227 - PLAYER_HEIGHT && this->get_Position()->i_y <= 370)
-		{
-			return true;
+			else if(this->get_Position()->i_x <= 1677 && this->get_Position()->i_y >= 227 - PLAYER_HEIGHT && this->get_Position()->i_y <= 370)
+			{
+				return true;
+			}
 		}
-	}
-	if(this->get_Position()->i_x <= 1206 && this->get_Position()->i_y <= 500 - PLAYER_WIDTH)
-	{
-		if(this->get_Position()->i_x <= 1203 && this->get_Position()->i_y >= 489 - PLAYER_HEIGHT)
+		if(this->get_Position()->i_x <= 1206 && this->get_Position()->i_y <= 500 - PLAYER_WIDTH)
 		{
-			return true;
+			if(this->get_Position()->i_x <= 1203 && this->get_Position()->i_y >= 489 - PLAYER_HEIGHT && this->get_Position()->i_x >= 950)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
+			{
+				return true;
+			}
 		}
-		else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect13[2].y)
-		{
-			return true;
-		}
-	}
 
 	//für den vierten Quadrant:
-	if(this->get_Position()->i_x < 969 && this->get_Position()->i_y < 600)
+		if(this->get_Position()->i_x < 969 && this->get_Position()->i_y < 600)
 		{
 			if (this->get_Position()->i_x >= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect13[4].y)
 			{
@@ -294,16 +295,153 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 			}
 			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect14[0].y)
 			{
-		
 				return true;
-			
 			}
 			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect14[0].y + p_TempSegment->SegmentRect14[0].h - PLAYER_HEIGHT)
 			{
-		
 				return true;
 			}
 			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect13[4].x - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect14[0].x)
+			{
+				return true;
+			}
+		}
+	}
+	// LVL2
+	if(CURRENTLEVEL == LEVEL2)
+	{
+		//für den ersten Quadrant:
+		if(this->get_Position()->i_x > 1 && this->get_Position()->i_y >  p_TempSegment->SegmentRect21[1].y)
+		{
+			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect21[0].y + p_TempSegment->SegmentRect21[0].h - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect21[0].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect21[1].x && this->get_Position()->i_y <= p_TempSegment->SegmentRect21[0].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect21[1].x + p_TempSegment->SegmentRect21[1].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect21[0].y)
+			{
+				return true;
+			}
+		}
+		//für den zweiten Quadrant:
+		if(this->get_Position()->i_x > 1 && this->get_Position()->i_y <  p_TempSegment->SegmentRect21[1].y)
+		{
+			if(this->get_Position()->i_y <= p_TempSegment->SegmentRect22[0].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect21[1].x + p_TempSegment->SegmentRect21[1].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect21[1].y - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect21[1].x && this->get_Position()->i_y >= p_TempSegment->SegmentRect21[1].y - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect22[0].x)
+			{
+				return true;
+			}
+		}
+	}
+	// LVL3
+	if(CURRENTLEVEL == LEVEL3)
+	{
+		//für den ersten Quadrant:
+		if(this->get_Position()->i_x < p_TempSegment->SegmentRect31[1].x + p_TempSegment->SegmentRect31[1].w && this->get_Position()->i_y <  p_TempSegment->SegmentRect31[0].y + p_TempSegment->SegmentRect31[0].h)
+		{
+			if(this->get_Position()->i_y + PLAYER_HEIGHT >= p_TempSegment->SegmentRect31[0].y + p_TempSegment->SegmentRect31[0].h)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect31[0].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect31[0].x + p_TempSegment->SegmentRect31[0].w - PLAYER_WIDTH && this->get_Position()->i_y >= p_TempSegment->SegmentRect31[1].y + p_TempSegment->SegmentRect31[1].h - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect31[0].x + p_TempSegment->SegmentRect31[0].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect31[1].y)
+			{
+				return true;
+			}
+		}
+		//für den zweiten Quadrant:
+		if(this->get_Position()->i_x < 1175 && this->get_Position()->i_y < 550 && this->get_Position()->i_x > 785 && this->get_Position()->i_y > 20)
+		{
+			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect32[1].y - PLAYER_HEIGHT && this->get_Position()->i_x >= 1025 - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect32[0].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect32[0].x + p_TempSegment->SegmentRect32[0].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect32[1].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect32[1].x - PLAYER_WIDTH)
+			{
+				return true;
+			}
+		}
+		//für den dritten Quadrant:
+		if(this->get_Position()->i_y > p_TempSegment->SegmentRect32[1].y)
+		{
+			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[0].y + p_TempSegment->SegmentRect33[0].h - PLAYER_HEIGHT && this->get_Position()->i_y < p_TempSegment->SegmentRect33[3].y && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[2].x + p_TempSegment->SegmentRect33[2].w - PLAYER_WIDTH && this->get_Position()->i_x < p_TempSegment->SegmentRect33[4].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[0].x + p_TempSegment->SegmentRect33[0].w - PLAYER_WIDTH && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[5].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[2].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[2].x + p_TempSegment->SegmentRect33[2].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect33[1].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[3].y + p_TempSegment->SegmentRect33[3].h - PLAYER_HEIGHT)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[3].x + p_TempSegment->SegmentRect33[3].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[4].y + p_TempSegment->SegmentRect33[4].h - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[4].y + p_TempSegment->SegmentRect33[4].h - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[5].y + p_TempSegment->SegmentRect33[5].h - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[5].x)
+			{
+				return true;
+			}
+			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[5].y + p_TempSegment->SegmentRect33[5].h - PLAYER_HEIGHT && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH)
 			{
 				return true;
 			}
