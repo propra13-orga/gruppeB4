@@ -5,6 +5,7 @@
 #include "list"
 #include "Vektor.h"
 #include "Resourcemanager.h"
+#include "EPManager.h"
 
 using namespace std;
 

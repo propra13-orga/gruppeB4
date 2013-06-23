@@ -64,7 +64,6 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	{
 		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
-	apply_Image(71 - this->get_Camera().x,67 - this->get_Camera().y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Transthron"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	Overlay::get_Instance().render(this->p_Player1);
 	
 }

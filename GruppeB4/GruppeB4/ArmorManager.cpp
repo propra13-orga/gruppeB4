@@ -25,6 +25,7 @@ void ArmorManager::update(s_Vector * p_TempPosition)
 		if(it->get_Position()->i_x - p_TempPosition->i_x <= 30 && it->get_Position()->i_x - p_TempPosition->i_x >= -30  && it->get_Position()->i_y - p_TempPosition->i_y <= 30 && it->get_Position()->i_y - p_TempPosition->i_y >= -30)
 		{
 			this->catchedarmors.push_back(Armor(0,0,it->get_Armor()));
+			EPManager::get_EPManager().Set_Ep(10);
 			cout << "Ich bin hier" << endl;
 			uncatchedarmors.erase(it);
 			this->show();

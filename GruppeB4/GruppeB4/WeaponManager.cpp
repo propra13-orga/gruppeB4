@@ -30,6 +30,7 @@ void WeaponManager::update(s_Vector * p_TempPosition)
 		if(it->get_Position()->i_x - p_TempPosition->i_x <= 30 && it->get_Position()->i_x - p_TempPosition->i_x >= -30  && it->get_Position()->i_y - p_TempPosition->i_y <= 30 && it->get_Position()->i_y - p_TempPosition->i_y >= -30)
 		{
 			this->catchedweapons.push_back(Weapon(0,0,it->get_Weapon()));
+			EPManager::get_EPManager().Set_Ep(10);
 			cout << "Ich bin hier" << endl;
 			uncatchedweapons.erase(it);
 			this->show();

@@ -16,6 +16,7 @@ void MoneyManager::update(s_Vector * p_TempPosition)
 		{
 			money++;
 			uncatchedmoney.erase(myIter);
+			EPManager::get_EPManager().Set_Ep(5);
 			break;
 		}
 	}

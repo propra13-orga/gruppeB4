@@ -84,6 +84,7 @@
     <ClInclude Include="Armor.h" />
     <ClInclude Include="ArmorManager.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EPManager.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="ItemManager.h" />
@@ -100,6 +101,7 @@
     <ClInclude Include="RendableObject.h" />
     <ClInclude Include="Resourcemanager.h" />
     <ClInclude Include="Shop.h" />
+    <ClInclude Include="Skilltree.h" />
     <ClInclude Include="Spritze.h" />
     <ClInclude Include="Timer.h" />
     <ClInclude Include="Vektor.h" />
@@ -126,6 +128,7 @@
     <ClCompile Include="FinalBoss.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
     <ClCompile Include="Shop.cpp" />
+    <ClCompile Include="Skilltree.cpp" />
     <ClCompile Include="Spritze.cpp" />
     <ClCompile Include="Timer.cpp" />
     <ClCompile Include="Verrückter.cpp" />

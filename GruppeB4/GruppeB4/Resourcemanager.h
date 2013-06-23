@@ -60,6 +60,7 @@ private:
 	SDL_Surface * p_gekauft;
 	SDL_Surface * p_nichtgekauft;
 	SDL_Surface * p_weak;
+	SDL_Surface * p_tut;
 	
 public:
 	TTF_Font * font;

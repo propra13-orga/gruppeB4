@@ -62,6 +62,7 @@ void S_Resourcemanager::initialize()
 	this->p_gekauft = IMG_Load("gekauft.png");
 	this->p_nichtgekauft = IMG_Load("nichtgekauft.png");
 	this->p_weak = IMG_Load("weak.png");
+	this->p_tut = IMG_Load("tutorial_sequenz.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -435,6 +436,11 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "weak"){
 	
 		return p_weak;
+	}
+
+	else if(key == "tut"){
+	
+		return p_tut;
 	}
 	else
 	{
