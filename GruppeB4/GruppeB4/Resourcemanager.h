@@ -61,6 +61,20 @@ private:
 	SDL_Surface * p_nichtgekauft;
 	SDL_Surface * p_weak;
 	SDL_Surface * p_tut;
+	SDL_Surface * p_ep_empty;
+	SDL_Surface * p_ep_10;
+	SDL_Surface * p_ep_20;
+	SDL_Surface * p_ep_30;
+	SDL_Surface * p_ep_40;
+	SDL_Surface * p_ep_50;
+	SDL_Surface * p_ep_60;
+	SDL_Surface * p_ep_70;
+	SDL_Surface * p_ep_80;
+	SDL_Surface * p_ep_90;
+	SDL_Surface * p_ep_100;
+	SDL_Surface * p_ep_110;
+	SDL_Surface * p_ep_120;
+	SDL_Surface * p_ep_125;
 	
 public:
 	TTF_Font * font;

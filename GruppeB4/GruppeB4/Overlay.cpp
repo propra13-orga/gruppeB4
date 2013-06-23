@@ -70,4 +70,79 @@ void Overlay::render(Player * p_TempPlayer)
 		
 		apply_Image(850,100,S_Resourcemanager::get_Resourcemanager()->get_Surface("mana_leer"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
+
+		// EP_OVERLAY________________
+
+		if(EPManager::get_EPManager().get_Ep() <10)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_empty"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+		
+		else if(EPManager::get_EPManager().get_Ep() <20)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_10"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <30)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_20"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <40)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_30"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <50)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_40"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <60)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_50"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <70)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_60"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <80)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_70"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <90)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_80"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <100)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_90"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <110)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_100"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}	
+
+		else if(EPManager::get_EPManager().get_Ep() <120)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_110"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+
+		}
+
+		else if(EPManager::get_EPManager().get_Ep() <125)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_120"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+
+		else if(EPManager::get_EPManager().get_Ep() >=125)
+		{
+		apply_Image(50,590,S_Resourcemanager::get_Resourcemanager()->get_Surface("ep_125"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		
+
 }
