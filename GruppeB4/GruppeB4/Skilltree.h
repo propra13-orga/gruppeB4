@@ -1,13 +1,9 @@
 #ifndef SKILLTREE_H_
-#define SKILETREE_H_
+#define SKILLTREE_H_
 
+#include "Weapon.h"
 
-
-#include "EPManager.h"
-
-
-
-
+using namespace std;
 
 
 
@@ -16,12 +12,18 @@ class Skilltree
 
 
 private:
+	Skilltree(){}
+	~Skilltree(){}
 
 	int i_skillpoint;
 
 public:
-	void set_skillpoint();
+	
+	static Skilltree & get_Skilltree(){static Skilltree Instance;return Instance;}
+	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl;}
 	int get_skillpoint();
+
+
 	void render();
 
 

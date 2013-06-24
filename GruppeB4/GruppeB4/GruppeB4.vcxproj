@@ -115,6 +115,7 @@
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="ArmorManager.cpp" />
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EPManager.cpp" />
     <ClCompile Include="ItemManager.cpp" />
     <ClCompile Include="LevelSegment.cpp" />
     <ClCompile Include="main.cpp" />
