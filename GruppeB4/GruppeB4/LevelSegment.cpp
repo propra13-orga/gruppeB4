@@ -99,7 +99,7 @@ void LevelSegmente::init_Segmente()
 
 	SegmentRect33[2].x = 190;
 	SegmentRect33[2].y = 855;
-	SegmentRect33[2].w = 250;
+	SegmentRect33[2].w = 150;
 	SegmentRect33[2].h = 175;
 
 	SegmentRect33[3].x = 190;
