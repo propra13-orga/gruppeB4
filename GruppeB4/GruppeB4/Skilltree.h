@@ -24,7 +24,7 @@ public:
 	int get_skillpoint();
 
 
-	void render();
+	void render(){cout <<"da"<< endl;}
 
 
 

@@ -9,7 +9,11 @@ void World::handle_Event(SDL_Event & even)
 
 
 
+void World::openSkilltree(){
 
+	Skilltree::get_Skilltree().render();
+
+}
 void World::update()
 {
 	this->try_swapLevel();
@@ -31,9 +35,16 @@ void World::update()
 	{
 		p_Player1->set_Position(p_Player1->get_Position()->i_x - p_Player1->get_Velocity()->i_x , p_Player1->get_Position()->i_y - p_Player1->get_Velocity()->i_y);
 	}
+
+	if(even.type == SDL_KEYDOWN)
+			{
+				if(even.key.keysym.sym == SDLK_n)			//wird e gedrückt geht der shop auf(später nur wenn npc in range ist)
+				{
+					World::openSkilltree();
+				}
 }
 
-
+}
 
 
 
@@ -65,6 +76,8 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
 	Overlay::get_Instance().render(this->p_Player1);
+
+	
 	
 }
 
@@ -227,6 +240,4 @@ void World::try_swapLevel()
 		}
 		
 	
-
-
 }

@@ -13,10 +13,12 @@
 #include "MoneyManager.h"
 #include "Shop.h"
 #include "NPC1.h"
+#include "Skilltree.h"
 
 class World
 {
 private:
+	SDL_Event even;
 	Player * p_Player1;
 	LevelSegmente * p_Segmente;
 	SDL_Rect Camera;
@@ -34,7 +36,7 @@ public:
 	bool collision_Detection(){if(p_Player1->collision_Detection(this->p_Segmente,this->CURRENTLEVEL)){return true;}}
 	Player * get_Player(){return p_Player1;}
 	LevelSegmente * get_LevelSegmente(){return p_Segmente;}
-
+	void openSkilltree();
 	//initialisierungsfunktionen der einzelnen Level
 
 	void initialize_Level();
