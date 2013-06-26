@@ -22,9 +22,10 @@ public:
 	static Skilltree & get_Skilltree(){static Skilltree Instance;return Instance;}
 	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl; cout << i_skillpoint << endl;}
 	int get_skillpoint();
+	void handleInput(SDL_Event &even,bool *skilltreeisopen);
 
 
-	void render(){cout <<"da"<< endl;}
+	void render();
 
 
 

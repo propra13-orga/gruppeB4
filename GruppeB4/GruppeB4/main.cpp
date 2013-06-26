@@ -18,7 +18,7 @@ int main(int argc ,char ** argv)
 	bool b_menueistoggled = false;
 	bool b_firstmenue = true;
 	bool b_shopisopen =false;
-
+	bool b_skilltreeisopen = false;
 
 
 	//Instanz des Hauptmenues
@@ -61,6 +61,42 @@ int main(int argc ,char ** argv)
 			}
 
 
+
+
+			//Skilltree_________________________________________Anfang_____________________________________________________________
+
+			
+
+			if(even.type == SDL_KEYDOWN)
+			{
+				if(even.key.keysym.sym == SDLK_n)			//wird n gedrückt geht der skilltree auf
+				{
+					
+					b_skilltreeisopen = true;
+					
+				}
+			}
+
+
+
+			if(b_skilltreeisopen == true)
+			{
+			cout << "Shop true" << endl;
+			while(b_skilltreeisopen == true)
+			{
+				
+															//schleife zum rendern und zum kaufen so lange shop auf true ist
+				
+				Skilltree::get_Skilltree().render();
+				if(SDL_PollEvent(&even))
+				{
+				Skilltree::get_Skilltree().handleInput(even,&b_skilltreeisopen);
+				}
+				SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+			}
+		}
+
+			//Skilltree______________________________________________ENDE_________________________________________________________
 			//SHOP_______________________________________________Anfang________________________________________________________________
 
 			
