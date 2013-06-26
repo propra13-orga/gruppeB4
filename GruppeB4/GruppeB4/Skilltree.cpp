@@ -19,6 +19,7 @@ int Skilltree::get_skillpoint(){
 
 
 
+
 void Skilltree::render(){
 
 
@@ -55,12 +56,28 @@ void Skilltree::handleInput(SDL_Event &even,bool *b_skilltreeisopen)
 
 		if(even.button.x >= 121 && even.button.x <= 200 && even.button.y >=51 && even.button.y <=116)
 		{
-				cout << "t1/1 true" << endl;
+
+			if(i_skillpoint >= 1)
+			{
+				
+				if(b_t11 == false)
+				{
+					i_skillpoint = i_skillpoint -1;
+					cout << "t1/1 true" << endl;
+					cout << i_skillpoint << endl;
+					b_t11 = true;
+				}
+				
+				
+			}
+				
+				
 		}
 
 	}
 
-		
+		//weiter bedingungen für jedes feld folgen
+
 	}
 
 		}

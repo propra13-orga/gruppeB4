@@ -16,6 +16,8 @@ private:
 	~Skilltree(){}
 
 	int i_skillpoint;
+	bool b_t11;
+
 
 public:
 	
@@ -23,6 +25,7 @@ public:
 	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl; cout << i_skillpoint << endl;}
 	int get_skillpoint();
 	void handleInput(SDL_Event &even,bool *skilltreeisopen);
+	
 
 
 	void render();
