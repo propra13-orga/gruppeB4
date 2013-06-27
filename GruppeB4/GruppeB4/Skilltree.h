@@ -12,13 +12,14 @@ class Skilltree
 
 
 private:
-	Skilltree(){}
+	Skilltree(){t1_1Timer = new Timer();}
 	~Skilltree(){}
 
 	Timer * t1_1Timer;
 	int i_skillpoint;
 	bool b_t11;
-	bool overlay_t1_1;
+	bool b_t1_1_over;
+	SDL_Event even;
 
 
 public:
@@ -29,8 +30,8 @@ public:
 	void handleInput(SDL_Event &even,bool *skilltreeisopen);
 	
 
-
-	void render();
+	
+	void render(SDL_Event &even);
 
 
 

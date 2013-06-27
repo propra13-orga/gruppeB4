@@ -19,6 +19,7 @@ int main(int argc ,char ** argv)
 	bool b_firstmenue = true;
 	bool b_shopisopen =false;
 	bool b_skilltreeisopen = false;
+	
 
 
 	//Instanz des Hauptmenues
@@ -74,6 +75,7 @@ int main(int argc ,char ** argv)
 					
 					b_skilltreeisopen = true;
 					
+					
 				}
 			}
 
@@ -87,7 +89,7 @@ int main(int argc ,char ** argv)
 				
 															//schleife zum rendern und zum kaufen so lange shop auf true ist
 				
-				Skilltree::get_Skilltree().render();
+				Skilltree::get_Skilltree().render(even);
 				if(SDL_PollEvent(&even))
 				{
 				Skilltree::get_Skilltree().handleInput(even,&b_skilltreeisopen);
@@ -95,7 +97,19 @@ int main(int argc ,char ** argv)
 				SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			}
 		}
-
+			p_World->update();
+		p_World->set_Camera();
+		//apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&p_World->get_Camera());
+		p_World->render(&b_menueistoggled,deltaTime);
+		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
+		{
+			
+			SDL_Delay( ( 1000 / 100) - Fps.Getticks() ); 
+		}
+		Fps.start();
+		counter++;
+	
 			//Skilltree______________________________________________ENDE_________________________________________________________
 			//SHOP_______________________________________________Anfang________________________________________________________________
 

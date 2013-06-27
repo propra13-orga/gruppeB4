@@ -11,7 +11,7 @@ void World::handle_Event(SDL_Event & even)
 
 void World::openSkilltree(){
 
-	Skilltree::get_Skilltree().render();
+	Skilltree::get_Skilltree().render(even);
 
 }
 void World::update()

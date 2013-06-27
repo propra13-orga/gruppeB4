@@ -79,6 +79,7 @@ void S_Resourcemanager::initialize()
 	this->p_ep_125 = IMG_Load("ep_125.png");
 	this->p_skilltree = IMG_Load("skilltree.png");
 	this->p_t1_1 = IMG_Load("t1_1.png");
+	
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
