@@ -7,6 +7,7 @@
 #include "globals.h"
 #include "Player.h"
 #include "Armor.h"
+#include "EPManager.h"
 using namespace std;
 
 

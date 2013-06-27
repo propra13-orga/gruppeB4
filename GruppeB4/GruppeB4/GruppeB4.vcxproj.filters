@@ -111,6 +111,12 @@
     <ClInclude Include="ArmorManager.h">
       <Filter>Header Files\Manager</Filter>
     </ClInclude>
+    <ClInclude Include="EPManager.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Skilltree.h">
+      <Filter>Header Files\Manager</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Timer.cpp">
@@ -180,6 +186,12 @@
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="ArmorManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Skilltree.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EPManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -76,6 +76,7 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 					if((*i)->get_Health() <= 0)
 					{
 						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						EPManager::get_EPManager().Set_Ep(20);
 						crazy_enemies.erase(i);
 						break;
 					}
@@ -92,6 +93,7 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 					if((*i)->get_Health() <= 0)
 					{
 						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						EPManager::get_EPManager().Set_Ep(20);
 						crazy_enemies.erase(i);
 						break;
 					}
@@ -108,6 +110,7 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 					if((*i)->get_Health() <= 0)
 					{
 						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						EPManager::get_EPManager().Set_Ep(20);
 						crazy_enemies.erase(i);
 						break;
 					}
@@ -124,6 +127,7 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 					if((*i)->get_Health() <= 0)
 					{
 						crazy_enemiesToDelete.push_back(new Crazy_enemy((*i)->get_Position()->i_x,(*i)->get_Position()->i_y));
+						EPManager::get_EPManager().Set_Ep(20);
 						crazy_enemies.erase(i);
 						break;
 					}

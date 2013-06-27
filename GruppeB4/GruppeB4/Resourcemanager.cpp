@@ -62,6 +62,24 @@ void S_Resourcemanager::initialize()
 	this->p_gekauft = IMG_Load("gekauft.png");
 	this->p_nichtgekauft = IMG_Load("nichtgekauft.png");
 	this->p_weak = IMG_Load("weak.png");
+	this->p_tut = IMG_Load("tutorial_sequenz.png");
+	this->p_ep_empty = IMG_Load("ep_empty.png");
+	this->p_ep_10 = IMG_Load("ep_10.png");
+	this->p_ep_20 = IMG_Load("ep_20.png");
+	this->p_ep_30 = IMG_Load("ep_30.png");
+	this->p_ep_40 = IMG_Load("ep_40.png");
+	this->p_ep_50 = IMG_Load("ep_50.png");
+	this->p_ep_60 = IMG_Load("ep_60.png");
+	this->p_ep_70 = IMG_Load("ep_70.png");
+	this->p_ep_80 = IMG_Load("ep_80.png");
+	this->p_ep_90 = IMG_Load("ep_90.png");
+	this->p_ep_100 = IMG_Load("ep_100.png");
+	this->p_ep_110 = IMG_Load("ep_110.png");
+	this->p_ep_120 = IMG_Load("ep_120.png");
+	this->p_ep_125 = IMG_Load("ep_125.png");
+	this->p_skilltree = IMG_Load("skilltree.png");
+	this->p_t1_1 = IMG_Load("t1_1.png");
+	
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -435,6 +453,76 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "weak"){
 	
 		return p_weak;
+	}
+
+	else if(key == "tut"){
+	
+		return p_tut;
+	}
+
+	else if(key == "ep_empty"){
+	
+		return p_ep_empty;
+	}
+	else if(key == "ep_10"){
+	
+		return p_ep_10;
+	}
+	else if(key == "ep_20"){
+	
+		return p_ep_20;
+	}
+	else if(key == "ep_30"){
+	
+		return p_ep_30;
+	}
+	else if(key == "ep_40"){
+	
+		return p_ep_40;
+	}
+	else if(key == "ep_50"){
+	
+		return p_ep_50;
+	}
+	else if(key == "ep_60"){
+	
+		return p_ep_60;
+	}
+	else if(key == "ep_70"){
+	
+		return p_ep_70;
+	}
+	else if(key == "ep_80"){
+	
+		return p_ep_80;
+	}
+	else if(key == "ep_90"){
+	
+		return p_ep_90;
+	}
+	else if(key == "ep_100"){
+	
+		return p_ep_100;
+	}
+	else if(key == "ep_110"){
+	
+		return p_ep_110;
+	}
+	else if(key == "ep_120"){
+	
+		return p_ep_120;
+	}
+	else if(key == "ep_125"){
+	
+		return p_ep_125;
+	}
+	else if(key == "skilltree")
+	{
+		return p_skilltree;
+	}
+	else if(key == "t1_1")
+	{
+		return p_t1_1;
 	}
 	else
 	{

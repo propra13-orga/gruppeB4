@@ -17,6 +17,7 @@
 #include <list>
 #include "Item.h"
 #include "Player.h"
+#include "EPManager.h"
 
 using namespace std;
 
