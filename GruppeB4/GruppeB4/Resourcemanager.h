@@ -76,6 +76,7 @@ private:
 	SDL_Surface * p_ep_120;
 	SDL_Surface * p_ep_125;
 	SDL_Surface * p_skilltree;
+	SDL_Surface * p_t1_1;
 public:
 	TTF_Font * font;
 	SDL_Surface * MoneyDisplay;

@@ -81,7 +81,7 @@ int main(int argc ,char ** argv)
 
 			if(b_skilltreeisopen == true)
 			{
-			cout << "Shop true" << endl;
+			cout << "skilltree true" << endl;
 			while(b_skilltreeisopen == true)
 			{
 				

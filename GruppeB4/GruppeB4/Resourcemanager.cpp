@@ -78,6 +78,7 @@ void S_Resourcemanager::initialize()
 	this->p_ep_120 = IMG_Load("ep_120.png");
 	this->p_ep_125 = IMG_Load("ep_125.png");
 	this->p_skilltree = IMG_Load("skilltree.png");
+	this->p_t1_1 = IMG_Load("t1_1.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -517,6 +518,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "skilltree")
 	{
 		return p_skilltree;
+	}
+	else if(key == "t1_1")
+	{
+		return p_t1_1;
 	}
 	else
 	{

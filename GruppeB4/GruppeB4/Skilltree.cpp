@@ -26,6 +26,19 @@ void Skilltree::render(){
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilltree"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 
+if(overlay_t1_1 == true)
+{
+	if(t1_1Timer->Getticks() >= 500)
+		{
+			t1_1Timer->stop();
+			overlay_t1_1 = false;
+			cout << "test1" << endl;
+			apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("t1_1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+
+		}
+
+}
+
 }
 
 
@@ -44,8 +57,8 @@ void Skilltree::handleInput(SDL_Event &even,bool *b_skilltreeisopen)
 	
 	}
 
-
-	if(even.type == SDL_MOUSEBUTTONDOWN)
+}
+/*	if(even.type == SDL_MOUSEBUTTONDOWN)
 	{
 	
 
@@ -53,31 +66,20 @@ void Skilltree::handleInput(SDL_Event &even,bool *b_skilltreeisopen)
 	{
 	
 
-
-		if(even.button.x >= 121 && even.button.x <= 200 && even.button.y >=51 && even.button.y <=116)
-		{
-
-			if(i_skillpoint >= 1)
-			{
 				
-				if(b_t11 == false)
+				 if(even.button.x >= 295 && even.button.x <= 389 && even.button.y >=25 && even.button.y <=108)
 				{
-					i_skillpoint = i_skillpoint -1;
-					cout << "t1/1 true" << endl;
-					cout << i_skillpoint << endl;
-					b_t11 = true;
+					
+					
+					overlay_t1_1 = true;
+					
 				}
-				
-				
-			}
-				
-				
-		}
+
+
+
+			
+
 
 	}
-
-		//weiter bedingungen für jedes feld folgen
-
 	}
-
-		}
+}*/

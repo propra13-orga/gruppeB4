@@ -15,8 +15,10 @@ private:
 	Skilltree(){}
 	~Skilltree(){}
 
+	Timer * t1_1Timer;
 	int i_skillpoint;
 	bool b_t11;
+	bool overlay_t1_1;
 
 
 public:
