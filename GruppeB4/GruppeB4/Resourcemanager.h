@@ -77,6 +77,12 @@ private:
 	SDL_Surface * p_ep_125;
 	SDL_Surface * p_skilltree;
 	SDL_Surface * p_t1_1;
+	SDL_Surface * p_t1_2;
+	SDL_Surface * p_t1_3;
+	SDL_Surface * p_t1_4;
+	SDL_Surface * p_t1_5;
+	SDL_Surface * p_check;
+	
 	
 public:
 	TTF_Font * font;

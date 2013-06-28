@@ -78,7 +78,12 @@ void S_Resourcemanager::initialize()
 	this->p_ep_120 = IMG_Load("ep_120.png");
 	this->p_ep_125 = IMG_Load("ep_125.png");
 	this->p_skilltree = IMG_Load("skilltree.png");
+	this->p_t1_2 = IMG_Load("t1_mana_-10.png");
 	this->p_t1_1 = IMG_Load("t1_1.png");
+	this->p_t1_3 = IMG_Load("t1_shop_-2.png");
+	this->p_t1_4 = IMG_Load("t1_mana_speed.png");
+	this->p_t1_5 = IMG_Load("t1_dmgMelee.png");
+	this->p_check = IMG_Load("check.png");
 	
 	if(p_spritze == NULL)
 	{
@@ -523,6 +528,26 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "t1_1")
 	{
 		return p_t1_1;
+	}
+	else if(key == "t1_2")
+	{
+		return p_t1_2;
+	}
+	else if(key == "t1_3")
+	{
+		return p_t1_3;
+	}
+	else if(key == "t1_4")
+	{
+		return p_t1_4;
+	}
+	else if(key == "t1_5")
+	{
+		return p_t1_5;
+	}
+	else if(key == "check")
+	{
+		return p_check;
 	}
 	else
 	{

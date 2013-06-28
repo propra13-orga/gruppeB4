@@ -29,6 +29,7 @@ void World::update()
 	WeaponManager::get_WeaponManager().update(this->p_Player1->get_Position());
 	MoneyManager::get_MoneyManager().update(this->p_Player1->get_Position());
 	ArmorManager::get_ArmorManager().update(this->p_Player1->get_Position());
+	
 
 	
 	if(collision_Detection() == true)
