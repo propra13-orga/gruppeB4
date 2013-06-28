@@ -79,7 +79,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CBlock.cpp" />
+    <ClCompile Include="GameApplicationLayer.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Resourcemanager.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CBlock.h" />
+    <ClInclude Include="CollisiobalObject.h" />
+    <ClInclude Include="GameApplicationLayer.h" />
+    <ClInclude Include="Resourcemanager.h" />
+    <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
