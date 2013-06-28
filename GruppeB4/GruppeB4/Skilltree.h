@@ -28,6 +28,7 @@ private:
 	bool b_t1_4_over;
 	bool b_t15;
 	bool b_t1_5_over;
+	bool b_skilled;
 	SDL_Event even;
 	Player * p_Player;
 	Timer * overlayTimer;

@@ -85,6 +85,7 @@ void S_Resourcemanager::initialize()
 	this->p_t1_5 = IMG_Load("t1_dmgMelee.png");
 	this->p_check = IMG_Load("check.png");
 	this->p_nopoints = IMG_Load("nopoints.png");
+	this->p_skilled = IMG_Load("skilled.png");
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -552,6 +553,11 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "nopoints")
 	{
 		return p_nopoints;
+	}
+
+	else if(key == "skilled")
+	{
+		return p_skilled;
 	}
 	else
 	{

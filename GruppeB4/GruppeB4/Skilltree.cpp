@@ -59,6 +59,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t11 == true)
 			{
 				cout << "skilled" << endl;
+				b_skilled = true;
+				overlayTimer->start();
 			}
 			
 			 if(i_skillpoint < 1 && b_t11 == false)
@@ -97,6 +99,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t12 == true)
 			{
 				cout << "skilled" << endl;
+				b_skilled = true;
+				overlayTimer->start();
 			}
 			
 
@@ -135,6 +139,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t13 == true)
 			{
 				cout << "skilled" << endl;
+				b_skilled = true;
+				overlayTimer->start();
 			}
 
 			if(i_skillpoint < 1 && b_t13 == false)
@@ -169,6 +175,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t14 == true)
 			{
 				cout << "skilled" << endl;
+				b_skilled = true;
+				overlayTimer->start();
 			}
 
 			if(i_skillpoint < 1 && b_t14 == false)
@@ -204,6 +212,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t15 == true)
 			{
 				cout << "skilled" << endl;
+				b_skilled = true;
+				overlayTimer->start();
 			}
 
 			if(i_skillpoint < 1 && b_t15 == false)
@@ -304,6 +314,18 @@ if(b_t1_1_over == true){	// Skill-Erklärungen werden gerendert für 2 Sekunden vi
 	
 	}
 
+	if(b_skilled == true)
+	{
+		if(overlayTimer->Getticks() >= 2000)
+		{
+			overlayTimer->stop();
+			b_skilled = false;
+		}
+		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilled"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+			
+	
+	}
+
 	Skilltree::get_Skilltree().check_skilled();
 }
 void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
@@ -364,5 +386,6 @@ void Skilltree::check_skilled()
 		
 	}
 
+	
 	
 }
