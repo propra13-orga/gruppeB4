@@ -82,6 +82,7 @@ private:
 	SDL_Surface * p_t1_4;
 	SDL_Surface * p_t1_5;
 	SDL_Surface * p_check;
+	SDL_Surface * p_nopoints;
 	
 	
 public:

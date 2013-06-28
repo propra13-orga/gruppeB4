@@ -13,7 +13,7 @@ class Skilltree
 
 
 private:
-	Skilltree(){t1_1Timer = new Timer();t1_2Timer = new Timer();t1_3Timer = new Timer;t1_4Timer = new Timer();t1_5Timer = new Timer();overlayTimer = new Timer();}
+	Skilltree(){overlayTimer = new Timer();b_t11 = false; b_t12 = false; b_t13 = false; b_t14 = false; b_t15 = false;}
 	~Skilltree(){}
 
 	
@@ -30,12 +30,8 @@ private:
 	bool b_t1_5_over;
 	SDL_Event even;
 	Player * p_Player;
-	Timer * t1_1Timer;
-	Timer * t1_2Timer;
-	Timer * t1_3Timer;
-	Timer * t1_4Timer;
-	Timer * t1_5Timer;
 	Timer * overlayTimer;
+	bool b_nopoints;
 
 
 public:

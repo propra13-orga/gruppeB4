@@ -28,7 +28,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 		if(it->get_Position()->i_x - p_TempPosition->i_x <= 25 && it->get_Position()->i_x - p_TempPosition->i_x >= -25  && it->get_Position()->i_y - p_TempPosition->i_y <= 25 && it->get_Position()->i_y - p_TempPosition->i_y >= -25)
 		{
 			this->catcheditems.push_back(Item(0,0,it->get_Item()));
-			EPManager::get_EPManager().Set_Ep(5);
+			EPManager::get_EPManager().Set_Ep(300);
 			uncatcheditems.erase(it);
 			this->anzeigen();
 			break;
