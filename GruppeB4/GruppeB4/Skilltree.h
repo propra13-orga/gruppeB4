@@ -6,20 +6,33 @@
 using namespace std;
 
 
+class Player;
 
 class Skilltree
 {
 
 
 private:
-	Skilltree(){t1_1Timer = new Timer();}
+	Skilltree(){overlayTimer = new Timer();b_t11 = false; b_t12 = false; b_t13 = false; b_t14 = false; b_t15 = false;}
 	~Skilltree(){}
 
-	Timer * t1_1Timer;
+	
 	int i_skillpoint;
 	bool b_t11;
 	bool b_t1_1_over;
+	bool b_t1_2_over;
+	bool b_t12;
+	bool b_t13;
+	bool b_t1_3_over;
+	bool b_t14;
+	bool b_t1_4_over;
+	bool b_t15;
+	bool b_t1_5_over;
+	bool b_skilled;
 	SDL_Event even;
+	Player * p_Player;
+	Timer * overlayTimer;
+	bool b_nopoints;
 
 
 public:
@@ -28,10 +41,11 @@ public:
 	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl; cout << i_skillpoint << endl;}
 	int get_skillpoint();
 	void handleInput(SDL_Event &even,bool *skilltreeisopen);
-	
+	void administrate_skills(Player *p_Player,bool b_t11);
 
 	
 	void render(SDL_Event &even);
+	void check_skilled();
 
 
 

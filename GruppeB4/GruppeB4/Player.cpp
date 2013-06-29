@@ -34,7 +34,7 @@ void Player::handle_Input(SDL_Event &even)
 		case(SDLK_DOWN):if(this->rageModeToggled == false){this->set_Velocity(0,2);}else{this->set_Velocity(0,3);};b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = true;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_RIGHT):if(this->rageModeToggled == false){this->set_Velocity(2,0);}else{this->set_Velocity(3,0);}b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = true;b_PlayerIsWalkingLeft = false;break;
 		case(SDLK_LEFT):if(this->rageModeToggled == false){this->set_Velocity(-2,0);}else{this->set_Velocity(-3,0);}b_PlayerIsWalkingUp = false;b_PlayerIsWalkingDown = false;b_PlayerIsWalkingRight = false;b_PlayerIsWalkingLeft = true;break;
-		case(SDLK_4):this->heal();cout << i_health << endl;break;
+		case(SDLK_4):this->heal(100);cout << i_health << endl;break;
 		case(SDLK_v):WeaponManager::get_WeaponManager().swap_weapon();WeaponManager::get_WeaponManager().show_currentWeapon();break;
 		case(SDLK_SPACE):this->attack();break;
 		case(SDLK_5):this->loadMana(); cout << i_mana << endl; break;
@@ -483,12 +483,12 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 		return false;
 }
 	
-void Player::heal()
+void Player::heal(int potsize)
 {
 	if(ItemManager::get_ItemManager().find(HEAL) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
 	{
 		ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
-		this->set_Health(this->get_Health() + 100);
+		this->set_Health(this->get_Health() + potsize);
 	}
 	else
 	{
