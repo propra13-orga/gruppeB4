@@ -329,30 +329,30 @@ if(b_t1_1_over == true){	// Skill-Erklärungen werden gerendert für 2 Sekunden vi
 	Skilltree::get_Skilltree().check_skilled();
 }
 void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
-{/*
+{
 	//Hier werden die Auswirkungen der Talentverteilung verwaltet
 	if(b_t11 == true)
 	{
-		p_Player->heal(100); // Heiltränke geben 100 HP mehr bei Benutzung oder 100 mehr Max HP
+		Skilltree::get_Skilltree().t1_1(); // Heiltränke geben 100 HP mehr bei Benutzung oder 100 mehr Max HP
 	}
 
 	if(b_t12 == true)
 	{
-		//RageMode 10 Mana punkte billiger
+		Skilltree::get_Skilltree().t1_2(); // Funktion senkt Mana-Kosten von RageMode
 	}
 	if(b_t13 == true)
 	{
-		// Heil -und Mana Spritzen kosten im shop nun weniger
+		Skilltree::get_Skilltree().t1_3();
 	}
 	if(b_t14 == true)
 	{
-		//RageMode 10% schneller laufen	
+		Skilltree::get_Skilltree().t1_4();	
 	}
-	if(b_t15 == true)
+	/*if(b_t15 == true)
 	{
 		//Nahkampfwaffen verursacehn 10	Schadenspunkte mehr als normal
-	}
-*/}
+	}*/
+}
 
 void Skilltree::check_skilled()
 {

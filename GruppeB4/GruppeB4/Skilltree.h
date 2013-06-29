@@ -35,6 +35,7 @@ private:
 	bool b_nopoints;
 
 
+
 public:
 	
 	static Skilltree & get_Skilltree(){static Skilltree Instance;return Instance;}
@@ -42,7 +43,11 @@ public:
 	int get_skillpoint();
 	void handleInput(SDL_Event &even,bool *skilltreeisopen);
 	void administrate_skills(Player *p_Player,bool b_t11);
-
+	bool t1_1(){return b_t11;}
+	bool t1_2(){return b_t12;}
+	bool t1_3(){return b_t13;}
+	bool t1_4(){return b_t14;}
+	bool t1_5(){return b_t15;}
 	
 	void render(SDL_Event &even);
 	void check_skilled();

@@ -488,7 +488,10 @@ void Player::heal(int potsize)
 	if(ItemManager::get_ItemManager().find(HEAL) == true)// guckt ob Item da, wenn ja, dann wird die Health um 100 Hochgepushed
 	{
 		ItemManager::get_ItemManager().kill_Item(HEAL);//anschliesend muss das benutzte item wieder gelöscht werden
-		this->set_Health(this->get_Health() + potsize);
+		if(Skilltree::get_Skilltree().t1_1() == true){
+			this->set_Health(this->get_Health() + 200);
+		}
+		else {this->set_Health(this->get_Health() + potsize);}
 	}
 	else
 	{
@@ -524,8 +527,61 @@ void Player::setRageMode()
 	}
 	else
 	{
-		if(this->i_mana >= 100)
-		{
+		
+
+		if(this->i_mana >= 90 && Skilltree::get_Skilltree().t1_2() == true)
+			{
+				if(Skilltree::get_Skilltree().t1_4() ==false){
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,3);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-3);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(3,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-3,0);
+			}
+			this->i_mana -= 90;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			}
+
+				if(Skilltree::get_Skilltree().t1_4() == true){
+
+					if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,4);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-4);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(4,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-4,0);
+			}
+			this->i_mana -= 90;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			}
+
+		}
+
+			if(this->i_mana >= 100 && Skilltree::get_Skilltree().t1_2() == false)
+			{
+				if(Skilltree::get_Skilltree().t1_4() == false){
+
 			if(this->b_PlayerIsWalkingDown == true)
 			{
 				this->set_Velocity(0,3);
@@ -546,5 +602,31 @@ void Player::setRageMode()
 			this->RageModeTimer->start();
 			this->rageModeToggled = true;
 		}
+			}
+
+			if(Skilltree::get_Skilltree().t1_4() == true){
+			
+				if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,4);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-4);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(4,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-4,0);
+			}
+			this->i_mana -= 100;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+		
+			}
+
 	}
 }
