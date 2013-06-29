@@ -25,9 +25,18 @@ S_Resourcemanager::S_Resourcemanager()
 	{
 		cout << "Fehler beim Initialisieren des 100x100 Blocks. Vermutlich fehlt das Bild, oder es wurde Umbenannt" << endl;
 	}
-	else if(this->SurfacesMap["Screen"] == NULL)
+	else
+	{
+		cout << "100x100Block erfolgreich geladen" << endl;
+	}
+
+	if(this->SurfacesMap["Screen"] == NULL)
 	{
 		cout << "Fehler Fehler beim Initialisieren des Screens. Stellen sie sicher, dass sie die aktuelle Version der SDL verwenden" << endl;
+	}
+	else
+	{
+		cout << "Screen erfolgreich geladen" << endl;
 	}
 
 

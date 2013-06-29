@@ -87,6 +87,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CBlock.h" />
+    <ClInclude Include="CollisibalObjectManager.h" />
     <ClInclude Include="CollisiobalObject.h" />
     <ClInclude Include="GameApplicationLayer.h" />
     <ClInclude Include="Resourcemanager.h" />
