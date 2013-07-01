@@ -65,7 +65,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			
 			 if(i_skillpoint < 1 && b_t11 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;   //da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -106,7 +106,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t12 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -145,7 +145,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t13 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;				//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -218,7 +218,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t15 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -259,7 +259,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t21 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -303,7 +303,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t22 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;		//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -348,8 +348,8 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t23 == false)
 			{
-				b_nopoints = true;
-				overlayTimer->start();
+				b_nopoints = true;		//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				overlayTimer->start();		
 			}
 
 			if(i_skillpoint >=1 && b_t23 == false){
@@ -391,7 +391,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t31 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -432,7 +432,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t32 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -473,7 +473,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint < 1 && b_t41 == false)
 			{
-				b_nopoints = true;
+				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -503,11 +503,13 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 void Skilltree::render(SDL_Event &even){
 
-
+	//Renderfunktion fuer den Talentbaum
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilltree"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 
-if(b_t1_1_over == true){	// Skill-Erklärungen werden gerendert für 2 Sekunden via Timer
+// Skill-Erklärungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
+
+if(b_t1_1_over == true){	
 		
 		if(overlayTimer->Getticks() >= 2000){             
 			overlayTimer->stop();					
@@ -648,7 +650,8 @@ if(b_t1_1_over == true){	// Skill-Erklärungen werden gerendert für 2 Sekunden vi
 			
 	
 	}
-	
+	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfügbaren Skillpunkte.
+
 	if(Skilltree::get_Skilltree().get_skillpoint() == 0)
 	{
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("tp_0"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
@@ -692,6 +695,8 @@ if(b_t1_1_over == true){	// Skill-Erklärungen werden gerendert für 2 Sekunden vi
 }
 void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
 {/*
+
+	Mittlerweile unwichtig(habe diese Funktionen anders verwendet -> in anderen Klassen, wie im Player,Shop etc. )
 	//Hier werden die Auswirkungen der Talentverteilung verwaltet
 	if(b_t11 == true)
 	{
