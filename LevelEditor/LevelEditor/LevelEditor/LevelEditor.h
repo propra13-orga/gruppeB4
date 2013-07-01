@@ -7,6 +7,8 @@
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
 
+class S_Overlay;
+
 using namespace std;
 
 
@@ -25,6 +27,8 @@ public:
 	static S_LevelEditor & get_LevelEditor(){static S_LevelEditor Instance; return Instance;}
 	void save_Level();//speichert das Level in einer Datei mit dem Namen map.Klinik
 	void load_Level();//läd das Level aus der Datei map.Klinik
+	OBJECTTYPE get_SelectedObjectType(){return SELECTEDOBJECT;}
+	Editor *  get_MainEditorSource(){return MainEditorSource;}
 
 	void swap_Selection();
 

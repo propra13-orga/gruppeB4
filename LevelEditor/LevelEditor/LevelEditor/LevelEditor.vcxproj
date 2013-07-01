@@ -84,6 +84,7 @@
     <ClCompile Include="GameApplicationLayer.cpp" />
     <ClCompile Include="LevelEditor.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
     <ClCompile Include="S_CollisibalObjectManager.cpp" />
     <ClCompile Include="World.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="GameApplicationLayer.h" />
     <ClInclude Include="globals.h" />
     <ClInclude Include="LevelEditor.h" />
+    <ClInclude Include="Overlay.h" />
     <ClInclude Include="Resourcemanager.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="World.h" />
