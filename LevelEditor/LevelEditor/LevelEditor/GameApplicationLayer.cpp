@@ -4,12 +4,14 @@
 void GameApplicationLayer::initialize_GameResources()
 {
 	S_Resourcemanager::get_Resourcemanager().initializeSurfaces();
+	S_EventHandler::get_EventHandler().initialize();
 }
 
 
 
 void GameApplicationLayer::game_Loop()
 {
+	//erstellen der Anfangsinstanzen
 	SDL_Init(SDL_INIT_EVERYTHING);
 
 	//Beginn der eigentlichen Schleife
@@ -23,11 +25,15 @@ void GameApplicationLayer::game_Loop()
 			{
 				b_quitgame = true;
 			}
+			else
+			{
+				S_EventHandler::get_EventHandler().handle_events(this->even);
+			}
 		}
 	
 	SDL_FillRect(S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"),&S_Resourcemanager::get_Resourcemanager().get_Surface("Screen")->clip_rect,SDL_MapRGB(S_Resourcemanager::get_Resourcemanager().get_Surface("Screen")->format,0xFF,0xFF,0xFF));
 
-	S_Resourcemanager::get_Resourcemanager().apply_Surface(0,0,S_Resourcemanager::get_Resourcemanager().get_Surface("100x100Block"),S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"));
+	S_CollisibalObjectManager::get_CManager().render();
 
 	S_Resourcemanager::get_Resourcemanager().updateScreen();
 

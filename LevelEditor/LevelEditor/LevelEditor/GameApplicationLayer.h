@@ -3,6 +3,8 @@
 
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
+#include "CBlock.h"
+#include "EventHandler.h"
 
 
 
@@ -16,6 +18,7 @@ public:
 	~GameApplicationLayer(){}
 	void initialize_GameResources();
 	void game_Loop();
+	void close_Game(){}
 
 
 };

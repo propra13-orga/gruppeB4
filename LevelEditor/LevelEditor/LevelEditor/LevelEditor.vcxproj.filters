@@ -30,6 +30,12 @@
     <ClCompile Include="Resourcemanager.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="Eventhandler.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="S_CollisibalObjectManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World.h">
@@ -48,6 +54,15 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="CollisibalObjectManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="EventHandler.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="globals.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
