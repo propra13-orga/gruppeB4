@@ -3,6 +3,7 @@
 
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
+#include "LevelEditor.h"
 
 class S_EventHandler
 {
