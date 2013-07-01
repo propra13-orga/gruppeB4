@@ -80,17 +80,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CBlock.cpp" />
+    <ClCompile Include="Eventhandler.cpp" />
     <ClCompile Include="GameApplicationLayer.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
+    <ClCompile Include="S_CollisibalObjectManager.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CBlock.h" />
     <ClInclude Include="CollisibalObjectManager.h" />
     <ClInclude Include="CollisiobalObject.h" />
+    <ClInclude Include="EventHandler.h" />
     <ClInclude Include="GameApplicationLayer.h" />
+    <ClInclude Include="globals.h" />
     <ClInclude Include="Resourcemanager.h" />
+    <ClInclude Include="Vector.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
