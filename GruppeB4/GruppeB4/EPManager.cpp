@@ -18,7 +18,15 @@ void EPManager::Set_Ep(int speccep)
 	{
 		EPManager::get_EPManager().clear_Ep();
 		Skilltree::get_Skilltree().set_skillpoint();
+		i_lvl++;
 		
 	}
 
+}
+
+
+int EPManager::get_level()
+{
+
+return i_lvl;
 }

@@ -86,6 +86,30 @@ void S_Resourcemanager::initialize()
 	this->p_check = IMG_Load("check.png");
 	this->p_nopoints = IMG_Load("nopoints.png");
 	this->p_skilled = IMG_Load("skilled.png");
+	this->p_t2_1 = IMG_Load("t2_1.png");
+	this->p_t2_2 = IMG_Load("t2_2.png");
+	this->p_t2_3 = IMG_Load("t2_3.png");
+	this->p_t3_1 = IMG_Load("t3_1.png");
+	this->p_t3_2 = IMG_Load("t3_2.png");
+	this->p_lvl1 = IMG_Load("lvl1.png");
+	this->p_lvl2 = IMG_Load("lvl2.png");
+	this->p_lvl3 = IMG_Load("lvl3.png");
+	this->p_lvl4 = IMG_Load("lvl4.png");
+	this->p_lvl5 = IMG_Load("lvl5.png");
+	this->p_lvl6 = IMG_Load("lvl6.png");
+	this->p_lvl7 = IMG_Load("lvl7.png");
+	this->p_lvl8 = IMG_Load("lvl8.png");
+	this->p_lvl8 = IMG_Load("lvl9.png");
+	this->p_lvl10 = IMG_Load("lvl10.png");
+	this->p_not_yet = IMG_Load("not_yet.png");
+	this->p_tp_0 = IMG_Load("tp_0.png");
+	this->p_tp_1 = IMG_Load("tp_1.png");
+	this->p_tp_2 = IMG_Load("tp_2.png");
+	this->p_tp_3 = IMG_Load("tp_3.png");
+	this->p_tp_4 = IMG_Load("tp_4.png");
+	this->p_tp_5 = IMG_Load("tp_5.png");
+	this->p_tp_gt5 = IMG_Load("tp_gt5.png");
+
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
@@ -558,6 +582,98 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "skilled")
 	{
 		return p_skilled;
+	}
+	else if(key == "t2_1")
+	{
+		return p_t2_1;
+	}
+	else if(key == "t2_2")
+	{
+		return p_t2_2;
+	}
+	else if(key == "t2_3")
+	{
+		return p_t2_3;
+	}
+	else if(key == "t3_1")
+	{
+		return p_t3_1;
+	}
+	else if(key == "t3_2")
+	{
+		return p_t3_2;
+	}
+	else if(key == "lvl1")
+	{
+		return p_lvl1;
+	}
+	else if(key == "lvl2")
+	{
+		return p_lvl2;
+	}
+	else if(key == "lvl3")
+	{
+		return p_lvl3;
+	}
+	else if(key == "lvl4")
+	{
+		return p_lvl4;
+	}
+	else if(key == "lvl5")
+	{
+		return p_lvl5;
+	}
+	else if(key == "lvl6")
+	{
+		return p_lvl6;
+	}
+	else if(key == "lvl7")
+	{
+		return p_lvl7;
+	}
+	else if(key == "lvl8")
+	{
+		return p_lvl8;
+	}
+	else if(key == "lvl9")
+	{
+		return p_lvl9;
+	}
+	else if(key == "lvl10")
+	{
+		return p_lvl10;
+	}
+	else if(key == "not_yet")
+	{
+		return p_not_yet;
+	}
+	else if(key == "tp_0")
+	{
+		return p_tp_0;
+	}
+	else if(key == "tp_1")
+	{
+		return p_tp_1;
+	}
+	else if(key == "tp_2")
+	{
+		return p_tp_2;
+	}
+	else if(key == "tp_3")
+	{
+		return p_tp_3;
+	}
+	else if(key == "tp_4")
+	{
+		return p_tp_4;
+	}
+	else if(key == "tp_5")
+	{
+		return p_tp_5;
+	}
+	else if(key == "tp_gt5")
+	{
+		return p_tp_gt5;
 	}
 	else
 	{

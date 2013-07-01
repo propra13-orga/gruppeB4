@@ -84,6 +84,33 @@ private:
 	SDL_Surface * p_check;
 	SDL_Surface * p_nopoints;
 	SDL_Surface * p_skilled;
+	SDL_Surface * p_t2_1;
+	SDL_Surface * p_t2_2;
+	SDL_Surface * p_t2_3;
+	SDL_Surface * p_t3_1;
+	SDL_Surface * p_t3_2;
+	SDL_Surface * p_lvl1;
+	SDL_Surface * p_lvl2;
+	SDL_Surface * p_lvl3;
+	SDL_Surface * p_lvl4;
+	SDL_Surface * p_lvl5;
+	SDL_Surface * p_lvl6;
+	SDL_Surface * p_lvl7;
+	SDL_Surface * p_lvl8;
+	SDL_Surface * p_lvl9;
+	SDL_Surface * p_lvl10;
+	SDL_Surface * p_not_yet;
+	SDL_Surface * p_tp_0;
+	SDL_Surface * p_tp_1;
+	SDL_Surface * p_tp_2;
+	SDL_Surface * p_tp_3;
+	SDL_Surface * p_tp_4;
+	SDL_Surface * p_tp_5;
+	SDL_Surface * p_tp_gt5;
+
+	
+
+	
 	
 	
 public:

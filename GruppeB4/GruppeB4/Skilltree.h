@@ -29,6 +29,18 @@ private:
 	bool b_t15;
 	bool b_t1_5_over;
 	bool b_skilled;
+	bool b_t2_1_over;
+	bool b_t21;
+	bool b_t2_2_over;
+	bool b_t22;
+	bool b_t2_3_over;
+	bool b_t23;
+	bool b_t3_1_over;
+	bool b_t31;
+	bool b_t3_2_over;
+	bool b_t32;
+	bool b_t4_1_over;
+	bool b_t41;
 	SDL_Event even;
 	Player * p_Player;
 	Timer * overlayTimer;
@@ -48,6 +60,12 @@ public:
 	bool t1_3(){return b_t13;}
 	bool t1_4(){return b_t14;}
 	bool t1_5(){return b_t15;}
+	bool t2_1(){return b_t21;}
+	bool t2_2(){return b_t22;}
+	bool t2_3(){return b_t23;}
+	bool t3_1(){return b_t31;}
+	bool t3_2(){return b_t32;}
+
 	
 	void render(SDL_Event &even);
 	void check_skilled();

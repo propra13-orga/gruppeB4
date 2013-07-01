@@ -32,7 +32,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 
 		if(even.button.x >= 278 && even.button.x <= 350 && even.button.y >=129 && even.button.y <=166)
 		
-			if(MoneyManager::get_MoneyManager().get_Money()>= 5 && Skilltree::get_Skilltree().t1_3() == false ){
+			if(MoneyManager::get_MoneyManager().get_Money()>= 5 && Skilltree::get_Skilltree().t1_3() == false && Skilltree::get_Skilltree().t2_2() == false ){
 			
 				ItemManager::get_ItemManager().insert_item(HEAL);
 				MoneyManager::get_MoneyManager().refreshMoney(5);
@@ -40,10 +40,28 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 				BuyTimer->start();
 				cout << "Heiltrank gekauft" << endl;
 			}
-				else if(MoneyManager::get_MoneyManager().get_Money()>= 3 && Skilltree::get_Skilltree().t1_3() == true ){
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 3 && Skilltree::get_Skilltree().t1_3() == true && Skilltree::get_Skilltree().t2_2() == false ){
 			
 				ItemManager::get_ItemManager().insert_item(HEAL);
 				MoneyManager::get_MoneyManager().refreshMoney(3);
+				renderbuy = true;
+				BuyTimer->start();
+				cout << "Heiltrank gekauft" << endl;
+		}
+
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 2 && Skilltree::get_Skilltree().t1_3() == true && Skilltree::get_Skilltree().t2_2() == true){
+			
+				ItemManager::get_ItemManager().insert_item(HEAL);
+				MoneyManager::get_MoneyManager().refreshMoney(2);
+				renderbuy = true;
+				BuyTimer->start();
+				cout << "Heiltrank gekauft" << endl;
+		}
+
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 2 && Skilltree::get_Skilltree().t1_3() == false && Skilltree::get_Skilltree().t2_2() == true){
+			
+				ItemManager::get_ItemManager().insert_item(HEAL);
+				MoneyManager::get_MoneyManager().refreshMoney(2);
 				renderbuy = true;
 				BuyTimer->start();
 				cout << "Heiltrank gekauft" << endl;
@@ -57,7 +75,7 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 
 		if(even.button.x >=278 && even.button.x <=350 && even.button.y >=82 && even.button.y <=117){
 		
-			if(MoneyManager::get_MoneyManager().get_Money()>= 5 && Skilltree::get_Skilltree().t1_3() == false)
+			if(MoneyManager::get_MoneyManager().get_Money()>= 5 && Skilltree::get_Skilltree().t1_3() == false && Skilltree::get_Skilltree().t2_1() == false)
 			{
 			ItemManager::get_ItemManager().insert_item(MANA);
 			MoneyManager::get_MoneyManager().refreshMoney(5);
@@ -66,10 +84,30 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 			cout << "Manatrank geklickt" << endl;
 		
 			}
-			else if(MoneyManager::get_MoneyManager().get_Money()>= 3 && Skilltree::get_Skilltree().t1_3() == true)
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 3 && Skilltree::get_Skilltree().t1_3() == true && Skilltree::get_Skilltree().t2_1() == false)
 			{
 			ItemManager::get_ItemManager().insert_item(MANA);
 			MoneyManager::get_MoneyManager().refreshMoney(3);
+			renderbuy = true;
+			BuyTimer->start();
+			cout << "Manatrank geklickt" << endl;
+		
+			}
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 2 && Skilltree::get_Skilltree().t1_3() == true && Skilltree::get_Skilltree().t2_2() == true)
+			{
+			ItemManager::get_ItemManager().insert_item(MANA);
+			MoneyManager::get_MoneyManager().refreshMoney(2);
+			renderbuy = true;
+			BuyTimer->start();
+			cout << "Manatrank geklickt" << endl;
+		
+			}
+			
+
+			else if(MoneyManager::get_MoneyManager().get_Money()>= 2 && Skilltree::get_Skilltree().t2_2() == true && Skilltree::get_Skilltree().t1_3() == false)
+			{
+			ItemManager::get_ItemManager().insert_item(MANA);
+			MoneyManager::get_MoneyManager().refreshMoney(2);
 			renderbuy = true;
 			BuyTimer->start();
 			cout << "Manatrank geklickt" << endl;

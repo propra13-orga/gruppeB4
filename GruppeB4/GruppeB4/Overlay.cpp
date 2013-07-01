@@ -145,4 +145,57 @@ void Overlay::render(Player * p_TempPlayer)
 		}
 		
 
+		if(EPManager::get_EPManager().get_level() == 0)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 1)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl2"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 2)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 3)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl4"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 4)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl5"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 5)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl6"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 6)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl7"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 7)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl8"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 8)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl9"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		if(EPManager::get_EPManager().get_level() == 9)
+		{
+		
+			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl10"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}
+		
+		
+
 }
