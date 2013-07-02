@@ -540,197 +540,10 @@ void Player::setRageMode()
 	{
 		
 
-		if(this->i_mana >= 90 && Skilltree::get_Skilltree().t1_2() == true)
+		if(this->i_mana >= 100 && Skilltree::get_Skilltree().t1_2() == false && Skilltree::get_Skilltree().t2_1() == false && Skilltree::get_Skilltree().t3_1() == false)
 			{
-				if(Skilltree::get_Skilltree().t1_4() ==false){
-			if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,3);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-3);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(3,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-3,0);
-			}
-			if(Skilltree::get_Skilltree().t2_1() == true){
-			this->i_mana -= 80;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t2_1() == false)
-			this->i_mana -= 90;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-
-				if(Skilltree::get_Skilltree().t1_4() == true){
-
-					if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,4);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-4);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(4,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-4,0);
-			}
-			if(Skilltree::get_Skilltree().t2_1() == true){
-			this->i_mana -= 80;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t2_1() == false){
-			this->i_mana -= 90;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			}
-
-		}
-
-
-		//___________t3.1_________
-		if(this->i_mana >= 50 && Skilltree::get_Skilltree().t1_2() == false && Skilltree::get_Skilltree().t3_1() == true)
-			{
-				if(Skilltree::get_Skilltree().t1_4() ==false){
-			if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,3);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-3);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(3,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-3,0);
-			}
-			
-			
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			
-			}
-
-				if(Skilltree::get_Skilltree().t1_4() == true){
-
-					if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,4);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-4);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(4,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-4,0);
-			}
-			if(Skilltree::get_Skilltree().t2_1() == true){
-			this->i_mana -= 80;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t2_1() == false){
-			this->i_mana -= 90;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t3_1() == true){
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			}
-
-		}
-
-		//____________t3.1______2_____________
-
-
-		if(this->i_mana >= 50 && Skilltree::get_Skilltree().t1_2() == true && Skilltree::get_Skilltree().t3_1() == true)
-			{
-				if(Skilltree::get_Skilltree().t1_4() ==false){
-			if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,3);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-3);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(3,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-3,0);
-			}
-			
-			
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			
-			}
-
-				if(Skilltree::get_Skilltree().t1_4() == true){
-
-					if(this->b_PlayerIsWalkingDown == true)
-			{
-				this->set_Velocity(0,4);
-			}
-			else if(this->b_PlayerIsWalkingUp == true)
-			{
-				this->set_Velocity(0,-4);
-			}
-			else if(this->b_PlayerIsWalkingRight == true)
-			{
-				this->set_Velocity(4,0);
-			}
-			else if(this->b_PlayerIsWalkingLeft == true)
-			{
-				this->set_Velocity(-4,0);
-			}
-			
-			
-			
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			
-			}
-
-		}
-
-			if(this->i_mana >= 100 && Skilltree::get_Skilltree().t1_2() == false)
-			{
+				
 				if(Skilltree::get_Skilltree().t1_4() == false){
-
 			if(this->b_PlayerIsWalkingDown == true)
 			{
 				this->set_Velocity(0,3);
@@ -747,23 +560,17 @@ void Player::setRageMode()
 			{
 				this->set_Velocity(-3,0);
 			}
-			if(Skilltree::get_Skilltree().t2_1() == true)
-			{
-			this->i_mana -= 80;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t2_1() == false){
+			
 			this->i_mana -= 100;
 			this->RageModeTimer->start();
 			this->rageModeToggled = true;
 			}
 		}
-			}
+		
+		if(Skilltree::get_Skilltree().t1_4() == true){
+				
 
-			if(Skilltree::get_Skilltree().t1_4() == true){
-			
-				if(this->b_PlayerIsWalkingDown == true)
+			if(this->b_PlayerIsWalkingDown == true)
 			{
 				this->set_Velocity(0,4);
 			}
@@ -779,34 +586,175 @@ void Player::setRageMode()
 			{
 				this->set_Velocity(-4,0);
 			}
-			if(Skilltree::get_Skilltree().t3_1() == true && Skilltree::get_Skilltree().t1_2() == true)
-			{
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-			}
-			else if(Skilltree::get_Skilltree().t3_1() == true && Skilltree::get_Skilltree().t1_2() == false)
-			{
-			this->i_mana -= 50;
-			this->RageModeTimer->start();
-			this->rageModeToggled = true;
-		
-			}
-			else if(Skilltree::get_Skilltree().t3_1() == false && Skilltree::get_Skilltree().t1_2() == false)
-			{
+			
 			this->i_mana -= 100;
 			this->RageModeTimer->start();
 			this->rageModeToggled = true;
-		
-			}
+			
+			
+		}
 
-			else if(Skilltree::get_Skilltree().t3_1() == false && Skilltree::get_Skilltree().t1_2() == true)
+		if(this->i_mana >= 90 && Skilltree::get_Skilltree().t1_2() == true && Skilltree::get_Skilltree().t2_1() == false && Skilltree::get_Skilltree().t3_1() == false)
 			{
+				
+				if(Skilltree::get_Skilltree().t1_4() == false){
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,3);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-3);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(3,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-3,0);
+			}
+			
 			this->i_mana -= 90;
 			this->RageModeTimer->start();
 			this->rageModeToggled = true;
+			}
+		}
 		
+		if(Skilltree::get_Skilltree().t1_4() == true){
+				
+
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,4);
 			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-4);
 			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(4,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-4,0);
+			}
+			
+			this->i_mana -= 90;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			
+			
+		}
+
+		if(this->i_mana >= 80 && Skilltree::get_Skilltree().t1_2() == true && Skilltree::get_Skilltree().t2_1() == true && Skilltree::get_Skilltree().t3_1() == false)
+			{
+				
+				if(Skilltree::get_Skilltree().t1_4() == false){
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,3);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-3);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(3,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-3,0);
+			}
+			
+			this->i_mana -= 80;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			}
+		}
+		
+		if(Skilltree::get_Skilltree().t1_4() == true){
+				
+
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,4);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-4);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(4,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-4,0);
+			}
+			
+			this->i_mana -= 80;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			
+			
+		}
+
+		if(this->i_mana >= 50 && Skilltree::get_Skilltree().t1_2() == true && Skilltree::get_Skilltree().t2_1() == true && Skilltree::get_Skilltree().t3_1() == true)
+			{
+				
+				if(Skilltree::get_Skilltree().t1_4() == false){
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,3);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-3);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(3,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-3,0);
+			}
+			
+			this->i_mana -= 50;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			}
+		}
+		
+		if(Skilltree::get_Skilltree().t1_4() == true){
+				
+
+			if(this->b_PlayerIsWalkingDown == true)
+			{
+				this->set_Velocity(0,4);
+			}
+			else if(this->b_PlayerIsWalkingUp == true)
+			{
+				this->set_Velocity(0,-4);
+			}
+			else if(this->b_PlayerIsWalkingRight == true)
+			{
+				this->set_Velocity(4,0);
+			}
+			else if(this->b_PlayerIsWalkingLeft == true)
+			{
+				this->set_Velocity(-4,0);
+			}
+			
+			this->i_mana -= 50;
+			this->RageModeTimer->start();
+			this->rageModeToggled = true;
+			
+			
+		}
+		}
+
 	}
-}
