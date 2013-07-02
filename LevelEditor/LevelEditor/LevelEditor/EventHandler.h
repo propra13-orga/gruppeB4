@@ -5,6 +5,7 @@
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
 #include "LevelEditor.h"
+#include "Overlay.h"
 
 
 class S_EventHandler

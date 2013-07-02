@@ -19,6 +19,8 @@ S_Resourcemanager::S_Resourcemanager()
 	this->SurfacesMap["Screen"] = SDL_SetVideoMode(900,600,32,SDL_SWSURFACE);
 	this->SurfacesMap["100x100Block"] = IMG_Load("100x100Block.png");
 	this->SurfacesMap["100x100BlockSelected"] = IMG_Load("100x100BlockSelected.png");
+	this->SurfacesMap["FullyUnselectedMenue"] = IMG_Load("FullyUnselectedMenue.png");
+	this->SurfacesMap["StartChoice"] = IMG_Load("StartChoice.png");
 
 	//Bilderprüfungsteil-----------------------------------------------------------------------------
 
