@@ -16,6 +16,10 @@ void S_Overlay::render(Editor * p_CurrentMainEditor)
 	{
 		S_Resourcemanager::get_Resourcemanager().apply_Surface(0,40,S_Resourcemanager::get_Resourcemanager().get_Surface("StartChoice"),S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"));
 	}
+	else if(this->b_choiceSelected == true)
+	{
+		S_Resourcemanager::get_Resourcemanager().apply_Surface(97,40,S_Resourcemanager::get_Resourcemanager().get_Surface("ChoiceChoice"),S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"));
+	}
 
 }
 
