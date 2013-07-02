@@ -45,6 +45,11 @@ private:
 	Player * p_Player;
 	Timer * overlayTimer;
 	bool b_nopoints;
+	bool b_not_yet_t2_1;
+	bool b_not_yet_t2_2;
+	bool b_not_yet_t2_3;
+	bool b_not_yet_t3_1;
+	bool b_not_yet_t3_2;
 
 
 

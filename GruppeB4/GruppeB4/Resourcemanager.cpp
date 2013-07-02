@@ -109,6 +109,7 @@ void S_Resourcemanager::initialize()
 	this->p_tp_4 = IMG_Load("tp_4.png");
 	this->p_tp_5 = IMG_Load("tp_5.png");
 	this->p_tp_gt5 = IMG_Load("tp_gt5.png");
+	this->p_not_skillable = IMG_Load("not_skillable.png");
 
 	if(p_spritze == NULL)
 	{
@@ -674,6 +675,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "tp_gt5")
 	{
 		return p_tp_gt5;
+	}
+	else if(key == "not_skillable")
+	{
+		return p_not_skillable;
 	}
 	else
 	{
