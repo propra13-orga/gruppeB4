@@ -18,6 +18,7 @@ S_Resourcemanager::S_Resourcemanager()
 
 	this->SurfacesMap["Screen"] = SDL_SetVideoMode(900,600,32,SDL_SWSURFACE);
 	this->SurfacesMap["100x100Block"] = IMG_Load("100x100Block.png");
+	this->SurfacesMap["100x100BlockSelected"] = IMG_Load("100x100BlockSelected.png");
 
 	//Bilderprüfungsteil-----------------------------------------------------------------------------
 
@@ -28,6 +29,15 @@ S_Resourcemanager::S_Resourcemanager()
 	else
 	{
 		cout << "100x100Block erfolgreich geladen" << endl;
+	}
+
+	if(this->SurfacesMap["100x100BlockSelected"] == NULL)
+	{
+		cout << "Fehler beim Initialisieren des 100x100 Blocks Selected. Vermutlich fehlt das Bild, oder es wurde Umbenannt" << endl;
+	}
+	else
+	{
+		cout << "100x100BlockSelected erfolgreich geladen" << endl;
 	}
 
 	if(this->SurfacesMap["Screen"] == NULL)

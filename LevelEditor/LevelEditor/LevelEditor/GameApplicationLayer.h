@@ -5,6 +5,7 @@
 #include "CollisibalObjectManager.h"
 #include "CBlock.h"
 #include "EventHandler.h"
+#include "LevelEditor.h"
 
 
 

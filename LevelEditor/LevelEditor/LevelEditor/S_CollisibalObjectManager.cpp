@@ -3,7 +3,7 @@
 
 void S_CollisibalObjectManager::set_Object(OBJECTTYPE CURRENTOBJECT,int x, int y)
 {
-	if (CURRENTOBJECT == C_BLOCK)
+	if (CURRENTOBJECT == Block100x100)
 	{
 		this->Blocklist.push_back(C_Block(x,y));
 	}
