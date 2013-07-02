@@ -17,7 +17,7 @@ void GameApplicationLayer::game_Loop()
 	//Beginn der eigentlichen Schleife
 	while(this->b_quitgame == false)
 	{
-
+		
 		if(SDL_PollEvent(&even))
 		{
 			//In diesen Block kommen alle Sachen, die das Spiel unterbrechen, also auch Menue u.ä.
@@ -30,6 +30,7 @@ void GameApplicationLayer::game_Loop()
 				S_EventHandler::get_EventHandler().handle_events(this->even);
 			}
 		}
+		S_LevelEditor::get_LevelEditor().update();
 	
 		S_LevelEditor::get_LevelEditor().render();
 

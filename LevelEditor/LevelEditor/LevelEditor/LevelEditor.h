@@ -7,6 +7,8 @@
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
 
+class S_EventHandler;
+
 class S_Overlay;
 
 using namespace std;

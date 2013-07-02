@@ -79,6 +79,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\GruppeB4\GruppeB4\Timer.cpp" />
     <ClCompile Include="CBlock.cpp" />
     <ClCompile Include="Eventhandler.cpp" />
     <ClCompile Include="GameApplicationLayer.cpp" />
@@ -90,6 +91,7 @@
     <ClCompile Include="World.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\GruppeB4\GruppeB4\Timer.h" />
     <ClInclude Include="CBlock.h" />
     <ClInclude Include="CollisibalObjectManager.h" />
     <ClInclude Include="CollisiobalObject.h" />

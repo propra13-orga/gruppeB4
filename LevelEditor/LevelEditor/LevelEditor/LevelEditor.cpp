@@ -1,5 +1,6 @@
 #include "LevelEditor.h"
 #include "Overlay.h"
+#include "EventHandler.h"
 
 
 void S_LevelEditor::swap_Selection()
@@ -21,4 +22,5 @@ void S_LevelEditor::render()
 
 void S_LevelEditor::update()
 {
+	S_EventHandler::get_EventHandler().updateEditorsEvents();
 }

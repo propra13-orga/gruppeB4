@@ -42,6 +42,9 @@
     <ClCompile Include="Overlay.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\GruppeB4\GruppeB4\Timer.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World.h">
@@ -78,6 +81,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="Overlay.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GruppeB4\GruppeB4\Timer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
