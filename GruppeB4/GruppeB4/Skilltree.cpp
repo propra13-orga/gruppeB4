@@ -26,13 +26,14 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 	
 	if(even.type == SDL_KEYDOWN)
 	{
-		if(even.key.keysym.sym == SDLK_n)
+		if(even.key.keysym.sym == SDLK_n || even.key.keysym.sym == SDLK_ESCAPE)
 		{
 			*b_skilltreeisopen = false;
 			
 			
 		}
 
+		
 }
 
 	if(even.type == SDL_MOUSEBUTTONDOWN)
@@ -247,6 +248,12 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 				
 		if(even.button.x >= 228 && even.button.x <= 316 && even.button.y >=219 && even.button.y <=335)
 		{
+			if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)
+			{
+			b_not_yet_t2_1 = true;
+			overlayTimer->start();
+			
+			}
 			if(Skilltree::get_Skilltree().t1_1() == true && Skilltree::get_Skilltree().t1_2() == true)
 				{
 			
@@ -292,6 +299,13 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 		if(even.button.x >= 410 && even.button.x <= 478 && even.button.y >=215 && even.button.y <=234)
 		{
+
+			if(Skilltree::get_Skilltree().t1_3() == false)
+			{
+			b_not_yet_t2_2 = true;
+			overlayTimer->start();
+			
+			}
 			if(Skilltree::get_Skilltree().t1_3() == true)
 			{
 			if(b_t22 == true)
@@ -337,6 +351,11 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 		if(even.button.x >= 572 && even.button.x <= 660 && even.button.y >=215 && even.button.y <=234)
 		{
+			if(Skilltree::get_Skilltree().t1_4() == false || Skilltree::get_Skilltree().t1_5() == false)
+			{
+				overlayTimer->start();
+				b_not_yet_t2_3 = true;
+			}
 			if(Skilltree::get_Skilltree().t1_4() == true && Skilltree::get_Skilltree().t1_5() == true)
 			{
 			if(b_t23 == true)
@@ -381,6 +400,12 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 		if(even.button.x >= 296 && even.button.x <= 428 && even.button.y >=356 && even.button.y <=375)
 		{
+			if(Skilltree::get_Skilltree().t2_1() == false)
+			{
+				overlayTimer->start();
+				b_not_yet_t3_1 = true;
+			}
+
 			if(Skilltree::get_Skilltree().t2_1() == true){	
 			if(b_t31 == true)
 			{
@@ -422,6 +447,12 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(even.button.x >= 457 && even.button.x <= 593 && even.button.y >=357 && even.button.y <=376)
 		{
+			if(Skilltree::get_Skilltree().t2_3() == false)
+			{
+				overlayTimer->start();
+				b_not_yet_t3_2 = true;
+			}
+
 			if(Skilltree::get_Skilltree().t2_3() == true){
 			if(b_t32 == true)
 			{
@@ -650,6 +681,61 @@ if(b_t1_1_over == true){
 			
 	
 	}
+	if(b_not_yet_t2_1 == true)
+	{
+		if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_not_yet_t2_1 = false;
+		}
+		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+
+	if(b_not_yet_t2_2 == true)
+	{
+		if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_not_yet_t2_2 = false;
+		}
+		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+	if(b_not_yet_t2_3 == true)
+	{
+		if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_not_yet_t2_3 = false;
+		}
+		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+	if(b_not_yet_t3_1 == true)
+	{
+		if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_not_yet_t3_1 = false;
+		}
+		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+
+	if(b_not_yet_t3_2 == true)
+	{
+		if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_not_yet_t3_2 = false;
+		}
+		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		}
+	
+
+
 	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfügbaren Skillpunkte.
 
 	if(Skilltree::get_Skilltree().get_skillpoint() == 0)
@@ -688,8 +774,7 @@ if(b_t1_1_over == true){
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("tp_gt5"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			
 	}
-
-
+	
 
 	Skilltree::get_Skilltree().check_skilled();
 }
