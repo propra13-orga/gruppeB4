@@ -781,4 +781,32 @@ void Skilltree::check_skilled()
 	{
 		apply_Image(481,306,S_Resourcemanager::get_Resourcemanager()->get_Surface("check"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
+
+	if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)
+	{
+		apply_Image(245,160,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_skillable"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
+
+	if(Skilltree::get_Skilltree().t1_3() == false )
+	{
+		apply_Image(410,145,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_skillable"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
+
+	if(Skilltree::get_Skilltree().t1_4() == false || Skilltree::get_Skilltree().t1_5() == false)
+	{
+		apply_Image(590,145,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_skillable"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
+
+	if(Skilltree::get_Skilltree().t2_1() == false)
+	{
+		apply_Image(332,306,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_skillable"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	
+	}
+
+	if(Skilltree::get_Skilltree().t2_3() == false)
+	{
+		apply_Image(481,306,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_skillable"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
+
+
 }
