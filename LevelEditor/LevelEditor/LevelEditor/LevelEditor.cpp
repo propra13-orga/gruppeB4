@@ -24,3 +24,13 @@ void S_LevelEditor::update()
 {
 	S_EventHandler::get_EventHandler().updateEditorsEvents();
 }
+
+void S_LevelEditor::load_Level()
+{
+	cout << "Laden" << endl;
+}
+
+void S_LevelEditor::save_Level()
+{
+	cout << "Speichern" << endl;
+}

@@ -6,6 +6,7 @@
 #include "CBlock.h"
 #include "EventHandler.h"
 #include "LevelEditor.h"
+#include "globals.h"
 
 
 
@@ -15,7 +16,7 @@ private:
 	SDL_Event even;
 	bool b_quitgame;
 public:
-	GameApplicationLayer():b_quitgame(false){}
+	GameApplicationLayer():b_quitgame(0){}
 	~GameApplicationLayer(){}
 	void initialize_GameResources();
 	void game_Loop();

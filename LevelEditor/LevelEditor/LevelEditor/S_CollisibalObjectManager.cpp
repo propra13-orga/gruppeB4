@@ -1,4 +1,5 @@
 #include "CollisibalObjectManager.h"
+#include "LevelEditor.h"
 
 
 void S_CollisibalObjectManager::set_Object(OBJECTTYPE CURRENTOBJECT,int x, int y)
@@ -24,4 +25,43 @@ void S_CollisibalObjectManager::render()
 	{
 		myIter->render();
 	}
+}
+
+C_Block * S_CollisibalObjectManager::get_WorkingListsFirstMember()
+{
+	return &Workinglist.front();
+}
+
+void S_CollisibalObjectManager::find(int x, int y)
+{
+	if(this->Workinglist.size() == 0)
+	{
+		for(list<C_Block>::iterator myIter = Blocklist.begin();myIter != this->Blocklist.end();++myIter)
+		{
+			if(myIter->get_Position()->x <= x && myIter->get_Position()->x + 100 >= x && myIter->get_Position()->y <= y && myIter->get_Position()->y + 100 >= y)
+			{
+				Workinglist.push_back(C_Block(myIter->get_Position()->x,myIter->get_Position()->y));
+				S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(myIter->get_Position()->x,myIter->get_Position()->y);
+				Blocklist.erase(myIter);
+				break;
+			}
+		}
+
+	}
+	else if(Workinglist.size() == 1)
+	{
+		for(list<C_Block>::iterator myIter = Blocklist.begin();myIter != this->Blocklist.end();++myIter)
+		{
+			if(myIter->get_Position()->x <= x && myIter->get_Position()->x + 100 >= x && myIter->get_Position()->y <= y && myIter->get_Position()->y + 100 >= y)
+			{
+				Workinglist.push_back(C_Block(myIter->get_Position()->x,myIter->get_Position()->y));
+				Blocklist.push_back(C_Block(Workinglist.front().get_Position()->x,Workinglist.front().get_Position()->y));
+				Workinglist.pop_front();
+				S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(myIter->get_Position()->x,myIter->get_Position()->y);
+				Blocklist.erase(myIter);
+				break;
+			}
+		}
+	}
+
 }

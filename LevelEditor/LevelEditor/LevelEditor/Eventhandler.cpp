@@ -1,8 +1,19 @@
 #include "EventHandler.h"
 
-void S_EventHandler::handle_events(SDL_Event even)
+void S_EventHandler::handle_events(SDL_Event even,bool & quitgame)
 {
-	S_Overlay::get_Overlay().handle_Events(even);
+	S_Overlay::get_Overlay().handle_Events(even,quitgame);
+
+	if(S_LevelEditor::get_LevelEditor().get_ChoiceMode() == true)
+	{
+		if(even.type == SDL_MOUSEBUTTONDOWN)
+		{
+			if(even.button.button == SDL_BUTTON_LEFT)
+			{
+			S_CollisibalObjectManager::get_CManager().find(even.button.x,even.button.y);
+			}
+		}
+	}
 
 	if(even.type == SDL_KEYDOWN)
 	{
@@ -13,7 +24,10 @@ void S_EventHandler::handle_events(SDL_Event even)
 		case(SDLK_DOWN):S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y + 10);KeyPressTimer->start();b_Down = true;break;
 		case(SDLK_RIGHT):S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x + 10,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y);KeyPressTimer->start();b_Right = true;break;
 		case(SDLK_LEFT):S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x - 10,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y);KeyPressTimer->start();b_Left = true;break;
+		if(S_LevelEditor::get_LevelEditor().get_BlockSetMode() == true)
+		{
 		case(SDLK_SPACE):S_CollisibalObjectManager::get_CManager().set_Object(Block100x100,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y);break;
+		}
 		}
 	}
 
@@ -21,7 +35,7 @@ void S_EventHandler::handle_events(SDL_Event even)
 	{
 		switch(even.key.keysym.sym)
 		{
-			case(SDLK_UP):b_Up = false; break;
+		case(SDLK_UP):b_Up = false; break;
 		case(SDLK_DOWN):b_Down = false;break;
 		case(SDLK_RIGHT):b_Right = false;break;
 		case(SDLK_LEFT):b_Left = false;break;
