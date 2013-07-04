@@ -79,7 +79,7 @@ int main(int argc ,char ** argv)
 				}
 			}
 
-
+			
 
 			if(b_skilltreeisopen == true)
 			{
@@ -90,6 +90,7 @@ int main(int argc ,char ** argv)
 															//schleife zum rendern und zum kaufen so lange shop auf true ist
 				
 				Skilltree::get_Skilltree().render(even);
+				
 				if(SDL_PollEvent(&even))
 				{
 				Skilltree::get_Skilltree().handleInput(even,&b_skilltreeisopen);
@@ -111,6 +112,8 @@ int main(int argc ,char ** argv)
 		counter++;
 	
 			//Skilltree______________________________________________ENDE_________________________________________________________
+
+		Overlay::get_Instance().check_lvl_up();
 			//SHOP_______________________________________________Anfang________________________________________________________________
 
 			

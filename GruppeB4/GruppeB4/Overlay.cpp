@@ -41,6 +41,7 @@ void Overlay::render(Player * p_TempPlayer)
 
 		heal << ItemManager::get_ItemManager().get_Amount(HEAL);
 		mana << ItemManager::get_ItemManager().get_Amount(MANA);
+		EPManager::get_EPManager().render();
 
 
 		S_Resourcemanager::get_Resourcemanager()->HealDisplay = TTF_RenderText_Solid(S_Resourcemanager::get_Resourcemanager()->font,heal.str().c_str(),S_Resourcemanager::get_Resourcemanager()->TextColor);
@@ -196,6 +197,48 @@ void Overlay::render(Player * p_TempPlayer)
 			apply_Image(750,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl10"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
 		
+
+	
 		
+
+}
+
+
+
+void Overlay::check_lvl_up()
+{
+
+		if(Skilltree::get_Skilltree().get_skillpoint() == 2)
+	{
+			OverlayTimer->start();
+			b_lvl_up = true;
+			cout << "neues level" << endl;
+	}
+	else if(Skilltree::get_Skilltree().get_skillpoint() == 3)
+	{
+			OverlayTimer->start();
+			b_lvl_up = true;
+	}
+	else if(Skilltree::get_Skilltree().get_skillpoint() == 4)
+	{
+			OverlayTimer->start();
+			b_lvl_up = true;
+	}
+	else if(Skilltree::get_Skilltree().get_skillpoint() == 5)
+	{
+			OverlayTimer->start();
+			b_lvl_up = true;
+	}
+	else if(Skilltree::get_Skilltree().get_skillpoint() >5)
+	{
+			OverlayTimer->start();
+			b_lvl_up = true;
+	}
+
+	
+
+
+
+
 
 }

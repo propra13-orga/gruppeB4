@@ -10,10 +10,13 @@
 class Overlay
 {
 private:
-	Overlay(){};
+	Overlay(){OverlayTimer = new Timer();};
 	~Overlay(){};
+	Timer * OverlayTimer;
+	bool b_lvl_up;
 public:
 	void render(Player * p_TempPlayer);
+	void check_lvl_up();
 	static Overlay  &get_Instance()
 	{
 		static Overlay Instance;

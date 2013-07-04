@@ -733,6 +733,17 @@ if(b_t1_1_over == true){
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("not_yet"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
 		}
+	if(b_lvl_up == true)
+	{
+	if(overlayTimer->Getticks() >=2000)
+		{
+			overlayTimer->stop();
+			b_lvl_up = false;
+		}
+		apply_Image(200,200,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl_up"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		
+	}
 	
 
 
@@ -774,6 +785,7 @@ if(b_t1_1_over == true){
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("tp_gt5"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			
 	}
+	
 	
 
 	Skilltree::get_Skilltree().check_skilled();
@@ -894,4 +906,26 @@ void Skilltree::check_skilled()
 	}
 
 
+	
+	
 }
+
+void Skilltree::render2()
+	{
+	
+		if(b_lvl_up == true)
+		{
+			if(overlayTimer->Getticks() >= 2000)
+			{
+				overlayTimer->stop();
+				b_lvl_up = false;
+			
+			}		
+			apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("lvl_up"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	
+		}
+	
+	
+	}
+
+

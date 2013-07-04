@@ -50,13 +50,13 @@ private:
 	bool b_not_yet_t2_3;
 	bool b_not_yet_t3_1;
 	bool b_not_yet_t3_2;
-
+	bool b_lvl_up;
 
 
 public:
 	
 	static Skilltree & get_Skilltree(){static Skilltree Instance;return Instance;}
-	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl; cout << i_skillpoint << endl;}
+	void set_skillpoint(){i_skillpoint++; cout << "LVL UP" << endl; cout << i_skillpoint << endl; overlayTimer->start(); b_lvl_up = true;}
 	int get_skillpoint();
 	void handleInput(SDL_Event &even,bool *skilltreeisopen);
 	void administrate_skills(Player *p_Player,bool b_t11);
@@ -70,9 +70,11 @@ public:
 	bool t2_3(){return b_t23;}
 	bool t3_1(){return b_t31;}
 	bool t3_2(){return b_t32;}
+	
 
 	
 	void render(SDL_Event &even);
+	void render2();
 	void check_skilled();
 
 

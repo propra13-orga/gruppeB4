@@ -108,6 +108,7 @@ private:
 	SDL_Surface * p_tp_5;
 	SDL_Surface * p_tp_gt5;
 	SDL_Surface * p_not_skillable;
+	SDL_Surface * p_lvl_up;
 
 	
 
