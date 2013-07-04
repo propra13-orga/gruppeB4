@@ -26,6 +26,7 @@ public:
 	C_Block * get_WorkingListsFirstMember();
 	void find(int x, int y);//Funktion findet das Element, auf das geklickt wurde und tut es in die Bearbeitungsliste, wenn bearbeitungsliste nicht leer, wird das element us der bearbeitungsliste wieder wie vorher gerendert
 	void show_Insertions();
+	void forced_pushIntoBlockList();
 	void render();
 };
 

@@ -27,9 +27,29 @@ void S_CollisibalObjectManager::render()
 	}
 }
 
+void S_CollisibalObjectManager::forced_pushIntoBlockList()
+{
+	if(Workinglist.size() != 0)
+	{
+		Blocklist.push_back(C_Block(Workinglist.front().get_Position()->x,Workinglist.front().get_Position()->y));
+		Workinglist.empty();
+	}
+	else
+	{
+		return;
+	}
+}
+
 C_Block * S_CollisibalObjectManager::get_WorkingListsFirstMember()
 {
-	return &Workinglist.front();
+	if(Workinglist.size() != 0)
+	{
+		return &Workinglist.front();
+	}
+	else
+	{
+		return NULL;
+	}
 }
 
 void S_CollisibalObjectManager::find(int x, int y)

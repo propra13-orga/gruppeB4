@@ -82,6 +82,20 @@ void S_Overlay::handle_Events(SDL_Event even,bool & quitgame)
 					quitgame = true;
 				}
 			}
+			else if(b_choiceSelected == true)
+			{
+				if(even.button.x > 97 && even.button.x <= 224 && even.button.y > 40 && even.button.y <= 77)
+				{
+					S_LevelEditor::get_LevelEditor().set_ChoiceMode(true);
+					S_LevelEditor::get_LevelEditor().setBlockSetMode(false);
+				}
+				else if(even.button.x > 97 && even.button.x <= 224 && even.button.y > 156 && even.button.y <= 240)
+				{
+					S_LevelEditor::get_LevelEditor().set_ChoiceMode(false);
+					S_LevelEditor::get_LevelEditor().setBlockSetMode(true);
+					S_CollisibalObjectManager::get_CManager().forced_pushIntoBlockList();
+				}
+			}
 		}
 	}
 }
