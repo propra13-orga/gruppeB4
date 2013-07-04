@@ -14,8 +14,9 @@ void GameApplicationLayer::game_Loop()
 	//erstellen der Anfangsinstanzen
 	SDL_Init(SDL_INIT_EVERYTHING);
 
+	b_quitgame = false;
 	//Beginn der eigentlichen Schleife
-	while(this->b_quitgame == false)
+	while(b_quitgame == false)
 	{
 		
 		if(SDL_PollEvent(&even))
@@ -27,7 +28,7 @@ void GameApplicationLayer::game_Loop()
 			}
 			else
 			{
-				S_EventHandler::get_EventHandler().handle_events(this->even);
+				S_EventHandler::get_EventHandler().handle_events(this->even,b_quitgame);
 			}
 		}
 		S_LevelEditor::get_LevelEditor().update();

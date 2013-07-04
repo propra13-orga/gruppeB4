@@ -21,7 +21,7 @@ private:
 	bool b_Right;
 	Timer * KeyPressTimer;
 public:
-	void handle_events(SDL_Event even);
+	void handle_events(SDL_Event even,bool & quitgame);
 	static S_EventHandler & get_EventHandler(){static S_EventHandler Instance; return Instance;}
 	void initialize(){}
 	void updateEditorsEvents();

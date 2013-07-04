@@ -24,7 +24,7 @@ void S_Overlay::render(Editor * p_CurrentMainEditor)
 }
 
 
-void S_Overlay::handle_Events(SDL_Event even)
+void S_Overlay::handle_Events(SDL_Event even,bool & quitgame)
 {
 	if (even.type == SDL_MOUSEBUTTONDOWN)
 	{
@@ -56,6 +56,30 @@ void S_Overlay::handle_Events(SDL_Event even)
 				this->b_startSelected = false;
 				this->b_nothingSelected = false;
 				this->b_choiceSelected = true;
+				}
+			}
+
+
+			if(b_nothingSelected == true)
+			{
+				return;
+			}
+			else if(b_startSelected == true)
+			{
+				if(even.button.x > 0 && even.button.x <= 97 && even.button.y > 40 && even.button.y <= 80 )
+				{
+					S_LevelEditor::get_LevelEditor().load_Level();
+				}
+				else if(even.button.x > 0 && even.button.x <= 97 && even.button.y > 80 && even.button.y <= 126 )
+				{
+					S_LevelEditor::get_LevelEditor().save_Level();
+				}
+				else if(even.button.x > 0 && even.button.x <= 97 && even.button.y > 126 && even.button.y <= 170 )
+				{
+				}
+				else if(even.button.x > 0 && even.button.x <= 97 && even.button.y > 170 && even.button.y <= 240  )
+				{
+					quitgame = true;
 				}
 			}
 		}

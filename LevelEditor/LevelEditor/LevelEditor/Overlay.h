@@ -15,7 +15,7 @@ private:
 public:
 	static S_Overlay & get_Overlay(){static S_Overlay Instance; return Instance;}
 	void render(Editor*);
-	void handle_Events(SDL_Event even);
+	void handle_Events(SDL_Event even,bool & quitgame);
 	void debugFunctionShow();
 };
 
