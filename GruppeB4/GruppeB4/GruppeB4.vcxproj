@@ -93,6 +93,7 @@
     <ClInclude Include="Menue.h" />
     <ClInclude Include="MoneyManager.h" />
     <ClInclude Include="NPC1.h" />
+    <ClInclude Include="NPC2.h" />
     <ClInclude Include="NPCManager.h" />
     <ClInclude Include="Overlay.h" />
     <ClInclude Include="Pfleger.h" />
@@ -123,6 +124,7 @@
     <ClCompile Include="Menue.cpp" />
     <ClCompile Include="MoneyManager.cpp" />
     <ClCompile Include="NPC1.cpp" />
+    <ClCompile Include="NPC2.cpp" />
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Pfleger.cpp" />
     <ClCompile Include="Player.cpp" />

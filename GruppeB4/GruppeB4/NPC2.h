@@ -1,11 +1,11 @@
 #include "Resourcemanager.h"
 #include "Vektor.h"
-#ifndef NPC1_H
-#define NPC1_H
+#ifndef NPC2_H
+#define NPC2_H
 
 class Player;
 
-class NPC1 {
+class NPC2 {
 
 
 private:
@@ -17,14 +17,14 @@ public:
 
 
 
-	static NPC1 & get_NPC1()
+	static NPC2 & get_NPC2()
 	{
-		static NPC1 Instance;
+		static NPC2 Instance;
 		return Instance;
 	}
 
-	NPC1(){p_s_Position = new s_Vector; p_s_Position->i_x = 780; p_s_Position->i_y = 1030;}
-	~NPC1(){delete p_s_Position;}
+	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 600; p_s_Position->i_y = 800;}
+	~NPC2(){delete p_s_Position;}
 
 
 	s_Vector* get_Position()
