@@ -27,7 +27,6 @@ public:
 	~NPC1(){delete p_s_Position;}
 
 
-
 	s_Vector* get_Position()
 	{
 		return this->p_s_Position;

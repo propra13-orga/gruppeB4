@@ -54,6 +54,7 @@ void S_Resourcemanager::initialize()
 	this->p_spritze = IMG_Load("Spritze.png");
 	this->p_shop = IMG_Load("shop.png");
 	this->p_npc1 = IMG_Load("npc1.png");
+	this->p_npc2 = IMG_Load("npc2.png");
 	this->p_manaspritze = IMG_Load("Mana_Spritze.png");
 	this->p_mana_leer = IMG_Load("mana_leer.png");
 	this->p_mana_halbvoll = IMG_Load("mana_halbvoll.png");
