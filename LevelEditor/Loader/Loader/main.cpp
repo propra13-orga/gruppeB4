@@ -10,19 +10,20 @@ struct Vector2d
 {
 	int x;
 	int y;
+	Vector2d(int x, int y){this->x = x; this->y = y;}
+	Vector2d(){}
 };
 
 class Object
 {
 private:
-	//Vector2d * p_Position;
-	Vector2d Position;
+	Vector2d  Position;
 
 public:
-	Object(int x, int y){Position.x = x;Position.y = y;}
+	Object(int x, int y){Position = Vector2d(x,y);}
 	~Object(){}
 	void set_Position(int x, int y){Position.x = x;Position.y = y;}
-	Vector2d  get_Position(){return Position;}
+	Vector2d *  get_Position(){return &Position;}
 };
 
 void save_ListMembersInOutputFile(list<Object> & tempList);
@@ -57,9 +58,9 @@ void save_ListMembersInOutputFile(list<Object> & tempList)
 
 	for(list<Object>::iterator myIter = tempList.begin();myIter != tempList.end();++myIter)
 	{
-		temporaryVariable = myIter->get_Position().x;
+		temporaryVariable = myIter->get_Position()->x;
 		DATAFILE << temporaryVariable << "\n";
-		temporaryVariable = myIter->get_Position().y;
+		temporaryVariable = myIter->get_Position()->y;
 		DATAFILE << temporaryVariable << "\n";
 	}
 
@@ -116,8 +117,8 @@ void showListInsertions(list<Object> & tempList)
 {
 	for(list<Object>::iterator myIter = tempList.begin();myIter != tempList.end();++myIter)
 	{
-		cout << "X:   " << myIter->get_Position().x << endl;
-		cout << "Y:   " << myIter->get_Position().y << endl;
+		cout << "X:   " << myIter->get_Position()->x << endl;
+		cout << "Y:   " << myIter->get_Position()->y << endl;
 	}
 }
 
