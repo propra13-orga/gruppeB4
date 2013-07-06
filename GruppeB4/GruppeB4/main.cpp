@@ -12,7 +12,7 @@ int counter = 0;
 
 int main(int argc ,char ** argv)
 {
-	//verschiedene Bools, die alle benötigt werden um die while schleife zu verwalten
+	//verschiedene Bools, die alle benoetigt werden um die while schleife zu verwalten
 	bool b_quit = false;
 	bool b_cap = true;
 	bool b_menueistoggled = false;
@@ -44,7 +44,7 @@ int main(int argc ,char ** argv)
 		deltaTime->start();
 	while(b_quit == false)
 	{
-		//nur temporär! überprüfung der Frames per Seconds
+		//nur temporaer! ueberpruefung der Frames per Seconds
 		if(Frames.Getticks() >= 1000)
 	{
 		Frames.start();
@@ -70,7 +70,7 @@ int main(int argc ,char ** argv)
 
 			if(even.type == SDL_KEYDOWN)
 			{
-				if(even.key.keysym.sym == SDLK_n)			//wird n gedrückt geht der skilltree auf
+				if(even.key.keysym.sym == SDLK_n)			//wird n gedrueckt geht der skilltree auf
 				{
 					
 					b_skilltreeisopen = true;
@@ -121,7 +121,7 @@ int main(int argc ,char ** argv)
 
 		if(even.type == SDL_KEYDOWN)
 			{
-				if(even.key.keysym.sym == SDLK_e)			//wird e gedrückt geht der shop auf(später nur wenn npc in range ist)
+				if(even.key.keysym.sym == SDLK_e)			//wird e gedrueckt geht der shop auf(spaeter nur wenn npc in range ist)
 				{
 					if(NPC1::get_NPC1().PlayCloseToBot(p_World->get_Player()) == true)
 					{
@@ -177,7 +177,7 @@ int main(int argc ,char ** argv)
 		// MENUE_______________________________________________________________________
 
 
-			//Wenn der Spieler Escape drückt
+			//Wenn der Spieler Escape drueckt
 		if(even.type == SDL_KEYDOWN )
 			{
 				if(even.key.keysym.sym == SDLK_ESCAPE)
@@ -189,7 +189,7 @@ int main(int argc ,char ** argv)
 			//Der SPieler wird bewegt
 			p_World->handle_Event(even);
 		}
-		//Menue einschlaten, die geschiet, falls Escape gedrückt wurde. Die whileschleife wird erst wieder beendet, wenn der Spieler
+		//Menue einschalten, die geschiet, falls Escape gedrueckt wurde. Die whileschleife wird erst wieder beendet, wenn der Spieler
 		//
 		if(b_menueistoggled == true && b_shopisopen ==false)
 		{

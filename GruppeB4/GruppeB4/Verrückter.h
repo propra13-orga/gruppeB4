@@ -9,7 +9,7 @@ class Crazy_enemy: public Enemy{
 private:
 	s_Vector * p_S_SafePosition;
 
-	//Animationsgedöns
+	//Animationsgedoens
 	Timer * AnimationTimer;
 	int frames;
 	status WALK_STATUS;

@@ -39,7 +39,7 @@ void World::update()
 
 	if(even.type == SDL_KEYDOWN)
 			{
-				if(even.key.keysym.sym == SDLK_n)			//wird e gedrückt geht der shop auf(später nur wenn npc in range ist)
+				if(even.key.keysym.sym == SDLK_n)			//wird e gedrueckt geht der shop auf(spaeter nur wenn npc in range ist)
 				{
 					World::openSkilltree();
 				}

@@ -196,7 +196,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 	//LVL1
 	if(CURRENTLEVEL == LEVEL1)
 	{
-	//für den ersten Quadranten:
+	//fuer den ersten Quadranten:
 	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
 		{
 			//Wand links:
@@ -225,7 +225,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	//für den zweiten Quadranten:
+	//fuer den zweiten Quadranten:
 	if(this->get_Position()->i_x >=969 && this->get_Position()->i_y >= 630 - PLAYER_WIDTH)
 		{
 			//Wand rechts:
@@ -249,7 +249,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	//für den dritten Quadrant (Treppenhaus):
+	//fuer den dritten Quadrant (Treppenhaus):
 	if(this->get_Position()->i_x >= 1203 - PLAYER_WIDTH && this->get_Position()->i_y <= 600 - PLAYER_WIDTH)
 		{
 			//erster Raum Wand links: 
@@ -296,7 +296,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	//für den vierten Quadrant:
+	//fuer den vierten Quadrant:
 	if(this->get_Position()->i_x < 969 && this->get_Position()->i_y < 600)
 		{
 			//Wand rechts oben + Durchgang oben:
@@ -324,7 +324,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 	// LVL2
 	if(CURRENTLEVEL == LEVEL2)
 	{
-		//für den ersten Quadrant:
+		//fuer den ersten Quadrant:
 		if(this->get_Position()->i_x > 1 && this->get_Position()->i_y >  p_TempSegment->SegmentRect21[1].y)
 		{
 			//Wand unten:
@@ -348,7 +348,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-		//für den zweiten Quadrant:
+		//fuer den zweiten Quadrant:
 		if(this->get_Position()->i_x > 1 && this->get_Position()->i_y <  p_TempSegment->SegmentRect21[1].y)
 		{
 			//Wand oben:
@@ -376,7 +376,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 	// LVL3
 	if(CURRENTLEVEL == LEVEL3)
 	{
-		//für den ersten Quadrant:
+		//fuer den ersten Quadrant:
 		if(this->get_Position()->i_x < p_TempSegment->SegmentRect31[1].x + p_TempSegment->SegmentRect31[1].w - PLAYER_WIDTH && this->get_Position()->i_y <  p_TempSegment->SegmentRect31[0].y + p_TempSegment->SegmentRect31[0].h)
 		{
 			//Wand unten:
@@ -400,7 +400,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-		//für den zweiten Quadrant:
+		//fuer den zweiten Quadrant:
 		if(this->get_Position()->i_x < 1175 && this->get_Position()->i_y < 550 && this->get_Position()->i_x > 785 && this->get_Position()->i_y > 20)
 		{
 			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect32[1].y - PLAYER_HEIGHT && this->get_Position()->i_x >= 1025 - PLAYER_WIDTH)
@@ -420,7 +420,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-		//für den dritten Quadrant (Flur):
+		//fuer den dritten Quadrant (Flur):
 		if(this->get_Position()->i_y > p_TempSegment->SegmentRect32[1].y)
 		{
 			//erster Raum unten + dritter Flur oben:
