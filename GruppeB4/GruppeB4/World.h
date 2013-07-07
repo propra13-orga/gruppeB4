@@ -22,7 +22,7 @@ private:
 	Player * p_Player1;
 	LevelSegmente * p_Segmente;
 	SDL_Rect Camera;
-	LEVEL_LOADED CURRENTLEVEL;//Hier entsteht eine Enumeration die gesetzt wird um zu überprüfen, welches Level geladen ist
+	LEVEL_LOADED CURRENTLEVEL;//Hier entsteht eine Enumeration die gesetzt wird um zu ueberpruefen, welches Level geladen ist
 	bool LevelToSet;
 public:
 	World(int i_x,int i_y){CURRENTLEVEL = LEVEL1;p_Player1 = new Player(i_x,i_y);p_Segmente = new LevelSegmente();Camera.w = 900; Camera.h = 600;LevelToSet = true;}

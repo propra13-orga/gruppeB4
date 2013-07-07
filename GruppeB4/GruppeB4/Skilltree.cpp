@@ -538,7 +538,7 @@ void Skilltree::render(SDL_Event &even){
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilltree"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 
-// Skill-Erklärungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
+// Skill-Erklaerungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
 
 if(b_t1_1_over == true){	
 		
@@ -747,7 +747,7 @@ if(b_t1_1_over == true){
 	
 
 
-	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfügbaren Skillpunkte.
+	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfuegbaren Skillpunkte.
 
 	if(Skilltree::get_Skilltree().get_skillpoint() == 0)
 	{
@@ -820,7 +820,7 @@ void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
 
 void Skilltree::check_skilled()
 {
-	// Es wird überprüft ob das besagte Talent bereits ausgewählt wurden, wenn dies der Fall ist wird es mit einem Symbol "gesperrt"
+	// Es wird ueberprueft ob das besagte Talent bereits ausgewaehlt wurden, wenn dies der Fall ist wird es mit einem Symbol "gesperrt"
 	if(b_t11 == true)
 	{
 		apply_Image(180,26,S_Resourcemanager::get_Resourcemanager()->get_Surface("check"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));

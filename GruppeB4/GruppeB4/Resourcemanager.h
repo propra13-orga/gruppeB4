@@ -20,7 +20,7 @@ private:
 	S_Resourcemanager(const S_Resourcemanager&){}
 	S_Resourcemanager& operator= (const S_Resourcemanager&) {return *this;}
 	~S_Resourcemanager(){}
-	//Bilder, die geladen werden müssen, to do: das ganze als map implementieren.
+	//Bilder, die geladen werden muessen, to do: das ganze als map implementieren.
 	SDL_Surface * p_screen;
 	SDL_Surface * p_player;
 	SDL_Surface * p_player_up;
@@ -130,7 +130,7 @@ public:
 	static S_Resourcemanager * get_Resourcemanager();
 	
 	void initialize();
-	//Rückgabe der Bilder , die in einer map gespeichert werden
+	//Rueckgabe der Bilder , die in einer map gespeichert werden
 	SDL_Surface * get_Surface(string key);
 };
 
