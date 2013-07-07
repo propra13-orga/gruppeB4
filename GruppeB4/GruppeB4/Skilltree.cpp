@@ -10,7 +10,7 @@ int Skilltree::get_skillpoint(){
 
 
 
-	return i_skillpoint;
+	return i_skillpoint;			// Um auf i_skillpoint zuzugreifen
 
 
 
@@ -20,7 +20,7 @@ int Skilltree::get_skillpoint(){
 
 
 
-void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
+void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funktion um Auswahl zu verwalten
 {
 	
 	
@@ -45,11 +45,12 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 	
 
 
-		if(even.button.x >= 180 && even.button.x <= 245 && even.button.y >=25 && even.button.y <=92)
+		if(even.button.x >= 180 && even.button.x <= 245 && even.button.y >=25 && even.button.y <=92)		// Wenn Klick innerhalb dieser Koordinaten -> Talent ausgwählt und bool = true also wird Talent Overlay gezeigt
 		{
 			cout << "t1_1 true" << endl;
-			b_t1_1_over = true;
-			overlayTimer->start();
+			b_t1_1_over = true;			// zusätzlich der overlay bool = true, damit der Timer laufen kann
+			overlayTimer->start();		// Timer wird gestartet und in anderer Funktion der Klasse weiter verwendet
+										
 			
 			
 		}
@@ -59,7 +60,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 		{
 			if(b_t11 == true)
 			{
-				cout << "skilled" << endl;
+				cout << "skilled" << endl;			// Es wird überprüft ob das Talent bereits ausgewählt wurde,wenn ja gibt es passendes Feedback
 				b_skilled = true;
 				overlayTimer->start();
 			}
@@ -71,13 +72,13 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			}
 
 
-			 if(i_skillpoint >=1 && b_t11 == false){
-				b_t11 = true;
-			i_skillpoint = i_skillpoint -1;
-			cout << "t1_1 ausgewählt" << endl;
-			cout << b_t11 << endl;
+			 if(i_skillpoint >=1 && b_t11 == false){  // wenn man genug Talentpunkte hat und das entsprechende Talent noch nicht ausgewählt wurde dann:
+				b_t11 = true;						  // Talent bool = true
+			i_skillpoint = i_skillpoint -1;			  // Ein Talentpunkt wird nun abgezogen
+			cout << "t1_1 ausgewählt" << endl;		  
+			cout << b_t11 << endl;					  
 				cout << i_skillpoint << endl;
-				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);
+				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);		// Wird später verwendet aber im Moment habe ich das ganze anders geregelt!!!
 			
 			}
 			
@@ -86,7 +87,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 		if(even.button.x >= 295 && even.button.x <= 360 && even.button.y >=25 && even.button.y <=92)
 		{
-			cout << "t1_2 true" << endl;
+			cout << "t1_2 true" << endl;		// Analog zu oben!!!
 			b_t1_2_over = true;
 			overlayTimer->start();
 			
@@ -100,7 +101,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t12 == true)
 			{
 				cout << "skilled" << endl;
-				b_skilled = true;
+				b_skilled = true;				// Analog zu oben!!!
 				overlayTimer->start();
 			}
 			
@@ -113,7 +114,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 
 			if(i_skillpoint >=1 && b_t12 == false){
 				b_t12 = true;
-			i_skillpoint = i_skillpoint -1;
+			i_skillpoint = i_skillpoint -1;				// Analog zu oben!!!
 			cout << "t1_2 ausgewählt" << endl;
 			cout << b_t12 << endl;
 				cout << i_skillpoint << endl;
@@ -128,7 +129,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 		if(even.button.x >= 411 && even.button.x <= 478 && even.button.y >=25 && even.button.y <=92)
 		{
 			cout << "t1_3 true" << endl;
-			b_t1_3_over = true;
+			b_t1_3_over = true;				// Analog zu oben!!!
 			overlayTimer->start();
 			
 			
@@ -140,7 +141,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t13 == true)
 			{
 				cout << "skilled" << endl;
-				b_skilled = true;
+				b_skilled = true;// Analog zu oben!!!
 				overlayTimer->start();
 			}
 
@@ -153,7 +154,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(i_skillpoint >=1 && b_t13 == false){
 				b_t13 = true;
 			i_skillpoint = i_skillpoint -1;
-			cout << "t1_3 ausgewählt" << endl;
+			cout << "t1_3 ausgewählt" << endl;// Analog zu oben!!!
 			cout << b_t13 << endl;
 				cout << i_skillpoint << endl;
 				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);
@@ -165,7 +166,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(even.button.x >= 524 && even.button.x <= 592 && even.button.y >=25 && even.button.y <=92)
 		{
 			cout << "t1_4 true" << endl;
-			b_t1_4_over = true;
+			b_t1_4_over = true;				// Analog zu oben!!!
 			overlayTimer->start();
 			
 			
@@ -176,20 +177,20 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t14 == true)
 			{
 				cout << "skilled" << endl;
-				b_skilled = true;
+				b_skilled = true;			// Analog zu oben!!!
 				overlayTimer->start();
 			}
 
 			if(i_skillpoint < 1 && b_t14 == false)
 			{
 				b_nopoints = true;
-				overlayTimer->start();
-			}
+				overlayTimer->start();			// Analog zu oben!!!
+			}		
 
 			if(i_skillpoint >=1 && b_t14 == false){
 				b_t14 = true;
 			i_skillpoint = i_skillpoint -1;
-			cout << "t1_4 ausgewählt" << endl;
+			cout << "t1_4 ausgewählt" << endl;			// Analog zu oben!!!
 			cout << b_t14 << endl;
 				cout << i_skillpoint << endl;
 				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);
@@ -201,7 +202,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(even.button.x >= 640 && even.button.x <= 708 && even.button.y >=25 && even.button.y <=92)
 		{
 			cout << "t1_5 true" << endl;
-			b_t1_5_over = true;
+			b_t1_5_over = true;				// Analog zu oben!!!
 			overlayTimer->start();
 			
 			
@@ -213,7 +214,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 			if(b_t15 == true)
 			{
 				cout << "skilled" << endl;
-				b_skilled = true;
+				b_skilled = true;					// Analog zu oben!!!
 				overlayTimer->start();
 			}
 
@@ -227,13 +228,13 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 				b_t15 = true;
 			i_skillpoint = i_skillpoint -1;
 			cout << "t1_5 ausgewählt" << endl;
-			cout << b_t15 << endl;
+			cout << b_t15 << endl;			// Analog zu oben!!!
 				cout << i_skillpoint << endl;
 				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);
 			}
 
 
-			//___________________T2_____________
+			//___________________T2_____________ Analog zu oben!!!_______Mit kleinem Zusatz___
 		}
 
 				if(even.button.x >= 228 && even.button.x <= 316 && even.button.y >=142 && even.button.y <= 210)
@@ -248,19 +249,20 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 				
 		if(even.button.x >= 228 && even.button.x <= 316 && even.button.y >=219 && even.button.y <=335)
 		{
-			if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)
+			// es wird überprüft ob der Spieler bereits die vorherigen Talente ausgewählt hat. Diese vorherigen Talente müssen bereits ausgewählt sein um das darauf folgende auswählen zu können!
+			if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)	
 			{
 			b_not_yet_t2_1 = true;
 			overlayTimer->start();
 			
 			}
-			if(Skilltree::get_Skilltree().t1_1() == true && Skilltree::get_Skilltree().t1_2() == true)
+			if(Skilltree::get_Skilltree().t1_1() == true && Skilltree::get_Skilltree().t1_2() == true)	// In diesem Fall sind beide vorherigen Talente aktiviert also geht es normal mit den beriets oben kommentierten Abfragen weiter.
 				{
 			
 			if(b_t21 == true)
 			{
 				cout << "skilled" << endl;
-				b_skilled = true;
+				b_skilled = true;		// Analog zu oben
 				overlayTimer->start();
 			}
 
@@ -274,7 +276,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)
 				b_t21 = true;
 			i_skillpoint = i_skillpoint -1;
 			cout << "t2_1 ausgewählt" << endl;
-			cout << b_t21 << endl;
+			cout << b_t21 << endl;			// Analog zu oben
 				cout << i_skillpoint << endl;
 				Skilltree::get_Skilltree().administrate_skills(p_Player, b_t11);
 
@@ -539,18 +541,21 @@ apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilltree
 
 
 // Skill-Erklaerungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
+// Hier werden ausschließlich Bilder verwaltet und wenn vorhanden Timer beendet, bzw. abgefragt!
 
-if(b_t1_1_over == true){	
-		
+if(b_t1_1_over == true){		// wenn der overlay bool aus der handleInput() Funktion true ist wird hier der Timer auf Ticks überprüft und nach 2 Sekunden beendet.
+								//		-> während dieser Zeit wird das Bild im Fenster ausgegeben(siehe apply_Image() unten.)
 		if(overlayTimer->Getticks() >= 2000){             
 			overlayTimer->stop();					
-			b_t1_1_over = false;
+			b_t1_1_over = false;		// Danach wird der bool wieder auf false gesetzt, damit es wieder im HandleInput() von vorne beginnen kann.
 		}
 		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("t1_1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
 	
 	}
+	
 
+//_________________________________Alles andere Analog zum ersten Teil_________________________!!!________________!!!___________________
 	if(b_t1_2_over == true){
 		
 		if(overlayTimer->Getticks() >= 2000){
@@ -749,7 +754,7 @@ if(b_t1_1_over == true){
 
 	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfuegbaren Skillpunkte.
 
-	if(Skilltree::get_Skilltree().get_skillpoint() == 0)
+	if(Skilltree::get_Skilltree().get_skillpoint() == 0)		// Es werden hier nur die Talentpunkte abgefragt, die der Spieler durch Level Up's bekommt, damit diese als Anzeige auf dem Overlay erscheinen.
 	{
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("tp_0"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			
@@ -794,7 +799,7 @@ void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
 {/*
 
 	Mittlerweile unwichtig(habe diese Funktionen anders verwendet -> in anderen Klassen, wie im Player,Shop etc. )
-	//Hier werden die Auswirkungen der Talentverteilung verwaltet
+	//Hier werden die Auswirkungen der Talentverteilung -->nicht<-- mehrverwaltet
 	if(b_t11 == true)
 	{
 		p_Player->heal(100); // Heiltränke geben 100 HP mehr bei Benutzung oder 100 mehr Max HP
@@ -878,6 +883,8 @@ void Skilltree::check_skilled()
 	{
 		apply_Image(481,306,S_Resourcemanager::get_Resourcemanager()->get_Surface("check"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
+	//___________Ein X Symbol wird über die Talente, deren Vorgänger Talente nicht aktiviert sind, gelegt.
+
 
 	if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)
 	{

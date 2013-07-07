@@ -67,6 +67,7 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 			this->p_s_Velocity->i_x = 0;
 			raged = true;
 			AttackTimer->start();
+			OverlayTimer->start();
 		}
 		if(raged == true)
 		{
@@ -124,6 +125,7 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 				cout << p_Player->get_Health();
 			}
 		}
+		
 }
 
 
@@ -149,9 +151,12 @@ void FinalBoss::weaken_Endboss(Player * p_Player)
 		}
 		return;
 	}
+	
 	else
 	{
 		cout << "Kein Finishmove möglich" << endl;
 		return;
 	}
+	
+
 }
