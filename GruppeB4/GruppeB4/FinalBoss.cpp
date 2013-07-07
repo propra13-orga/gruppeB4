@@ -7,7 +7,7 @@
 
 
 
-/*
+/**
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
@@ -112,9 +112,9 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 		}
 		this->p_s_Position->i_x += p_s_Velocity->i_x;this->p_s_Position->i_y += this->p_s_Velocity->i_y;
 
-		//ENDE BEwegungsteil_________________________________________________________________________________________________________________
+		///ENDE BEwegungsteil_________________________________________________________________________________________________________________
 
-		//Anfang Schadenssetzungsteil__________________________________________________________________________________________________________
+		///Anfang Schadenssetzungsteil__________________________________________________________________________________________________________
 
 
 		if(this->HURTSTATE == HURT)

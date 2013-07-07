@@ -9,10 +9,10 @@
 void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Player * temp){
 
 
-	// Verwaltet den UserInput
+	/// Verwaltet den UserInput
 	if(even.type == SDL_KEYDOWN)
 	{
-		if(even.key.keysym.sym == SDLK_e)		// Wenn 'e' gedrückt wird schließt sich der shop(siehe main.cpp, da dort die Funktion aufgerufen wird.)
+		if(even.key.keysym.sym == SDLK_e)		///<Wenn 'e' gedrückt wird schließt sich der shop(siehe main.cpp, da dort die Funktion aufgerufen wird.)
 		{
 			*b_shopisopen = false;
 			renderbuy = false;
@@ -34,8 +34,8 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 
 		if(even.button.x >= 278 && even.button.x <= 350 && even.button.y >=129 && even.button.y <=166)// Wenn bei diesen Coords geklickt wird wird abgefragt:
 		
-			// Wenn genug Geld vorhanden + Talente im Skilltree abgefragt( da diese auf den Shop Auswirkungen haben)
-				//Gibt mehrere Varianten für einen Kaufe im Shop, je nachdem ob oder wieviele Talente true sind.
+			/**Wenn genug Geld vorhanden + Talente im Skilltree abgefragt( da diese auf den Shop Auswirkungen haben)
+			 *	Gibt mehrere Varianten für einen Kaufe im Shop, je nachdem ob oder wieviele Talente true sind.*/
 			if(MoneyManager::get_MoneyManager().get_Money()>= 5 && Skilltree::get_Skilltree().t1_3() == false && Skilltree::get_Skilltree().t2_2() == false ){
 			
 				ItemManager::get_ItemManager().insert_item(HEAL);
