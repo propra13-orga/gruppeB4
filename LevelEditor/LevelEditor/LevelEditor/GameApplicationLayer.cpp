@@ -39,8 +39,9 @@ void GameApplicationLayer::game_Loop()
 
 	}
 
-	
-	
-
 	SDL_Quit();
+}
+
+void GameApplicationLayer::close_Game()
+{
 }

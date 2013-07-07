@@ -6,6 +6,7 @@
 #include "Editor.h"
 #include "Resourcemanager.h"
 #include "CollisibalObjectManager.h"
+#include "SaveAndLoad.h"
 
 class S_EventHandler;
 

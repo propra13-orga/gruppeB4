@@ -27,10 +27,14 @@ void S_LevelEditor::update()
 
 void S_LevelEditor::load_Level()
 {
-	cout << "Laden" << endl;
+	SaveAndLoad * p_GameLoad = new SaveAndLoad();
+	p_GameLoad->load_LevelData();
+	delete p_GameLoad;
 }
 
 void S_LevelEditor::save_Level()
 {
-	cout << "Speichern" << endl;
+	SaveAndLoad * p_GameSave = new SaveAndLoad();
+	p_GameSave->save_LevelData();
+	delete p_GameSave;
 }

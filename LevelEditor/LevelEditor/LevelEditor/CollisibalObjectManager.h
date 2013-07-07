@@ -24,10 +24,12 @@ public:
 	static S_CollisibalObjectManager & get_CManager(){static S_CollisibalObjectManager Instance;return Instance;}
 	void set_Object(OBJECTTYPE CURRENTOBJECT,int x, int y);
 	C_Block * get_WorkingListsFirstMember();
+	list<C_Block> & get_BlockList(){return Blocklist;}
 	void find(int x, int y);//Funktion findet das Element, auf das geklickt wurde und tut es in die Bearbeitungsliste, wenn bearbeitungsliste nicht leer, wird das element us der bearbeitungsliste wieder wie vorher gerendert
 	void show_Insertions();
 	void forced_pushIntoBlockList();
 	void render();
+	void delete_lastMember(){Blocklist.pop_back();}
 };
 
 

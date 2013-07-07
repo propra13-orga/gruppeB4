@@ -45,6 +45,9 @@
     <ClCompile Include="..\..\..\GruppeB4\GruppeB4\Timer.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
+    <ClCompile Include="SaveAndLoad.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="World.h">
@@ -84,6 +87,9 @@
       <Filter>Headerdateien</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\GruppeB4\GruppeB4\Timer.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="SaveAndLoad.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>

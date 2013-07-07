@@ -87,6 +87,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="Resourcemanager.cpp" />
+    <ClCompile Include="SaveAndLoad.cpp" />
     <ClCompile Include="S_CollisibalObjectManager.cpp" />
     <ClCompile Include="World.cpp" />
   </ItemGroup>
@@ -102,6 +103,7 @@
     <ClInclude Include="LevelEditor.h" />
     <ClInclude Include="Overlay.h" />
     <ClInclude Include="Resourcemanager.h" />
+    <ClInclude Include="SaveAndLoad.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="World.h" />
   </ItemGroup>

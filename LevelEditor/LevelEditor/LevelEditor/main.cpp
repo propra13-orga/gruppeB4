@@ -12,6 +12,10 @@ int main(int argv,char ** argc)
 
 	Game.game_Loop();
 
+	Game.close_Game();
+
+	system("PAUSE");
+
 	
 
 

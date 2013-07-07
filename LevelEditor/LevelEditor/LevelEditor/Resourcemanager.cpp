@@ -22,6 +22,7 @@ S_Resourcemanager::S_Resourcemanager()
 	this->SurfacesMap["FullyUnselectedMenue"] = IMG_Load("FullyUnselectedMenue.png");
 	this->SurfacesMap["StartChoice"] = IMG_Load("StartChoice.png");
 	this->SurfacesMap["ChoiceChoice"] = IMG_Load("ChoiceChoice.png");
+	this->SurfacesMap["PopUpSave"] = IMG_Load("PopUpSave.png");
 
 	//Bilderprüfungsteil-----------------------------------------------------------------------------
 

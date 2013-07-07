@@ -20,7 +20,7 @@ public:
 	~GameApplicationLayer(){}
 	void initialize_GameResources();
 	void game_Loop();
-	void close_Game(){}
+	void close_Game();
 
 
 };

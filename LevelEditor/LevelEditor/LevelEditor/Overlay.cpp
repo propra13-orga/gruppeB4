@@ -21,6 +21,18 @@ void S_Overlay::render(Editor * p_CurrentMainEditor)
 		S_Resourcemanager::get_Resourcemanager().apply_Surface(97,40,S_Resourcemanager::get_Resourcemanager().get_Surface("ChoiceChoice"),S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"));
 	}
 
+	if(this->b_popUpisActive == true && this->p_PopUpTimer->Getticks() <= 1000)
+	{
+		if(POPUP == SAVE)
+		{
+		S_Resourcemanager::get_Resourcemanager().apply_Surface(0,0,S_Resourcemanager::get_Resourcemanager().get_Surface("PopUpSave"),S_Resourcemanager::get_Resourcemanager().get_Surface("Screen"));
+		}
+	}
+	else
+	{
+		this->b_popUpisActive = false;
+	}
+
 }
 
 
@@ -116,4 +128,11 @@ void S_Overlay::debugFunctionShow()
 	{
 		cout << "Start ausgewählt" << endl;
 	}
+}
+
+void S_Overlay::initialize_PopUp(POPUPTYPE tempPOPUP)
+{
+	this->POPUP = tempPOPUP;
+	this->b_popUpisActive = true;
+	this->p_PopUpTimer->start();
 }
