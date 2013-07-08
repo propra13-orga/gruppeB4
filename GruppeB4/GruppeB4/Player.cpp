@@ -190,8 +190,8 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 		*tempmenue = true;
 	}
 }
-/// Collision
 
+/** Collision: Hier wird die Position vom Player mit Angaben aus der Levelsegmentierung verglichen und wenn Position größer bzw. kleiner ist wird die Geschwindigkeit, welche dem Player bei Bewegen gegben wird wieder abgezogen und er bleibt vor den Wänden stehen */
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	///LVL1
@@ -404,18 +404,22 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 		///fuer den zweiten Quadrant:
 		if(this->get_Position()->i_x < 1175 && this->get_Position()->i_y < 550 && this->get_Position()->i_x > 785 && this->get_Position()->i_y > 20)
 		{
+			///Wand unten linke Seite
 			if(this->get_Position()->i_y >= p_TempSegment->SegmentRect32[1].y - PLAYER_HEIGHT && this->get_Position()->i_x >= 1025 - PLAYER_WIDTH)
 			{
 				return true;
 			}
+			///Wand oben:
 			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect32[0].y)
 			{
 				return true;
 			}
+			///Wand rechts
 			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect32[0].x + p_TempSegment->SegmentRect32[0].w - PLAYER_WIDTH)
 			{
 				return true;
 			}
+			///Wand unten rechte Seite
 			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect32[1].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect32[1].x - PLAYER_WIDTH)
 			{
 				return true;
@@ -434,51 +438,38 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 			{
 				return true;
 			}
-			///erster Raum Wand links oben + erster Flur oben:
-			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y - PLAYER_HEIGHT && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x)
-			{
-				return true;
-			}
 			///erster Raum Wand links unten + erster Flur unten:
 			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[2].y - PLAYER_HEIGHT && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[2].x + p_TempSegment->SegmentRect33[2].w - PLAYER_WIDTH)
 			{
 				return true;
 			}
+			///erster Raum Wand links oben + erster Flur oben:
 			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[1].y && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[0].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[0].x )
 			{
 				return true;
 			}
+			///Wand ganz links:
 			else if(this->get_Position()->i_x <= p_TempSegment->SegmentRect33[1].x)
 			{
 				return true;
 			}
+			///Wand dritter Flur unten:
 			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[3].y + p_TempSegment->SegmentRect33[3].h - PLAYER_HEIGHT)
 			{
 				return true;
 			}
+			///Wand dritter Flut rechts:
 			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[3].x + p_TempSegment->SegmentRect33[3].w - PLAYER_WIDTH)
 			{
 				return true;
 			}
-			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y)
-			{
-				return true;
-			}
-			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[4].y + p_TempSegment->SegmentRect33[4].h - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[5].x)
-			{
-				return true;
-			}
-			else if(this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y - PLAYER_HEIGHT && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH)
+			///Wand dritter Flur oben rechte Seite + letzter Flur rechte Seite + Boss Raum unten rechts: 
+			else if(this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y && this->get_Position()->i_y >= p_TempSegment->SegmentRect33[4].y - PLAYER_HEIGHT)
 			{
 				return true;
 			}
 			///letzter Flur linke Seite + Boss Raum unten links: 
 			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[5].y + p_TempSegment->SegmentRect33[5].h - PLAYER_HEIGHT && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y && this->get_Position()->i_x <= p_TempSegment->SegmentRect33[4].x && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[5].x)
-			{
-				return true;
-			}
-			///letzter Flur rechte + Boss Raum unten recht:
-			else if(this->get_Position()->i_y >= p_TempSegment->SegmentRect33[5].y + p_TempSegment->SegmentRect33[5].h - PLAYER_HEIGHT && this->get_Position()->i_x >= p_TempSegment->SegmentRect33[4].x + p_TempSegment->SegmentRect33[4].w - PLAYER_WIDTH && this->get_Position()->i_y <= p_TempSegment->SegmentRect33[3].y)
 			{
 				return true;
 			}
