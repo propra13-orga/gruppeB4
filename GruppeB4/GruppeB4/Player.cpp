@@ -191,6 +191,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 	}
 }
 /// Collision
+
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	///LVL1

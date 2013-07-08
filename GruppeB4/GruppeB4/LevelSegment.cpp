@@ -1,5 +1,5 @@
 #include "LevelSegment.h"
-
+/**Diese Datei verwaltet die Werte der Level.Hier wird Länge,Höhe und Breite sowie die x und y Koordinaten,der linken oberen Ecke von jedem Quadraten gespeichert */
 void LevelSegmente::init_Segmente()
 {
 	SegmentRect11[0].x = 394;

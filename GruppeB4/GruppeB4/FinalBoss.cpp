@@ -31,7 +31,7 @@ void FinalBoss::render(SDL_Rect  camera){
 
 void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 {
-	//Bewegungsteil_________________________________________________________________________________________________________________________________
+	///Bewegungsteil_________________________________________________________________________________________________________________________________
 	if(transformed == false)
 	{
 		p_Player->set_disable(true);

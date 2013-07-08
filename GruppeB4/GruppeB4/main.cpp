@@ -190,7 +190,7 @@ int main(int argc ,char ** argv)
 			p_World->handle_Event(even);
 		}
 		/**Menue einschalten, die geschiet, falls Escape gedrueckt wurde. Die whileschleife wird erst wieder beendet, wenn der Spieler*/
-		//
+		
 		if(b_menueistoggled == true && b_shopisopen ==false)
 		{
 			while(b_menueistoggled == true)

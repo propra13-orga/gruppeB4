@@ -1,6 +1,8 @@
 #include "Skilltree.h"
 
-
+/**Diese Datei verwaltet den Skillbaum.Es wird geschaut ob man Talentpunkte hat und guckt welche Talente man mit den erreichten
+*Talnetpunkten freischalten kann. Wenn man nicht genug Punkte hat wird entsprechendes Feedback zurück gegeben
+*Gibt alles aus und verwaltet die Funktion .Vergleicht Mausposition sowie die Bilder ausgabe. Zieht Talentpunkte ab wenn man etwas freischaltet*/
 
 
 
@@ -268,7 +270,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t21 == false)
 			{
-				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;	///<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -319,7 +321,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t22 == false)
 			{
-				b_nopoints = true;		//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;		//<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -369,7 +371,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t23 == false)
 			{
-				b_nopoints = true;		//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;		///<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();		
 			}
 
@@ -418,7 +420,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t31 == false)
 			{
-				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;	///<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -465,7 +467,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t32 == false)
 			{
-				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;	///<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -506,7 +508,7 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 			if(i_skillpoint < 1 && b_t41 == false)
 			{
-				b_nopoints = true;	//da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+				b_nopoints = true;	///<da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
 				overlayTimer->start();
 			}
 
@@ -536,18 +538,18 @@ void Skilltree::handleInput(SDL_Event &even, bool *b_skilltreeisopen)		// Funkti
 
 void Skilltree::render(SDL_Event &even){
 
-	//Renderfunktion fuer den Talentbaum
+	///Renderfunktion fuer den Talentbaum
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("skilltree"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 
-// Skill-Erklaerungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
-// Hier werden ausschließlich Bilder verwaltet und wenn vorhanden Timer beendet, bzw. abgefragt!
+/** Skill-Erklaerungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
+*Hier werden ausschließlich Bilder verwaltet und wenn vorhanden Timer beendet, bzw. abgefragt!*/
 
-if(b_t1_1_over == true){		// wenn der overlay bool aus der handleInput() Funktion true ist wird hier der Timer auf Ticks überprüft und nach 2 Sekunden beendet.
-								//		-> während dieser Zeit wird das Bild im Fenster ausgegeben(siehe apply_Image() unten.)
+if(b_t1_1_over == true){		///< wenn der overlay bool aus der handleInput() Funktion true ist wird hier der Timer auf Ticks überprüft und nach 2 Sekunden beendet.
+								///<		-> während dieser Zeit wird das Bild im Fenster ausgegeben(siehe apply_Image() unten.)
 		if(overlayTimer->Getticks() >= 2000){             
 			overlayTimer->stop();					
-			b_t1_1_over = false;		// Danach wird der bool wieder auf false gesetzt, damit es wieder im HandleInput() von vorne beginnen kann.
+			b_t1_1_over = false;		///< Danach wird der bool wieder auf false gesetzt, damit es wieder im HandleInput() von vorne beginnen kann.
 		}
 		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("t1_1"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		
@@ -555,7 +557,7 @@ if(b_t1_1_over == true){		// wenn der overlay bool aus der handleInput() Funktio
 	}
 	
 
-//_________________________________Alles andere Analog zum ersten Teil_________________________!!!________________!!!___________________
+///_________________________________Alles andere Analog zum ersten Teil_________________________!!!________________!!!___________________
 	if(b_t1_2_over == true){
 		
 		if(overlayTimer->Getticks() >= 2000){
@@ -752,9 +754,9 @@ if(b_t1_1_over == true){		// wenn der overlay bool aus der handleInput() Funktio
 	
 
 
-	// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfuegbaren Skillpunkte.
+	/// Anzeige im Overlay des Talentbaumes zum Anzeigen der aktuell verfuegbaren Skillpunkte.
 
-	if(Skilltree::get_Skilltree().get_skillpoint() == 0)		// Es werden hier nur die Talentpunkte abgefragt, die der Spieler durch Level Up's bekommt, damit diese als Anzeige auf dem Overlay erscheinen.
+	if(Skilltree::get_Skilltree().get_skillpoint() == 0)		///< Es werden hier nur die Talentpunkte abgefragt, die der Spieler durch Level Up's bekommt, damit diese als Anzeige auf dem Overlay erscheinen.
 	{
 		apply_Image(40,430,S_Resourcemanager::get_Resourcemanager()->get_Surface("tp_0"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 			
@@ -825,7 +827,7 @@ void Skilltree::administrate_skills(Player *p_Player,bool b_t11)
 
 void Skilltree::check_skilled()
 {
-	// Es wird ueberprueft ob das besagte Talent bereits ausgewaehlt wurden, wenn dies der Fall ist wird es mit einem Symbol "gesperrt"
+	/// Es wird ueberprueft ob das besagte Talent bereits ausgewaehlt wurden, wenn dies der Fall ist wird es mit einem Symbol "gesperrt"
 	if(b_t11 == true)
 	{
 		apply_Image(180,26,S_Resourcemanager::get_Resourcemanager()->get_Surface("check"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
@@ -883,7 +885,7 @@ void Skilltree::check_skilled()
 	{
 		apply_Image(481,306,S_Resourcemanager::get_Resourcemanager()->get_Surface("check"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
-	//___________Ein X Symbol wird über die Talente, deren Vorgänger Talente nicht aktiviert sind, gelegt.
+	///___________Ein X Symbol wird über die Talente, deren Vorgänger Talente nicht aktiviert sind, gelegt.
 
 
 	if(Skilltree::get_Skilltree().t1_1() == false || Skilltree::get_Skilltree().t1_2() == false)

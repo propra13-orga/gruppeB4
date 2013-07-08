@@ -2,6 +2,7 @@
 #define LEVELSEGMENT_H_
 
 #include "Resourcemanager.h"
+/**Hier werden die einzelnen Level eingeführt*/
 
 class LevelSegmente
 {

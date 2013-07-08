@@ -128,9 +128,9 @@ public:
 	SDL_Rect PlayerLeftClips[6];
 	SDL_Rect EndbossClips[7];
 	static S_Resourcemanager * get_Resourcemanager();
-	
+  /**Rueckgabe der Bilder , die in einer map gespeichert werden*/
 	void initialize();
-	/**Rueckgabe der Bilder , die in einer map gespeichert werden*/
+	
 	SDL_Surface * get_Surface(string key);
 };
 
