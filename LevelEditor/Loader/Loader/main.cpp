@@ -17,13 +17,15 @@ struct Vector2d
 class Object
 {
 private:
-	Vector2d  Position;
+	Vector2d * Position;
 
 public:
-	Object(int x, int y){Position = Vector2d(x,y);}
-	~Object(){}
-	void set_Position(int x, int y){Position.x = x;Position.y = y;}
-	Vector2d *  get_Position(){return &Position;}
+	Object(int x, int y){Position = new Vector2d(x,y);}
+	~Object(){delete Position;}
+	Object(const Object & o){Position = new Vector2d;Position->x = o.Position->x;Position->y = o.Position->y;}
+	Object & operator=(const Object & that){Position->x = that.Position->x;Position->y = that.Position->y; }
+	void set_Position(int x, int y){Position->x = x;Position->y = y;}
+	const Vector2d *  get_Position(){return Position;}
 };
 
 void save_ListMembersInOutputFile(list<Object> & tempList);
