@@ -7,7 +7,7 @@
 
 
 
-/*
+/**
 apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Win"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		SDL_Delay(5000);
@@ -31,7 +31,7 @@ void FinalBoss::render(SDL_Rect  camera){
 
 void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 {
-	//Bewegungsteil_________________________________________________________________________________________________________________________________
+	///Bewegungsteil_________________________________________________________________________________________________________________________________
 	if(transformed == false)
 	{
 		p_Player->set_disable(true);
@@ -67,6 +67,7 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 			this->p_s_Velocity->i_x = 0;
 			raged = true;
 			AttackTimer->start();
+			OverlayTimer->start();
 		}
 		if(raged == true)
 		{
@@ -111,9 +112,9 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 		}
 		this->p_s_Position->i_x += p_s_Velocity->i_x;this->p_s_Position->i_y += this->p_s_Velocity->i_y;
 
-		//ENDE BEwegungsteil_________________________________________________________________________________________________________________
+		///ENDE BEwegungsteil_________________________________________________________________________________________________________________
 
-		//Anfang Schadenssetzungsteil__________________________________________________________________________________________________________
+		///Anfang Schadenssetzungsteil__________________________________________________________________________________________________________
 
 
 		if(this->HURTSTATE == HURT)
@@ -124,6 +125,7 @@ void FinalBoss::update(Player * p_Player,SDL_Rect camera)
 				cout << p_Player->get_Health();
 			}
 		}
+		
 }
 
 
@@ -149,9 +151,12 @@ void FinalBoss::weaken_Endboss(Player * p_Player)
 		}
 		return;
 	}
+	
 	else
 	{
 		cout << "Kein Finishmove möglich" << endl;
 		return;
 	}
+	
+
 }

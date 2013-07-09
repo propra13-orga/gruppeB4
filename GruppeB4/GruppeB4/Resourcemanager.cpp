@@ -2,7 +2,7 @@
 
 S_Resourcemanager * S_Resourcemanager::get_Resourcemanager()
 {
-		// hier wird eine statische Instanz erzeugt, die sich auf grund ihrer statischen Eigenschaft nur einmal beim ersten funktionsaufruf erzeugt wird.
+		/// hier wird eine statische Instanz erzeugt, die sich auf grund ihrer statischen Eigenschaft nur einmal beim ersten funktionsaufruf erzeugt wird.
 		static S_Resourcemanager Instance;
 		return &Instance;
 	}
@@ -150,7 +150,7 @@ void S_Resourcemanager::initialize()
 	  this->p_map2 = OptimizedImageMap2;
 	  this->p_map3 = OptimizedImageMap3;
 
-	  //SDL_FreeSurface(OptimizedImage);
+	  ///SDL_FreeSurface(OptimizedImage);
 
 	if(p_background == NULL)
 	{

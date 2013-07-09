@@ -10,17 +10,17 @@
 #include <SDL_ttf.h>
 
 using namespace std;
-
+/**Diese Klasse verwaltet die Bilder und l‰dt sie auf die SDL*/
 
 class S_Resourcemanager
 {
 private:
-	//Singleton Prinzip: KOnstruktoren im privaten Bereich, sodass erzeugung des Objektes auﬂerhalb der Klasse verboten wird
+	/**Singleton Prinzip: KOnstruktoren im privaten Bereich, sodass erzeugung des Objektes auﬂerhalb der Klasse verboten wird*/
 	S_Resourcemanager(){}
 	S_Resourcemanager(const S_Resourcemanager&){}
 	S_Resourcemanager& operator= (const S_Resourcemanager&) {return *this;}
 	~S_Resourcemanager(){}
-	//Bilder, die geladen werden muessen, to do: das ganze als map implementieren.
+	/**Bilder, die geladen werden muessen, to do: das ganze als map implementieren.*/
 	SDL_Surface * p_screen;
 	SDL_Surface * p_player;
 	SDL_Surface * p_player_up;
@@ -128,9 +128,9 @@ public:
 	SDL_Rect PlayerLeftClips[6];
 	SDL_Rect EndbossClips[7];
 	static S_Resourcemanager * get_Resourcemanager();
-	
+  /**Rueckgabe der Bilder , die in einer map gespeichert werden*/
 	void initialize();
-	//Rueckgabe der Bilder , die in einer map gespeichert werden
+	
 	SDL_Surface * get_Surface(string key);
 };
 

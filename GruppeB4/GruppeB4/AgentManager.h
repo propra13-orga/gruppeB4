@@ -15,7 +15,7 @@ class AgentManager
 private:
 	AgentManager(){p_BossManager = new FinalBoss();}
 	~AgentManager(){}
-	vector<Crazy_enemy*>crazy_enemies;//Vektor der alle Crazy enemies speichert
+	vector<Crazy_enemy*>crazy_enemies;///<Vektor der alle Crazy enemies speichert
 	vector<Pfleger*>allPfleger;
 	vector<Crazy_enemy*>crazy_enemiesToDelete;
 	FinalBoss * p_BossManager;

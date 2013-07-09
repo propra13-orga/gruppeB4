@@ -13,7 +13,7 @@ class Timer;
 class Spritze;
 class Player;
 
-//Diese Klasse erstellt einen Spritzenschieﬂenden Gegner, die Spritze ist dabei ein eigenes Objekt und testet KOllision selbst
+///Diese Klasse erstellt einen Spritzenschieﬂenden Gegner, die Spritze ist dabei ein eigenes Objekt und testet KOllision selbst
 
 class Pfleger
 {

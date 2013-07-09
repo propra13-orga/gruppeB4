@@ -27,18 +27,18 @@ public:
 	void set_health(int t){health = t;}
 
 	void render(SDL_Rect camera);
+	
+
+	///void show_enemyStats(int ,int);
+
+	///void set_health(int i_health);
+
+	///void get_health(int i_health);
+
+	///void get_enemy(bool b_enemy);
+
+	///void set_enemy(bool b_enemy);
 	void update();
-
-	//void show_enemyStats(int ,int);
-
-	//void set_health(int i_health);
-
-	//void get_health(int i_health);
-
-	//void get_enemy(bool b_enemy);
-
-	//void set_enemy(bool b_enemy);
-
 };
 
 #endif

@@ -39,12 +39,12 @@ private:
 
 public:
 
-	//Konstruktoren
+	///Konstruktoren
 
 	Player():i_health(400){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = 0; p_s_Position->i_y = 0; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;e_currentwalkstatus = PSY_DOWN;this->i_frame = 0;rageModeToggled =  false;disableallabilities = false;}
 	Player(int i_x,int i_y):i_health(400),potsize(0), i_mana(100){p_s_Position = new s_Vector;p_s_Velocity = new s_Vector; p_s_Position->i_x = i_x; p_s_Position->i_y = i_y; p_s_Velocity->i_x = 0; p_s_Velocity->i_y = 0;RageModeTimer = new Timer();e_currentwalkstatus = PSY_DOWN;this->i_frame = 0;rageModeToggled = false;disableallabilities = false;i_maxhealth = 400;}
 	~Player(){delete p_s_Position;delete p_s_Velocity;}
-	// simple FUnktionen für den Zugriff auf den privaten Bereich
+	/** simple FUnktionen für den Zugriff auf den privaten Bereich*/
 	s_Vector * get_Position(){return  p_s_Position;}
 	void  set_Position(int i_x,int i_y){this->p_s_Position->i_x = i_x;this->p_s_Position->i_y = i_y;}
 	s_Vector * get_Velocity(){return  p_s_Velocity;}
@@ -61,15 +61,18 @@ public:
 	void set_health_cap(int max){this->i_maxhealth =max;}
 
 
-	//Itembenutzung
-
-	void heal(int potsize);//Funktion Heilt den Spieler falls in der Liste der catchedItems des Itemmanagers ein heiltrank vorhanden ist
-	void loadMana();//Funktion laed mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist
-	void setRageMode();//Hier wird der RageMode des Spielers angestellt
+	///Itembenutzung
+	/**Funktion Heilt den Spieler falls in der Liste der catchedItems des Itemmanagers ein heiltrank vorhanden ist*/
+	void heal(int potsize);
+	/**Funktion laed mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist*/
+	void loadMana();
+	///Hier wird der RageMode des Spielers angestellt
+	void setRageMode();
+	
 
 	void attack();
 
-	//Funktionen die fuer die Bewegung und das Abbilden des Spielers erstellt sind
+	/**Funktionen die fuer die Bewegung und das Abbilden des Spielers erstellt sind*/
 	bool collision_Detection(LevelSegmente * p_TempSeg,LEVEL_LOADED CURRENTLEVEL);
 	void update();
 	void render(bool * tempmenue,Timer * deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL,World * p_TempWorld);

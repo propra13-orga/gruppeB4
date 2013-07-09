@@ -6,7 +6,7 @@
 #include <string>
 #include <sstream>
 
-// Hier wird der gesamte status des Spielers auf den screen gebracht
+/// Hier wird der gesamte status des Spielers auf den screen gebracht
 class Overlay
 {
 private:
