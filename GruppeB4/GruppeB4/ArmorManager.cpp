@@ -1,7 +1,7 @@
 #include "ArmorManager.h"
 
 
-void ArmorManager::render(SDL_Rect camera)
+void ArmorManager::render(SDL_Rect camera) ///Rendert die nicht aufgehobenen Ruestungen
 {
 	for(list<Armor>::iterator it = this->uncatchedarmors.begin();it != this->uncatchedarmors.end(); ++it)
 	{
@@ -17,7 +17,7 @@ void ArmorManager::render(SDL_Rect camera)
 
 
 
-void ArmorManager::update(s_Vector * p_TempPosition)
+void ArmorManager::update(s_Vector * p_TempPosition)///Ueberprueft und verwaltet die Ruestungsaufnahme
 {
 	
    for(list<Armor>::iterator it = this->uncatchedarmors.begin();it != this->uncatchedarmors.end(); ++it)
@@ -26,7 +26,6 @@ void ArmorManager::update(s_Vector * p_TempPosition)
 		{
 			this->catchedarmors.push_back(Armor(0,0,it->get_Armor()));
 			EPManager::get_EPManager().Set_Ep(10);
-			cout << "Ich bin hier" << endl;
 			uncatchedarmors.erase(it);
 			this->show();
 			break;
@@ -39,7 +38,7 @@ void ArmorManager::update(s_Vector * p_TempPosition)
 
 
 
-ARMOR_TYPE ArmorManager::get_Armor(){
+ARMOR_TYPE ArmorManager::get_Armor(){ ///zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen
 
 
 	for(list<Armor>::iterator myIter = catchedarmors.begin();myIter != catchedarmors.end();myIter++)
