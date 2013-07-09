@@ -113,6 +113,8 @@ void S_Resourcemanager::initialize()
 	this->p_not_skillable = IMG_Load("not_skillable.png");
 	this->p_lvl_up = IMG_Load("lvl_up.png");
 
+
+
 	if(p_spritze == NULL)
 	{
 		cout << "keine SPritze" << endl;
