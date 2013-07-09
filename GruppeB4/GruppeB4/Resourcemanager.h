@@ -8,6 +8,8 @@
 #include <SDL_image.h>
 #include "globals.h"
 #include <SDL_ttf.h>
+#include <SDL_mixer.h>
+#include <map>
 
 using namespace std;
 /**Diese Klasse verwaltet die Bilder und lädt sie auf die SDL*/
@@ -112,6 +114,8 @@ private:
 	SDL_Surface * p_lvl_up;
 
 	
+	map<string,Mix_Chunk*>SoundEffectMap;
+
 
 	
 	

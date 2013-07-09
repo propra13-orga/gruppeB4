@@ -151,12 +151,6 @@
     <ClCompile Include="Overlay.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Weapon.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Armor.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="Verrückter.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>

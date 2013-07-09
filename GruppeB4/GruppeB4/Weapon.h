@@ -12,10 +12,9 @@
 
 class Weapon{
 private:
-	WEAPON_TYPE CURRENT_WEAPON;		//angelegte Waffe
+	WEAPON_TYPE CURRENT_WEAPON;		///angelegte Waffe
 	s_Vector * p_s_Position;
-
-	int i_dmg;
+	int i_dmg;						///Schadenswert der Waffe
 public:
 
 	Weapon(int x, int y,WEAPON_TYPE WEAPONTOSET){CURRENT_WEAPON = WEAPONTOSET;p_s_Position = new s_Vector;p_s_Position->i_x = x;p_s_Position->i_y = y;}
@@ -25,10 +24,10 @@ public:
 	//void setPistol();		//Waffentyp Pistole
 	//void setDMG();			//Schaden alle Waffen
 	//int getDMG();			//um Schadenswerte zu holen
-	void set_Position(int x, int y){this->p_s_Position->i_x = x;this->p_s_Position->i_y = y;}
+	void set_Position(int x, int y){this->p_s_Position->i_x = x;this->p_s_Position->i_y = y;} /// Setze Waffenposition
 	s_Vector * get_Position(){return this->p_s_Position;}
-	WEAPON_TYPE get_Weapon(){return this->CURRENT_WEAPON;}
-	void set_Weapon(WEAPON_TYPE TEMPWEAPON){this->CURRENT_WEAPON = TEMPWEAPON;}
+	WEAPON_TYPE get_Weapon(){return this->CURRENT_WEAPON;} /// Gibt aktuellen Waffentyp wieder
+	void set_Weapon(WEAPON_TYPE TEMPWEAPON){this->CURRENT_WEAPON = TEMPWEAPON;} /// Setzt aktuellen Waffentyp
 	
 
 	

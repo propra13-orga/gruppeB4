@@ -5,7 +5,7 @@ using namespace std;
 
 
 
-void Crazy_enemy::update(){
+void Crazy_enemy::update(){ ///Verwaltet die Bewegung des Verrueckten
 	if(this->get_Position()->i_x <= p_S_SafePosition->i_x && this->get_Position()->i_y <= p_S_SafePosition->i_y)
 	{
 
@@ -34,7 +34,7 @@ void Crazy_enemy::update(){
 
 
 
-void Crazy_enemy::render(SDL_Rect camera)
+void Crazy_enemy::render(SDL_Rect camera) ///Rendert den Verrueckten
 {
 	if(this->AnimationTimer->Getticks() >= 100)
 	{

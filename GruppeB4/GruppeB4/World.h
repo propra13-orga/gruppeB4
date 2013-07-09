@@ -13,6 +13,7 @@
 #include "MoneyManager.h"
 #include "Shop.h"
 #include "NPC1.h"
+#include "NPC2.h"
 #include "Skilltree.h"
 //World merge test
 class World
@@ -38,12 +39,12 @@ public:
 	Player * get_Player(){return p_Player1;}
 	LevelSegmente * get_LevelSegmente(){return p_Segmente;}
 	void openSkilltree();
+	void openquest();
 	///initialisierungsfunktionen der einzelnen Level
 
 	void initialize_Level();
 
 	///Aendern des aktuellen Levels
-
 	void try_swapLevel();
 	
 };
