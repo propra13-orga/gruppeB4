@@ -34,7 +34,7 @@ int main(int argc, char ** argv)
     }
     memset(&addr,0,sizeof(SOCKADDR));
     addr.sin_family = AF_INET;
-    addr.sin_port = htons(12345);
+    addr.sin_port = htons(5050);
     addr.sin_addr.s_addr = inet_addr("25.193.46.75");
     rc = connect(s,(SOCKADDR*)&addr,sizeof(SOCKADDR));
     if(rc == SOCKET_ERROR)
