@@ -53,6 +53,7 @@ private:
 	SDL_Surface * p_shop;
 	SDL_Surface * p_npc1;
 	SDL_Surface * p_npc2;
+	SDL_Surface * p_qabfrage;
 	SDL_Surface * p_manaspritze;
 	SDL_Surface * p_map2;
 	SDL_Surface * p_map3;
