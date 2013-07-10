@@ -114,14 +114,14 @@ void S_Resourcemanager::initialize()
 	this->p_tp_gt5 = IMG_Load("tp_gt5.png");
 	this->p_not_skillable = IMG_Load("not_skillable.png");
 	this->p_lvl_up = IMG_Load("lvl_up.png");
-	this->p_Bär = IMG_Load("Bär.png");
-	this->p_Bär_spricht = IMG_Load("Bär spricht.png");
+	this->p_Baer = IMG_Load("Baer.png");
+	this->p_Baer_spricht = IMG_Load("Baer spricht.png");
 
 
 
 	if(p_spritze == NULL)
 	{
-		cout << "keine SPritze" << endl;
+		cout << "keine Spritze" << endl;
 	}
 
 	SDL_Surface * LoadedImage2 = IMG_Load("Licht_thronsaal.png");
@@ -704,13 +704,13 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		return p_lvl_up;
 	}
-	else if(key == "Bär")
+	else if(key == "Baer")
 	{
-		return p_Bär;
+		return p_Baer;
 	}
-	else if(key == "Bär spricht")
+	else if(key == "Baer spricht")
 	{
-		return p_Bär_spricht;
+		return p_Baer_spricht;
 	}
 	else
 	{

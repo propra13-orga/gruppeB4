@@ -11,14 +11,14 @@
 
 class Player;
 
-class NPC2 {
-
+class NPC2 
+{
 
 private:
 
 	s_Vector* p_s_Position;
 	s_Vector* p_s_SecondPosition;
-	bool b_quest1;
+	bool b_questanfang;
 	bool b_questende;
 	Timer * p_QuestTimer;
 
@@ -32,7 +32,7 @@ public:
 		return Instance;
 	}
 
-	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 120; p_s_Position->i_y = 450;p_QuestTimer = new Timer();b_quest1 = false;}
+	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 120; p_s_Position->i_y = 450;p_QuestTimer = new Timer();b_questanfang = false;}
 	~NPC2(){delete p_s_Position;delete p_QuestTimer;}
 
 
@@ -46,11 +46,11 @@ public:
 		this->p_s_Position->i_x=i_x;this->p_s_Position->i_y=i_y;
 	}
 
-
 	void render(SDL_Rect camera);
 	bool PlayCloseToBot(Player * p_TempPlayer);
 	void questanfrage(Player * p_TempPlayer,SDL_Event even);
 	void questloeschen();
+	void questloeschen2();
 	void set_QuestEnde(bool b);
 	
 };

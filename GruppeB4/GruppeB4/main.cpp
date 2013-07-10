@@ -116,6 +116,7 @@ int main(int argc ,char ** argv)
 		Overlay::get_Instance().check_lvl_up();
 		NPC2::get_NPC2().questanfrage(p_World->get_Player(),even);
 		NPC2::get_NPC2().questloeschen();
+		NPC2::get_NPC2().questloeschen2();
 			///SHOP_______________________________________________Anfang________________________________________________________________
 
 			

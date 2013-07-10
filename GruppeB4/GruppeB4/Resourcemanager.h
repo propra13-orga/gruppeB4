@@ -114,8 +114,8 @@ private:
 	SDL_Surface * p_tp_gt5;
 	SDL_Surface * p_not_skillable;
 	SDL_Surface * p_lvl_up;
-	SDL_Surface * p_Bär;
-	SDL_Surface * p_Bär_spricht;
+	SDL_Surface * p_Baer;
+	SDL_Surface * p_Baer_spricht;
 
 	
 	map<string,Mix_Chunk*>SoundEffectMap;
