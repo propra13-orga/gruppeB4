@@ -55,6 +55,7 @@ void S_Resourcemanager::initialize()
 	this->p_shop = IMG_Load("shop.png");
 	this->p_npc1 = IMG_Load("npc1.png");
 	this->p_npc2 = IMG_Load("npc2.png");
+	this->p_qabfrage = IMG_Load("qabfrage.png");
 	this->p_manaspritze = IMG_Load("Mana_Spritze.png");
 	this->p_mana_leer = IMG_Load("mana_leer.png");
 	this->p_mana_halbvoll = IMG_Load("mana_halbvoll.png");
@@ -452,6 +453,14 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "npc1")
 	{
 		return p_npc1;
+	}
+	else if(key == "npc2")
+	{
+		return p_npc2;
+	}
+	else if(key == "qabfrage")
+	{
+		return p_qabfrage;
 	}
 	else if(key == "Mana_Spritze")
 	{

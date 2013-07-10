@@ -23,7 +23,7 @@ public:
 		return Instance;
 	}
 
-	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 600; p_s_Position->i_y = 800;}
+	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 120; p_s_Position->i_y = 450;}
 	~NPC2(){delete p_s_Position;}
 
 
