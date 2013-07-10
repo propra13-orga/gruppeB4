@@ -35,6 +35,7 @@ int main(int argc ,char ** argv)
 	///erzeugung der Klassen 
 	World * p_World = new World(648,795);
 	p_World->get_LevelSegmente()->init_Segmente();
+	S_Resourcemanager::get_Resourcemanager()->play_GameBackgroundMusic();///<Hintergrundmusik wird abgespielt
 	Timer Fps;
 	Timer Frames;
 	Frames.start();

@@ -144,14 +144,15 @@ void Shop::render(){
 	}
 
 	 if(nomoney == true)
-	{
+	{   
 		if(NoMoneyTimer->Getticks() >= 500)
 		{
+			Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("Pillenmangel"),0);
 			NoMoneyTimer->stop();
 			nomoney = false;
 		}
 		apply_Image(450,300,S_Resourcemanager::get_Resourcemanager()->get_Surface("nichtgekauft"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-	}
+	} 
 }
 
 

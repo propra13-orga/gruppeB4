@@ -23,6 +23,7 @@ private:
 	S_Resourcemanager& operator= (const S_Resourcemanager&) {return *this;}
 	~S_Resourcemanager(){}
 	/**Bilder, die geladen werden muessen, to do: das ganze als map implementieren.*/
+	Mix_Music * music;
 	SDL_Surface * p_screen;
 	SDL_Surface * p_player;
 	SDL_Surface * p_player_up;
@@ -118,7 +119,8 @@ private:
 	SDL_Surface * p_Baer_spricht;
 
 	
-	map<string,Mix_Chunk*>SoundEffectMap;
+	map<string,Mix_Chunk*>SoundEffectMap;///< Verwaltet die Musik dateien
+	map<string,Mix_Music*> MusicFiles;
 
 
 	
@@ -140,6 +142,10 @@ public:
 	void initialize();
 	
 	SDL_Surface * get_Surface(string key);
+
+	void play_GameBackgroundMusic();
+
+	Mix_Chunk * get_SoundEffect(string s){return this->SoundEffectMap[s];}
 };
 
 void apply_Image(int i_x,int i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip = NULL);

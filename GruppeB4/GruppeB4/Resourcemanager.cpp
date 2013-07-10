@@ -116,6 +116,18 @@ void S_Resourcemanager::initialize()
 	this->p_lvl_up = IMG_Load("lvl_up.png");
 	this->p_Baer = IMG_Load("Baer.png");
 	this->p_Baer_spricht = IMG_Load("Baer spricht.png");
+	///SDL_mixer wird initalisiert
+	if( Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 2, 4096 ) == -1 ) { cout << "Fehler im Mixer" << endl; }
+	///Dateien werden implementiert
+	this->MusicFiles["Background"] = Mix_LoadMUS("KlinikBackground.wav");
+	this->SoundEffectMap["Item"] = Mix_LoadWAV("Item.wav");
+	this->SoundEffectMap["Pillenmangel"] = Mix_LoadWAV("NotenoughPills.wav");
+	this->SoundEffectMap["Gameover"] = Mix_LoadWAV("GameOver.wav");
+	Mix_VolumeMusic(35);///<Lautstaerker von der Musik wird geregelt
+	Mix_VolumeChunk(this->SoundEffectMap["Item"],128);///<Lautstaeke von den Soundeffekten werden geregelt
+	Mix_VolumeChunk(this->SoundEffectMap["Pillenmangel"],128);
+	Mix_VolumeChunk(this->SoundEffectMap["Gameover"],128);
+	//music = Mix_LoadMUS("KlinikBackground.wav");
 
 
 
@@ -716,5 +728,18 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		std::cout << "Zugriff nicht möglich" << std::endl;
 		return NULL;
+	}
+}
+
+///Funktion um die Musik abzuspielen
+void S_Resourcemanager::play_GameBackgroundMusic()
+{
+	if(Mix_PlayMusic(this->MusicFiles["Background"],-1) == -1)
+	{
+		cout << "Fuck Ya!" << endl;
+	}
+	else
+	{ 
+		cout << "success" << endl;
 	}
 }
