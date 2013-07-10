@@ -56,6 +56,7 @@ void S_Resourcemanager::initialize()
 	this->p_npc1 = IMG_Load("npc1.png");
 	this->p_npc2 = IMG_Load("npc2.png");
 	this->p_qabfrage = IMG_Load("qabfrage.png");
+	this->p_qbelohnung = IMG_Load("qbelohnung.png");
 	this->p_manaspritze = IMG_Load("Mana_Spritze.png");
 	this->p_mana_leer = IMG_Load("mana_leer.png");
 	this->p_mana_halbvoll = IMG_Load("mana_halbvoll.png");
@@ -113,6 +114,8 @@ void S_Resourcemanager::initialize()
 	this->p_tp_gt5 = IMG_Load("tp_gt5.png");
 	this->p_not_skillable = IMG_Load("not_skillable.png");
 	this->p_lvl_up = IMG_Load("lvl_up.png");
+	this->p_Bär = IMG_Load("Bär.png");
+	this->p_Bär_spricht = IMG_Load("Bär spricht.png");
 
 
 
@@ -462,6 +465,10 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		return p_qabfrage;
 	}
+	else if(key == "qbelohnung")
+	{
+		return p_qbelohnung;
+	}
 	else if(key == "Mana_Spritze")
 	{
 		return p_manaspritze;
@@ -696,6 +703,14 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	else if(key == "lvl_up")
 	{
 		return p_lvl_up;
+	}
+	else if(key == "Bär")
+	{
+		return p_Bär;
+	}
+	else if(key == "Bär spricht")
+	{
+		return p_Bär_spricht;
 	}
 	else
 	{

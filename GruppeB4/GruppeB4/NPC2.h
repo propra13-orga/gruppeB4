@@ -1,5 +1,11 @@
-#include "Resourcemanager.h"
+
 #include "Vektor.h"
+#include<iostream>
+#include<string>
+#include "Player.h"
+#include "Resourcemanager.h"
+#include "Timer.h"
+
 #ifndef NPC2_H
 #define NPC2_H
 
@@ -9,9 +15,12 @@ class NPC2 {
 
 
 private:
+
 	s_Vector* p_s_Position;
 	s_Vector* p_s_SecondPosition;
-
+	bool b_quest1;
+	bool b_questende;
+	Timer * p_QuestTimer;
 
 public:
 
@@ -23,8 +32,8 @@ public:
 		return Instance;
 	}
 
-	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 120; p_s_Position->i_y = 450;}
-	~NPC2(){delete p_s_Position;}
+	NPC2(){p_s_Position = new s_Vector; p_s_Position->i_x = 120; p_s_Position->i_y = 450;p_QuestTimer = new Timer();b_quest1 = false;}
+	~NPC2(){delete p_s_Position;delete p_QuestTimer;}
 
 
 	s_Vector* get_Position()
@@ -40,7 +49,12 @@ public:
 
 	void render(SDL_Rect camera);
 	bool PlayCloseToBot(Player * p_TempPlayer);
-
+	void questanfrage(Player * p_TempPlayer,SDL_Event even);
+	void questloeschen();
+	void set_QuestEnde(bool b);
 	
 };
+
+typedef bool FLAG;
+
 #endif

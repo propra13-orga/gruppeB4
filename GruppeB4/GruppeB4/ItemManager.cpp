@@ -13,6 +13,7 @@ void ItemManager::render(SDL_Rect camera)
 		{
 			apply_Image(it->get_Position()->i_x - camera.x,it->get_Position()->i_y - camera.y,S_Resourcemanager::get_Resourcemanager()->get_Surface("Mana_Spritze"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}
+		
 		else
 		{
 			return;
@@ -28,6 +29,7 @@ void ItemManager::update(s_Vector * p_TempPosition)
 		if(it->get_Position()->i_x - p_TempPosition->i_x <= 25 && it->get_Position()->i_x - p_TempPosition->i_x >= -25  && it->get_Position()->i_y - p_TempPosition->i_y <= 25 && it->get_Position()->i_y - p_TempPosition->i_y >= -25)
 		{
 			this->catcheditems.push_back(Item(0,0,it->get_Item()));
+			
 			EPManager::get_EPManager().Set_Ep(20);
 			uncatcheditems.erase(it);
 			this->anzeigen();
@@ -98,6 +100,7 @@ void ItemManager::insert_item(ITEM_TYPE tempitem){
 	{
 		this->catcheditems.push_back(Item(0,0,MANA));
 	}
+
 
 
 }

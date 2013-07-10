@@ -2,6 +2,7 @@
 #define ITEMMANAGER_H_
 
 #include "Vektor.h"
+#include "quest1.h"
 
 /** Klasse berechnet und verwaltet alle Kollision und Objekte, die mit Items zu tun haben, bzw die items sind. Somit wir dhier alles fern vom Spieler geregelt
 *Der Spieler soll durch funktionen wie heal() oder loadMana ganz einfach mithilfe des Itemmanagers ueberpruefen koennen

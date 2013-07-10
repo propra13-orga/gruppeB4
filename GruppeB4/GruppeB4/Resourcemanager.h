@@ -54,6 +54,7 @@ private:
 	SDL_Surface * p_npc1;
 	SDL_Surface * p_npc2;
 	SDL_Surface * p_qabfrage;
+	SDL_Surface * p_qbelohnung;
 	SDL_Surface * p_manaspritze;
 	SDL_Surface * p_map2;
 	SDL_Surface * p_map3;
@@ -113,6 +114,8 @@ private:
 	SDL_Surface * p_tp_gt5;
 	SDL_Surface * p_not_skillable;
 	SDL_Surface * p_lvl_up;
+	SDL_Surface * p_Bär;
+	SDL_Surface * p_Bär_spricht;
 
 	
 	map<string,Mix_Chunk*>SoundEffectMap;

@@ -114,6 +114,8 @@ int main(int argc ,char ** argv)
 			///Skilltree______________________________________________ENDE_________________________________________________________
 
 		Overlay::get_Instance().check_lvl_up();
+		NPC2::get_NPC2().questanfrage(p_World->get_Player(),even);
+		NPC2::get_NPC2().questloeschen();
 			///SHOP_______________________________________________Anfang________________________________________________________________
 
 			

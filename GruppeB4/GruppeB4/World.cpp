@@ -69,6 +69,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	ArmorManager::get_ArmorManager().render(Camera);
 	WeaponManager::get_WeaponManager().render(Camera);
 	NPC1::get_NPC1().render(Camera);
+	
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
 	if(NPC1::get_NPC1().PlayCloseToBot(this->get_Player()) == true)
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
