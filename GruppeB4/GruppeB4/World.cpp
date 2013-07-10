@@ -61,7 +61,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	if(this->CURRENTLEVEL == LEVEL3)
 	{
 		apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Level3"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"),&Camera);
-		NPC2::get_NPC2().render(Camera);
+		NPC2::get_NPC2().render(Camera,this->get_Player());
 	}
 	AgentManager::get_AgentManager().render( Camera,CURRENTLEVEL);
 	MoneyManager::get_MoneyManager().render(Camera);
@@ -72,11 +72,15 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 	
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
 	if(NPC1::get_NPC1().PlayCloseToBot(this->get_Player()) == true)
+	{
+		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+	}
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
 	if(NPC2::get_NPC2().PlayCloseToBot(this->get_Player()) == true)
 	{
 		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
+
 	Overlay::get_Instance().render(this->p_Player1);
 
 	
