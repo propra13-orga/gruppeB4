@@ -16,7 +16,7 @@ using namespace std;
 
 
 
-                                                  //Position des Gegners anzeigen
+                                                  ///Position des Gegners anzeigen
 
 
 	

@@ -34,10 +34,10 @@ public:
 
 
 	bool find(WEAPON_TYPE CURRENT_WEAPON);			
-	void render(SDL_Rect camera);		//Waffen auf den Boden rendern
-	void update(s_Vector * p_Position);			//Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
-	void kill_weapon(WEAPON_TYPE CURRENT_WEAPON);		//Waffe zerstoeren
-	void reinitialize(){catchedweapons.clear();uncatchedweapons.clear();} //Clear
+	void render(SDL_Rect camera);		///<Waffen auf den Boden rendern
+	void update(s_Vector * p_Position);			///<Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
+	void kill_weapon(WEAPON_TYPE CURRENT_WEAPON);		///<Waffe zerstoeren
+	void reinitialize(){catchedweapons.clear();uncatchedweapons.clear();} ///<Clear
 	void reinitializeLevelSwap(){uncatchedweapons.clear();}
 	void set_Weapon(int x, int y,WEAPON_TYPE);
 	void show();

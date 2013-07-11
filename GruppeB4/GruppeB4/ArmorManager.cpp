@@ -1,7 +1,7 @@
 #include "ArmorManager.h"
 
 
-void ArmorManager::render(SDL_Rect camera) ///Rendert die nicht aufgehobenen Ruestungen
+void ArmorManager::render(SDL_Rect camera) ///<Rendert die nicht aufgehobenen Ruestungen
 {
 	for(list<Armor>::iterator it = this->uncatchedarmors.begin();it != this->uncatchedarmors.end(); ++it)
 	{
@@ -17,7 +17,7 @@ void ArmorManager::render(SDL_Rect camera) ///Rendert die nicht aufgehobenen Rue
 
 
 
-void ArmorManager::update(s_Vector * p_TempPosition)///Ueberprueft und verwaltet die Ruestungsaufnahme
+void ArmorManager::update(s_Vector * p_TempPosition)///<Ueberprueft und verwaltet die Ruestungsaufnahme
 {
 	
    for(list<Armor>::iterator it = this->uncatchedarmors.begin();it != this->uncatchedarmors.end(); ++it)
@@ -38,7 +38,7 @@ void ArmorManager::update(s_Vector * p_TempPosition)///Ueberprueft und verwaltet
 
 
 
-ARMOR_TYPE ArmorManager::get_Armor(){ ///zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen
+ARMOR_TYPE ArmorManager::get_Armor(){ ///<zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen
 
 
 	for(list<Armor>::iterator myIter = catchedarmors.begin();myIter != catchedarmors.end();myIter++)
