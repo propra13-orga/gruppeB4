@@ -1,0 +1,5 @@
+<map id="WeaponManager::show" name="WeaponManager::show">
+<area shape="rect" id="node3" href="$class_weapon_manager.html#a59cc9e0d6cb21105cf00ac419ea2a573" title="Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="215,5,380,35"/>
+<area shape="rect" id="node5" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="431,5,532,35"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="581,5,632,35"/>
+</map>

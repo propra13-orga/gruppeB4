@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>Propra13gruppeB4: Resourcemanager.h Quellcode</title>
+<title>My Project: Resourcemanager.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">Propra13gruppeB4
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -60,6 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variablen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,7 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="title">Resourcemanager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RESOURCEMANAGER_H_</span></div>
+<a href="_resourcemanager_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RESOURCEMANAGER_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define RESOURCEMANAGER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;SDL.h&gt;</span></div>
@@ -90,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;SDL_image.h&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;globals.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="globals_8h.html">globals.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;SDL_ttf.h&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;SDL_mixer.h&gt;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
@@ -207,16 +208,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    </div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    </div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    TTF_Font * font;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    SDL_Surface * MoneyDisplay;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    SDL_Surface * HealDisplay;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    SDL_Surface * ManaDisplay;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    SDL_Color TextColor;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    SDL_Rect PlayerDownClips[6];</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    SDL_Rect PlayerUpClips[6];</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    SDL_Rect PlayerRightClips[6];</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    SDL_Rect PlayerLeftClips[6];</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    SDL_Rect EndbossClips[7];</div>
+<div class="line"><a name="l00130"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a33c6b528491d39021acbff6dc692105c">  130</a></span>&#160;    TTF_Font * <a class="code" href="class_s___resourcemanager.html#a33c6b528491d39021acbff6dc692105c">font</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aeaffe8033a3c754b1d4b7ac7ab3ccd85">  131</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aeaffe8033a3c754b1d4b7ac7ab3ccd85">MoneyDisplay</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a8123d7ef848a8796a783e5a22a401274">  132</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a8123d7ef848a8796a783e5a22a401274">HealDisplay</a>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#abd22829bb772bed90d54906afd3ff591">  133</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#abd22829bb772bed90d54906afd3ff591">ManaDisplay</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a80a1e4c840eb27a2b98f5b54250d4528">  134</a></span>&#160;    SDL_Color <a class="code" href="class_s___resourcemanager.html#a80a1e4c840eb27a2b98f5b54250d4528">TextColor</a>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad807253d4166886c26626fea9f6575dd">  135</a></span>&#160;    SDL_Rect PlayerDownClips[6];</div>
+<div class="line"><a name="l00136"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ae572d384d320a06611c9c758862b0e14">  136</a></span>&#160;    SDL_Rect PlayerUpClips[6];</div>
+<div class="line"><a name="l00137"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a2bc8ae381b2c62e527fa45c45dd569ea">  137</a></span>&#160;    SDL_Rect PlayerRightClips[6];</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ac84b018abfae853121018e771707aa76">  138</a></span>&#160;    SDL_Rect PlayerLeftClips[6];</div>
+<div class="line"><a name="l00139"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a70e4606e4a47f8130fb4e083289c1745">  139</a></span>&#160;    SDL_Rect EndbossClips[7];</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keyword">static</span> <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a> * get_Resourcemanager();</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <span class="keywordtype">void</span> initialize();</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
@@ -224,17 +225,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordtype">void</span> play_GameBackgroundMusic();</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    Mix_Chunk * get_SoundEffect(<span class="keywordtype">string</span> s){<span class="keywordflow">return</span> this-&gt;SoundEffectMap[s];}</div>
+<div class="line"><a name="l00148"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a6d12deef1baa37c154c8ed6f8f0aeecd">  148</a></span>&#160;    Mix_Chunk * <a class="code" href="class_s___resourcemanager.html#a6d12deef1baa37c154c8ed6f8f0aeecd">get_SoundEffect</a>(<span class="keywordtype">string</span> s){<span class="keywordflow">return</span> this-&gt;SoundEffectMap[s];}</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;};</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">void</span> apply_Image(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip = NULL);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="keywordtype">void</span> <a class="code" href="_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1">apply_Image</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y,SDL_Surface * source, SDL_Surface * destination,SDL_Rect * clip = NULL);</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 15:23:37 für Propra13gruppeB4 von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

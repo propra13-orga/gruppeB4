@@ -1,0 +1,14 @@
+<map id="Player::set_Health" name="Player::set_Health">
+<area shape="rect" id="node3" href="$class_agent_manager.html#a5548da9e3f247e8dd4a9eb98748fd3df" title="AgentManager::check\l_collision" alt="" coords="184,5,333,51"/>
+<area shape="rect" id="node11" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="196,75,321,104"/>
+<area shape="rect" id="node14" href="$class_pfleger.html#ab16f8907843415401742d8def572da73" title="Pfleger::update" alt="" coords="204,128,313,157"/>
+<area shape="rect" id="node16" href="$class_player.html#a5f3457c6aaf834b83d35d9085b46e31d" title="Player::reinitialize" alt="" coords="196,181,321,211"/>
+<area shape="rect" id="node23" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="213,235,304,264"/>
+<area shape="rect" id="node5" href="$class_agent_manager.html#a1c05e1578aafde1892a5e4e79862b19f" title="AgentManager::update" alt="" coords="383,75,535,104"/>
+<area shape="rect" id="node7" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="605,101,707,131"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="776,181,827,211"/>
+<area shape="rect" id="node18" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="408,181,509,211"/>
+<area shape="rect" id="node20" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="607,181,705,211"/>
+<area shape="rect" id="node25" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="388,235,529,264"/>
+<area shape="rect" id="node27" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="585,235,727,264"/>
+</map>

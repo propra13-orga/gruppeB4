@@ -10,32 +10,38 @@ Dieses Klasse wird vom \hyperlink{class_pfleger}{Pfleger} benutzt.
 
 {\ttfamily \#include $<$Spritze.\-h$>$}
 
+
+
+Zusammengehörigkeiten von Spritze\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_spritze__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_spritze_a786a149a9e6a937af87566a5c0ab432e}{{\bfseries Spritze} (int x, int y)}\label{class_spritze_a786a149a9e6a937af87566a5c0ab432e}
-
+\hyperlink{class_spritze_a786a149a9e6a937af87566a5c0ab432e}{Spritze} (int x, int y)
 \item 
-\hypertarget{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe}{\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ {\bfseries get\-\_\-\-Position} ()}\label{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe}
-
+\hyperlink{class_spritze_a4cca3fc867fc55f6dde677c045d459d1}{Spritze} ()
 \item 
-\hypertarget{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876}{\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ {\bfseries get\-\_\-\-Velocity} ()}\label{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876}
-
+\hyperlink{class_spritze_a5b57faf9fa3bccc91845bb399233c795}{$\sim$\-Spritze} ()
 \item 
-\hypertarget{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19}{void {\bfseries set\-\_\-\-Position} (int x, int y)}\label{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19}
-
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe}{get\-\_\-\-Position} ()
 \item 
-\hypertarget{class_spritze_aa54b894d1a40b2c1156eb0e62779fa0e}{void {\bfseries set\-\_\-\-Velocity} (int x, int y)}\label{class_spritze_aa54b894d1a40b2c1156eb0e62779fa0e}
-
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876}{get\-\_\-\-Velocity} ()
 \item 
-\hypertarget{class_spritze_a5d305371f76fb207684c203e7b4e5fd8}{\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ {\bfseries get\-\_\-\-Start\-Position} ()}\label{class_spritze_a5d305371f76fb207684c203e7b4e5fd8}
-
+void \hyperlink{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19}{set\-\_\-\-Position} (int x, int y)
 \item 
-\hypertarget{class_spritze_aaf70068b9356284874156f19f5237c94}{void {\bfseries update} ()}\label{class_spritze_aaf70068b9356284874156f19f5237c94}
-
+void \hyperlink{class_spritze_aa54b894d1a40b2c1156eb0e62779fa0e}{set\-\_\-\-Velocity} (int x, int y)
 \item 
-\hypertarget{class_spritze_a2d1fac0870a40d50f0582e1efec53751}{void {\bfseries render} (S\-D\-L\-\_\-\-Rect camera)}\label{class_spritze_a2d1fac0870a40d50f0582e1efec53751}
-
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_spritze_a5d305371f76fb207684c203e7b4e5fd8}{get\-\_\-\-Start\-Position} ()
+\item 
+void \hyperlink{class_spritze_aaf70068b9356284874156f19f5237c94}{update} ()
+\item 
+void \hyperlink{class_spritze_a2d1fac0870a40d50f0582e1efec53751}{render} (S\-D\-L\-\_\-\-Rect camera)
 \end{DoxyCompactItemize}
 
 
@@ -44,7 +50,182 @@ Dieses Klasse wird vom \hyperlink{class_pfleger}{Pfleger} benutzt.
 
 Es ist kein! Objekt, dass man haben kann oder kaufen kann. $\ast$\-Die \hyperlink{class_spritze}{Spritze} testet selber ob sie mit der Welt oder mit dem Spieler kollidiert 
 
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_spritze_a786a149a9e6a937af87566a5c0ab432e}{\index{Spritze@{Spritze}!Spritze@{Spritze}}
+\index{Spritze@{Spritze}!Spritze@{Spritze}}
+\subsubsection[{Spritze}]{\setlength{\rightskip}{0pt plus 5cm}Spritze\-::\-Spritze (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_a786a149a9e6a937af87566a5c0ab432e}
+\hypertarget{class_spritze_a4cca3fc867fc55f6dde677c045d459d1}{\index{Spritze@{Spritze}!Spritze@{Spritze}}
+\index{Spritze@{Spritze}!Spritze@{Spritze}}
+\subsubsection[{Spritze}]{\setlength{\rightskip}{0pt plus 5cm}Spritze\-::\-Spritze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_a4cca3fc867fc55f6dde677c045d459d1}
+\hypertarget{class_spritze_a5b57faf9fa3bccc91845bb399233c795}{\index{Spritze@{Spritze}!$\sim$\-Spritze@{$\sim$\-Spritze}}
+\index{$\sim$\-Spritze@{$\sim$\-Spritze}!Spritze@{Spritze}}
+\subsubsection[{$\sim$\-Spritze}]{\setlength{\rightskip}{0pt plus 5cm}Spritze\-::$\sim$\-Spritze (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_a5b57faf9fa3bccc91845bb399233c795}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe}{\index{Spritze@{Spritze}!get\-\_\-\-Position@{get\-\_\-\-Position}}
+\index{get\-\_\-\-Position@{get\-\_\-\-Position}!Spritze@{Spritze}}
+\subsubsection[{get\-\_\-\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Spritze\-::get\-\_\-\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spritze_aef30f9337f9559b4873ee895a0c8f4fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spritze_a5d305371f76fb207684c203e7b4e5fd8}{\index{Spritze@{Spritze}!get\-\_\-\-Start\-Position@{get\-\_\-\-Start\-Position}}
+\index{get\-\_\-\-Start\-Position@{get\-\_\-\-Start\-Position}!Spritze@{Spritze}}
+\subsubsection[{get\-\_\-\-Start\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Spritze\-::get\-\_\-\-Start\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_a5d305371f76fb207684c203e7b4e5fd8}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{class_spritze_a5d305371f76fb207684c203e7b4e5fd8_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876}{\index{Spritze@{Spritze}!get\-\_\-\-Velocity@{get\-\_\-\-Velocity}}
+\index{get\-\_\-\-Velocity@{get\-\_\-\-Velocity}!Spritze@{Spritze}}
+\subsubsection[{get\-\_\-\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Spritze\-::get\-\_\-\-Velocity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spritze_ad5f7645d831b543b1ca92bd4ccb9c876_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spritze_a2d1fac0870a40d50f0582e1efec53751}{\index{Spritze@{Spritze}!render@{render}}
+\index{render@{render}!Spritze@{Spritze}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Spritze\-::render (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Rect}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_spritze_a2d1fac0870a40d50f0582e1efec53751}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_spritze_a2d1fac0870a40d50f0582e1efec53751_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{class_spritze_a2d1fac0870a40d50f0582e1efec53751_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19}{\index{Spritze@{Spritze}!set\-\_\-\-Position@{set\-\_\-\-Position}}
+\index{set\-\_\-\-Position@{set\-\_\-\-Position}!Spritze@{Spritze}}
+\subsubsection[{set\-\_\-\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Spritze\-::set\-\_\-\-Position (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_spritze_acab9a7ff57ce3ce2f33a3480d04cbe19_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_spritze_aa54b894d1a40b2c1156eb0e62779fa0e}{\index{Spritze@{Spritze}!set\-\_\-\-Velocity@{set\-\_\-\-Velocity}}
+\index{set\-\_\-\-Velocity@{set\-\_\-\-Velocity}!Spritze@{Spritze}}
+\subsubsection[{set\-\_\-\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}void Spritze\-::set\-\_\-\-Velocity (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_spritze_aa54b894d1a40b2c1156eb0e62779fa0e}
+\hypertarget{class_spritze_aaf70068b9356284874156f19f5237c94}{\index{Spritze@{Spritze}!update@{update}}
+\index{update@{update}!Spritze@{Spritze}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Spritze\-::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_spritze_aaf70068b9356284874156f19f5237c94}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_spritze_aaf70068b9356284874156f19f5237c94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{class_spritze_aaf70068b9356284874156f19f5237c94_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-Spritze.\-h\item 
-Spritze.\-cpp\end{DoxyCompactItemize}
+\hyperlink{_spritze_8h}{Spritze.\-h}\item 
+\hyperlink{_spritze_8cpp}{Spritze.\-cpp}\end{DoxyCompactItemize}

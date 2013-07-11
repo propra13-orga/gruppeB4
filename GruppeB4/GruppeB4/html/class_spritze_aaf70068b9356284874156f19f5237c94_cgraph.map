@@ -1,0 +1,5 @@
+<map id="Spritze::update" name="Spritze::update">
+<area shape="rect" id="node3" href="$class_spritze.html#acab9a7ff57ce3ce2f33a3480d04cbe19" title="Spritze::set_Position" alt="" coords="167,5,308,35"/>
+<area shape="rect" id="node5" href="$class_spritze.html#aef30f9337f9559b4873ee895a0c8f4fe" title="Spritze::get_Position" alt="" coords="167,59,308,88"/>
+<area shape="rect" id="node7" href="$class_spritze.html#ad5f7645d831b543b1ca92bd4ccb9c876" title="Spritze::get_Velocity" alt="" coords="167,112,308,141"/>
+</map>

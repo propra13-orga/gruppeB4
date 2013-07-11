@@ -1,0 +1,8 @@
+<map id="Pfleger::render" name="Pfleger::render">
+<area shape="rect" id="node3" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="381,5,477,35"/>
+<area shape="rect" id="node5" href="$class_pfleger.html#a8af1eb8290c18f38547cab4182fd9801" title="Pfleger::get_Position" alt="" coords="161,223,303,252"/>
+<area shape="rect" id="node7" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="353,58,505,105"/>
+<area shape="rect" id="node9" href="$class_s___resourcemanager.html#a0b3ad58e4b25c14849f03dfc949045cf" title="S_Resourcemanager::\lget_Surface" alt="" coords="353,181,505,227"/>
+<area shape="rect" id="node11" href="$class_spritze.html#a2d1fac0870a40d50f0582e1efec53751" title="Spritze::render" alt="" coords="179,119,285,148"/>
+<area shape="rect" id="node14" href="$class_spritze.html#aef30f9337f9559b4873ee895a0c8f4fe" title="Spritze::get_Position" alt="" coords="359,128,500,157"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="FinalBoss::weaken_Endboss" name="FinalBoss::weaken_Endboss">
+<area shape="rect" id="node3" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="245,5,387,35"/>
+<area shape="rect" id="node5" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="436,5,577,35"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="627,5,677,35"/>
+</map>

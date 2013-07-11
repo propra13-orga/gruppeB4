@@ -1,0 +1,21 @@
+<map id="Overlay.cpp" name="Overlay.cpp">
+<area shape="rect" id="node3" href="$_overlay_8h.html" title="Overlay.h" alt="" coords="275,160,352,189"/>
+<area shape="rect" id="node86" href="$_armor_manager_8h.html" title="ArmorManager.h" alt="" coords="669,83,787,112"/>
+<area shape="rect" id="node5" href="$_player_8h.html" title="Player.h" alt="" coords="695,237,764,267"/>
+<area shape="rect" id="node63" href="$_money_manager_8h.html" title="MoneyManager.h" alt="" coords="485,315,608,344"/>
+<area shape="rect" id="node7" href="$_vektor_8h.html" title="Vektor.h" alt="" coords="1087,701,1156,731"/>
+<area shape="rect" id="node9" href="$_resourcemanager_8h.html" title="Resourcemanager.h" alt="" coords="355,701,493,731"/>
+<area shape="rect" id="node21" href="$globals_8h.html" title="globals.h" alt="" coords="1328,779,1403,808"/>
+<area shape="rect" id="node27" href="$_level_segment_8h.html" title="LevelSegment.h" alt="" coords="195,469,309,499"/>
+<area shape="rect" id="node31" href="$_timer_8h.html" title="Timer.h" alt="" coords="121,701,188,731"/>
+<area shape="rect" id="node35" href="$_item_manager_8h.html" title="ItemManager.h" alt="" coords="1069,315,1179,344"/>
+<area shape="rect" id="node73" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="664,315,795,344"/>
+<area shape="rect" id="node38" href="$quest1_8h.html" title="quest1.h" alt="" coords="1069,392,1141,421"/>
+<area shape="rect" id="node44" href="$_item_8h.html" title="Item.h" alt="" coords="1336,624,1395,653"/>
+<area shape="rect" id="node49" href="$_e_p_manager_8h.html" title="EPManager.h" alt="" coords="843,392,944,421"/>
+<area shape="rect" id="node51" href="$_skilltree_8h.html" title="Skilltree.h" alt="" coords="813,469,893,499"/>
+<area shape="rect" id="node53" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="813,547,893,576"/>
+<area shape="rect" id="node59" href="$_n_p_c1_8h.html" title="NPC1.h" alt="" coords="688,624,757,653"/>
+<area shape="rect" id="node65" href="$_rendable_object_8h.html" title="RendableObject.h" alt="" coords="781,624,907,653"/>
+<area shape="rect" id="node93" href="$_armor_8h.html" title="Armor.h" alt="" coords="731,160,797,189"/>
+</map>

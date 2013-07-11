@@ -1,9 +1,22 @@
 <map id="Skilltree::get_Skilltree" name="Skilltree::get_Skilltree">
-<area shape="rect" id="node3" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="236,5,327,35"/>
-<area shape="rect" id="node5" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="220,59,343,88"/>
-<area shape="rect" id="node7" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="208,112,355,141"/>
-<area shape="rect" id="node9" href="$class_shop.html#ab351ada15116901f29a2d35474883894" title="Shop::handle_Input" alt="" coords="215,165,348,195"/>
-<area shape="rect" id="node11" href="$class_skilltree.html#ae60bd6e6d9ce06eed34f90284ceb0714" title="Skilltree::handleInput" alt="" coords="209,219,353,248"/>
-<area shape="rect" id="node13" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="409,297,521,327"/>
-<area shape="rect" id="node15" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="204,323,359,352"/>
+<area shape="rect" id="node3" href="$class_e_p_manager.html#a300554dc6cd44d47ece8ebe6d8ed2daa" title="EPManager::Set_Ep" alt="" coords="211,360,352,389"/>
+<area shape="rect" id="node13" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1243,524,1293,553"/>
+<area shape="rect" id="node30" href="$class_overlay.html#a6e01bd776bf1daf819ced8e0e45b4478" title="Overlay::check_lvl_up" alt="" coords="1044,576,1193,605"/>
+<area shape="rect" id="node33" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="460,108,551,137"/>
+<area shape="rect" id="node36" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="220,288,343,317"/>
+<area shape="rect" id="node39" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="208,68,355,97"/>
+<area shape="rect" id="node42" href="$class_shop.html#ab351ada15116901f29a2d35474883894" title="Shop::handle_Input" alt="" coords="857,628,991,657"/>
+<area shape="rect" id="node45" href="$class_skilltree.html#ae60bd6e6d9ce06eed34f90284ceb0714" title="Skilltree::handleInput" alt="" coords="1047,680,1191,709"/>
+<area shape="rect" id="node48" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="449,524,561,553"/>
+<area shape="rect" id="node51" href="$class_world.html#aae955513a6b43da75bebbaf0022efcc3" title="World::openSkilltree" alt="" coords="659,472,797,501"/>
+<area shape="rect" id="node54" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="204,473,359,503"/>
+<area shape="rect" id="node5" href="$class_agent_manager.html#aafa2ae19bfa65b44dc3c955bd21e0fc3" title="AgentManager::weaken_Bots" alt="" coords="409,212,601,241"/>
+<area shape="rect" id="node15" href="$class_armor_manager.html#a6f608963c4a1efb31b2d658ee5246459" title="Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="651,419,805,448"/>
+<area shape="rect" id="node20" href="$class_item_manager.html#a17e930f7669eb96bdcb49684f2254abb" title="ItemManager::update" alt="" coords="656,264,800,293"/>
+<area shape="rect" id="node23" href="$class_money_manager.html#a2732c50d4ab200fa9aa89881ddaafe9b" title="MoneyManager::update" alt="" coords="427,316,584,345"/>
+<area shape="rect" id="node26" href="$class_weapon_manager.html#a59cc9e0d6cb21105cf00ac419ea2a573" title="Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="423,369,588,399"/>
+<area shape="rect" id="node7" href="$class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9" title="Player::attack" alt="" coords="677,211,779,240"/>
+<area shape="rect" id="node9" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="853,159,995,188"/>
+<area shape="rect" id="node11" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="1048,236,1189,265"/>
+<area shape="rect" id="node17" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="873,392,975,421"/>
 </map>

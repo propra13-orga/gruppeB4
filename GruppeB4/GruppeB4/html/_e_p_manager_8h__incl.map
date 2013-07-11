@@ -1,0 +1,17 @@
+<map id="EPManager.h" name="EPManager.h">
+<area shape="rect" id="node3" href="$_skilltree_8h.html" title="Skilltree.h" alt="" coords="463,83,543,112"/>
+<area shape="rect" id="node5" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="555,160,635,189"/>
+<area shape="rect" id="node7" href="$_resourcemanager_8h.html" title="Resourcemanager.h" alt="" coords="795,392,933,421"/>
+<area shape="rect" id="node19" href="$globals_8h.html" title="globals.h" alt="" coords="389,469,464,499"/>
+<area shape="rect" id="node25" href="$_player_8h.html" title="Player.h" alt="" coords="488,237,557,267"/>
+<area shape="rect" id="node27" href="$_vektor_8h.html" title="Vektor.h" alt="" coords="159,469,228,499"/>
+<area shape="rect" id="node74" href="$_n_p_c1_8h.html" title="NPC1.h" alt="" coords="713,315,783,344"/>
+<area shape="rect" id="node30" href="$_level_segment_8h.html" title="LevelSegment.h" alt="" coords="807,315,921,344"/>
+<area shape="rect" id="node34" href="$_timer_8h.html" title="Timer.h" alt="" coords="987,392,1053,421"/>
+<area shape="rect" id="node38" href="$_item_manager_8h.html" title="ItemManager.h" alt="" coords="177,315,287,344"/>
+<area shape="rect" id="node53" href="$_money_manager_8h.html" title="MoneyManager.h" alt="" coords="311,315,433,344"/>
+<area shape="rect" id="node63" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="457,315,588,344"/>
+<area shape="rect" id="node41" href="$quest1_8h.html" title="quest1.h" alt="" coords="51,392,123,421"/>
+<area shape="rect" id="node47" href="$_item_8h.html" title="Item.h" alt="" coords="197,392,256,421"/>
+<area shape="rect" id="node55" href="$_rendable_object_8h.html" title="RendableObject.h" alt="" coords="331,392,456,421"/>
+</map>

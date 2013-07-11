@@ -1,0 +1,30 @@
+<map id="World::handle_Event" name="World::handle_Event">
+<area shape="rect" id="node3" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="197,632,339,661"/>
+<area shape="rect" id="node5" href="$class_player.html#a12fea44fe4eda565ada463b15443dc56" title="Player::set_Velocity" alt="" coords="669,5,808,35"/>
+<area shape="rect" id="node7" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="437,291,528,320"/>
+<area shape="rect" id="node19" href="$class_weapon_manager.html#a43dc0489aed7aad37a65a0e6d687f06c" title="WeaponManager::get\l_WeaponManager" alt="" coords="905,509,1052,555"/>
+<area shape="rect" id="node21" href="$class_weapon_manager.html#ad2d37307f38fc2ae493d0ee804c9842f" title="WeaponManager::swap\l_weapon" alt="" coords="404,789,561,835"/>
+<area shape="rect" id="node23" href="$class_weapon_manager.html#a815b728b877f0f1fefceec97c1a6a7e9" title="WeaponManager::show\l_currentWeapon" alt="" coords="404,858,561,905"/>
+<area shape="rect" id="node25" href="$class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9" title="Player::attack" alt="" coords="432,632,533,661"/>
+<area shape="rect" id="node27" href="$class_agent_manager.html#a1af0e6f1ed0b2b4db25617f4e9357e81" title="AgentManager::get_AgentManager" alt="" coords="628,685,849,715"/>
+<area shape="rect" id="node48" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="421,448,544,477"/>
+<area shape="rect" id="node57" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="409,133,556,163"/>
+<area shape="rect" id="node63" href="$class_agent_manager.html#a13afeaa1a5581415e3b312444bb43b82" title="AgentManager::get_Boss" alt="" coords="399,928,567,957"/>
+<area shape="rect" id="node65" href="$class_final_boss.html#a1579fd9da81da66bbed75799f7113be9" title="FinalBoss::weaken_Endboss" alt="" coords="388,736,577,765"/>
+<area shape="rect" id="node9" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="636,371,841,400"/>
+<area shape="rect" id="node11" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="661,317,816,347"/>
+<area shape="rect" id="node13" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="1128,196,1277,225"/>
+<area shape="rect" id="node15" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="673,264,804,293"/>
+<area shape="rect" id="node17" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="673,211,804,240"/>
+<area shape="rect" id="node29" href="$class_agent_manager.html#aafa2ae19bfa65b44dc3c955bd21e0fc3" title="AgentManager::weaken_Bots" alt="" coords="643,632,835,661"/>
+<area shape="rect" id="node32" href="$class_player.html#ae2b606a4cc6b7f3f1147c117fbfa82ce" title="Player::get_WalkStatus" alt="" coords="899,632,1059,661"/>
+<area shape="rect" id="node34" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="909,737,1048,767"/>
+<area shape="rect" id="node36" href="$class_e_p_manager.html#a7dd8287b28c4c0fc6e39e8846ee4bbc5" title="EPManager::get_EPManager" alt="" coords="1108,671,1297,700"/>
+<area shape="rect" id="node38" href="$class_e_p_manager.html#a300554dc6cd44d47ece8ebe6d8ed2daa" title="EPManager::Set_Ep" alt="" coords="908,579,1049,608"/>
+<area shape="rect" id="node41" href="$class_e_p_manager.html#ab16a464979242e27ab1de48a2fa8d193" title="EPManager::clear_Ep" alt="" coords="1128,592,1277,621"/>
+<area shape="rect" id="node44" href="$class_skilltree.html#ae70ee0539a4cf46685e0b16be65b2c6a" title="Skilltree::set_skillpoint" alt="" coords="1127,539,1279,568"/>
+<area shape="rect" id="node46" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="1159,391,1247,420"/>
+<area shape="rect" id="node53" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="677,475,800,504"/>
+<area shape="rect" id="node55" href="$class_player.html#a352a8894a05f649fb236ae99cd9da3e9" title="Player::get_Mana" alt="" coords="677,528,800,557"/>
+<area shape="rect" id="node68" href="$class_final_boss.html#a6c30600b7492a40d2ec99874d41296b0" title="FinalBoss::get_Position" alt="" coords="659,789,819,819"/>
+</map>

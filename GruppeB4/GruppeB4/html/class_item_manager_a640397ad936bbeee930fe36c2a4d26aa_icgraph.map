@@ -1,4 +1,7 @@
 <map id="ItemManager::kill_Item" name="ItemManager::kill_Item">
 <area shape="rect" id="node3" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="224,5,315,35"/>
-<area shape="rect" id="node5" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="208,59,331,88"/>
+<area shape="rect" id="node11" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="208,59,331,88"/>
+<area shape="rect" id="node5" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="379,32,520,61"/>
+<area shape="rect" id="node7" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="569,32,711,61"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="760,32,811,61"/>
 </map>

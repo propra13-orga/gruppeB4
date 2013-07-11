@@ -1,13 +1,33 @@
 <map id="S_Resourcemanager::get_Resourcemanager" name="S_Resourcemanager::get_Resourcemanager">
-<area shape="rect" id="node3" href="$class_armor_manager.html#a79a20356f9630c6c51a816f0163b28bf" title="Ruestung auf den Boden rendern." alt="" coords="216,5,365,35"/>
-<area shape="rect" id="node5" href="$class_final_boss.html#a0dfe88f2e430bd3a8760801809ab7c01" title="FinalBoss::render" alt="" coords="229,59,352,88"/>
-<area shape="rect" id="node7" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="423,85,548,115"/>
-<area shape="rect" id="node10" href="$class_item_manager.html#af436e023ae2f467062fb055581b64923" title="ItemManager::render" alt="" coords="220,163,361,192"/>
-<area shape="rect" id="node12" href="$class_item_manager.html#a17e930f7669eb96bdcb49684f2254abb" title="ItemManager::update" alt="" coords="219,216,363,245"/>
-<area shape="rect" id="node14" href="$class_n_p_c2.html#adbe4a4a931a63eb4fcf3eedb372b9878" title="NPC2::render" alt="" coords="240,269,341,299"/>
-<area shape="rect" id="node16" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="236,323,345,352"/>
-<area shape="rect" id="node18" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="429,400,541,429"/>
-<area shape="rect" id="node20" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="213,427,368,456"/>
-<area shape="rect" id="node23" href="$class_crazy__enemy.html#a4fc63fd437c01b6522beaf468c218f4a" title="Siehe Verrückter.cpp." alt="" coords="217,480,364,509"/>
-<area shape="rect" id="node25" href="$class_weapon_manager.html#acb9216f61525ede5ed970b5d558db9e9" title="Waffen auf den Boden rendern." alt="" coords="209,533,372,563"/>
+<area shape="rect" id="node3" href="$class_agent_manager.html#a1b94eb002a1a9a57106539b84402f32a" title="AgentManager::render" alt="" coords="436,565,585,595"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="676,357,775,387"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1093,821,1144,851"/>
+<area shape="rect" id="node9" href="$class_armor_manager.html#a79a20356f9630c6c51a816f0163b28bf" title="Ruestung auf den Boden rendern." alt="" coords="436,72,585,101"/>
+<area shape="rect" id="node12" href="$class_crazy__enemy.html#ab3f0fd1c099d35b9a10aaa51064030cc" title="Crazy_enemy::render" alt="" coords="217,1080,364,1109"/>
+<area shape="rect" id="node14" href="$class_endboss.html#a17b150268f358172b140a984aaaa61c8" title="Endboss::render" alt="" coords="232,1133,349,1163"/>
+<area shape="rect" id="node16" href="$class_e_p_manager.html#ae0839a39f9ee6fd51d67faafbd6ff560" title="EPManager::render" alt="" coords="224,155,357,184"/>
+<area shape="rect" id="node18" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="456,144,565,173"/>
+<area shape="rect" id="node21" href="$class_final_boss.html#a0dfe88f2e430bd3a8760801809ab7c01" title="FinalBoss::render" alt="" coords="229,616,352,645"/>
+<area shape="rect" id="node24" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="448,663,573,692"/>
+<area shape="rect" id="node32" href="$class_item_manager.html#af436e023ae2f467062fb055581b64923" title="ItemManager::render" alt="" coords="440,197,581,227"/>
+<area shape="rect" id="node35" href="$class_item_manager.html#a17e930f7669eb96bdcb49684f2254abb" title="ItemManager::update" alt="" coords="653,716,797,745"/>
+<area shape="rect" id="node39" href="$class_main___menue.html#aed4976d8260e9ddc97a363cc9db0569d" title="Main_Menue::initialize_Game" alt="" coords="852,873,1044,903"/>
+<area shape="rect" id="node42" href="$class_main___menue.html#accf9d040d93aa3a1fe85b9fc9d6d8732" title="Main_Menue::render" alt="" coords="221,976,360,1005"/>
+<area shape="rect" id="node44" href="$class_main___menue.html#aa60a21b72ad952bb630c7d1d6d983b1f" title="Main_Menue::Menue_Loop" alt="" coords="421,925,600,955"/>
+<area shape="rect" id="node48" href="$class_money_manager.html#a33ad5f3a0229855b500ccbaf791d48db" title="MoneyManager::render" alt="" coords="433,251,588,280"/>
+<area shape="rect" id="node51" href="$class_n_p_c1.html#a3fa4f42017cbef90df3fc010de47f452" title="NPC1::render" alt="" coords="460,304,561,333"/>
+<area shape="rect" id="node54" href="$class_n_p_c2.html#adbe4a4a931a63eb4fcf3eedb372b9878" title="NPC2::render" alt="" coords="460,357,561,387"/>
+<area shape="rect" id="node58" href="$class_pfleger.html#a4ae72e0182e9d909358755769447681d" title="Pfleger::render" alt="" coords="457,1211,564,1240"/>
+<area shape="rect" id="node60" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="460,411,561,440"/>
+<area shape="rect" id="node63" href="$class_player2.html#a4a4b0e14f00b815f6b190939d83be5fa" title="Player2::render" alt="" coords="236,1291,345,1320"/>
+<area shape="rect" id="node65" href="$class_shop.html#a6c1786f48bc976b2c7a45dde48ec36ae" title="Shop::render" alt="" coords="900,1003,996,1032"/>
+<area shape="rect" id="node68" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="455,796,567,825"/>
+<area shape="rect" id="node74" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="213,821,368,851"/>
+<area shape="rect" id="node77" href="$class_skilltree.html#a01f048624ac0e92490e94ca3ee8fbece" title="Skilltree::render2" alt="" coords="231,1344,351,1373"/>
+<area shape="rect" id="node79" href="$class_spritze.html#a2d1fac0870a40d50f0582e1efec53751" title="Spritze::render" alt="" coords="237,1237,344,1267"/>
+<area shape="rect" id="node82" href="$class_weapon_manager.html#acb9216f61525ede5ed970b5d558db9e9" title="Waffen auf den Boden rendern." alt="" coords="209,461,372,491"/>
+<area shape="rect" id="node86" href="$class_world.html#a9164eb25c327d3c1153deb6a6fd89a83" title="World::render_Win" alt="" coords="225,1397,356,1427"/>
+<area shape="rect" id="node26" href="$class_agent_manager.html#a1c05e1578aafde1892a5e4e79862b19f" title="AgentManager::update" alt="" coords="649,663,801,692"/>
+<area shape="rect" id="node28" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="897,743,999,772"/>
+<area shape="rect" id="node71" href="$class_world.html#aae955513a6b43da75bebbaf0022efcc3" title="World::openSkilltree" alt="" coords="656,769,795,799"/>
 </map>

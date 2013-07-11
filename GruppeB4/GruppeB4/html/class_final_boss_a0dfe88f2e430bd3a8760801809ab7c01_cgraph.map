@@ -1,3 +1,6 @@
 <map id="FinalBoss::render" name="FinalBoss::render">
-<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="180,5,332,51"/>
+<area shape="rect" id="node3" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="211,5,307,35"/>
+<area shape="rect" id="node5" href="$class_final_boss.html#a6c30600b7492a40d2ec99874d41296b0" title="FinalBoss::get_Position" alt="" coords="179,59,339,88"/>
+<area shape="rect" id="node7" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="183,111,335,158"/>
+<area shape="rect" id="node9" href="$class_s___resourcemanager.html#a0b3ad58e4b25c14849f03dfc949045cf" title="S_Resourcemanager::\lget_Surface" alt="" coords="183,181,335,227"/>
 </map>

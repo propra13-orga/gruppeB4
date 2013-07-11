@@ -1,8 +1,27 @@
 var searchData=
 [
   ['set_5farmor',['set_Armor',['../class_armor.html#a8c1238b98e8bc91fb39e0e7ef8a331bf',1,'Armor::set_Armor()'],['../class_armor_manager.html#ae1d12bdafa1ec883841aa311307a3b85',1,'ArmorManager::set_Armor()']]],
-  ['set_5fhealth',['set_health',['../class_crazy__enemy.html#aca0e6e11b0cf95954141771b710e78ae',1,'Crazy_enemy']]],
-  ['set_5fitem',['set_Item',['../class_item.html#a00a562954be3b3ce018676aea84d9a75',1,'Item::set_Item()'],['../class_item_manager.html#ad15fabe46ac5fab89a6b857c53e79dee',1,'ItemManager::set_Item()']]],
+  ['set_5fbot',['set_Bot',['../class_agent_manager.html#ab00a9cbf5753546fbb5f9f5cfa1b1241',1,'AgentManager']]],
+  ['set_5fcamera',['set_Camera',['../class_world.html#a149a22406179d656aea426c32577bed9',1,'World']]],
+  ['set_5fcoin',['set_Coin',['../class_money_manager.html#afb4cbbd62d99a50349450f994180a030',1,'MoneyManager::set_Coin(s_Vector *p_TempPosition)'],['../class_money_manager.html#af86f1a7b7224997f693dae28a2e3b025',1,'MoneyManager::set_Coin(int x, int y)']]],
+  ['set_5fdisable',['set_disable',['../class_player.html#add9dfdb430f9e78178e43a8bf78fa7a3',1,'Player']]],
+  ['set_5fep',['Set_Ep',['../class_e_p_manager.html#a300554dc6cd44d47ece8ebe6d8ed2daa',1,'EPManager']]],
+  ['set_5fhealth',['set_Health',['../class_player.html#a25da073f8c291a56b482d8005b2476d1',1,'Player::set_Health()'],['../class_endboss.html#a0bbf59647d911c6380246de92b5f5e21',1,'Endboss::set_health()'],['../class_crazy__enemy.html#aca0e6e11b0cf95954141771b710e78ae',1,'Crazy_enemy::set_health()']]],
+  ['set_5fhealth_5fcap',['set_health_cap',['../class_player.html#ab321d07e6272a7a7168bf411eed105c0',1,'Player']]],
+  ['set_5fisactivated',['set_isactivated',['../class_final_boss.html#aa9ee8f4ddea7ecfc2d7b9bbaf6ca73a6',1,'FinalBoss']]],
+  ['set_5fitem',['set_Item',['../class_item.html#a00a562954be3b3ce018676aea84d9a75',1,'Item::set_Item()'],['../class_item_manager.html#ad15fabe46ac5fab89a6b857c53e79dee',1,'ItemManager::set_Item(s_Vector *p_TempPosition, ITEM_TYPE TEMPITEM)'],['../class_item_manager.html#a1f0ef737a253bec0e41ca8807b65e45f',1,'ItemManager::set_Item(int x, int y, ITEM_TYPE TEMPITEM)']]],
+  ['set_5fmana',['set_Mana',['../class_player.html#af0ddd345e35423723ce460c64cd9a7b6',1,'Player']]],
+  ['set_5fposition',['set_Position',['../class_armor.html#a007fd5929f7cd4c3ab062094c2465371',1,'Armor::set_Position()'],['../class_enemy.html#a39b8b0f9a87bf2a7b6ee8a1f59cefcf4',1,'Enemy::set_Position()'],['../class_final_boss.html#a65029b764ec03a87caf71e7687d23306',1,'FinalBoss::set_Position()'],['../class_item.html#a71772937c1e153dbef03e583be74215a',1,'Item::set_Position()'],['../class_n_p_c1.html#a6f7d2842c3ad04969ed90722324875b4',1,'NPC1::set_Position()'],['../class_n_p_c2.html#a77cbb553e517b11026e95cf7f0ada3d6',1,'NPC2::set_Position()'],['../class_pfleger.html#a125d4f58e1d558e3da1632f5b145c981',1,'Pfleger::set_Position()'],['../class_player.html#a3615907f803845ff9b37dee94944b09b',1,'Player::set_Position()'],['../class_player2.html#a3a6f363502f4241020de0e641dad4111',1,'Player2::set_Position()'],['../class_spritze.html#acab9a7ff57ce3ce2f33a3480d04cbe19',1,'Spritze::set_Position()']]],
+  ['set_5fquestende',['set_QuestEnde',['../class_n_p_c2.html#ac3d04a589607feb67f02e7aeb06f56f6',1,'NPC2']]],
+  ['set_5fquestfertig',['set_questfertig',['../classquest1.html#a0d15ef2a709da84e40eeebfe9d013ca2',1,'quest1']]],
+  ['set_5fskillpoint',['set_skillpoint',['../class_skilltree.html#ae70ee0539a4cf46685e0b16be65b2c6a',1,'Skilltree']]],
+  ['set_5fvelocity',['set_Velocity',['../class_enemy.html#ab026b4302720f1676653285b27babd59',1,'Enemy::set_Velocity()'],['../class_player.html#a12fea44fe4eda565ada463b15443dc56',1,'Player::set_Velocity()'],['../class_player2.html#a0a386cf73970cab8fb22462fbc252fa3',1,'Player2::set_Velocity()'],['../class_spritze.html#aa54b894d1a40b2c1156eb0e62779fa0e',1,'Spritze::set_Velocity()']]],
+  ['set_5fweapon',['set_Weapon',['../class_weapon_manager.html#a6213a907c477df0f032ac4ebc8dd810d',1,'WeaponManager']]],
   ['setragemode',['setRageMode',['../class_player.html#a500a169debe3d89456f57e4c13fef28d',1,'Player']]],
-  ['show',['show',['../class_armor_manager.html#a67c0b4d0206bb0916dc2c6f8ca0ee225',1,'ArmorManager']]]
+  ['show',['show',['../class_armor_manager.html#a67c0b4d0206bb0916dc2c6f8ca0ee225',1,'ArmorManager::show()'],['../class_money_manager.html#acec03aacba984985299507968b60c40b',1,'MoneyManager::show()'],['../class_weapon_manager.html#ab9c945db9e377562d05493f9474ec499',1,'WeaponManager::show()']]],
+  ['show_5fcurrentweapon',['show_currentWeapon',['../class_weapon_manager.html#a815b728b877f0f1fefceec97c1a6a7e9',1,'WeaponManager']]],
+  ['spritze',['Spritze',['../class_spritze.html#a786a149a9e6a937af87566a5c0ab432e',1,'Spritze::Spritze(int x, int y)'],['../class_spritze.html#a4cca3fc867fc55f6dde677c045d459d1',1,'Spritze::Spritze()']]],
+  ['start',['start',['../class_timer.html#a3a8b5272198d029779dc9302a54305a8',1,'Timer']]],
+  ['stop',['stop',['../class_timer.html#a63f0eb44b27402196590a03781515dba',1,'Timer']]],
+  ['swap_5fweapon',['swap_weapon',['../class_weapon_manager.html#ad2d37307f38fc2ae493d0ee804c9842f',1,'WeaponManager']]]
 ];

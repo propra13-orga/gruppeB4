@@ -1,4 +1,4 @@
 <map id="Enemy" name="Enemy">
-<area shape="rect" id="node3" href="$class_crazy__enemy.html" title="Crazy_enemy" alt="" coords="5,83,107,112"/>
-<area shape="rect" id="node6" href="$class_endboss.html" title="Endboss" alt="" coords="131,83,203,112"/>
+<area shape="rect" id="node3" href="$class_crazy__enemy.html" title="{Crazy_enemy\n||+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ render()\l+ update()\l+ Crazy_enemy()\l+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="5,243,136,501"/>
+<area shape="rect" id="node6" href="$class_endboss.html" title="{Endboss\n||+ Endboss()\l+ Endboss()\l+ ~Endboss()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="160,277,264,467"/>
 </map>

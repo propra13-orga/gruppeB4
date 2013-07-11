@@ -1,0 +1,10 @@
+<map id="Pfleger::update" name="Pfleger::update">
+<area shape="rect" id="node3" href="$class_spritze.html#aaf70068b9356284874156f19f5237c94" title="Spritze::update" alt="" coords="196,59,305,88"/>
+<area shape="rect" id="node5" href="$class_spritze.html#acab9a7ff57ce3ce2f33a3480d04cbe19" title="Spritze::set_Position" alt="" coords="385,5,527,35"/>
+<area shape="rect" id="node7" href="$class_spritze.html#aef30f9337f9559b4873ee895a0c8f4fe" title="Spritze::get_Position" alt="" coords="385,112,527,141"/>
+<area shape="rect" id="node12" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="181,163,320,192"/>
+<area shape="rect" id="node15" href="$class_spritze.html#a5d305371f76fb207684c203e7b4e5fd8" title="Spritze::get_StartPosition" alt="" coords="165,216,336,245"/>
+<area shape="rect" id="node17" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="185,269,316,299"/>
+<area shape="rect" id="node19" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="185,323,316,352"/>
+<area shape="rect" id="node9" href="$class_spritze.html#ad5f7645d831b543b1ca92bd4ccb9c876" title="Spritze::get_Velocity" alt="" coords="385,59,527,88"/>
+</map>

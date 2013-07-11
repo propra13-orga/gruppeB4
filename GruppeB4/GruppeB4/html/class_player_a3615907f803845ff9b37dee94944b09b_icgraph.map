@@ -1,0 +1,9 @@
+<map id="Player::set_Position" name="Player::set_Position">
+<area shape="rect" id="node3" href="$class_player.html#a5f3457c6aaf834b83d35d9085b46e31d" title="Player::reinitialize" alt="" coords="204,5,329,35"/>
+<area shape="rect" id="node11" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="213,59,320,88"/>
+<area shape="rect" id="node13" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="391,97,492,127"/>
+<area shape="rect" id="node17" href="$class_world.html#a227f2998664ae3586190752920ee2713" title="Aendern des aktuellen Levels." alt="" coords="193,163,340,192"/>
+<area shape="rect" id="node5" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="391,19,492,48"/>
+<area shape="rect" id="node7" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="543,25,641,55"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="691,55,741,84"/>
+</map>

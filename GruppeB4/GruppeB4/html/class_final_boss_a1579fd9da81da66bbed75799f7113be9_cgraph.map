@@ -1,0 +1,4 @@
+<map id="FinalBoss::weaken_Endboss" name="FinalBoss::weaken_Endboss">
+<area shape="rect" id="node3" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="256,5,395,35"/>
+<area shape="rect" id="node5" href="$class_final_boss.html#a6c30600b7492a40d2ec99874d41296b0" title="FinalBoss::get_Position" alt="" coords="245,59,405,88"/>
+</map>

@@ -1,4 +1,12 @@
 <map id="Skilltree::check_skilled" name="Skilltree::check_skilled">
-<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="212,5,364,51"/>
-<area shape="rect" id="node5" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="213,75,363,104"/>
+<area shape="rect" id="node3" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="240,5,336,35"/>
+<area shape="rect" id="node5" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="212,58,364,105"/>
+<area shape="rect" id="node7" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="213,128,363,157"/>
+<area shape="rect" id="node9" href="$class_skilltree.html#aed683621d09de5536a39a5e7f6895b41" title="Skilltree::t1_1" alt="" coords="237,181,339,211"/>
+<area shape="rect" id="node11" href="$class_skilltree.html#ae0226fcc85365c85eb4ef88139c65df5" title="Skilltree::t1_2" alt="" coords="237,235,339,264"/>
+<area shape="rect" id="node13" href="$class_skilltree.html#af772b25271d2b1805bab39773041da82" title="Skilltree::t1_3" alt="" coords="237,288,339,317"/>
+<area shape="rect" id="node15" href="$class_skilltree.html#a21f7aea9d771b8fffe9df9b517f0245f" title="Skilltree::t1_4" alt="" coords="237,341,339,371"/>
+<area shape="rect" id="node17" href="$class_skilltree.html#ac22abb2448aa780e5d310b6572170ab0" title="Skilltree::t1_5" alt="" coords="237,395,339,424"/>
+<area shape="rect" id="node19" href="$class_skilltree.html#a4cc4fcaa43ae3deb0c66963d2dc939f7" title="Skilltree::t2_1" alt="" coords="237,448,339,477"/>
+<area shape="rect" id="node21" href="$class_skilltree.html#ab2a53b0b26afc12430ec1ecfa5c66114" title="Skilltree::t2_3" alt="" coords="237,501,339,531"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="World::collision_Detection" name="World::collision_Detection">
+<area shape="rect" id="node3" href="$class_player.html#a4962a0e045b4d8cf30b49faec7a1b006" title="Player::collision_Detection" alt="" coords="231,5,407,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="456,5,595,35"/>
+</map>

@@ -1,3 +1,8 @@
 <map id="Shop::handle_Input" name="Shop::handle_Input">
-<area shape="rect" id="node3" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="189,5,339,35"/>
+<area shape="rect" id="node3" href="$class_money_manager.html#a9e244a12805cbff0dee7f76d1ca8c05a" title="MoneyManager::get_MoneyManager" alt="" coords="191,5,423,35"/>
+<area shape="rect" id="node5" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="232,59,381,88"/>
+<area shape="rect" id="node7" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="204,112,409,141"/>
+<area shape="rect" id="node9" href="$class_item_manager.html#a4a49254cca50492af965ad5643ca9126" title="ItemManager::insert_item" alt="" coords="221,165,392,195"/>
+<area shape="rect" id="node11" href="$class_money_manager.html#acda99c2efae55a5c4eaf5670305d7f07" title="MoneyManager::refreshMoney" alt="" coords="208,219,405,248"/>
+<area shape="rect" id="node13" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="263,272,351,301"/>
 </map>

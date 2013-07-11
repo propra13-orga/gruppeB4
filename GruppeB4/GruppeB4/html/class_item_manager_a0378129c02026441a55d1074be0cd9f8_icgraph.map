@@ -1,0 +1,5 @@
+<map id="ItemManager::get_Amount" name="ItemManager::get_Amount">
+<area shape="rect" id="node3" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="231,5,340,35"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="391,5,489,35"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="539,5,589,35"/>
+</map>

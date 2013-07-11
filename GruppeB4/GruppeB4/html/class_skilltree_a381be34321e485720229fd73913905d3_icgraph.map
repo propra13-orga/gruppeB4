@@ -1,3 +1,6 @@
 <map id="Skilltree::check_skilled" name="Skilltree::check_skilled">
 <area shape="rect" id="node3" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="212,5,324,35"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="712,5,763,35"/>
+<area shape="rect" id="node7" href="$class_world.html#aae955513a6b43da75bebbaf0022efcc3" title="World::openSkilltree" alt="" coords="373,31,512,60"/>
+<area shape="rect" id="node9" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="561,31,663,60"/>
 </map>

@@ -1,23 +1,54 @@
 \hypertarget{class_shop}{\section{Shop Klassenreferenz}
 \label{class_shop}\index{Shop@{Shop}}
 }
+
+
+{\ttfamily \#include $<$Shop.\-h$>$}
+
+
+
+Zusammengeh√∂rigkeiten von Shop\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{class_shop__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{√ñffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}{void {\bfseries render} ()}\label{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}
-
+void \hyperlink{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}{render} ()
 \item 
-void \hyperlink{class_shop_ab351ada15116901f29a2d35474883894}{handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&even, bool $\ast$quitshop, bool $\ast$b\-\_\-shopisopen, \hyperlink{class_player}{Player} $\ast$temp)
+void \hyperlink{class_shop_ab351ada15116901f29a2d35474883894}{handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&\hyperlink{main_8cpp_af6a41c81a6372a814ffae9ba6615e1e7}{even}, bool $\ast$quitshop, bool $\ast$b\-\_\-shopisopen, \hyperlink{class_player}{Player} $\ast$temp)
 \end{DoxyCompactItemize}
 \subsection*{√ñffentliche, statische Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}{static \hyperlink{class_shop}{Shop} \& {\bfseries get\-\_\-\-Shop} ()}\label{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}
-
+static \hyperlink{class_shop}{Shop} \& \hyperlink{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}{get\-\_\-\-Shop} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}{\index{Shop@{Shop}!get\-\_\-\-Shop@{get\-\_\-\-Shop}}
+\index{get\-\_\-\-Shop@{get\-\_\-\-Shop}!Shop@{Shop}}
+\subsubsection[{get\-\_\-\-Shop}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Shop}\& Shop\-::get\-\_\-\-Shop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8_icgraph}
+\end{center}
+\end{figure}
+
+
 \hypertarget{class_shop_ab351ada15116901f29a2d35474883894}{\index{Shop@{Shop}!handle\-\_\-\-Input@{handle\-\_\-\-Input}}
 \index{handle\-\_\-\-Input@{handle\-\_\-\-Input}!Shop@{Shop}}
 \subsubsection[{handle\-\_\-\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Shop\-::handle\-\_\-\-Input (
@@ -30,7 +61,7 @@ void \hyperlink{class_shop_ab351ada15116901f29a2d35474883894}{handle\-\_\-\-Inpu
 )}}\label{class_shop_ab351ada15116901f29a2d35474883894}
 Verwaltet den User\-Input
 
-$<$Wenn 'e' gedr¸ckt wird schlieﬂt sich der shop(siehe main.\-cpp, da dort die Funktion aufgerufen wird.)
+$<$Wenn 'e' gedr¸ckt wird schlieﬂt sich der shop(siehe \hyperlink{main_8cpp}{main.\-cpp}, da dort die Funktion aufgerufen wird.)
 
 Wenn genug Geld vorhanden + Talente im \hyperlink{class_skilltree}{Skilltree} abgefragt( da diese auf den Shop Auswirkungen haben) Gibt mehrere Varianten f¸r einen Kaufe im \hyperlink{class_shop}{Shop}, je nachdem ob oder wieviele Talente true sind. 
 
@@ -39,7 +70,50 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=330pt]{class_shop_ab351ada15116901f29a2d35474883894_cgraph}
+\includegraphics[width=350pt]{class_shop_ab351ada15116901f29a2d35474883894_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{class_shop_ab351ada15116901f29a2d35474883894_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}{\index{Shop@{Shop}!render@{render}}
+\index{render@{render}!Shop@{Shop}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Shop\-::render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae_icgraph}
 \end{center}
 \end{figure}
 
@@ -48,5 +122,5 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 Die Dokumentation f√ºr diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-Shop.\-h\item 
-Shop.\-cpp\end{DoxyCompactItemize}
+\hyperlink{_shop_8h}{Shop.\-h}\item 
+\hyperlink{_shop_8cpp}{Shop.\-cpp}\end{DoxyCompactItemize}

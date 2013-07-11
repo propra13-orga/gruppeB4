@@ -1,0 +1,12 @@
+<map id="World::initialize_Level" name="World::initialize_Level">
+<area shape="rect" id="node3" href="$class_agent_manager.html#a1af0e6f1ed0b2b4db25617f4e9357e81" title="AgentManager::get_AgentManager" alt="" coords="209,5,431,35"/>
+<area shape="rect" id="node5" href="$class_agent_manager.html#ab00a9cbf5753546fbb5f9f5cfa1b1241" title="AgentManager::set_Bot" alt="" coords="241,59,399,88"/>
+<area shape="rect" id="node7" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="217,112,423,141"/>
+<area shape="rect" id="node9" href="$class_item_manager.html#ad15fabe46ac5fab89a6b857c53e79dee" title="ItemManager::set_Item" alt="" coords="241,165,399,195"/>
+<area shape="rect" id="node11" href="$class_armor_manager.html#ac2d0437101488564e279661ae9078d5a" title="ArmorManager::get_ArmorManager" alt="" coords="208,219,432,248"/>
+<area shape="rect" id="node13" href="$class_armor_manager.html#ae1d12bdafa1ec883841aa311307a3b85" title="Setzt Ruestungstyp." alt="" coords="233,272,407,301"/>
+<area shape="rect" id="node15" href="$class_money_manager.html#a9e244a12805cbff0dee7f76d1ca8c05a" title="MoneyManager::get_MoneyManager" alt="" coords="204,325,436,355"/>
+<area shape="rect" id="node17" href="$class_money_manager.html#afb4cbbd62d99a50349450f994180a030" title="MoneyManager::set_Coin" alt="" coords="235,379,405,408"/>
+<area shape="rect" id="node19" href="$class_weapon_manager.html#a43dc0489aed7aad37a65a0e6d687f06c" title="WeaponManager::get\l_WeaponManager" alt="" coords="247,431,393,478"/>
+<area shape="rect" id="node21" href="$class_weapon_manager.html#a6213a907c477df0f032ac4ebc8dd810d" title="WeaponManager::set\l_Weapon" alt="" coords="247,501,393,547"/>
+</map>

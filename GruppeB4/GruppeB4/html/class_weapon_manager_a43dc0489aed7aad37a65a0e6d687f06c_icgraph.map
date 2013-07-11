@@ -1,0 +1,13 @@
+<map id="WeaponManager::get_WeaponManager" name="WeaponManager::get_WeaponManager">
+<area shape="rect" id="node3" href="$class_agent_manager.html#aafa2ae19bfa65b44dc3c955bd21e0fc3" title="AgentManager::weaken_Bots" alt="" coords="201,5,393,35"/>
+<area shape="rect" id="node7" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="603,57,744,87"/>
+<area shape="rect" id="node13" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="444,109,553,139"/>
+<area shape="rect" id="node15" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="624,161,723,191"/>
+<area shape="rect" id="node19" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="448,267,549,296"/>
+<area shape="rect" id="node23" href="$class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level" alt="" coords="223,213,372,243"/>
+<area shape="rect" id="node29" href="$class_world.html#a227f2998664ae3586190752920ee2713" title="Aendern des aktuellen Levels." alt="" coords="224,317,371,347"/>
+<area shape="rect" id="node5" href="$class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9" title="Player::attack" alt="" coords="448,5,549,35"/>
+<area shape="rect" id="node9" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="793,84,935,113"/>
+<area shape="rect" id="node11" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="984,161,1035,191"/>
+<area shape="rect" id="node25" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="448,213,549,243"/>
+</map>

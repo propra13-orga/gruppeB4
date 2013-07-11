@@ -1,3 +1,10 @@
 <map id="ItemManager::update" name="ItemManager::update">
-<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="201,5,353,51"/>
+<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="204,5,356,51"/>
+<area shape="rect" id="node5" href="$class_e_p_manager.html#a7dd8287b28c4c0fc6e39e8846ee4bbc5" title="EPManager::get_EPManager" alt="" coords="409,45,599,75"/>
+<area shape="rect" id="node7" href="$class_e_p_manager.html#a300554dc6cd44d47ece8ebe6d8ed2daa" title="EPManager::Set_Ep" alt="" coords="209,125,351,155"/>
+<area shape="rect" id="node18" href="$class_item_manager.html#af72a2522a8ae7b2b7a01614e44a132a8" title="ItemManager::anzeigen" alt="" coords="201,179,359,208"/>
+<area shape="rect" id="node10" href="$class_e_p_manager.html#ab16a464979242e27ab1de48a2fa8d193" title="EPManager::clear_Ep" alt="" coords="429,99,579,128"/>
+<area shape="rect" id="node12" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="429,152,579,181"/>
+<area shape="rect" id="node14" href="$class_skilltree.html#ae70ee0539a4cf46685e0b16be65b2c6a" title="Skilltree::set_skillpoint" alt="" coords="428,205,580,235"/>
+<area shape="rect" id="node16" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="460,259,548,288"/>
 </map>

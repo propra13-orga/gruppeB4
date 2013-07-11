@@ -1,0 +1,8 @@
+<map id="ArmorManager::get_ArmorManager" name="ArmorManager::get_ArmorManager">
+<area shape="rect" id="node3" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="300,5,409,35"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="631,84,729,113"/>
+<area shape="rect" id="node9" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="479,163,580,192"/>
+<area shape="rect" id="node13" href="$class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level" alt="" coords="280,109,429,139"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="779,111,829,140"/>
+<area shape="rect" id="node15" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="479,109,580,139"/>
+</map>

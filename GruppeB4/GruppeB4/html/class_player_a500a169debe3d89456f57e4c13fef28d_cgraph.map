@@ -1,0 +1,5 @@
+<map id="Player::setRageMode" name="Player::setRageMode">
+<area shape="rect" id="node3" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="203,5,352,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a12fea44fe4eda565ada463b15443dc56" title="Player::set_Velocity" alt="" coords="208,59,347,88"/>
+<area shape="rect" id="node7" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="233,112,321,141"/>
+</map>
