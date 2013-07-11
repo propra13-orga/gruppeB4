@@ -4,11 +4,13 @@
 \subsection*{Ã–ffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
+\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+
+\begin{DoxyCompactList}\small\item\em Konstruktoren. \end{DoxyCompactList}\item 
 \hypertarget{class_player_aa87d00dbf49b8d4fa4eb22d1351a7663}{{\bfseries Player} (int i\-\_\-x, int i\-\_\-y)}\label{class_player_aa87d00dbf49b8d4fa4eb22d1351a7663}
 
 \item 
-\hypertarget{class_player_a50f12c89f28826db8191f76ed915d788}{\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ {\bfseries get\-\_\-\-Position} ()}\label{class_player_a50f12c89f28826db8191f76ed915d788}
-
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_player_a50f12c89f28826db8191f76ed915d788}{get\-\_\-\-Position} ()
 \item 
 \hypertarget{class_player_a3615907f803845ff9b37dee94944b09b}{void {\bfseries set\-\_\-\-Position} (int i\-\_\-x, int i\-\_\-y)}\label{class_player_a3615907f803845ff9b37dee94944b09b}
 
@@ -49,20 +51,17 @@
 \hypertarget{class_player_ab321d07e6272a7a7168bf411eed105c0}{void {\bfseries set\-\_\-health\-\_\-cap} (int max)}\label{class_player_ab321d07e6272a7a7168bf411eed105c0}
 
 \item 
-\hypertarget{class_player_a82c2af081cd2891be248459b4015be56}{void {\bfseries heal} (int potsize)}\label{class_player_a82c2af081cd2891be248459b4015be56}
-
+void \hyperlink{class_player_a82c2af081cd2891be248459b4015be56}{heal} (int potsize)
+\begin{DoxyCompactList}\small\item\em Itembenutzung. \end{DoxyCompactList}\item 
+void \hyperlink{class_player_ae06fc7fdd0493e8c13c0441b49b66777}{load\-Mana} ()
 \item 
-\hypertarget{class_player_ae06fc7fdd0493e8c13c0441b49b66777}{void {\bfseries load\-Mana} ()}\label{class_player_ae06fc7fdd0493e8c13c0441b49b66777}
+\hypertarget{class_player_a500a169debe3d89456f57e4c13fef28d}{void \hyperlink{class_player_a500a169debe3d89456f57e4c13fef28d}{set\-Rage\-Mode} ()}\label{class_player_a500a169debe3d89456f57e4c13fef28d}
 
-\item 
-\hypertarget{class_player_a500a169debe3d89456f57e4c13fef28d}{void {\bfseries set\-Rage\-Mode} ()}\label{class_player_a500a169debe3d89456f57e4c13fef28d}
-
-\item 
+\begin{DoxyCompactList}\small\item\em Hier wird der Rage\-Mode des Spielers angestellt. \end{DoxyCompactList}\item 
 \hypertarget{class_player_aeea45f839f224a5320dfadfd2ff3ebe9}{void {\bfseries attack} ()}\label{class_player_aeea45f839f224a5320dfadfd2ff3ebe9}
 
 \item 
-\hypertarget{class_player_a4962a0e045b4d8cf30b49faec7a1b006}{bool {\bfseries collision\-\_\-\-Detection} (\hyperlink{class_level_segmente}{Level\-Segmente} $\ast$p\-\_\-\-Temp\-Seg, L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L)}\label{class_player_a4962a0e045b4d8cf30b49faec7a1b006}
-
+bool \hyperlink{class_player_a4962a0e045b4d8cf30b49faec7a1b006}{collision\-\_\-\-Detection} (\hyperlink{class_level_segmente}{Level\-Segmente} $\ast$p\-\_\-\-Temp\-Seg, L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L)
 \item 
 \hypertarget{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{void {\bfseries update} ()}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}
 
@@ -73,6 +72,194 @@
 \hypertarget{class_player_af44299a346f97deb829bea5abed63d20}{void {\bfseries handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&even)}\label{class_player_af44299a346f97deb829bea5abed63d20}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_player_a4962a0e045b4d8cf30b49faec7a1b006}{\index{Player@{Player}!collision\-\_\-\-Detection@{collision\-\_\-\-Detection}}
+\index{collision\-\_\-\-Detection@{collision\-\_\-\-Detection}!Player@{Player}}
+\subsubsection[{collision\-\_\-\-Detection}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::collision\-\_\-\-Detection (
+\begin{DoxyParamCaption}
+\item[{{\bf Level\-Segmente} $\ast$}]{p\-\_\-\-Temp\-Segment, }
+\item[{L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D}]{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L}
+\end{DoxyParamCaption}
+)}}\label{class_player_a4962a0e045b4d8cf30b49faec7a1b006}
+Funktionen die fuer die Bewegung und das Abbilden des Spielers zuständig ist
+
+Collision\-: Hier wird die Position vom \hyperlink{class_player}{Player} mit Angaben aus der Levelsegmentierung verglichen und wenn Position größer bzw. kleiner ist wird die Geschwindigkeit, welche dem \hyperlink{class_player}{Player} bei Bewegen gegben wird wieder abgezogen und er bleibt vor den Wänden stehen L\-V\-L1
+
+fuer den ersten Quadranten\-:
+
+Wand links\-:
+
+Wand oben\-:
+
+Wand unten\-:
+
+Wand rechts oben + Durchgang oben\-:
+
+Wand rechts unten + Durchgang unten\-:
+
+fuer den zweiten Quadranten\-:
+
+Wand rechts\-:
+
+Wand oben linke Seite + Durchgang links\-:
+
+Wand oben rechte Seite + Durchgang rechts\-:
+
+Wand unten\-:
+
+fuer den dritten Quadrant (Treppenhaus)\-:
+
+erster Raum Wand links\-:
+
+L\-V\-L2
+
+fuer den ersten Quadrant\-:
+
+Wand unten\-:
+
+Wand links\-:
+
+Wand oben linke Seite + Durchgang links\-:
+
+Wand oben rechte Seite + Durchgang rechts\-:
+
+fuer den zweiten Quadrant\-:
+
+Wand oben\-:
+
+Wand unten rechte Seite\-:
+
+Wand unten linke Seite\-:
+
+Wand links\-:
+
+L\-V\-L3
+
+fuer den ersten Quadrant\-:
+
+Wand unten\-:
+
+Wand oben\-:
+
+Wand rechts oben
+
+Wand rechts unten\-:
+
+fuer den zweiten Quadrant\-:
+
+Wand unten linke Seite
+
+Wand oben\-:
+
+Wand rechts
+
+Wand unten rechte Seite
+
+fuer den dritten Quadrant (Flur)\-:
+
+erster Raum unten + dritter Flur oben\-:
+
+erster Raum Wand rechts\-:
+
+erster Raum Wand links unten + erster Flur unten\-:
+
+erster Raum Wand links oben + erster Flur oben\-:
+
+Wand ganz links\-:
+
+Wand dritter Flur unten\-:
+
+Wand dritter Flut rechts\-:
+
+Wand dritter Flur oben rechte Seite + letzter Flur rechte Seite + Boss Raum unten rechts\-:
+
+letzter Flur linke Seite + Boss Raum unten links\-:
+
+Boss Raum\-:
+
+Wand oben\-:
+
+Wand links\-:
+
+Wand rechts\-: 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a4962a0e045b4d8cf30b49faec7a1b006_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_a50f12c89f28826db8191f76ed915d788}{\index{Player@{Player}!get\-\_\-\-Position@{get\-\_\-\-Position}}
+\index{get\-\_\-\-Position@{get\-\_\-\-Position}!Player@{Player}}
+\subsubsection[{get\-\_\-\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Player\-::get\-\_\-\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a50f12c89f28826db8191f76ed915d788}
+simple F\-Unktionen für den Zugriff auf den privaten Bereich 
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_player_a50f12c89f28826db8191f76ed915d788_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_a82c2af081cd2891be248459b4015be56}{\index{Player@{Player}!heal@{heal}}
+\index{heal@{heal}!Player@{Player}}
+\subsubsection[{heal}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::heal (
+\begin{DoxyParamCaption}
+\item[{int}]{potsize}
+\end{DoxyParamCaption}
+)}}\label{class_player_a82c2af081cd2891be248459b4015be56}
+
+
+Itembenutzung. 
+
+Funktion Heilt den Spieler falls in der Liste der catched\-Items des Itemmanagers ein heiltrank vorhanden ist $<$guckt ob \hyperlink{class_item}{Item} da, wenn ja, dann wird die Health um 100 Hochgepushed
+
+$<$anschliesend muss das benutzte item wieder gelöscht werden 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{class_player_a82c2af081cd2891be248459b4015be56_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_player_ae06fc7fdd0493e8c13c0441b49b66777}{\index{Player@{Player}!load\-Mana@{load\-Mana}}
+\index{load\-Mana@{load\-Mana}!Player@{Player}}
+\subsubsection[{load\-Mana}]{\setlength{\rightskip}{0pt plus 5cm}void Player\-::load\-Mana (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_player_ae06fc7fdd0493e8c13c0441b49b66777}
+Funktion laed mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist $<$ guckt ob \hyperlink{class_item}{Item} da, wenn ja, dann wird das Mana um 100 gepushed, was einem die möglichkeit von einem drei sekündigem Sprint gibt
+
+$<$anschliesend muss das benutzte item wieder gelöscht werden 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_player_ae06fc7fdd0493e8c13c0441b49b66777_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

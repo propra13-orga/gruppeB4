@@ -1,20 +1,28 @@
 \hypertarget{class_s___resourcemanager}{\section{S\-\_\-\-Resourcemanager Klassenreferenz}
 \label{class_s___resourcemanager}\index{S\-\_\-\-Resourcemanager@{S\-\_\-\-Resourcemanager}}
 }
+
+
+{\ttfamily \#include $<$Resourcemanager.\-h$>$}
+
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_s___resourcemanager_aa20eaf4ccdd3188ddf5d393b6a975efd}{void {\bfseries initialize} ()}\label{class_s___resourcemanager_aa20eaf4ccdd3188ddf5d393b6a975efd}
-
+void \hyperlink{class_s___resourcemanager_aa20eaf4ccdd3188ddf5d393b6a975efd}{initialize} ()
 \item 
 \hypertarget{class_s___resourcemanager_a0b3ad58e4b25c14849f03dfc949045cf}{S\-D\-L\-\_\-\-Surface $\ast$ {\bfseries get\-\_\-\-Surface} (string key)}\label{class_s___resourcemanager_a0b3ad58e4b25c14849f03dfc949045cf}
+
+\item 
+\hypertarget{class_s___resourcemanager_ac7d2a2b674cacda260e6b3a81bb5a2f4}{void \hyperlink{class_s___resourcemanager_ac7d2a2b674cacda260e6b3a81bb5a2f4}{play\-\_\-\-Game\-Background\-Music} ()}\label{class_s___resourcemanager_ac7d2a2b674cacda260e6b3a81bb5a2f4}
+
+\begin{DoxyCompactList}\small\item\em Funktion um die Musik abzuspielen. \end{DoxyCompactList}\item 
+\hypertarget{class_s___resourcemanager_a6d12deef1baa37c154c8ed6f8f0aeecd}{Mix\-\_\-\-Chunk $\ast$ {\bfseries get\-\_\-\-Sound\-Effect} (string s)}\label{class_s___resourcemanager_a6d12deef1baa37c154c8ed6f8f0aeecd}
 
 \end{DoxyCompactItemize}
 \subsection*{Öffentliche, statische Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{static \hyperlink{class_s___resourcemanager}{S\-\_\-\-Resourcemanager} $\ast$ {\bfseries get\-\_\-\-Resourcemanager} ()}\label{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}
-
+static \hyperlink{class_s___resourcemanager}{S\-\_\-\-Resourcemanager} $\ast$ \hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{get\-\_\-\-Resourcemanager} ()
 \end{DoxyCompactItemize}
 \subsection*{Öffentliche Attribute}
 \begin{DoxyCompactItemize}
@@ -50,6 +58,46 @@
 
 \end{DoxyCompactItemize}
 
+
+\subsection{Ausführliche Beschreibung}
+Diese Klasse verwaltet die Bilder und l�dt sie auf die S\-D\-L 
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{\index{S\-\_\-\-Resourcemanager@{S\-\_\-\-Resourcemanager}!get\-\_\-\-Resourcemanager@{get\-\_\-\-Resourcemanager}}
+\index{get\-\_\-\-Resourcemanager@{get\-\_\-\-Resourcemanager}!S_Resourcemanager@{S\-\_\-\-Resourcemanager}}
+\subsubsection[{get\-\_\-\-Resourcemanager}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\-\_\-\-Resourcemanager} $\ast$ S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}
+hier wird eine statische Instanz erzeugt, die sich auf grund ihrer statischen Eigenschaft nur einmal beim ersten funktionsaufruf erzeugt wird. 
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_s___resourcemanager_aa20eaf4ccdd3188ddf5d393b6a975efd}{\index{S\-\_\-\-Resourcemanager@{S\-\_\-\-Resourcemanager}!initialize@{initialize}}
+\index{initialize@{initialize}!S_Resourcemanager@{S\-\_\-\-Resourcemanager}}
+\subsubsection[{initialize}]{\setlength{\rightskip}{0pt plus 5cm}void S\-\_\-\-Resourcemanager\-::initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_s___resourcemanager_aa20eaf4ccdd3188ddf5d393b6a975efd}
+Rueckgabe der Bilder , die in einer map gespeichert werden S\-D\-L\-\_\-mixer wird initalisiert
+
+Dateien werden implementiert
+
+$<$Lautstaerker von der Musik wird geregelt
+
+$<$Lautstaeke von den Soundeffekten werden geregelt
+
+S\-D\-L\-\_\-\-Free\-Surface(\-Optimized\-Image); 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 

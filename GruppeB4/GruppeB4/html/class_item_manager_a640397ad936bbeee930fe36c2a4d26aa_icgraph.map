@@ -1,0 +1,4 @@
+<map id="ItemManager::kill_Item" name="ItemManager::kill_Item">
+<area shape="rect" id="node3" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="224,5,315,35"/>
+<area shape="rect" id="node5" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="208,59,331,88"/>
+</map>

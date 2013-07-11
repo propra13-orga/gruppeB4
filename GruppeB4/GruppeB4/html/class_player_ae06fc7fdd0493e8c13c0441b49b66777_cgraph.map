@@ -1,0 +1,4 @@
+<map id="Player::loadMana" name="Player::loadMana">
+<area shape="rect" id="node3" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="176,5,331,35"/>
+<area shape="rect" id="node5" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="179,59,328,88"/>
+</map>

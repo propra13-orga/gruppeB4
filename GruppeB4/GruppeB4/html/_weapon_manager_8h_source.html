@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: WeaponManager.h Quellcode</title>
+<title>Propra13gruppeB4: WeaponManager.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">Propra13gruppeB4
    </div>
   </td>
  </tr>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variablen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -118,10 +118,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> find(WEAPON_TYPE CURRENT_WEAPON);          </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> render(SDL_Rect camera);       <span class="comment">//Waffen auf den Boden rendern</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> update(<a class="code" href="structs___vector.html">s_Vector</a> * p_Position);         <span class="comment">//Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> kill_weapon(WEAPON_TYPE CURRENT_WEAPON);       <span class="comment">//Waffe zerstoeren</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> reinitialize(){catchedweapons.clear();uncatchedweapons.clear();} <span class="comment">//Clear</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> render(SDL_Rect camera);       </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> update(<a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * p_Position);         </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> kill_weapon(WEAPON_TYPE CURRENT_WEAPON);       </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_weapon_manager.html#a8d7e4a4638847ef3c39323a37dddd616">   40</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_weapon_manager.html#a8d7e4a4638847ef3c39323a37dddd616" title="Clear.">reinitialize</a>(){catchedweapons.clear();uncatchedweapons.clear();} </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> reinitializeLevelSwap(){uncatchedweapons.clear();}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> set_Weapon(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y,WEAPON_TYPE);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> show();</div>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:59 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 15:23:37 für Propra13gruppeB4 von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

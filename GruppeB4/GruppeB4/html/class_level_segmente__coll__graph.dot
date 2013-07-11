@@ -1,0 +1,8 @@
+digraph "LevelSegmente"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{LevelSegmente\n|+ SegmentRect11\l+ SegmentRect12\l+ SegmentRect13\l+ SegmentRect14\l+ SegmentRect21\l+ SegmentRect22\l+ SegmentRect31\l+ SegmentRect32\l+ SegmentRect33\l|+ init_Segmente()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

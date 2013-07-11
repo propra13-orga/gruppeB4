@@ -1,0 +1,4 @@
+<map id="Enemy" name="Enemy">
+<area shape="rect" id="node3" href="$class_crazy__enemy.html" title="Crazy_enemy" alt="" coords="5,83,107,112"/>
+<area shape="rect" id="node6" href="$class_endboss.html" title="Endboss" alt="" coords="131,83,203,112"/>
+</map>

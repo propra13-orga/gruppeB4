@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: Endboss.h Quellcode</title>
+<title>Propra13gruppeB4: Endboss.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">Propra13gruppeB4
    </div>
   </td>
  </tr>
@@ -68,7 +68,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variablen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,7 +91,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="class_endboss.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_endboss.html">Endboss</a>: <span class="keyword">public</span> <a class="code" href="class_enemy.html">Enemy</a>{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="structs___vector.html">s_Vector</a> * p_S_SafePosition;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * p_S_SafePosition;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="comment">//Animation</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_timer.html">Timer</a> * AnimationTimer;</div>
@@ -104,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_endboss.html">Endboss</a>():<a class="code" href="class_enemy.html">Enemy</a>(){}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_endboss.html">Endboss</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y):<a class="code" href="class_enemy.html">Enemy</a>(x,y){p_S_SafePosition = <span class="keyword">new</span> <a class="code" href="structs___vector.html">s_Vector</a>; p_S_SafePosition-&gt;i_x = x;p_S_SafePosition-&gt;i_y = y;AnimationTimer = <span class="keyword">new</span> <a class="code" href="class_timer.html">Timer</a>(); AnimationTimer-&gt;start();frames = 0;health = 100;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_endboss.html">Endboss</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y):<a class="code" href="class_enemy.html">Enemy</a>(x,y){p_S_SafePosition = <span class="keyword">new</span> <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a>; p_S_SafePosition-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = x;p_S_SafePosition-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = y;AnimationTimer = <span class="keyword">new</span> <a class="code" href="class_timer.html">Timer</a>(); AnimationTimer-&gt;start();frames = 0;health = 100;}</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="class_endboss.html">Endboss</a>(){}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">int</span> get_Health(){<span class="keywordflow">return</span> health;}</div>
@@ -129,7 +129,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:58 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 15:23:37 für Propra13gruppeB4 von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -1,0 +1,5 @@
+<map id="FinalBoss::update" name="FinalBoss::update">
+<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="369,5,521,51"/>
+<area shape="rect" id="node5" href="$class_final_boss.html#a0dfe88f2e430bd3a8760801809ab7c01" title="FinalBoss::render" alt="" coords="189,39,312,68"/>
+<area shape="rect" id="node8" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="181,92,320,121"/>
+</map>

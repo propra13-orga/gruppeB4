@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: Shop Klassenreferenz</title>
+<title>Propra13gruppeB4: Shop Klassenreferenz</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">Propra13gruppeB4
    </div>
   </td>
  </tr>
@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
       <li><a href="annotated.html"><span>Auflistung&#160;der&#160;Klassen</span></a></li>
       <li><a href="classes.html"><span>Klassen-Verzeichnis</span></a></li>
       <li><a href="inherits.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="functions.html"><span>Klassen-Elemente</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variablen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -94,8 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <tr class="memitem:a6c1786f48bc976b2c7a45dde48ec36ae"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c1786f48bc976b2c7a45dde48ec36ae"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> ()</td></tr>
 <tr class="separator:a6c1786f48bc976b2c7a45dde48ec36ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab351ada15116901f29a2d35474883894"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab351ada15116901f29a2d35474883894"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_Input</b> (SDL_Event &amp;even, bool *quitshop, bool *b_shopisopen, <a class="el" href="class_player.html">Player</a> *temp)</td></tr>
+<tr class="memitem:ab351ada15116901f29a2d35474883894"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shop.html#ab351ada15116901f29a2d35474883894">handle_Input</a> (SDL_Event &amp;even, bool *quitshop, bool *b_shopisopen, <a class="el" href="class_player.html">Player</a> *temp)</td></tr>
 <tr class="separator:ab351ada15116901f29a2d35474883894"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -104,6 +104,57 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>handle_Input</b> (SDL
 static <a class="el" href="class_shop.html">Shop</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_Shop</b> ()</td></tr>
 <tr class="separator:a4b36d3cd90162ce239b5f7c81d277ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="ab351ada15116901f29a2d35474883894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Shop::handle_Input </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Event &amp;&#160;</td>
+          <td class="paramname"><em>even</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>quitshop</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>b_shopisopen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> *&#160;</td>
+          <td class="paramname"><em>temp</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Verwaltet den UserInput</p>
+<p>&lt;Wenn 'e' gedrückt wird schließt sich der shop(siehe main.cpp, da dort die Funktion aufgerufen wird.)</p>
+<p>Wenn genug Geld vorhanden + Talente im <a class="el" href="class_skilltree.html">Skilltree</a> abgefragt( da diese auf den Shop Auswirkungen haben) Gibt mehrere Varianten für einen Kaufe im <a class="el" href="class_shop.html">Shop</a>, je nachdem ob oder wieviele Talente true sind. </p>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_shop_ab351ada15116901f29a2d35474883894_cgraph.png" border="0" usemap="#class_shop_ab351ada15116901f29a2d35474883894_cgraph" alt=""/></div>
+<map name="class_shop_ab351ada15116901f29a2d35474883894_cgraph" id="class_shop_ab351ada15116901f29a2d35474883894_cgraph">
+<area shape="rect" id="node3" href="class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="189,5,339,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li><a class="el" href="_shop_8h_source.html">Shop.h</a></li>
 <li>Shop.cpp</li>
@@ -111,7 +162,7 @@ static <a class="el" href="class_shop.html">Shop</a> &amp;&#160;</td><td class="
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:59 fÃ¼r gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 15:23:37 fÃ¼r Propra13gruppeB4 von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

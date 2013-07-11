@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: ArmorManager Klassenreferenz</title>
+<title>Propra13gruppeB4: ArmorManager Klassenreferenz</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">Propra13gruppeB4
    </div>
   </td>
  </tr>
@@ -62,6 +62,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
       <li><a href="annotated.html"><span>Auflistung&#160;der&#160;Klassen</span></a></li>
       <li><a href="classes.html"><span>Klassen-Verzeichnis</span></a></li>
       <li><a href="inherits.html"><span>Klassenhierarchie</span></a></li>
+      <li><a href="functions.html"><span>Klassen-Elemente</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Variablen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,28 +93,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Öffentliche Methoden</h2></td></tr>
 <tr class="memitem:ac5fa1487799e07ac40cdc4f44282c65e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5fa1487799e07ac40cdc4f44282c65e"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>find</b> (ARMOR_TYPE CURRENT_ARMOR)</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#ac5fa1487799e07ac40cdc4f44282c65e">find</a> (ARMOR_TYPE CURRENT_ARMOR)</td></tr>
+<tr class="memdesc:ac5fa1487799e07ac40cdc4f44282c65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gibt aktuellen Ruestungstyp zurueck. <br/></td></tr>
 <tr class="separator:ac5fa1487799e07ac40cdc4f44282c65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79a20356f9630c6c51a816f0163b28bf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79a20356f9630c6c51a816f0163b28bf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>render</b> (SDL_Rect camera)</td></tr>
+<tr class="memitem:a79a20356f9630c6c51a816f0163b28bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#a79a20356f9630c6c51a816f0163b28bf">render</a> (SDL_Rect camera)</td></tr>
+<tr class="memdesc:a79a20356f9630c6c51a816f0163b28bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruestung auf den Boden rendern.  <a href="#a79a20356f9630c6c51a816f0163b28bf">Mehr ...</a><br/></td></tr>
 <tr class="separator:a79a20356f9630c6c51a816f0163b28bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f608963c4a1efb31b2d658ee5246459"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f608963c4a1efb31b2d658ee5246459"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>update</b> (<a class="el" href="structs___vector.html">s_Vector</a> *p_Position)</td></tr>
+<tr class="memitem:a6f608963c4a1efb31b2d658ee5246459"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#a6f608963c4a1efb31b2d658ee5246459">update</a> (<a class="el" href="structs___vector.html">s_Vector</a> *p_Position)</td></tr>
+<tr class="memdesc:a6f608963c4a1efb31b2d658ee5246459"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im <a class="el" href="class_player.html">Player</a> gehts weiter.  <a href="#a6f608963c4a1efb31b2d658ee5246459">Mehr ...</a><br/></td></tr>
 <tr class="separator:a6f608963c4a1efb31b2d658ee5246459"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce4fd2a1570a917b844c740d3164325"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ce4fd2a1570a917b844c740d3164325"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>kill_armor</b> (ARMOR_TYPE CURRENT_ARMOR)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#a4ce4fd2a1570a917b844c740d3164325">kill_armor</a> (ARMOR_TYPE CURRENT_ARMOR)</td></tr>
+<tr class="memdesc:a4ce4fd2a1570a917b844c740d3164325"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ruestung zerstoeren. <br/></td></tr>
 <tr class="separator:a4ce4fd2a1570a917b844c740d3164325"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ee86635d7c7087cc59cb76cbc954d80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ee86635d7c7087cc59cb76cbc954d80"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>reinitialize</b> ()</td></tr>
 <tr class="separator:a9ee86635d7c7087cc59cb76cbc954d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c0b4d0206bb0916dc2c6f8ca0ee225"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67c0b4d0206bb0916dc2c6f8ca0ee225"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>show</b> ()</td></tr>
+<tr class="memitem:a67c0b4d0206bb0916dc2c6f8ca0ee225"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#a67c0b4d0206bb0916dc2c6f8ca0ee225">show</a> ()</td></tr>
+<tr class="memdesc:a67c0b4d0206bb0916dc2c6f8ca0ee225"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loescht Ruestungslisten.  <a href="#a67c0b4d0206bb0916dc2c6f8ca0ee225">Mehr ...</a><br/></td></tr>
 <tr class="separator:a67c0b4d0206bb0916dc2c6f8ca0ee225"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1d12bdafa1ec883841aa311307a3b85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1d12bdafa1ec883841aa311307a3b85"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_Armor</b> (ARMOR_TYPE TEMPARMOR, int x, int y)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#ae1d12bdafa1ec883841aa311307a3b85">set_Armor</a> (ARMOR_TYPE TEMPARMOR, int x, int y)</td></tr>
+<tr class="memdesc:ae1d12bdafa1ec883841aa311307a3b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setzt Ruestungstyp. <br/></td></tr>
 <tr class="separator:ae1d12bdafa1ec883841aa311307a3b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b4b1f42b418b09b6917767a3baae74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08b4b1f42b418b09b6917767a3baae74"></a>
-ARMOR_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>get_Armor</b> ()</td></tr>
+<tr class="memitem:a08b4b1f42b418b09b6917767a3baae74"><td class="memItemLeft" align="right" valign="top">ARMOR_TYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_armor_manager.html#a08b4b1f42b418b09b6917767a3baae74">get_Armor</a> ()</td></tr>
 <tr class="separator:a08b4b1f42b418b09b6917767a3baae74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
@@ -122,6 +125,124 @@ ARMOR_TYPE&#160;</td><td class="memItemRight" valign="bottom"><b>get_Armor</b> (
 static <a class="el" href="class_armor_manager.html">ArmorManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>get_ArmorManager</b> ()</td></tr>
 <tr class="separator:ac2d0437101488564e279661ae9078d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Dokumentation der Elementfunktionen</h2>
+<a class="anchor" id="a08b4b1f42b418b09b6917767a3baae74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ARMOR_TYPE ArmorManager::get_Armor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>&lt;zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen </p>
+
+</div>
+</div>
+<a class="anchor" id="a79a20356f9630c6c51a816f0163b28bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArmorManager::render </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>camera</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ruestung auf den Boden rendern. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">camera</td><td>Rendert die nicht aufgehobenen Ruestungen </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_cgraph.png" border="0" usemap="#class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_cgraph" alt=""/></div>
+<map name="class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_cgraph" id="class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_cgraph">
+<area shape="rect" id="node3" href="class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="207,5,359,51"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a67c0b4d0206bb0916dc2c6f8ca0ee225"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArmorManager::show </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loescht Ruestungslisten. </p>
+<p>Geht Ruestungslisten durch </p>
+
+<p><div class="dynheader">
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225_icgraph.png" border="0" usemap="#class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225_icgraph" alt=""/></div>
+<map name="class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225_icgraph" id="class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225_icgraph">
+<area shape="rect" id="node3" href="class_armor_manager.html#a6f608963c4a1efb31b2d658ee5246459" title="Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="200,5,355,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f608963c4a1efb31b2d658ee5246459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ArmorManager::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structs___vector.html">s_Vector</a> *&#160;</td>
+          <td class="paramname"><em>p_TempPosition</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im <a class="el" href="class_player.html">Player</a> gehts weiter. </p>
+<dl class="params"><dt>Parameter</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">p_TempPosition</td><td>Ueberprueft und verwaltet die Ruestungsaufnahme </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_cgraph.png" border="0" usemap="#class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_cgraph" alt=""/></div>
+<map name="class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_cgraph" id="class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_cgraph">
+<area shape="rect" id="node3" href="class_armor_manager.html#a67c0b4d0206bb0916dc2c6f8ca0ee225" title="Loescht Ruestungslisten." alt="" coords="208,5,355,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li><a class="el" href="_armor_manager_8h_source.html">ArmorManager.h</a></li>
 <li>ArmorManager.cpp</li>
@@ -129,7 +250,7 @@ static <a class="el" href="class_armor_manager.html">ArmorManager</a> &amp;&#160
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:59 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 15:23:37 für Propra13gruppeB4 von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

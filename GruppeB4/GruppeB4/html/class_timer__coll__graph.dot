@@ -1,0 +1,8 @@
+digraph "Timer"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Timer\n||+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

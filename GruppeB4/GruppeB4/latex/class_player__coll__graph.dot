@@ -1,0 +1,8 @@
+digraph "Player"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Player\n||+ Player()\l+ Player()\l+ ~Player()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l+ set_Health()\l+ set_Mana()\l+ get_Health()\lund 15 mehr ...\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

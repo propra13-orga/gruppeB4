@@ -19,15 +19,71 @@
 \hypertarget{class_final_boss_aa9ee8f4ddea7ecfc2d7b9bbaf6ca73a6}{void {\bfseries set\-\_\-isactivated} (bool t)}\label{class_final_boss_aa9ee8f4ddea7ecfc2d7b9bbaf6ca73a6}
 
 \item 
-\hypertarget{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}{void {\bfseries render} (S\-D\-L\-\_\-\-Rect camera)}\label{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}
-
+void \hyperlink{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}{render} (S\-D\-L\-\_\-\-Rect camera)
 \item 
-\hypertarget{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}{void {\bfseries update} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Player, S\-D\-L\-\_\-\-Rect camera)}\label{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}
-
+void \hyperlink{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}{update} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Player, S\-D\-L\-\_\-\-Rect camera)
 \item 
 \hypertarget{class_final_boss_a1579fd9da81da66bbed75799f7113be9}{void {\bfseries weaken\-\_\-\-Endboss} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Temp\-Player)}\label{class_final_boss_a1579fd9da81da66bbed75799f7113be9}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}{\index{Final\-Boss@{Final\-Boss}!render@{render}}
+\index{render@{render}!FinalBoss@{Final\-Boss}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Final\-Boss\-::render (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Rect}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}
+apply\-\_\-\-Image(0,0,\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Win\char`\"{}),\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Screen\char`\"{})); S\-D\-L\-\_\-\-Flip(\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Screen\char`\"{})); S\-D\-L\-\_\-\-Delay(5000); tempplayer-\/$>$set\-\_\-\-Health(100); tempplayer-\/$>$set\-\_\-\-Position(0,0); $\ast$tempmenue = true; 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}{\index{Final\-Boss@{Final\-Boss}!update@{update}}
+\index{update@{update}!FinalBoss@{Final\-Boss}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Final\-Boss\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf Player} $\ast$}]{p\-\_\-\-Player, }
+\item[{S\-D\-L\-\_\-\-Rect}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}
+Bewegungsteil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-
+
+E\-N\-D\-E B\-Ewegungsteil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-
+
+Anfang Schadenssetzungsteil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\- 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

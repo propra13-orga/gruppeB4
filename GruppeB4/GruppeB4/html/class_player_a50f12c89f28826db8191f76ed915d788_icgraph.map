@@ -1,0 +1,5 @@
+<map id="Player::get_Position" name="Player::get_Position">
+<area shape="rect" id="node3" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="219,5,344,35"/>
+<area shape="rect" id="node5" href="$class_n_p_c2.html#a6ddbd4fb90ec1f684df8cac1508ff29a" title="Wenn man den Bären findet wird ein bool gesetzt, damit man sich die Belohnung abholen kann:..." alt="" coords="197,59,365,88"/>
+<area shape="rect" id="node7" href="$class_player.html#a4962a0e045b4d8cf30b49faec7a1b006" title="Player::collision_Detection" alt="" coords="193,112,369,141"/>
+</map>
