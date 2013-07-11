@@ -1,0 +1,6 @@
+<map id="Skilltree::render" name="Skilltree::render">
+<area shape="rect" id="node3" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="375,5,527,51"/>
+<area shape="rect" id="node5" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="376,96,525,125"/>
+<area shape="rect" id="node7" href="$class_skilltree.html#a00957d9725305806a2245746e5972252" title="Skilltree::get_skillpoint" alt="" coords="171,92,323,121"/>
+<area shape="rect" id="node9" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="169,39,324,68"/>
+</map>

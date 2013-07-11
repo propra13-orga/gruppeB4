@@ -7,8 +7,7 @@
 \hypertarget{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}{void {\bfseries render} ()}\label{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}
 
 \item 
-\hypertarget{class_shop_ab351ada15116901f29a2d35474883894}{void {\bfseries handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&even, bool $\ast$quitshop, bool $\ast$b\-\_\-shopisopen, \hyperlink{class_player}{Player} $\ast$temp)}\label{class_shop_ab351ada15116901f29a2d35474883894}
-
+void \hyperlink{class_shop_ab351ada15116901f29a2d35474883894}{handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&even, bool $\ast$quitshop, bool $\ast$b\-\_\-shopisopen, \hyperlink{class_player}{Player} $\ast$temp)
 \end{DoxyCompactItemize}
 \subsection*{Ã–ffentliche, statische Methoden}
 \begin{DoxyCompactItemize}
@@ -16,6 +15,35 @@
 \hypertarget{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}{static \hyperlink{class_shop}{Shop} \& {\bfseries get\-\_\-\-Shop} ()}\label{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}
 
 \end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_shop_ab351ada15116901f29a2d35474883894}{\index{Shop@{Shop}!handle\-\_\-\-Input@{handle\-\_\-\-Input}}
+\index{handle\-\_\-\-Input@{handle\-\_\-\-Input}!Shop@{Shop}}
+\subsubsection[{handle\-\_\-\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Shop\-::handle\-\_\-\-Input (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event \&}]{even, }
+\item[{bool $\ast$}]{quitshop, }
+\item[{bool $\ast$}]{b\-\_\-shopisopen, }
+\item[{{\bf Player} $\ast$}]{temp}
+\end{DoxyParamCaption}
+)}}\label{class_shop_ab351ada15116901f29a2d35474883894}
+Verwaltet den User\-Input
+
+$<$Wenn 'e' gedrückt wird schließt sich der shop(siehe main.\-cpp, da dort die Funktion aufgerufen wird.)
+
+Wenn genug Geld vorhanden + Talente im \hyperlink{class_skilltree}{Skilltree} abgefragt( da diese auf den Shop Auswirkungen haben) Gibt mehrere Varianten für einen Kaufe im \hyperlink{class_shop}{Shop}, je nachdem ob oder wieviele Talente true sind. 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_shop_ab351ada15116901f29a2d35474883894_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

@@ -1,0 +1,9 @@
+<map id="Skilltree::get_Skilltree" name="Skilltree::get_Skilltree">
+<area shape="rect" id="node3" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="236,5,327,35"/>
+<area shape="rect" id="node5" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="220,59,343,88"/>
+<area shape="rect" id="node7" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="208,112,355,141"/>
+<area shape="rect" id="node9" href="$class_shop.html#ab351ada15116901f29a2d35474883894" title="Shop::handle_Input" alt="" coords="215,165,348,195"/>
+<area shape="rect" id="node11" href="$class_skilltree.html#ae60bd6e6d9ce06eed34f90284ceb0714" title="Skilltree::handleInput" alt="" coords="209,219,353,248"/>
+<area shape="rect" id="node13" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="409,297,521,327"/>
+<area shape="rect" id="node15" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="204,323,359,352"/>
+</map>

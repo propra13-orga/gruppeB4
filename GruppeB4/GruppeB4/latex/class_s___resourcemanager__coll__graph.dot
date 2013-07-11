@@ -1,0 +1,8 @@
+digraph "S_Resourcemanager"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{S_Resourcemanager\n|+ font\l+ MoneyDisplay\l+ HealDisplay\l+ ManaDisplay\l+ TextColor\l+ PlayerDownClips\l+ PlayerUpClips\l+ PlayerRightClips\l+ PlayerLeftClips\l+ EndbossClips\l|+ initialize()\l+ get_Surface()\l+ play_GameBackgroundMusic()\l+ get_SoundEffect()\l+ get_Resourcemanager()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

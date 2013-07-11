@@ -7,11 +7,9 @@
 \hypertarget{class_skilltree_ae70ee0539a4cf46685e0b16be65b2c6a}{void {\bfseries set\-\_\-skillpoint} ()}\label{class_skilltree_ae70ee0539a4cf46685e0b16be65b2c6a}
 
 \item 
-\hypertarget{class_skilltree_a00957d9725305806a2245746e5972252}{int {\bfseries get\-\_\-skillpoint} ()}\label{class_skilltree_a00957d9725305806a2245746e5972252}
-
+int \hyperlink{class_skilltree_a00957d9725305806a2245746e5972252}{get\-\_\-skillpoint} ()
 \item 
-\hypertarget{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}{void {\bfseries handle\-Input} (S\-D\-L\-\_\-\-Event \&even, bool $\ast$skilltreeisopen)}\label{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}
-
+void \hyperlink{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}{handle\-Input} (S\-D\-L\-\_\-\-Event \&even, bool $\ast$skilltreeisopen)
 \item 
 \hypertarget{class_skilltree_a582d9b59e84bcd1b3401241b3d748837}{void {\bfseries administrate\-\_\-skills} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Player, bool b\-\_\-t11)}\label{class_skilltree_a582d9b59e84bcd1b3401241b3d748837}
 
@@ -46,21 +44,187 @@
 \hypertarget{class_skilltree_a6b0f90f9bcbc468241dcb0b8f5e6fd50}{bool {\bfseries t3\-\_\-2} ()}\label{class_skilltree_a6b0f90f9bcbc468241dcb0b8f5e6fd50}
 
 \item 
-\hypertarget{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb}{void {\bfseries render} (S\-D\-L\-\_\-\-Event \&even)}\label{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb}
-
+void \hyperlink{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb}{render} (S\-D\-L\-\_\-\-Event \&even)
 \item 
 \hypertarget{class_skilltree_a01f048624ac0e92490e94ca3ee8fbece}{void {\bfseries render2} ()}\label{class_skilltree_a01f048624ac0e92490e94ca3ee8fbece}
 
 \item 
-\hypertarget{class_skilltree_a381be34321e485720229fd73913905d3}{void {\bfseries check\-\_\-skilled} ()}\label{class_skilltree_a381be34321e485720229fd73913905d3}
-
+void \hyperlink{class_skilltree_a381be34321e485720229fd73913905d3}{check\-\_\-skilled} ()
 \end{DoxyCompactItemize}
 \subsection*{Ã–ffentliche, statische Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a}{static \hyperlink{class_skilltree}{Skilltree} \& {\bfseries get\-\_\-\-Skilltree} ()}\label{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a}
-
+static \hyperlink{class_skilltree}{Skilltree} \& \hyperlink{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a}{get\-\_\-\-Skilltree} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_skilltree_a381be34321e485720229fd73913905d3}{\index{Skilltree@{Skilltree}!check\-\_\-skilled@{check\-\_\-skilled}}
+\index{check\-\_\-skilled@{check\-\_\-skilled}!Skilltree@{Skilltree}}
+\subsubsection[{check\-\_\-skilled}]{\setlength{\rightskip}{0pt plus 5cm}void Skilltree\-::check\-\_\-skilled (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_skilltree_a381be34321e485720229fd73913905d3}
+Es wird ueberprueft ob das besagte Talent bereits ausgewaehlt wurden, wenn dies der Fall ist wird es mit einem Symbol \char`\"{}gesperrt\char`\"{}
+
+\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-Ein X Symbol wird über die Talente, deren Vorgänger Talente nicht aktiviert sind, gelegt. 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_skilltree_a381be34321e485720229fd73913905d3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_skilltree_a381be34321e485720229fd73913905d3_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_skilltree_a00957d9725305806a2245746e5972252}{\index{Skilltree@{Skilltree}!get\-\_\-skillpoint@{get\-\_\-skillpoint}}
+\index{get\-\_\-skillpoint@{get\-\_\-skillpoint}!Skilltree@{Skilltree}}
+\subsubsection[{get\-\_\-skillpoint}]{\setlength{\rightskip}{0pt plus 5cm}int Skilltree\-::get\-\_\-skillpoint (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_skilltree_a00957d9725305806a2245746e5972252}
+Diese Datei verwaltet den Skillbaum.\-Es wird geschaut ob man Talentpunkte hat und guckt welche Talente man mit den erreichten $\ast$\-Talnetpunkten freischalten kann. Wenn man nicht genug Punkte hat wird entsprechendes Feedback zurück gegeben $\ast$\-Gibt alles aus und verwaltet die Funktion .Vergleicht Mausposition sowie die Bilder ausgabe. Zieht Talentpunkte ab wenn man etwas freischaltet $<$ Um auf i\-\_\-skillpoint zuzugreifen 
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{class_skilltree_a00957d9725305806a2245746e5972252_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a}{\index{Skilltree@{Skilltree}!get\-\_\-\-Skilltree@{get\-\_\-\-Skilltree}}
+\index{get\-\_\-\-Skilltree@{get\-\_\-\-Skilltree}!Skilltree@{Skilltree}}
+\subsubsection[{get\-\_\-\-Skilltree}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Skilltree}\& Skilltree\-::get\-\_\-\-Skilltree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a}
+Bool zur Überprüfung der Reihenfolge der einzelnen Talente 
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_skilltree_af11a355bb085e638952ee5d9b15d6b0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}{\index{Skilltree@{Skilltree}!handle\-Input@{handle\-Input}}
+\index{handle\-Input@{handle\-Input}!Skilltree@{Skilltree}}
+\subsubsection[{handle\-Input}]{\setlength{\rightskip}{0pt plus 5cm}void Skilltree\-::handle\-Input (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event \&}]{even, }
+\item[{bool $\ast$}]{skilltreeisopen}
+\end{DoxyParamCaption}
+)}}\label{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}
+$<$ zusätzlich der overlay bool = true, damit der \hyperlink{class_timer}{Timer} laufen kann
+
+$<$ \hyperlink{class_timer}{Timer} wird gestartet und in anderer Funktion der Klasse weiter verwendet
+
+$<$ Es wird überprüft ob das Talent bereits ausgewählt wurde,wenn ja gibt es passendes Feedback
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$ wenn man genug Talentpunkte hat und das entsprechende Talent noch nicht ausgewählt wurde dann\-:
+
+$<$ Talent bool = true
+
+$<$Ein Talentpunkt wird nun abgezogen
+
+$<$ Wird später verwendet aber im Moment habe ich das ganze anders geregelt!!!
+
+$<$ Analog zu oben!!!
+
+$<$ Analog zu oben!!!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$ Analog zu oben!!!
+
+$<$ Analog zu oben!!!
+
+$<$ Analog zu oben!!!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$ Analog zu oben!!!
+
+$<$ Analog zu oben!!!
+
+$<$ Analog zu oben!!!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben!
+
+$<$da nicht genug Talentpunkte, wird nun entprechendes Feedback gegeben! 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb}{\index{Skilltree@{Skilltree}!render@{render}}
+\index{render@{render}!Skilltree@{Skilltree}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Skilltree\-::render (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Event \&}]{even}
+\end{DoxyParamCaption}
+)}}\label{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb}
+Funktionen um einfach aus anderen Funktionen Zugriff auf die Talente zu nehmen Renderfunktion fuer den Talentbaum \begin{DoxyVerb}Skill-Erklaerungen werden gerendert für 2 Sekunden via Timer(gilt für alles Nachfolgende!)
+\end{DoxyVerb}
+ $\ast$\-Hier werden ausschließlich Bilder verwaltet und wenn vorhanden \hyperlink{class_timer}{Timer} beendet, bzw. abgefragt!
+
+$<$ wenn der overlay bool aus der \hyperlink{class_skilltree_ae60bd6e6d9ce06eed34f90284ceb0714}{handle\-Input()} Funktion true ist wird hier der \hyperlink{class_timer}{Timer} auf Ticks überprüft und nach 2 Sekunden beendet. -\/$>$ während dieser Zeit wird das Bild im Fenster ausgegeben(siehe apply\-\_\-\-Image() unten.)
+
+$<$ Danach wird der bool wieder auf false gesetzt, damit es wieder im Handle\-Input() von vorne beginnen kann.
+
+\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-Alles andere Analog zum ersten Teil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-!!!\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-!!!\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-
+
+Anzeige im \hyperlink{class_overlay}{Overlay} des Talentbaumes zum Anzeigen der aktuell verfuegbaren Skillpunkte.
+
+$<$ Es werden hier nur die Talentpunkte abgefragt, die der Spieler durch Level Up's bekommt, damit diese als Anzeige auf dem \hyperlink{class_overlay}{Overlay} erscheinen. 
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_skilltree_ac33bd425bec067ce79466825ffd9eeeb_cgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

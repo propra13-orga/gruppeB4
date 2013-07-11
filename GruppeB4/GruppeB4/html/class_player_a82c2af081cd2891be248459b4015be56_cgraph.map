@@ -1,0 +1,4 @@
+<map id="Player::heal" name="Player::heal">
+<area shape="rect" id="node3" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="144,5,299,35"/>
+<area shape="rect" id="node5" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="147,59,296,88"/>
+</map>
