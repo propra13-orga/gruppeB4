@@ -1,0 +1,5 @@
+<map id="Player2::get_Position" name="Player2::get_Position">
+<area shape="rect" id="node3" href="$class_player2.html#a930161d0d6bad9b47852ff1127da3ff5" title="Player2::update" alt="" coords="205,5,317,35"/>
+<area shape="rect" id="node5" href="$class_player2.html#a4a4b0e14f00b815f6b190939d83be5fa" title="Player2::render" alt="" coords="207,59,316,88"/>
+<area shape="rect" id="node7" href="$class_player2.html#a8433489a1c934924f93b3164194e6bbb" title="Player2::collision\l_Detection" alt="" coords="201,111,321,158"/>
+</map>

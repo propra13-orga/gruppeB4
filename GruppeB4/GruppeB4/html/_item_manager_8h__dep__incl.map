@@ -1,0 +1,36 @@
+<map id="ItemManager.h" name="ItemManager.h">
+<area shape="rect" id="node3" href="$_player_8h.html" title="Player.h" alt="" coords="564,83,633,112"/>
+<area shape="rect" id="node11" href="$_world_8h.html" title="World.h" alt="" coords="860,547,927,576"/>
+<area shape="rect" id="node15" href="$_shop_8h.html" title="Shop.h" alt="" coords="281,624,343,653"/>
+<area shape="rect" id="node91" href="$_item_manager_8cpp.html" title="ItemManager.cpp" alt="" coords="657,83,780,112"/>
+<area shape="rect" id="node5" href="$_pfleger_8h.html" title="Pfleger.h" alt="" coords="1089,392,1164,421"/>
+<area shape="rect" id="node25" href="$_player_8cpp.html" title="Player.cpp" alt="" coords="1235,624,1317,653"/>
+<area shape="rect" id="node33" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="384,160,464,189"/>
+<area shape="rect" id="node43" href="$_overlay_8h.html" title="Overlay.h" alt="" coords="568,469,645,499"/>
+<area shape="rect" id="node51" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="297,392,428,421"/>
+<area shape="rect" id="node58" href="$_armor_manager_8h.html" title="ArmorManager.h" alt="" coords="75,392,192,421"/>
+<area shape="rect" id="node73" href="$_armor_8h.html" title="Armor.h" alt="" coords="205,160,272,189"/>
+<area shape="rect" id="node79" href="$_final_boss_8cpp.html" title="FinalBoss.cpp" alt="" coords="488,160,592,189"/>
+<area shape="rect" id="node83" href="$_n_p_c2_8h.html" title="NPC2.h" alt="" coords="831,160,900,189"/>
+<area shape="rect" id="node88" href="$_n_p_c1_8cpp.html" title="NPC1.cpp" alt="" coords="616,160,699,189"/>
+<area shape="rect" id="node7" href="$_agent_manager_8h.html" title="AgentManager.h" alt="" coords="1195,469,1312,499"/>
+<area shape="rect" id="node30" href="$_pfleger_8cpp.html" title="Pfleger.cpp" alt="" coords="1083,469,1171,499"/>
+<area shape="rect" id="node9" href="$_agentmanager_8cpp.html" title="Agentmanager.cpp" alt="" coords="1108,547,1239,576"/>
+<area shape="rect" id="node13" href="$main_8cpp.html" title="main.cpp" alt="" coords="896,701,971,731"/>
+<area shape="rect" id="node20" href="$_menue_8h.html" title="Menue.h" alt="" coords="757,624,829,653"/>
+<area shape="rect" id="node27" href="$_world_8cpp.html" title="World.cpp" alt="" coords="853,624,933,653"/>
+<area shape="rect" id="node18" href="$_shop_8cpp.html" title="Shop.cpp" alt="" coords="273,701,351,731"/>
+<area shape="rect" id="node23" href="$_menue_8cpp.html" title="Menue.cpp" alt="" coords="751,701,836,731"/>
+<area shape="rect" id="node35" href="$_skilltree_8h.html" title="Skilltree.h" alt="" coords="555,237,635,267"/>
+<area shape="rect" id="node70" href="$_weapon_8cpp.html" title="Weapon.cpp" alt="" coords="379,237,472,267"/>
+<area shape="rect" id="node37" href="$_e_p_manager_8h.html" title="EPManager.h" alt="" coords="429,315,531,344"/>
+<area shape="rect" id="node67" href="$_skilltree_8cpp.html" title="Skilltree.cpp" alt="" coords="555,315,648,344"/>
+<area shape="rect" id="node40" href="$_money_manager_8h.html" title="MoneyManager.h" alt="" coords="729,392,852,421"/>
+<area shape="rect" id="node64" href="$_e_p_manager_8cpp.html" title="EPManager.cpp" alt="" coords="452,392,567,421"/>
+<area shape="rect" id="node49" href="$_money_manager_8cpp.html" title="MoneyManager.cpp" alt="" coords="669,469,805,499"/>
+<area shape="rect" id="node46" href="$_overlay_8cpp.html" title="Overlay.cpp" alt="" coords="184,547,275,576"/>
+<area shape="rect" id="node56" href="$_weapon_manager_8cpp.html" title="WeaponManager.cpp" alt="" coords="349,469,493,499"/>
+<area shape="rect" id="node60" href="$_armor_manager_8cpp.html" title="ArmorManager.cpp" alt="" coords="93,469,224,499"/>
+<area shape="rect" id="node75" href="$_armor_8cpp.html" title="Armor.cpp" alt="" coords="197,237,280,267"/>
+<area shape="rect" id="node86" href="$_n_p_c2_8cpp.html" title="NPC2.cpp" alt="" coords="824,237,907,267"/>
+</map>

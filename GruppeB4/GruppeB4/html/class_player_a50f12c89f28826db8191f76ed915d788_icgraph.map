@@ -1,0 +1,23 @@
+<map id="Player::get_Position" name="Player::get_Position">
+<area shape="rect" id="node3" href="$class_agent_manager.html#a1c05e1578aafde1892a5e4e79862b19f" title="AgentManager::update" alt="" coords="455,192,607,221"/>
+<area shape="rect" id="node5" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="708,333,809,363"/>
+<area shape="rect" id="node9" href="$class_agent_manager.html#a5548da9e3f247e8dd4a9eb98748fd3df" title="AgentManager::check\l_collision" alt="" coords="215,213,364,259"/>
+<area shape="rect" id="node12" href="$class_agent_manager.html#aafa2ae19bfa65b44dc3c955bd21e0fc3" title="AgentManager::weaken_Bots" alt="" coords="193,5,385,35"/>
+<area shape="rect" id="node21" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="227,109,352,139"/>
+<area shape="rect" id="node24" href="$class_final_boss.html#a1579fd9da81da66bbed75799f7113be9" title="FinalBoss::weaken_Endboss" alt="" coords="436,59,625,88"/>
+<area shape="rect" id="node27" href="$class_n_p_c1.html#a630634825b51471ec57664e03f8f69c1" title="NPC1::PlayCloseToBot" alt="" coords="892,595,1052,624"/>
+<area shape="rect" id="node30" href="$class_n_p_c2.html#abd040a952f1ca623263fb4981d9f1897" title="NPC2::PlayCloseToBot" alt="" coords="209,384,369,413"/>
+<area shape="rect" id="node32" href="$class_n_p_c2.html#a6ddbd4fb90ec1f684df8cac1508ff29a" title="Wenn man den Bären findet wird ein bool gesetzt, damit man sich die Belohnung abholen kann:..." alt="" coords="675,647,843,676"/>
+<area shape="rect" id="node35" href="$class_n_p_c2.html#a8bed81521fa09a250f435de26d4f9719" title="NPC2::PlayerCloseToBear" alt="" coords="200,491,379,520"/>
+<area shape="rect" id="node37" href="$class_pfleger.html#ab16f8907843415401742d8def572da73" title="Pfleger::update" alt="" coords="235,544,344,573"/>
+<area shape="rect" id="node39" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="477,333,584,363"/>
+<area shape="rect" id="node42" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="708,700,809,729"/>
+<area shape="rect" id="node47" href="$class_player.html#a4962a0e045b4d8cf30b49faec7a1b006" title="Player::collision_Detection" alt="" coords="201,437,377,467"/>
+<area shape="rect" id="node53" href="$class_world.html#a149a22406179d656aea426c32577bed9" title="World::set_Camera" alt="" coords="905,752,1039,781"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="1101,621,1152,651"/>
+<area shape="rect" id="node14" href="$class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9" title="Player::attack" alt="" coords="480,5,581,35"/>
+<area shape="rect" id="node16" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="688,59,829,88"/>
+<area shape="rect" id="node18" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="901,171,1043,200"/>
+<area shape="rect" id="node44" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="923,699,1021,728"/>
+<area shape="rect" id="node49" href="$class_world.html#ae324f881eae678d166eb81321dc8cbab" title="World::collision_Detection" alt="" coords="444,412,617,441"/>
+</map>

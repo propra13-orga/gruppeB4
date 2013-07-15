@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: Player.h Quellcode</title>
+<title>My Project: Player.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -60,6 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,29 +83,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="title">Player.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLAYER_H_</span></div>
+<a href="_player_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef PLAYER_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define PLAYER_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span><a class="code" href="class_agent_manager.html">AgentManager</a>;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;Vektor.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Resourcemanager.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;LevelSegment.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;globals.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Timer.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ItemManager.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;MoneyManager.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;WeaponManager.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vektor_8h.html">Vektor.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_resourcemanager_8h.html">Resourcemanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_level_segment_8h.html">LevelSegment.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="globals_8h.html">globals.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_timer_8h.html">Timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_manager_8h.html">ItemManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_money_manager_8h.html">MoneyManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_weapon_manager_8h.html">WeaponManager.h</a>&quot;</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_agent_manager.html">AgentManager</a>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_world.html">World</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span><a class="code" href="class_world.html" title="World merge test.">World</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
 <div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_player.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_player.html">Player</a></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structs___vector.html">s_Vector</a> * p_s_Position;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="structs___vector.html">s_Vector</a> * p_s_Velocity;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * p_s_Position;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * p_s_Velocity;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">bool</span> b_PlayerIsWalkingRight;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> b_PlayerIsWalkingLeft;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> b_PlayerIsWalkingUp;</div>
@@ -119,52 +120,49 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//Animationsdateien</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span> potsize;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">int</span> i_frame;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    status e_currentwalkstatus;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> e_currentwalkstatus;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">public</span>:</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//Konstruktoren</span></div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_player.html">Player</a>():i_health(400){p_s_Position = <span class="keyword">new</span> <a class="code" href="structs___vector.html">s_Vector</a>;p_s_Velocity = <span class="keyword">new</span> <a class="code" href="structs___vector.html">s_Vector</a>; p_s_Position-&gt;i_x = 0; p_s_Position-&gt;i_y = 0; p_s_Velocity-&gt;i_x = 0; p_s_Velocity-&gt;i_y = 0;e_currentwalkstatus = PSY_DOWN;this-&gt;i_frame = 0;rageModeToggled =  <span class="keyword">false</span>;disableallabilities = <span class="keyword">false</span>;}</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_player.html">Player</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y):i_health(400),potsize(0), i_mana(100){p_s_Position = <span class="keyword">new</span> <a class="code" href="structs___vector.html">s_Vector</a>;p_s_Velocity = <span class="keyword">new</span> <a class="code" href="structs___vector.html">s_Vector</a>; p_s_Position-&gt;i_x = i_x; p_s_Position-&gt;i_y = i_y; p_s_Velocity-&gt;i_x = 0; p_s_Velocity-&gt;i_y = 0;RageModeTimer = <span class="keyword">new</span> <a class="code" href="class_timer.html">Timer</a>();e_currentwalkstatus = PSY_DOWN;this-&gt;i_frame = 0;rageModeToggled = <span class="keyword">false</span>;disableallabilities = <span class="keyword">false</span>;i_maxhealth = 400;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ~<a class="code" href="class_player.html">Player</a>(){<span class="keyword">delete</span> p_s_Position;<span class="keyword">delete</span> p_s_Velocity;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// simple FUnktionen f�r den Zugriff auf den privaten Bereich</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="structs___vector.html">s_Vector</a> * get_Position(){<span class="keywordflow">return</span>  p_s_Position;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span>  set_Position(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){this-&gt;p_s_Position-&gt;i_x = i_x;this-&gt;p_s_Position-&gt;i_y = i_y;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="structs___vector.html">s_Vector</a> * get_Velocity(){<span class="keywordflow">return</span>  p_s_Velocity;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span>  set_Velocity(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){this-&gt;p_s_Velocity-&gt;i_x = i_x;this-&gt;p_s_Velocity-&gt;i_y = i_y;}</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> set_Health(<span class="keywordtype">int</span> health){this-&gt;i_health = health;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> set_Mana(<span class="keywordtype">int</span> mana){this-&gt;i_mana = mana;}</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> get_Health()<span class="keyword"> const </span>{<span class="keywordflow">return</span> i_health;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">int</span> get_Mana()<span class="keyword"> const </span>{<span class="keywordflow">return</span> i_mana;}</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> get_disable(){<span class="keywordflow">return</span> disableallabilities;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">void</span> set_disable(<span class="keywordtype">bool</span> t){this-&gt;disableallabilities = t;}</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    status get_WalkStatus(){<span class="keywordflow">return</span> e_currentwalkstatus;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> reinitialize(LEVEL_LOADED CURRENTLEVEL);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">int</span> health_cap(){<span class="keywordflow">return</span> i_maxhealth;}</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> set_health_cap(<span class="keywordtype">int</span> max){this-&gt;i_maxhealth =max;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8">   44</a></span>&#160;    <a class="code" href="class_player.html#affe0cc3cb714f6deb4e62f0c0d3f1fd8" title="Konstruktoren.">Player</a>():i_health(400){p_s_Position = <span class="keyword">new</span> <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a>;p_s_Velocity = <span class="keyword">new</span> <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a>; p_s_Position-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = 0; p_s_Position-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = 0; p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = 0; p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = 0;e_currentwalkstatus = <a class="code" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959afb15e2383ae921c22df80fe19c8877fa">PSY_DOWN</a>;this-&gt;i_frame = 0;rageModeToggled =  <span class="keyword">false</span>;disableallabilities = <span class="keyword">false</span>;}</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_player.html#aa87d00dbf49b8d4fa4eb22d1351a7663">   45</a></span>&#160;    <a class="code" href="class_player.html#aa87d00dbf49b8d4fa4eb22d1351a7663">Player</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y):i_health(400),potsize(0), i_mana(100){p_s_Position = <span class="keyword">new</span> <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a>;p_s_Velocity = <span class="keyword">new</span> <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a>; p_s_Position-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = i_x; p_s_Position-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = i_y; p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = 0; p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = 0;RageModeTimer = <span class="keyword">new</span> <a class="code" href="class_timer.html">Timer</a>();e_currentwalkstatus = <a class="code" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959afb15e2383ae921c22df80fe19c8877fa">PSY_DOWN</a>;this-&gt;i_frame = 0;rageModeToggled = <span class="keyword">false</span>;disableallabilities = <span class="keyword">false</span>;i_maxhealth = 400;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_player.html#a749d2c00e1fe0f5c2746f7505a58c062">   46</a></span>&#160;    <a class="code" href="class_player.html#a749d2c00e1fe0f5c2746f7505a58c062">~Player</a>(){<span class="keyword">delete</span> p_s_Position;<span class="keyword">delete</span> p_s_Velocity;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_player.html#a50f12c89f28826db8191f76ed915d788">   48</a></span>&#160;    <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * <a class="code" href="class_player.html#a50f12c89f28826db8191f76ed915d788">get_Position</a>(){<span class="keywordflow">return</span>  p_s_Position;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_player.html#a3615907f803845ff9b37dee94944b09b">   49</a></span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_player.html#a3615907f803845ff9b37dee94944b09b">set_Position</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){this-&gt;p_s_Position-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = i_x;this-&gt;p_s_Position-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = i_y;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_player.html#a0b3564dce7078dee4733a2af2460fae1">   50</a></span>&#160;    <a class="code" href="structs___vector.html" title="Das ist der Basisvektor.">s_Vector</a> * <a class="code" href="class_player.html#a0b3564dce7078dee4733a2af2460fae1">get_Velocity</a>(){<span class="keywordflow">return</span>  p_s_Velocity;}</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_player.html#a12fea44fe4eda565ada463b15443dc56">   51</a></span>&#160;    <span class="keywordtype">void</span>  <a class="code" href="class_player.html#a12fea44fe4eda565ada463b15443dc56">set_Velocity</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){this-&gt;p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a530003f44afc98b7ce7e51f77ef8f291" title="x Position">i_x</a> = i_x;this-&gt;p_s_Velocity-&gt;<a class="code" href="structs___vector.html#a13bd27672ca23d2302f5c24359f67ed2" title="y Position">i_y</a> = i_y;}</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_player.html#a25da073f8c291a56b482d8005b2476d1">   52</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#a25da073f8c291a56b482d8005b2476d1">set_Health</a>(<span class="keywordtype">int</span> health){this-&gt;i_health = health;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_player.html#af0ddd345e35423723ce460c64cd9a7b6">   53</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#af0ddd345e35423723ce460c64cd9a7b6">set_Mana</a>(<span class="keywordtype">int</span> mana){this-&gt;i_mana = mana;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_player.html#a8684c93430c1a9d3827071e00bcdc0d2">   54</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_player.html#a8684c93430c1a9d3827071e00bcdc0d2">get_Health</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> i_health;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_player.html#a352a8894a05f649fb236ae99cd9da3e9">   55</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_player.html#a352a8894a05f649fb236ae99cd9da3e9">get_Mana</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> i_mana;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_player.html#a20ab0b8731172d9b39989b1700ebd47d">   56</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_player.html#a20ab0b8731172d9b39989b1700ebd47d">get_disable</a>(){<span class="keywordflow">return</span> disableallabilities;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_player.html#add9dfdb430f9e78178e43a8bf78fa7a3">   57</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#add9dfdb430f9e78178e43a8bf78fa7a3">set_disable</a>(<span class="keywordtype">bool</span> t){this-&gt;disableallabilities = t;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_player.html#ae2b606a4cc6b7f3f1147c117fbfa82ce">   58</a></span>&#160;    <a class="code" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> <a class="code" href="class_player.html#ae2b606a4cc6b7f3f1147c117fbfa82ce">get_WalkStatus</a>(){<span class="keywordflow">return</span> e_currentwalkstatus;}</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#a5f3457c6aaf834b83d35d9085b46e31d">reinitialize</a>(<a class="code" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a> CURRENTLEVEL);</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_player.html#a6d09b9e7f5e5bcc1bae2d6134c22bf81">   60</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_player.html#a6d09b9e7f5e5bcc1bae2d6134c22bf81">health_cap</a>(){<span class="keywordflow">return</span> i_maxhealth;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_player.html#ab321d07e6272a7a7168bf411eed105c0">   61</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#ab321d07e6272a7a7168bf411eed105c0">set_health_cap</a>(<span class="keywordtype">int</span> max){this-&gt;i_maxhealth =max;}</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">//Itembenutzung</span></div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> heal(<span class="keywordtype">int</span> potsize);<span class="comment">//Funktion Heilt den Spieler falls in der Liste der catchedItems des Itemmanagers ein heiltrank vorhanden ist</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> loadMana();<span class="comment">//Funktion laed mana des spielers, falls in der Liste der Catched items ein Manatrank vorhanden ist</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> setRageMode();<span class="comment">//Hier wird der RageMode des Spielers angestellt</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> attack();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//Funktionen die fuer die Bewegung und das Abbilden des Spielers erstellt sind</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span> collision_Detection(<a class="code" href="class_level_segmente.html">LevelSegmente</a> * p_TempSeg,LEVEL_LOADED CURRENTLEVEL);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> update();</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> render(<span class="keywordtype">bool</span> * tempmenue,<a class="code" href="class_timer.html">Timer</a> * deltaTime,SDL_Rect cam,LEVEL_LOADED CURRENTLEVEL,<a class="code" href="class_world.html">World</a> * p_TempWorld);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> handle_Input(SDL_Event &amp;even);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung.">heal</a>(<span class="keywordtype">int</span> potsize);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#ae06fc7fdd0493e8c13c0441b49b66777">loadMana</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt.">setRageMode</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9">attack</a>();</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_player.html#a4962a0e045b4d8cf30b49faec7a1b006">collision_Detection</a>(<a class="code" href="class_level_segmente.html">LevelSegmente</a> * p_TempSeg,<a class="code" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a> CURRENTLEVEL);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4">update</a>();</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#ad911072980c4a07dc37ececee2bfbca4">render</a>(<span class="keywordtype">bool</span> * tempmenue,<a class="code" href="class_timer.html">Timer</a> * deltaTime,SDL_Rect cam,<a class="code" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a> CURRENTLEVEL,<a class="code" href="class_world.html" title="World merge test.">World</a> * p_TempWorld);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_player.html#af44299a346f97deb829bea5abed63d20">handle_Input</a>(SDL_Event &amp;<a class="code" href="main_8cpp.html#af6a41c81a6372a814ffae9ba6615e1e7">even</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:59 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

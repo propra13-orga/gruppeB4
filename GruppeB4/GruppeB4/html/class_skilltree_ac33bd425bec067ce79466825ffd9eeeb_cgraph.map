@@ -1,0 +1,16 @@
+<map id="Skilltree::render" name="Skilltree::render">
+<area shape="rect" id="node3" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="403,5,499,35"/>
+<area shape="rect" id="node5" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="375,58,527,105"/>
+<area shape="rect" id="node7" href="$class_timer.html#a419af9cdb3d77331954a78a9c877de11" title="Timer::Getticks" alt="" coords="191,235,303,264"/>
+<area shape="rect" id="node9" href="$class_timer.html#a63f0eb44b27402196590a03781515dba" title="Timer::stop" alt="" coords="203,288,291,317"/>
+<area shape="rect" id="node11" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="376,128,525,157"/>
+<area shape="rect" id="node13" href="$class_skilltree.html#a00957d9725305806a2245746e5972252" title="Skilltree::get_skillpoint" alt="" coords="171,341,323,371"/>
+<area shape="rect" id="node15" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="169,181,324,211"/>
+<area shape="rect" id="node20" href="$class_skilltree.html#aed683621d09de5536a39a5e7f6895b41" title="Skilltree::t1_1" alt="" coords="400,288,501,317"/>
+<area shape="rect" id="node22" href="$class_skilltree.html#ae0226fcc85365c85eb4ef88139c65df5" title="Skilltree::t1_2" alt="" coords="400,341,501,371"/>
+<area shape="rect" id="node24" href="$class_skilltree.html#af772b25271d2b1805bab39773041da82" title="Skilltree::t1_3" alt="" coords="400,395,501,424"/>
+<area shape="rect" id="node26" href="$class_skilltree.html#a21f7aea9d771b8fffe9df9b517f0245f" title="Skilltree::t1_4" alt="" coords="400,448,501,477"/>
+<area shape="rect" id="node28" href="$class_skilltree.html#ac22abb2448aa780e5d310b6572170ab0" title="Skilltree::t1_5" alt="" coords="400,501,501,531"/>
+<area shape="rect" id="node30" href="$class_skilltree.html#a4cc4fcaa43ae3deb0c66963d2dc939f7" title="Skilltree::t2_1" alt="" coords="400,181,501,211"/>
+<area shape="rect" id="node32" href="$class_skilltree.html#ab2a53b0b26afc12430ec1ecfa5c66114" title="Skilltree::t2_3" alt="" coords="400,235,501,264"/>
+</map>

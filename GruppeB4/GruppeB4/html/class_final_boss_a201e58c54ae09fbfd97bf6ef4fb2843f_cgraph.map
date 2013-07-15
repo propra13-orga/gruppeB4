@@ -1,0 +1,13 @@
+<map id="FinalBoss::update" name="FinalBoss::update">
+<area shape="rect" id="node3" href="$class_player.html#add9dfdb430f9e78178e43a8bf78fa7a3" title="Player::set_disable" alt="" coords="184,5,317,35"/>
+<area shape="rect" id="node5" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="207,59,295,88"/>
+<area shape="rect" id="node7" href="$class_timer.html#a419af9cdb3d77331954a78a9c877de11" title="Timer::Getticks" alt="" coords="195,112,307,141"/>
+<area shape="rect" id="node9" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="372,145,524,191"/>
+<area shape="rect" id="node11" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="400,215,496,244"/>
+<area shape="rect" id="node13" href="$class_final_boss.html#a0dfe88f2e430bd3a8760801809ab7c01" title="FinalBoss::render" alt="" coords="189,267,312,296"/>
+<area shape="rect" id="node16" href="$class_final_boss.html#a6c30600b7492a40d2ec99874d41296b0" title="FinalBoss::get_Position" alt="" coords="368,337,528,367"/>
+<area shape="rect" id="node21" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="181,371,320,400"/>
+<area shape="rect" id="node24" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="185,424,316,453"/>
+<area shape="rect" id="node26" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="185,477,316,507"/>
+<area shape="rect" id="node19" href="$class_s___resourcemanager.html#a0b3ad58e4b25c14849f03dfc949045cf" title="S_Resourcemanager::\lget_Surface" alt="" coords="372,267,524,314"/>
+</map>

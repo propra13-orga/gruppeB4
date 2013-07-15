@@ -1,0 +1,12 @@
+<map id="Timer::stop" name="Timer::stop">
+<area shape="rect" id="node3" href="$class_e_p_manager.html#ae0839a39f9ee6fd51d67faafbd6ff560" title="EPManager::render" alt="" coords="143,5,276,35"/>
+<area shape="rect" id="node11" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="341,109,448,139"/>
+<area shape="rect" id="node16" href="$class_shop.html#a6c1786f48bc976b2c7a45dde48ec36ae" title="Shop::render" alt="" coords="516,59,612,88"/>
+<area shape="rect" id="node19" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="153,161,265,191"/>
+<area shape="rect" id="node25" href="$class_skilltree.html#a01f048624ac0e92490e94ca3ee8fbece" title="Skilltree::render2" alt="" coords="149,215,269,244"/>
+<area shape="rect" id="node5" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="340,5,449,35"/>
+<area shape="rect" id="node7" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="515,5,613,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="664,85,715,115"/>
+<area shape="rect" id="node13" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="513,112,615,141"/>
+<area shape="rect" id="node22" href="$class_world.html#aae955513a6b43da75bebbaf0022efcc3" title="World::openSkilltree" alt="" coords="325,163,464,192"/>
+</map>

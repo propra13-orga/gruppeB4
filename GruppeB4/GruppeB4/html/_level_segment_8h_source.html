@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: LevelSegment.h Quellcode</title>
+<title>My Project: LevelSegment.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -60,6 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,31 +83,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="title">LevelSegment.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LEVELSEGMENT_H_</span></div>
+<a href="_level_segment_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef LEVELSEGMENT_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define LEVELSEGMENT_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Resourcemanager.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
-<div class="line"><a name="l00006"></a><span class="lineno"><a class="code" href="class_level_segmente.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_level_segmente.html">LevelSegmente</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    SDL_Rect SegmentRect11[2];</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    SDL_Rect SegmentRect12[2];</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    SDL_Rect SegmentRect13[5];</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    SDL_Rect SegmentRect14[1];</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    SDL_Rect SegmentRect21[2];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    SDL_Rect SegmentRect22[1];</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    SDL_Rect SegmentRect31[2];</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    SDL_Rect SegmentRect32[2];</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    SDL_Rect SegmentRect33[6];</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> init_Segmente();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_resourcemanager_8h.html">Resourcemanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_level_segmente.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_level_segmente.html">LevelSegmente</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_level_segmente.html#a5d1a94c5dbff9f1a21e7133d0a1df938">   10</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#a5d1a94c5dbff9f1a21e7133d0a1df938">SegmentRect11</a>[2];</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_level_segmente.html#ae16269f7d452a929abbcb2fb069b1d22">   11</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#ae16269f7d452a929abbcb2fb069b1d22">SegmentRect12</a>[2];</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_level_segmente.html#a4e3f5c52739fcde85e79adee6cd3e9c5">   12</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#a4e3f5c52739fcde85e79adee6cd3e9c5">SegmentRect13</a>[5];</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_level_segmente.html#a56501807d8a912a8edad899585d17cf1">   13</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#a56501807d8a912a8edad899585d17cf1">SegmentRect14</a>[1];</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_level_segmente.html#af1e8ec1f2beeaadad76cc31935166771">   14</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#af1e8ec1f2beeaadad76cc31935166771">SegmentRect21</a>[2];</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_level_segmente.html#a5810a11bf901830c9c18e43fb5cf3a15">   15</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#a5810a11bf901830c9c18e43fb5cf3a15">SegmentRect22</a>[1];</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_level_segmente.html#a7a75d1639d095443c70340bd9276e4b8">   16</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#a7a75d1639d095443c70340bd9276e4b8">SegmentRect31</a>[2];</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_level_segmente.html#ada637a35cca601d073fe54a855d127f2">   17</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#ada637a35cca601d073fe54a855d127f2">SegmentRect32</a>[2];</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_level_segmente.html#af52268cfa4490167a5cf9ce5ee1f60d2">   18</a></span>&#160;    SDL_Rect <a class="code" href="class_level_segmente.html#af52268cfa4490167a5cf9ce5ee1f60d2">SegmentRect33</a>[6];</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_level_segmente.html#a076dcbcdfeb93b6af1f75dcdd34bf6d2">init_Segmente</a>();</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:58 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

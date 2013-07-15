@@ -1,0 +1,5 @@
+<map id="Player2::update" name="Player2::update">
+<area shape="rect" id="node3" href="$class_player2.html#a3a6f363502f4241020de0e641dad4111" title="Player2::set_Position" alt="" coords="168,5,315,35"/>
+<area shape="rect" id="node5" href="$class_player2.html#a78d7625285d5fab78431e257325f5592" title="Player2::get_Position" alt="" coords="168,59,315,88"/>
+<area shape="rect" id="node7" href="$class_player2.html#a05675802549c3f3458fa38129ee77cfd" title="Player2::get_Velocity" alt="" coords="168,112,315,141"/>
+</map>

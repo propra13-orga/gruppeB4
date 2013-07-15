@@ -1,0 +1,5 @@
+<map id="WeaponManager::swap_weapon" name="WeaponManager::swap_weapon">
+<area shape="rect" id="node3" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="213,13,355,43"/>
+<area shape="rect" id="node5" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="404,13,545,43"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="595,13,645,43"/>
+</map>

@@ -1,0 +1,8 @@
+digraph "AgentManager"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{AgentManager\n||+ render()\l+ check_collision()\l+ update()\l+ weaken_Bots()\l+ set_Bot()\l+ reinitialize()\l+ get_Boss()\l+ get_AgentManager()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

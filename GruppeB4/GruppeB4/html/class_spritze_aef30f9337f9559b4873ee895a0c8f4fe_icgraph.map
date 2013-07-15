@@ -1,0 +1,6 @@
+<map id="Spritze::get_Position" name="Spritze::get_Position">
+<area shape="rect" id="node3" href="$class_pfleger.html#ab16f8907843415401742d8def572da73" title="Pfleger::update" alt="" coords="359,5,468,35"/>
+<area shape="rect" id="node5" href="$class_spritze.html#aaf70068b9356284874156f19f5237c94" title="Spritze::update" alt="" coords="199,31,308,60"/>
+<area shape="rect" id="node8" href="$class_spritze.html#a2d1fac0870a40d50f0582e1efec53751" title="Spritze::render" alt="" coords="200,84,307,113"/>
+<area shape="rect" id="node10" href="$class_pfleger.html#a4ae72e0182e9d909358755769447681d" title="Pfleger::render" alt="" coords="360,84,467,113"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Player::reinitialize" name="Player::reinitialize">
+<area shape="rect" id="node3" href="$class_player.html#a3615907f803845ff9b37dee94944b09b" title="Player::set_Position" alt="" coords="179,5,317,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="183,59,313,88"/>
+<area shape="rect" id="node7" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="187,112,309,141"/>
+</map>

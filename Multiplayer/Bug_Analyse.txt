@@ -1,0 +1,81 @@
+Bug-Analyse:
+
+
+
+Kollision:
+
+
+
+Raum1:
+		
+	
+		Alles optimal, bis auf untere Wand(muss 15 pixel höher!)
+
+
+
+
+Lane1:
+
+
+
+Alles optimal
+
+
+
+
+
+Raum2:
+
+Alles optimal
+
+
+
+
+Lane2:
+
+Alles optimal
+
+
+Raum3:
+
+
+Letzer Teilraum -> kleiner Bug an rechter unterer Wand!
+
+
+Lane3:
+
+Muss ein bisschen breiter sein!
+
+
+
+Raum 3:
+
+
+
+Alles optimal.
+
+
+
+
+Win/Lose Aktion:
+
+
+Win: Funktioniert
+
+Lose: Funktioniert
+
+
+
+Menue:
+
+Anfangsmenue: Funktioniert.
+
+Zwischenmenue:Funktioniert
+
+Bug:Bei Lose auf Esp -> Spieler steht auf 0/0
+
+
+
+
+
+

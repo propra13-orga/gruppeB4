@@ -1,0 +1,5 @@
+<map id="ItemManager::anzeigen" name="ItemManager::anzeigen">
+<area shape="rect" id="node3" href="$class_item_manager.html#a17e930f7669eb96bdcb49684f2254abb" title="ItemManager::update" alt="" coords="215,5,359,35"/>
+<area shape="rect" id="node5" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="409,5,511,35"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="560,5,611,35"/>
+</map>

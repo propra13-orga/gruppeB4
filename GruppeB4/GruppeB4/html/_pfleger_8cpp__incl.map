@@ -1,0 +1,20 @@
+<map id="Pfleger.cpp" name="Pfleger.cpp">
+<area shape="rect" id="node3" href="$_pfleger_8h.html" title="Pfleger.h" alt="" coords="187,83,261,112"/>
+<area shape="rect" id="node5" href="$_resourcemanager_8h.html" title="Resourcemanager.h" alt="" coords="301,624,440,653"/>
+<area shape="rect" id="node23" href="$_vektor_8h.html" title="Vektor.h" alt="" coords="908,624,977,653"/>
+<area shape="rect" id="node25" href="$_timer_8h.html" title="Timer.h" alt="" coords="16,392,83,421"/>
+<area shape="rect" id="node29" href="$_spritze_8h.html" title="Spritze.h" alt="" coords="509,547,584,576"/>
+<area shape="rect" id="node33" href="$_player_8h.html" title="Player.h" alt="" coords="496,160,565,189"/>
+<area shape="rect" id="node17" href="$globals_8h.html" title="globals.h" alt="" coords="1132,701,1207,731"/>
+<area shape="rect" id="node37" href="$_level_segment_8h.html" title="LevelSegment.h" alt="" coords="224,469,339,499"/>
+<area shape="rect" id="node42" href="$_item_manager_8h.html" title="ItemManager.h" alt="" coords="913,237,1023,267"/>
+<area shape="rect" id="node70" href="$_money_manager_8h.html" title="MoneyManager.h" alt="" coords="671,237,793,267"/>
+<area shape="rect" id="node80" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="465,237,596,267"/>
+<area shape="rect" id="node45" href="$quest1_8h.html" title="quest1.h" alt="" coords="1005,315,1077,344"/>
+<area shape="rect" id="node51" href="$_item_8h.html" title="Item.h" alt="" coords="1256,547,1315,576"/>
+<area shape="rect" id="node56" href="$_e_p_manager_8h.html" title="EPManager.h" alt="" coords="728,315,829,344"/>
+<area shape="rect" id="node58" href="$_skilltree_8h.html" title="Skilltree.h" alt="" coords="608,392,688,421"/>
+<area shape="rect" id="node60" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="603,469,683,499"/>
+<area shape="rect" id="node66" href="$_n_p_c1_8h.html" title="NPC1.h" alt="" coords="608,547,677,576"/>
+<area shape="rect" id="node72" href="$_rendable_object_8h.html" title="RendableObject.h" alt="" coords="1107,547,1232,576"/>
+</map>

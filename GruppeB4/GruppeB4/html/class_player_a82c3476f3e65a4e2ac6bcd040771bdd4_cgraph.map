@@ -1,0 +1,8 @@
+<map id="Player::update" name="Player::update">
+<area shape="rect" id="node3" href="$class_player.html#a3615907f803845ff9b37dee94944b09b" title="Player::set_Position" alt="" coords="160,5,299,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="160,59,299,88"/>
+<area shape="rect" id="node7" href="$class_player.html#a0b3564dce7078dee4733a2af2460fae1" title="Player::get_Velocity" alt="" coords="160,112,299,141"/>
+<area shape="rect" id="node9" href="$class_timer.html#a419af9cdb3d77331954a78a9c877de11" title="Timer::Getticks" alt="" coords="173,165,285,195"/>
+<area shape="rect" id="node11" href="$class_timer.html#a63f0eb44b27402196590a03781515dba" title="Timer::stop" alt="" coords="185,219,273,248"/>
+<area shape="rect" id="node13" href="$class_player.html#a12fea44fe4eda565ada463b15443dc56" title="Player::set_Velocity" alt="" coords="160,272,299,301"/>
+</map>

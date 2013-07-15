@@ -1,42 +1,233 @@
 \hypertarget{class_armor_manager}{\section{Armor\-Manager Klassenreferenz}
 \label{class_armor_manager}\index{Armor\-Manager@{Armor\-Manager}}
 }
+
+
+{\ttfamily \#include $<$Armor\-Manager.\-h$>$}
+
+
+
+Zusammengehörigkeiten von Armor\-Manager\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_armor_manager__coll__graph}
+\end{center}
+\end{figure}
 \subsection*{Öffentliche Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_armor_manager_ac5fa1487799e07ac40cdc4f44282c65e}{bool {\bfseries find} (A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R)}\label{class_armor_manager_ac5fa1487799e07ac40cdc4f44282c65e}
-
+bool \hyperlink{class_armor_manager_ac5fa1487799e07ac40cdc4f44282c65e}{find} (\hyperlink{globals_8h_a8e5f74edbc14259a161d93bd9a69d236}{A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E} C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R)
+\begin{DoxyCompactList}\small\item\em Gibt aktuellen Ruestungstyp zurueck. \end{DoxyCompactList}\item 
+void \hyperlink{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf}{render} (S\-D\-L\-\_\-\-Rect camera)
+\begin{DoxyCompactList}\small\item\em Ruestung auf den Boden rendern. \end{DoxyCompactList}\item 
+void \hyperlink{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459}{update} (\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$p\-\_\-\-Position)
+\begin{DoxyCompactList}\small\item\em Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im \hyperlink{class_player}{Player} gehts weiter. \end{DoxyCompactList}\item 
+void \hyperlink{class_armor_manager_a4ce4fd2a1570a917b844c740d3164325}{kill\-\_\-armor} (\hyperlink{globals_8h_a8e5f74edbc14259a161d93bd9a69d236}{A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E} C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R)
+\begin{DoxyCompactList}\small\item\em Ruestung zerstoeren. \end{DoxyCompactList}\item 
+void \hyperlink{class_armor_manager_a9ee86635d7c7087cc59cb76cbc954d80}{reinitialize} ()
 \item 
-\hypertarget{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf}{void {\bfseries render} (S\-D\-L\-\_\-\-Rect camera)}\label{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf}
-
-\item 
-\hypertarget{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459}{void {\bfseries update} (\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$p\-\_\-\-Position)}\label{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459}
-
-\item 
-\hypertarget{class_armor_manager_a4ce4fd2a1570a917b844c740d3164325}{void {\bfseries kill\-\_\-armor} (A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R)}\label{class_armor_manager_a4ce4fd2a1570a917b844c740d3164325}
-
-\item 
-\hypertarget{class_armor_manager_a9ee86635d7c7087cc59cb76cbc954d80}{void {\bfseries reinitialize} ()}\label{class_armor_manager_a9ee86635d7c7087cc59cb76cbc954d80}
-
-\item 
-\hypertarget{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225}{void {\bfseries show} ()}\label{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225}
-
-\item 
-\hypertarget{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85}{void {\bfseries set\-\_\-\-Armor} (A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E T\-E\-M\-P\-A\-R\-M\-O\-R, int x, int y)}\label{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85}
-
-\item 
-\hypertarget{class_armor_manager_a08b4b1f42b418b09b6917767a3baae74}{A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E {\bfseries get\-\_\-\-Armor} ()}\label{class_armor_manager_a08b4b1f42b418b09b6917767a3baae74}
-
+void \hyperlink{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225}{show} ()
+\begin{DoxyCompactList}\small\item\em Loescht Ruestungslisten. \end{DoxyCompactList}\item 
+void \hyperlink{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85}{set\-\_\-\-Armor} (\hyperlink{globals_8h_a8e5f74edbc14259a161d93bd9a69d236}{A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E} T\-E\-M\-P\-A\-R\-M\-O\-R, int x, int y)
+\begin{DoxyCompactList}\small\item\em Setzt Ruestungstyp. \end{DoxyCompactList}\item 
+\hyperlink{globals_8h_a8e5f74edbc14259a161d93bd9a69d236}{A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E} \hyperlink{class_armor_manager_a08b4b1f42b418b09b6917767a3baae74}{get\-\_\-\-Armor} ()
 \end{DoxyCompactItemize}
 \subsection*{Öffentliche, statische Methoden}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_armor_manager_ac2d0437101488564e279661ae9078d5a}{static \hyperlink{class_armor_manager}{Armor\-Manager} \& {\bfseries get\-\_\-\-Armor\-Manager} ()}\label{class_armor_manager_ac2d0437101488564e279661ae9078d5a}
-
+static \hyperlink{class_armor_manager}{Armor\-Manager} \& \hyperlink{class_armor_manager_ac2d0437101488564e279661ae9078d5a}{get\-\_\-\-Armor\-Manager} ()
 \end{DoxyCompactItemize}
+
+
+\subsection{Dokumentation der Elementfunktionen}
+\hypertarget{class_armor_manager_ac5fa1487799e07ac40cdc4f44282c65e}{\index{Armor\-Manager@{Armor\-Manager}!find@{find}}
+\index{find@{find}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}bool Armor\-Manager\-::find (
+\begin{DoxyParamCaption}
+\item[{{\bf A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E}}]{C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R}
+\end{DoxyParamCaption}
+)}}\label{class_armor_manager_ac5fa1487799e07ac40cdc4f44282c65e}
+
+
+Gibt aktuellen Ruestungstyp zurueck. 
+
+\hypertarget{class_armor_manager_a08b4b1f42b418b09b6917767a3baae74}{\index{Armor\-Manager@{Armor\-Manager}!get\-\_\-\-Armor@{get\-\_\-\-Armor}}
+\index{get\-\_\-\-Armor@{get\-\_\-\-Armor}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{get\-\_\-\-Armor}]{\setlength{\rightskip}{0pt plus 5cm}{\bf A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E} Armor\-Manager\-::get\-\_\-\-Armor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_armor_manager_a08b4b1f42b418b09b6917767a3baae74}
+$<$zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen \hypertarget{class_armor_manager_ac2d0437101488564e279661ae9078d5a}{\index{Armor\-Manager@{Armor\-Manager}!get\-\_\-\-Armor\-Manager@{get\-\_\-\-Armor\-Manager}}
+\index{get\-\_\-\-Armor\-Manager@{get\-\_\-\-Armor\-Manager}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{get\-\_\-\-Armor\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf Armor\-Manager}\& Armor\-Manager\-::get\-\_\-\-Armor\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_armor_manager_ac2d0437101488564e279661ae9078d5a}
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_ac2d0437101488564e279661ae9078d5a_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_armor_manager_a4ce4fd2a1570a917b844c740d3164325}{\index{Armor\-Manager@{Armor\-Manager}!kill\-\_\-armor@{kill\-\_\-armor}}
+\index{kill\-\_\-armor@{kill\-\_\-armor}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{kill\-\_\-armor}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::kill\-\_\-armor (
+\begin{DoxyParamCaption}
+\item[{{\bf A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E}}]{C\-U\-R\-R\-E\-N\-T\-\_\-\-A\-R\-M\-O\-R}
+\end{DoxyParamCaption}
+)}}\label{class_armor_manager_a4ce4fd2a1570a917b844c740d3164325}
+
+
+Ruestung zerstoeren. 
+
+\hypertarget{class_armor_manager_a9ee86635d7c7087cc59cb76cbc954d80}{\index{Armor\-Manager@{Armor\-Manager}!reinitialize@{reinitialize}}
+\index{reinitialize@{reinitialize}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{reinitialize}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::reinitialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_armor_manager_a9ee86635d7c7087cc59cb76cbc954d80}
+\hypertarget{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf}{\index{Armor\-Manager@{Armor\-Manager}!render@{render}}
+\index{render@{render}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::render (
+\begin{DoxyParamCaption}
+\item[{S\-D\-L\-\_\-\-Rect}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf}
+
+
+Ruestung auf den Boden rendern. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em camera} & Rendert die nicht aufgehobenen Ruestungen \\
+\hline
+\end{DoxyParams}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_a79a20356f9630c6c51a816f0163b28bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85}{\index{Armor\-Manager@{Armor\-Manager}!set\-\_\-\-Armor@{set\-\_\-\-Armor}}
+\index{set\-\_\-\-Armor@{set\-\_\-\-Armor}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{set\-\_\-\-Armor}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::set\-\_\-\-Armor (
+\begin{DoxyParamCaption}
+\item[{{\bf A\-R\-M\-O\-R\-\_\-\-T\-Y\-P\-E}}]{T\-E\-M\-P\-A\-R\-M\-O\-R, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85}
+
+
+Setzt Ruestungstyp. 
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_ae1d12bdafa1ec883841aa311307a3b85_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225}{\index{Armor\-Manager@{Armor\-Manager}!show@{show}}
+\index{show@{show}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225}
+
+
+Loescht Ruestungslisten. 
+
+Geht Ruestungslisten durch 
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_a67c0b4d0206bb0916dc2c6f8ca0ee225_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459}{\index{Armor\-Manager@{Armor\-Manager}!update@{update}}
+\index{update@{update}!ArmorManager@{Armor\-Manager}}
+\subsubsection[{update}]{\setlength{\rightskip}{0pt plus 5cm}void Armor\-Manager\-::update (
+\begin{DoxyParamCaption}
+\item[{{\bf s\-\_\-\-Vector} $\ast$}]{p\-\_\-\-Temp\-Position}
+\end{DoxyParamCaption}
+)}}\label{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459}
+
+
+Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im \hyperlink{class_player}{Player} gehts weiter. 
+
+
+\begin{DoxyParams}{Parameter}
+{\em p\-\_\-\-Temp\-Position} & Ueberprueft und verwaltet die Ruestungsaufnahme \\
+\hline
+\end{DoxyParams}
+
+
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_armor_manager_a6f608963c4a1efb31b2d658ee5246459_icgraph}
+\end{center}
+\end{figure}
+
+
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
 \item 
-Armor\-Manager.\-h\item 
-Armor\-Manager.\-cpp\end{DoxyCompactItemize}
+\hyperlink{_armor_manager_8h}{Armor\-Manager.\-h}\item 
+\hyperlink{_armor_manager_8cpp}{Armor\-Manager.\-cpp}\end{DoxyCompactItemize}

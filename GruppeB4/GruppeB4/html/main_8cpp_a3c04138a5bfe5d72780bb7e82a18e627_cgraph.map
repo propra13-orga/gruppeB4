@@ -1,0 +1,51 @@
+<map id="main" name="main">
+<area shape="rect" id="node3" href="$class_main___menue.html#aed4976d8260e9ddc97a363cc9db0569d" title="Main_Menue::initialize_Game" alt="" coords="105,142,297,171"/>
+<area shape="rect" id="node5" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="588,329,740,376"/>
+<area shape="rect" id="node9" href="$class_main___menue.html#aa60a21b72ad952bb630c7d1d6d983b1f" title="Main_Menue::Menue_Loop" alt="" coords="112,334,291,363"/>
+<area shape="rect" id="node15" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="616,543,712,573"/>
+<area shape="rect" id="node19" href="$class_world.html#affdfa76f27683180d8103b297ae6972c" title="World::get_LevelSegmente" alt="" coords="112,537,291,566"/>
+<area shape="rect" id="node21" href="$class_level_segmente.html#a076dcbcdfeb93b6af1f75dcdd34bf6d2" title="LevelSegmente::init\l_Segmente" alt="" coords="133,589,269,636"/>
+<area shape="rect" id="node24" href="$class_s___resourcemanager.html#ac7d2a2b674cacda260e6b3a81bb5a2f4" title="Funktion um die Musik abzuspielen." alt="" coords="105,659,297,705"/>
+<area shape="rect" id="node26" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="620,1221,708,1250"/>
+<area shape="rect" id="node28" href="$class_timer.html#a419af9cdb3d77331954a78a9c877de11" title="Timer::Getticks" alt="" coords="608,618,720,647"/>
+<area shape="rect" id="node30" href="$class_skilltree.html#af11a355bb085e638952ee5d9b15d6b0a" title="Skilltree::get_Skilltree" alt="" coords="589,1167,739,1197"/>
+<area shape="rect" id="node32" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="145,847,257,877"/>
+<area shape="rect" id="node61" href="$class_skilltree.html#ae60bd6e6d9ce06eed34f90284ceb0714" title="Skilltree::handleInput" alt="" coords="353,986,497,1015"/>
+<area shape="rect" id="node74" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="151,1298,252,1327"/>
+<area shape="rect" id="node78" href="$class_world.html#af0d1ca602664a0a005cf1521b6aee784" title="World::get_Player" alt="" coords="601,1558,727,1587"/>
+<area shape="rect" id="node92" href="$class_world.html#a149a22406179d656aea426c32577bed9" title="World::set_Camera" alt="" coords="135,1194,268,1223"/>
+<area shape="rect" id="node94" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="152,1351,251,1381"/>
+<area shape="rect" id="node98" href="$class_n_p_c2.html#af885f9c5210936ba28c99d2c23971595" title="NPC2::get_NPC2" alt="" coords="363,1610,488,1639"/>
+<area shape="rect" id="node102" href="$class_n_p_c1.html#aa44be35612f75bcfb437dc5277f63b57" title="NPC1::get_NPC1" alt="" coords="363,1663,488,1693"/>
+<area shape="rect" id="node104" href="$class_overlay.html#a6f0ea07b818fdc4ea2b00f1ed8169a6f" title="Overlay::get_Instance" alt="" coords="351,1743,500,1773"/>
+<area shape="rect" id="node107" href="$class_overlay.html#a6e01bd776bf1daf819ced8e0e45b4478" title="Overlay::check_lvl_up" alt="" coords="351,1141,500,1170"/>
+<area shape="rect" id="node112" href="$class_n_p_c2.html#a651f67f8968ecb4f5c0d96418b7833ea" title="NPC2::questanfrage" alt="" coords="131,1455,272,1485"/>
+<area shape="rect" id="node116" href="$class_n_p_c2.html#abc6d095ba6fd51c58f3746893ae404e7" title="Timer wird gesetzt damit die Quest Anfrage nach drei Sekunden verschwindet:" alt="" coords="127,1559,276,1589"/>
+<area shape="rect" id="node118" href="$class_n_p_c2.html#a6ddbd4fb90ec1f684df8cac1508ff29a" title="Wenn man den Bären findet wird ein bool gesetzt, damit man sich die Belohnung abholen kann:..." alt="" coords="117,1613,285,1642"/>
+<area shape="rect" id="node121" href="$class_n_p_c1.html#a630634825b51471ec57664e03f8f69c1" title="NPC1::PlayCloseToBot" alt="" coords="121,1666,281,1695"/>
+<area shape="rect" id="node123" href="$class_shop.html#a4b36d3cd90162ce239b5f7c81d277ca8" title="Shop::get_Shop" alt="" coords="144,1719,259,1749"/>
+<area shape="rect" id="node125" href="$class_shop.html#a6c1786f48bc976b2c7a45dde48ec36ae" title="Shop::render" alt="" coords="377,570,473,599"/>
+<area shape="rect" id="node131" href="$class_shop.html#ab351ada15116901f29a2d35474883894" title="Shop::handle_Input" alt="" coords="359,1194,492,1223"/>
+<area shape="rect" id="node135" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="131,1874,272,1903"/>
+<area shape="rect" id="node138" href="$class_menue.html#a91bc6d5c4bb7214cd818223cdde9ef88" title="Menue::get_Menue" alt="" coords="135,1927,268,1957"/>
+<area shape="rect" id="node140" href="$class_menue.html#adab670791d2a103a26626b700698376d" title="Menue::handle_Input" alt="" coords="131,1981,272,2010"/>
+<area shape="rect" id="node7" href="$class_s___resourcemanager.html#aa20eaf4ccdd3188ddf5d393b6a975efd" title="S_Resourcemanager::\linitialize" alt="" coords="349,73,501,120"/>
+<area shape="rect" id="node11" href="$class_main___menue.html#af1677a4b1a78c2e1f290278e070b95a7" title="Main_Menue::handle\l_Events" alt="" coords="355,244,496,291"/>
+<area shape="rect" id="node13" href="$class_main___menue.html#accf9d040d93aa3a1fe85b9fc9d6d8732" title="Main_Menue::render" alt="" coords="356,415,495,445"/>
+<area shape="rect" id="node37" href="$class_timer.html#a63f0eb44b27402196590a03781515dba" title="Timer::stop" alt="" coords="620,671,708,701"/>
+<area shape="rect" id="node40" href="$class_skilltree.html#a00957d9725305806a2245746e5972252" title="Skilltree::get_skillpoint" alt="" coords="349,674,501,703"/>
+<area shape="rect" id="node42" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="348,933,503,962"/>
+<area shape="rect" id="node47" href="$class_skilltree.html#aed683621d09de5536a39a5e7f6895b41" title="Skilltree::t1_1" alt="" coords="613,778,715,807"/>
+<area shape="rect" id="node49" href="$class_skilltree.html#ae0226fcc85365c85eb4ef88139c65df5" title="Skilltree::t1_2" alt="" coords="613,831,715,861"/>
+<area shape="rect" id="node51" href="$class_skilltree.html#af772b25271d2b1805bab39773041da82" title="Skilltree::t1_3" alt="" coords="613,885,715,914"/>
+<area shape="rect" id="node53" href="$class_skilltree.html#a21f7aea9d771b8fffe9df9b517f0245f" title="Skilltree::t1_4" alt="" coords="613,938,715,967"/>
+<area shape="rect" id="node55" href="$class_skilltree.html#ac22abb2448aa780e5d310b6572170ab0" title="Skilltree::t1_5" alt="" coords="613,991,715,1021"/>
+<area shape="rect" id="node57" href="$class_skilltree.html#a4cc4fcaa43ae3deb0c66963d2dc939f7" title="Skilltree::t2_1" alt="" coords="613,1045,715,1074"/>
+<area shape="rect" id="node59" href="$class_skilltree.html#ab2a53b0b26afc12430ec1ecfa5c66114" title="Skilltree::t2_3" alt="" coords="613,725,715,754"/>
+<area shape="rect" id="node65" href="$class_skilltree.html#a582d9b59e84bcd1b3401241b3d748837" title="Skilltree::administrate\l_skills" alt="" coords="591,1097,737,1144"/>
+<area shape="rect" id="node76" href="$class_world.html#a227f2998664ae3586190752920ee2713" title="Aendern des aktuellen Levels." alt="" coords="352,1506,499,1535"/>
+<area shape="rect" id="node80" href="$class_agent_manager.html#a1af0e6f1ed0b2b4db25617f4e9357e81" title="AgentManager::get_AgentManager" alt="" coords="553,1429,775,1458"/>
+<area shape="rect" id="node82" href="$class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level" alt="" coords="351,1402,500,1431"/>
+<area shape="rect" id="node86" href="$class_agent_manager.html#a1c05e1578aafde1892a5e4e79862b19f" title="AgentManager::update" alt="" coords="349,1298,501,1327"/>
+<area shape="rect" id="node88" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="372,829,479,858"/>
+</map>

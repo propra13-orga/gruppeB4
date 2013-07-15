@@ -1,0 +1,8 @@
+<map id="Player::get_Mana" name="Player::get_Mana">
+<area shape="rect" id="node3" href="$class_overlay.html#ab5e47eefa2743c08bc208131c8b17a45" title="Overlay::render" alt="" coords="185,5,295,35"/>
+<area shape="rect" id="node9" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="179,59,301,88"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="561,5,660,35"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="731,32,781,61"/>
+<area shape="rect" id="node11" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="349,59,491,88"/>
+<area shape="rect" id="node13" href="$class_world.html#a6e9d1717aae39babd17d801a7de6486d" title="World::handle_Event" alt="" coords="540,59,681,88"/>
+</map>

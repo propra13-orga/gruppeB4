@@ -1,0 +1,6 @@
+<map id="World::get_Player" name="World::get_Player">
+<area shape="rect" id="node3" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="531,29,581,59"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="381,29,480,59"/>
+<area shape="rect" id="node8" href="$class_world.html#a227f2998664ae3586190752920ee2713" title="Aendern des aktuellen Levels." alt="" coords="183,81,329,111"/>
+<area shape="rect" id="node10" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="380,83,481,112"/>
+</map>

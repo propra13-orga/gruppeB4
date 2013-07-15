@@ -1,0 +1,8 @@
+digraph "WeaponManager"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{WeaponManager\n|+ CURRENT_WEAPON2\l|+ find()\l+ render()\l+ update()\l+ kill_weapon()\l+ reinitialize()\l+ reinitializeLevelSwap()\l+ set_Weapon()\l+ show()\l+ swap_weapon()\l+ show_currentWeapon()\l+ get_WeaponManager()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

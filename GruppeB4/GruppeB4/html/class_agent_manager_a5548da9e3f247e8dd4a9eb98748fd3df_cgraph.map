@@ -1,0 +1,5 @@
+<map id="AgentManager::check_collision" name="AgentManager::check_collision">
+<area shape="rect" id="node3" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="203,5,341,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="207,59,337,88"/>
+<area shape="rect" id="node7" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="207,112,337,141"/>
+</map>

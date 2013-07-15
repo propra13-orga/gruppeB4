@@ -1,0 +1,3 @@
+<map id="Crazy_enemy" name="Crazy_enemy">
+<area shape="rect" id="node2" href="$class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="13,5,128,195"/>
+</map>

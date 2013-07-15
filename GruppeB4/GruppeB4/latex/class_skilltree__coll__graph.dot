@@ -1,0 +1,8 @@
+digraph "Skilltree"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Skilltree\n||+ set_skillpoint()\l+ get_skillpoint()\l+ handleInput()\l+ administrate_skills()\l+ t1_1()\l+ t1_2()\l+ t1_3()\l+ t1_4()\l+ t1_5()\l+ t2_1()\lund 7 mehr ...\l+ get_Skilltree()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -1,0 +1,7 @@
+<map id="WeaponManager::set_Weapon" name="WeaponManager::set_Weapon">
+<area shape="rect" id="node3" href="$class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level" alt="" coords="200,33,349,63"/>
+<area shape="rect" id="node5" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="399,7,500,36"/>
+<area shape="rect" id="node11" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="551,59,652,88"/>
+<area shape="rect" id="node7" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="552,5,651,35"/>
+<area shape="rect" id="node9" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="701,32,752,61"/>
+</map>

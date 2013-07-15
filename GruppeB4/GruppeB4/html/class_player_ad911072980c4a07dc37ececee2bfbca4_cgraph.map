@@ -1,0 +1,25 @@
+<map id="Player::render" name="Player::render">
+<area shape="rect" id="node3" href="$class_timer.html#a419af9cdb3d77331954a78a9c877de11" title="Timer::Getticks" alt="" coords="188,5,300,35"/>
+<area shape="rect" id="node5" href="$class_timer.html#a3a8b5272198d029779dc9302a54305a8" title="Timer::start" alt="" coords="200,59,288,88"/>
+<area shape="rect" id="node7" href="$_resourcemanager_8cpp.html#afaea6bba9096ef55eb21a87190651ec1" title="apply_Image" alt="" coords="196,112,292,141"/>
+<area shape="rect" id="node9" href="$class_player.html#a50f12c89f28826db8191f76ed915d788" title="Player::get_Position" alt="" coords="175,165,313,195"/>
+<area shape="rect" id="node11" href="$class_s___resourcemanager.html#a785fd4b8631a35647823bd41c28ae2d0" title="S_Resourcemanager::\lget_Resourcemanager" alt="" coords="168,218,320,265"/>
+<area shape="rect" id="node13" href="$class_s___resourcemanager.html#a0b3ad58e4b25c14849f03dfc949045cf" title="S_Resourcemanager::\lget_Surface" alt="" coords="168,287,320,334"/>
+<area shape="rect" id="node15" href="$class_agent_manager.html#a1af0e6f1ed0b2b4db25617f4e9357e81" title="AgentManager::get_AgentManager" alt="" coords="385,245,607,275"/>
+<area shape="rect" id="node17" href="$class_agent_manager.html#abc1499700649f6af77205fedc0698085" title="AgentManager::reinitialize" alt="" coords="159,512,329,541"/>
+<area shape="rect" id="node19" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="393,299,599,328"/>
+<area shape="rect" id="node21" href="$class_item_manager.html#a8365907614865dc5190627381e954c91" title="ItemManager::reinitialize" alt="" coords="163,565,325,595"/>
+<area shape="rect" id="node23" href="$class_player.html#a5f3457c6aaf834b83d35d9085b46e31d" title="Player::reinitialize" alt="" coords="181,837,307,867"/>
+<area shape="rect" id="node31" href="$class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level" alt="" coords="169,459,319,488"/>
+<area shape="rect" id="node25" href="$class_player.html#a3615907f803845ff9b37dee94944b09b" title="Player::set_Position" alt="" coords="427,811,565,840"/>
+<area shape="rect" id="node27" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="431,864,561,893"/>
+<area shape="rect" id="node29" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="435,917,557,947"/>
+<area shape="rect" id="node34" href="$class_agent_manager.html#ab00a9cbf5753546fbb5f9f5cfa1b1241" title="AgentManager::set_Bot" alt="" coords="417,757,575,787"/>
+<area shape="rect" id="node37" href="$class_item_manager.html#ad15fabe46ac5fab89a6b857c53e79dee" title="ItemManager::set_Item" alt="" coords="417,352,575,381"/>
+<area shape="rect" id="node39" href="$class_armor_manager.html#ac2d0437101488564e279661ae9078d5a" title="ArmorManager::get_ArmorManager" alt="" coords="384,405,608,435"/>
+<area shape="rect" id="node41" href="$class_armor_manager.html#ae1d12bdafa1ec883841aa311307a3b85" title="Setzt Ruestungstyp." alt="" coords="409,459,583,488"/>
+<area shape="rect" id="node43" href="$class_money_manager.html#a9e244a12805cbff0dee7f76d1ca8c05a" title="MoneyManager::get_MoneyManager" alt="" coords="380,512,612,541"/>
+<area shape="rect" id="node45" href="$class_money_manager.html#afb4cbbd62d99a50349450f994180a030" title="MoneyManager::set_Coin" alt="" coords="411,565,581,595"/>
+<area shape="rect" id="node47" href="$class_weapon_manager.html#a43dc0489aed7aad37a65a0e6d687f06c" title="WeaponManager::get\l_WeaponManager" alt="" coords="423,618,569,665"/>
+<area shape="rect" id="node49" href="$class_weapon_manager.html#a6213a907c477df0f032ac4ebc8dd810d" title="WeaponManager::set\l_Weapon" alt="" coords="423,687,569,734"/>
+</map>

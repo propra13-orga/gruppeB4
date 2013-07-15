@@ -1,0 +1,106 @@
+\documentclass{book}
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=2.5cm,right=2.5cm]{geometry}
+\usepackage{makeidx}
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{ifthen}
+\usepackage[table]{xcolor}
+\usepackage{textcomp}
+\usepackage{alltt}
+\usepackage{ifpdf}
+\ifpdf
+\usepackage[pdftex,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\else
+\usepackage[ps2pdf,
+            pagebackref=true,
+            colorlinks=true,
+            linkcolor=blue,
+            unicode
+           ]{hyperref}
+\usepackage{pspicture}
+\fi
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\usepackage{mathptmx}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{sectsty}
+\usepackage{amssymb}
+\usepackage[titles]{tocloft}
+\usepackage{doxygen}
+\lstset{language=C++,inputencoding=utf8,basicstyle=\footnotesize,breaklines=true,breakatwhitespace=true,tabsize=4,numbers=left }
+\makeindex
+\setcounter{tocdepth}{3}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\familydefault}{\sfdefault}
+\hfuzz=15pt
+\setlength{\emergencystretch}{15pt}
+\hbadness=750
+\tolerance=750
+\begin{document}
+\hypersetup{pageanchor=false,citecolor=blue}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}
+{\Large gruppe\-B4 Entwicklerdokumentation }\\
+\vspace*{1cm}
+{\large Erzeugt von Doxygen 1.8.3.1}\\
+\vspace*{0.5cm}
+{\small Son Jul 7 2013 10:54:59}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\pagenumbering{roman}
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true,citecolor=blue}
+\chapter{Hierarchie-\/\-Verzeichnis}
+\input{hierarchy}
+\chapter{Klassen-\/\-Verzeichnis}
+\input{annotated}
+\chapter{Klassen-\/\-Dokumentation}
+\input{class_actor}
+\input{class_agent_manager}
+\input{class_armor}
+\input{class_armor_manager}
+\input{class_crazy__enemy}
+\input{class_endboss}
+\input{class_enemy}
+\input{class_e_p_manager}
+\input{class_final_boss}
+\input{class_item}
+\input{class_item_manager}
+\input{class_level_segmente}
+\input{class_main___menue}
+\input{class_menue}
+\input{class_money_manager}
+\input{class_n_p_c1}
+\input{class_n_p_c2}
+\input{class_n_p_c_manager}
+\input{class_overlay}
+\input{class_pfleger}
+\input{class_player}
+\input{class_player2}
+\input{class_renable_object}
+\input{class_s___resourcemanager}
+\input{structs___vector}
+\input{class_shop}
+\input{class_skilltree}
+\input{class_spritze}
+\input{class_timer}
+\input{class_weapon_manager}
+\input{class_world}
+\addcontentsline{toc}{part}{Index}
+\printindex
+\end{document}

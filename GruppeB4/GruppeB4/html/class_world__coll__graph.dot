@@ -1,0 +1,8 @@
+digraph "World"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{World\n||+ World()\l+ ~World()\l+ set_Camera()\l+ get_Camera()\l+ render_Win()\l+ update()\l+ handle_Event()\l+ render()\l+ collision_Detection()\l+ get_Player()\l+ get_LevelSegmente()\l+ openSkilltree()\l+ openquest()\l+ initialize_Level()\l+ try_swapLevel()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}

@@ -1,0 +1,20 @@
+<map id="S_Resourcemanager::get_Surface" name="S_Resourcemanager::get_Surface">
+<area shape="rect" id="node3" href="$class_agent_manager.html#a1b94eb002a1a9a57106539b84402f32a" title="AgentManager::render" alt="" coords="421,59,571,88"/>
+<area shape="rect" id="node9" href="$class_armor_manager.html#a79a20356f9630c6c51a816f0163b28bf" title="Ruestung auf den Boden rendern." alt="" coords="421,215,571,244"/>
+<area shape="rect" id="node12" href="$class_endboss.html#a17b150268f358172b140a984aaaa61c8" title="Endboss::render" alt="" coords="229,109,347,139"/>
+<area shape="rect" id="node14" href="$class_final_boss.html#a0dfe88f2e430bd3a8760801809ab7c01" title="FinalBoss::render" alt="" coords="227,5,349,35"/>
+<area shape="rect" id="node24" href="$class_item_manager.html#af436e023ae2f467062fb055581b64923" title="ItemManager::render" alt="" coords="425,319,567,348"/>
+<area shape="rect" id="node27" href="$class_money_manager.html#a33ad5f3a0229855b500ccbaf791d48db" title="MoneyManager::render" alt="" coords="419,372,573,401"/>
+<area shape="rect" id="node30" href="$class_n_p_c1.html#a3fa4f42017cbef90df3fc010de47f452" title="NPC1::render" alt="" coords="445,512,547,541"/>
+<area shape="rect" id="node33" href="$class_n_p_c2.html#adbe4a4a931a63eb4fcf3eedb372b9878" title="NPC2::render" alt="" coords="237,629,339,659"/>
+<area shape="rect" id="node36" href="$class_pfleger.html#a4ae72e0182e9d909358755769447681d" title="Pfleger::render" alt="" coords="443,448,549,477"/>
+<area shape="rect" id="node38" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="237,163,339,192"/>
+<area shape="rect" id="node41" href="$class_spritze.html#a2d1fac0870a40d50f0582e1efec53751" title="Spritze::render" alt="" coords="235,421,341,451"/>
+<area shape="rect" id="node44" href="$class_crazy__enemy.html#a4fc63fd437c01b6522beaf468c218f4a" title="Siehe Verrückter.cpp." alt="" coords="215,576,361,605"/>
+<area shape="rect" id="node46" href="$class_weapon_manager.html#acb9216f61525ede5ed970b5d558db9e9" title="Waffen auf den Boden rendern." alt="" coords="207,267,369,296"/>
+<area shape="rect" id="node5" href="$class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875" title="World::render" alt="" coords="649,267,748,296"/>
+<area shape="rect" id="node7" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="976,176,1027,205"/>
+<area shape="rect" id="node17" href="$class_final_boss.html#a201e58c54ae09fbfd97bf6ef4fb2843f" title="FinalBoss::update" alt="" coords="433,5,559,35"/>
+<area shape="rect" id="node19" href="$class_agent_manager.html#a1c05e1578aafde1892a5e4e79862b19f" title="AgentManager::update" alt="" coords="623,109,775,139"/>
+<area shape="rect" id="node21" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="825,136,927,165"/>
+</map>

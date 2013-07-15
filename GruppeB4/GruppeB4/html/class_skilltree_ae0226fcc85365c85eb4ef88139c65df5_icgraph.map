@@ -1,0 +1,8 @@
+<map id="Skilltree::t1_2" name="Skilltree::t1_2">
+<area shape="rect" id="node3" href="$class_skilltree.html#ae60bd6e6d9ce06eed34f90284ceb0714" title="Skilltree::handleInput" alt="" coords="363,5,507,35"/>
+<area shape="rect" id="node7" href="$class_skilltree.html#a381be34321e485720229fd73913905d3" title="Skilltree::check_skilled" alt="" coords="159,59,313,88"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="893,56,944,85"/>
+<area shape="rect" id="node9" href="$class_skilltree.html#ac33bd425bec067ce79466825ffd9eeeb" title="Skilltree::render" alt="" coords="379,59,491,88"/>
+<area shape="rect" id="node12" href="$class_world.html#aae955513a6b43da75bebbaf0022efcc3" title="World::openSkilltree" alt="" coords="555,108,693,137"/>
+<area shape="rect" id="node14" href="$class_world.html#aac8c1fde63c06577ffc648aaefdb37f0" title="World::update" alt="" coords="743,108,844,137"/>
+</map>

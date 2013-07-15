@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.3.1"/>
-<title>gruppeB4 Entwicklerdokumentation: World.h Quellcode</title>
+<title>My Project: World.h Quellcode</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
-   <div id="projectname">gruppeB4 Entwicklerdokumentation
+   <div id="projectname">My Project
    </div>
   </td>
  </tr>
@@ -60,6 +60,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -68,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Makrodefinitionen</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -82,60 +83,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="title">World.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WORLD_H_</span></div>
+<a href="_world_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WORLD_H_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define WORLD_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Resourcemanager.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Player.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;LevelSegment.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_resourcemanager_8h.html">Resourcemanager.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_player_8h.html">Player.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_level_segment_8h.html">LevelSegment.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;Verr�ckter.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;FinalBoss.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;AgentManager.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;Overlay.h&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;ItemManager.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;WeaponManager.h&quot;</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;MoneyManager.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;Shop.h&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;NPC1.h&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;Skilltree.h&quot;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_world.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_world.html">World</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    SDL_Event even;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_player.html">Player</a> * p_Player1;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_level_segmente.html">LevelSegmente</a> * p_Segmente;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    SDL_Rect Camera;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    LEVEL_LOADED CURRENTLEVEL;<span class="comment">//Hier entsteht eine Enumeration die gesetzt wird um zu ueberpruefen, welches Level geladen ist</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">bool</span> LevelToSet;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_world.html">World</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){CURRENTLEVEL = LEVEL1;p_Player1 = <span class="keyword">new</span> <a class="code" href="class_player.html">Player</a>(i_x,i_y);p_Segmente = <span class="keyword">new</span> <a class="code" href="class_level_segmente.html">LevelSegmente</a>();Camera.w = 900; Camera.h = 600;LevelToSet = <span class="keyword">true</span>;}</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="class_world.html">World</a>(){<span class="keyword">delete</span> p_Player1;}</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> set_Camera();</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    SDL_Rect get_Camera(){<span class="keywordflow">return</span> Camera;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> render_Win(<span class="keywordtype">bool</span> * tempmenue);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> update();</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> handle_Event(SDL_Event &amp;even);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> render(<span class="keywordtype">bool</span> * tempmenue,<a class="code" href="class_timer.html">Timer</a> * deltaTime);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> collision_Detection(){<span class="keywordflow">if</span>(p_Player1-&gt;collision_Detection(this-&gt;p_Segmente,this-&gt;CURRENTLEVEL)){<span class="keywordflow">return</span> <span class="keyword">true</span>;}}</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_player.html">Player</a> * get_Player(){<span class="keywordflow">return</span> p_Player1;}</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_level_segmente.html">LevelSegmente</a> * get_LevelSegmente(){<span class="keywordflow">return</span> p_Segmente;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> openSkilltree();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">//initialisierungsfunktionen der einzelnen Level</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> initialize_Level();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">//�ndern desaktuellen Levels</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> try_swapLevel();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_final_boss_8h.html">FinalBoss.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_agent_manager_8h.html">AgentManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_overlay_8h.html">Overlay.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_item_manager_8h.html">ItemManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_weapon_manager_8h.html">WeaponManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_money_manager_8h.html">MoneyManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_shop_8h.html">Shop.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_n_p_c1_8h.html">NPC1.h</a>&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_n_p_c2_8h.html">NPC2.h</a>&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_skilltree_8h.html">Skilltree.h</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_world.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_world.html" title="World merge test.">World</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    SDL_Event even;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_player.html">Player</a> * p_Player1;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_level_segmente.html">LevelSegmente</a> * p_Segmente;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    SDL_Rect Camera;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a> CURRENTLEVEL;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">bool</span> LevelToSet;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_world.html#a223764f33284a2f1f0bf647ffb210759">   30</a></span>&#160;    <a class="code" href="class_world.html#a223764f33284a2f1f0bf647ffb210759">World</a>(<span class="keywordtype">int</span> i_x,<span class="keywordtype">int</span> i_y){CURRENTLEVEL = <a class="code" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207a5f6aff2efe946ec43f8bad546893b0af">LEVEL1</a>;p_Player1 = <span class="keyword">new</span> <a class="code" href="class_player.html">Player</a>(i_x,i_y);p_Segmente = <span class="keyword">new</span> <a class="code" href="class_level_segmente.html">LevelSegmente</a>();Camera.w = 900; Camera.h = 600;LevelToSet = <span class="keyword">true</span>;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_world.html#a8c73fba541a5817fff65147ba47cd827">   31</a></span>&#160;    <a class="code" href="class_world.html#a8c73fba541a5817fff65147ba47cd827">~World</a>(){<span class="keyword">delete</span> p_Player1;}</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a149a22406179d656aea426c32577bed9">set_Camera</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_world.html#ae55ead4b6828a5f2b3a6d93e8c947c97">   33</a></span>&#160;    SDL_Rect <a class="code" href="class_world.html#ae55ead4b6828a5f2b3a6d93e8c947c97">get_Camera</a>(){<span class="keywordflow">return</span> Camera;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a9164eb25c327d3c1153deb6a6fd89a83">render_Win</a>(<span class="keywordtype">bool</span> * tempmenue);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#aac8c1fde63c06577ffc648aaefdb37f0">update</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a6e9d1717aae39babd17d801a7de6486d">handle_Event</a>(SDL_Event &amp;even);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875">render</a>(<span class="keywordtype">bool</span> * tempmenue,<a class="code" href="class_timer.html">Timer</a> * deltaTime);</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_world.html#ae324f881eae678d166eb81321dc8cbab">   38</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_world.html#ae324f881eae678d166eb81321dc8cbab">collision_Detection</a>(){<span class="keywordflow">if</span>(p_Player1-&gt;<a class="code" href="class_player.html#a4962a0e045b4d8cf30b49faec7a1b006">collision_Detection</a>(this-&gt;p_Segmente,this-&gt;CURRENTLEVEL)){<span class="keywordflow">return</span> <span class="keyword">true</span>;}}</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_world.html#af0d1ca602664a0a005cf1521b6aee784">   39</a></span>&#160;    <a class="code" href="class_player.html">Player</a> * <a class="code" href="class_world.html#af0d1ca602664a0a005cf1521b6aee784">get_Player</a>(){<span class="keywordflow">return</span> p_Player1;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_world.html#affdfa76f27683180d8103b297ae6972c">   40</a></span>&#160;    <a class="code" href="class_level_segmente.html">LevelSegmente</a> * <a class="code" href="class_world.html#affdfa76f27683180d8103b297ae6972c">get_LevelSegmente</a>(){<span class="keywordflow">return</span> p_Segmente;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#aae955513a6b43da75bebbaf0022efcc3">openSkilltree</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a503eb92ca22d62edfba5caaa405b7ff7">openquest</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a862716ca9282cf7f64522fd819427498" title="initialisierungsfunktionen der einzelnen Level">initialize_Level</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_world.html#a227f2998664ae3586190752920ee2713" title="Aendern des aktuellen Levels.">try_swapLevel</a>();</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Son Jul 7 2013 10:54:59 für gruppeB4 Entwicklerdokumentation von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

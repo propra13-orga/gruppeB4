@@ -1,0 +1,8 @@
+digraph "MoneyManager"
+{
+ // INTERACTIVE_SVG=YES
+  bgcolor="transparent";
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MoneyManager\n||+ set_Coin()\l+ set_Coin()\l+ render()\l+ update()\l+ reinitialize()\l+ show()\l+ get_Money()\l+ refreshMoney()\l+ get_MoneyManager()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+}
