@@ -76,7 +76,7 @@ void World::render(bool * tempmenue,Timer * deltaTime)
 		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
 	p_Player1->render(tempmenue,deltaTime,Camera,CURRENTLEVEL,this);
-	if(NPC2::get_NPC2().PlayCloseToBot(this->get_Player()) == true)
+	if(NPC2::get_NPC2().PlayCloseToBot(this->get_Player()) == true && NPC2::get_NPC2().get_questende()  == false)
 	{
 		apply_Image(0,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Aufforderung_e"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}

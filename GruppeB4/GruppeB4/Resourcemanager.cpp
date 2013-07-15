@@ -116,6 +116,7 @@ void S_Resourcemanager::initialize()
 	this->p_lvl_up = IMG_Load("lvl_up.png");
 	this->p_Baer = IMG_Load("Baer.png");
 	this->p_Baer_spricht = IMG_Load("Baer spricht.png");
+
 	///SDL_mixer wird initalisiert
 	if( Mix_OpenAudio( 22050, MIX_DEFAULT_FORMAT, 2, 4096 ) == -1 ) { cout << "Fehler im Mixer" << endl; }
 	///Dateien werden implementiert
