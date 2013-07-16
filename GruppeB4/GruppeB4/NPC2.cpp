@@ -18,6 +18,13 @@ void NPC2::render(SDL_Rect camera,Player * p_TempPlayer)
 	else if(b_questende == true && PlayCloseToBot(p_TempPlayer) == true)
 	{
 		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("qbelohnung"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		
+		if(b_finish == true)
+		{
+			EPManager::get_EPManager().Set_Ep(100);
+			/*MoneyManager::get_MoneyManager().(20);*/		
+		}
+		b_finish = false;
 	}
 } 
 
@@ -54,8 +61,10 @@ void  NPC2::playerclosetobaer(Player * p_TempPlayer)
 {
 	if(p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x <= 50 && p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x >= -50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y <= 50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y >= -50)
 	{
+		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer_spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		cout <<"bär spricht"<< endl;
 		this->b_questende = true;
-		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		b_finish = true;
 	}
 }
 
@@ -69,7 +78,7 @@ bool NPC2::PlayerCloseToBaer(Player * p_TempPlayer)
 ///Timer wird gesetzt damit die Quest Anfrage nach drei Sekunden verschwindet:
 void NPC2::questloeschen()
 {
-	if(b_questanfang == true && this->p_QuestTimer->Getticks() >= 3000)
+	if(b_questanfang == true && this->p_QuestTimer->Getticks() >= 2000)
 	{
 		b_questanfang = false;
 	}
@@ -79,6 +88,7 @@ void NPC2::set_QuestEnde(bool b)
 {
 	this->b_questende = b;
 }
+
 
 
 
