@@ -2,7 +2,7 @@
 
 void Lobby::initialize_Game()
 {
-	S_Resourcemanager::get_Resourcemanager()->initialize();
+	S_Resourcemanager::get_Resourcemanager()->initialize();			// Hier wird der Multiplayer mit der passenden Map initialisiert
 }
 
 void Lobby::handle_Events(SDL_Event & even,bool &game,bool & lobby)
@@ -37,7 +37,7 @@ void Lobby::handle_Events(SDL_Event & even,bool &game,bool & lobby)
 }
 
 
-	if(even.type == SDL_MOUSEBUTTONDOWN)
+	if(even.type == SDL_MOUSEBUTTONDOWN)			// Abfrage für Maus-Koords um  zu sehen was geklickt wurde(welcher Button)
 	{
 	
 
@@ -78,7 +78,7 @@ void Lobby::handle_Events(SDL_Event & even,bool &game,bool & lobby)
 }
 
 }
-void Lobby::render()
+void Lobby::render()		//render() für die Lobby
 {
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("Lobby"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
