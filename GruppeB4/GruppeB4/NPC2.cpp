@@ -55,10 +55,11 @@ void  NPC2::playerclosetobaer(Player * p_TempPlayer)
 	if(p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x <= 50 && p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x >= -50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y <= 50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y >= -50)
 	{
 		this->b_questende = true;
+		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 	}
 }
 
-bool NPC2::PlayerCloseToBear(Player * p_TempPlayer)
+bool NPC2::PlayerCloseToBaer(Player * p_TempPlayer)
 {
 	if(p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x <= 50 && p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x >= -50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y <= 50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y >= -50)
 	{

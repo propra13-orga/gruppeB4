@@ -49,8 +49,8 @@ public:
 	void questloeschen();
 	void set_QuestEnde(bool b);
 	void playerclosetobaer(Player *);
-	bool PlayerCloseToBear(Player *);
-	
+	bool PlayerCloseToBaer(Player *);
+	bool get_questende(){return b_questende;}	
 };
 
 #endif

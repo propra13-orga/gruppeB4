@@ -40,6 +40,7 @@ public:
 	LevelSegmente * get_LevelSegmente(){return p_Segmente;}
 	void openSkilltree();
 	void openquest();
+	
 	///initialisierungsfunktionen der einzelnen Level
 
 	void initialize_Level();
