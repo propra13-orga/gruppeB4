@@ -721,7 +721,7 @@ SDL_Surface * S_Resourcemanager::get_Surface(string key)
 	{
 		return p_Baer;
 	}
-	else if(key == "Baer spricht")
+	else if(key == "Baer_spricht")
 	{
 		return p_Baer_spricht;
 	}

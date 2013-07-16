@@ -21,6 +21,7 @@ private:
 	bool b_questanfang;
 	bool b_questende;
 	Timer * p_QuestTimer;
+	bool b_finish;
 
 public:
 
