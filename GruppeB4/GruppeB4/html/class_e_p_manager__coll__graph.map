@@ -1,2 +1,3 @@
 <map id="EPManager" name="EPManager">
+<area shape="rect" id="node2" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="7,6,137,282"/>
 </map>

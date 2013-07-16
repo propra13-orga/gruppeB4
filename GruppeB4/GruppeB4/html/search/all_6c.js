@@ -8,5 +8,7 @@ var searchData=
   ['levelsegment_2ecpp',['LevelSegment.cpp',['../_level_segment_8cpp.html',1,'']]],
   ['levelsegment_2eh',['LevelSegment.h',['../_level_segment_8h.html',1,'']]],
   ['levelsegmente',['LevelSegmente',['../class_level_segmente.html',1,'']]],
-  ['loadmana',['loadMana',['../class_player.html#ae06fc7fdd0493e8c13c0441b49b66777',1,'Player']]]
+  ['leveltoset',['LevelToSet',['../class_world.html#a11f6309cf175e5c89c54c1408067bf06',1,'World']]],
+  ['loadmana',['loadMana',['../class_player.html#ae06fc7fdd0493e8c13c0441b49b66777',1,'Player']]],
+  ['lvl_5fup',['lvl_up',['../class_e_p_manager.html#abe039770fe63d4e4e685ed5abf738fa6',1,'EPManager']]]
 ];

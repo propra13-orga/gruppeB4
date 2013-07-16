@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pri-attribs">Private Attribute</a> &#124;
 <a href="class_enemy-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">Enemy Klassenreferenz</div>  </div>
@@ -95,14 +96,14 @@ Klassendiagramm für Enemy:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enemy__inherit__graph.png" border="0" usemap="#_enemy_inherit__map" alt="Inheritance graph"/></div>
 <map name="_enemy_inherit__map" id="_enemy_inherit__map">
-<area shape="rect" id="node3" href="class_crazy__enemy.html" title="{Crazy_enemy\n||+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ render()\l+ update()\l+ Crazy_enemy()\l+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="5,243,136,501"/><area shape="rect" id="node6" href="class_endboss.html" title="{Endboss\n||+ Endboss()\l+ Endboss()\l+ ~Endboss()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="160,277,264,467"/></map>
+<area shape="rect" id="node3" href="class_crazy__enemy.html" title="{Crazy_enemy\n|&#45; p_S_SafePosition\l&#45; AnimationTimer\l&#45; frames\l&#45; WALK_STATUS\l&#45; health\l|+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ render()\l+ update()\l+ Crazy_enemy()\l+ Crazy_enemy()\l+ ~Crazy_enemy()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="5,261,139,589"/><area shape="rect" id="node6" href="class_endboss.html" title="{Endboss\n|&#45; p_S_SafePosition\l&#45; AnimationTimer\l&#45; frames\l&#45; WALK_STATUS\l&#45; health\l|+ Endboss()\l+ Endboss()\l+ ~Endboss()\l+ get_Health()\l+ set_health()\l+ render()\l+ update()\l}" alt="" coords="163,296,296,555"/></map>
 </div>
 <div class="dynheader">
 Zusammengehörigkeiten von Enemy:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_enemy__coll__graph.png" border="0" usemap="#_enemy_coll__map" alt="Collaboration graph"/></div>
 <map name="_enemy_coll__map" id="_enemy_coll__map">
-</map>
+<area shape="rect" id="node2" href="structs___vector.html" title="Das ist der Basisvektor." alt="" coords="25,6,100,109"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -121,6 +122,13 @@ Zusammengehörigkeiten von Enemy:</div>
 <tr class="separator:a01024ba4588c4ab2efc9a9e0a960c983"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab026b4302720f1676653285b27babd59"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ab026b4302720f1676653285b27babd59">set_Velocity</a> (int i_x, int i_y)</td></tr>
 <tr class="separator:ab026b4302720f1676653285b27babd59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attribute</h2></td></tr>
+<tr class="memitem:ac7136c8ed3c3581e690cf685f74eddc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structs___vector.html">s_Vector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ac7136c8ed3c3581e690cf685f74eddc0">p_s_Position</a></td></tr>
+<tr class="separator:ac7136c8ed3c3581e690cf685f74eddc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb2b27bb2982235aa8a8ab2b9912f3f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structs___vector.html">s_Vector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#abb2b27bb2982235aa8a8ab2b9912f3f0">p_s_Velocity</a></td></tr>
+<tr class="separator:abb2b27bb2982235aa8a8ab2b9912f3f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="a94f30d348b6d2840fd71675472ba38dd"></a>
@@ -318,13 +326,54 @@ Zusammengehörigkeiten von Enemy:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="ac7136c8ed3c3581e690cf685f74eddc0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structs___vector.html">s_Vector</a>* Enemy::p_s_Position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="abb2b27bb2982235aa8a8ab2b9912f3f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structs___vector.html">s_Vector</a>* Enemy::p_s_Velocity</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Datei:<ul>
 <li><a class="el" href="_enemy_8h_source.html">Enemy.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 17:11:29 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

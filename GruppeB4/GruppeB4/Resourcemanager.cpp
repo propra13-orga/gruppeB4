@@ -124,11 +124,19 @@ void S_Resourcemanager::initialize()
 	this->SoundEffectMap["Item"] = Mix_LoadWAV("Item.wav");
 	this->SoundEffectMap["Pillenmangel"] = Mix_LoadWAV("NotenoughPills.wav");
 	this->SoundEffectMap["Gameover"] = Mix_LoadWAV("GameOver.wav");
-	Mix_VolumeMusic(35);///<Lautstaerker von der Musik wird geregelt
+	this->SoundEffectMap["getPills"] = Mix_LoadWAV("Common_Coins.wav");
+	this->SoundEffectMap["Levelup"] = Mix_LoadWAV("S_Powerup.wav");
+	this->SoundEffectMap["Elektro"] = Mix_LoadWAV("Electric.wav");
+	Mix_VolumeMusic(33);///<Lautstaerker von der Musik wird geregelt
 	Mix_VolumeChunk(this->SoundEffectMap["Item"],128);///<Lautstaeke von den Soundeffekten werden geregelt
 	Mix_VolumeChunk(this->SoundEffectMap["Pillenmangel"],128);
 	Mix_VolumeChunk(this->SoundEffectMap["Gameover"],128);
-	//music = Mix_LoadMUS("KlinikBackground.wav");
+	Mix_VolumeChunk(this->SoundEffectMap["getPills"],128);
+	Mix_VolumeChunk(this->SoundEffectMap["Levelup"],128);
+	Mix_VolumeChunk(this->SoundEffectMap["Elektro"],128);
+
+	
+	
 
 
 

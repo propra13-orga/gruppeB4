@@ -13,7 +13,7 @@ void MoneyManager::update(s_Vector * p_TempPosition)
 	for(list<RenableObject>::iterator myIter = uncatchedmoney.begin();myIter != uncatchedmoney.end();++myIter)
 	{
 		if(myIter->get_Position()->i_x - p_TempPosition->i_x <= 25 && myIter->get_Position()->i_x - p_TempPosition->i_x >= -25  && myIter->get_Position()->i_y - p_TempPosition->i_y <= 25 && myIter->get_Position()->i_y - p_TempPosition->i_y >= -25)
-		{
+		{Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("getPills"),0);
 			money++;
 			uncatchedmoney.erase(myIter);
 			EPManager::get_EPManager().Set_Ep(5);

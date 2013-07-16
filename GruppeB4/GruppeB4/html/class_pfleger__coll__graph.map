@@ -1,2 +1,5 @@
 <map id="Pfleger" name="Pfleger">
+<area shape="rect" id="node2" href="$class_spritze.html" title="Dieses Klasse wird vom Pfleger benutzt." alt="" coords="127,229,268,470"/>
+<area shape="rect" id="node4" href="$structs___vector.html" title="Das ist der Basisvektor." alt="" coords="36,6,111,109"/>
+<area shape="rect" id="node7" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="292,211,423,487"/>
 </map>

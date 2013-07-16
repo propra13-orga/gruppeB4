@@ -41,7 +41,7 @@ void EPManager::render()
 {
 
 	if(lvl_up == true)
-	{
+	{Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("Levelup"),0);
 		if(OverlayTimer->Getticks() >= 2000)
 		{
 			lvl_up = false;

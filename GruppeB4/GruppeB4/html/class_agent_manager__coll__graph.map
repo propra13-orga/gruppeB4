@@ -1,2 +1,5 @@
 <map id="AgentManager" name="AgentManager">
+<area shape="rect" id="node2" href="$class_final_boss.html" title="{FinalBoss\n|&#45; e_walkstatus\l&#45; transformed\l&#45; isactivated\l&#45; raged\l&#45; finishmovedoneonce\l&#45; isdead\l&#45; HURTSTATE\l&#45; i_health\l&#45; i_frames\l|+ FinalBoss()\l+ ~FinalBoss()\l+ get_Position()\l+ set_Position()\l+ get_isDead()\l+ get_isactivated()\l+ set_isactivated()\l+ render()\l+ update()\l+ weaken_Endboss()\l}" alt="" coords="37,385,187,765"/>
+<area shape="rect" id="node4" href="$structs___vector.html" title="Das ist der Basisvektor." alt="" coords="5,93,80,195"/>
+<area shape="rect" id="node6" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="116,6,247,282"/>
 </map>

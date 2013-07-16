@@ -17,7 +17,7 @@ Zusammengehörigkeiten von World\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=198pt]{class_world__coll__graph}
+\includegraphics[height=550pt]{class_world__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Methoden}
@@ -35,7 +35,7 @@ void \hyperlink{class_world_a9164eb25c327d3c1153deb6a6fd89a83}{render\-\_\-\-Win
 \item 
 void \hyperlink{class_world_aac8c1fde63c06577ffc648aaefdb37f0}{update} ()
 \item 
-void \hyperlink{class_world_a6e9d1717aae39babd17d801a7de6486d}{handle\-\_\-\-Event} (S\-D\-L\-\_\-\-Event \&even)
+void \hyperlink{class_world_a6e9d1717aae39babd17d801a7de6486d}{handle\-\_\-\-Event} (S\-D\-L\-\_\-\-Event \&\hyperlink{class_world_a4f32e82a26dac5cc9ce72bfe0d596340}{even})
 \item 
 void \hyperlink{class_world_a15a2d4bb5a4f26400a6c1365d8eb4875}{render} (bool $\ast$tempmenue, \hyperlink{class_timer}{Timer} $\ast$delta\-Time)
 \item 
@@ -53,6 +53,21 @@ void \hyperlink{class_world_a862716ca9282cf7f64522fd819427498}{initialize\-\_\-\
 \begin{DoxyCompactList}\small\item\em initialisierungsfunktionen der einzelnen Level \end{DoxyCompactList}\item 
 void \hyperlink{class_world_a227f2998664ae3586190752920ee2713}{try\-\_\-swap\-Level} ()
 \begin{DoxyCompactList}\small\item\em Aendern des aktuellen Levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+S\-D\-L\-\_\-\-Event \hyperlink{class_world_a4f32e82a26dac5cc9ce72bfe0d596340}{even}
+\item 
+\hyperlink{class_player}{Player} $\ast$ \hyperlink{class_world_ab37dcbf81f1120451fb908ec2dfbb816}{p\-\_\-\-Player1}
+\item 
+\hyperlink{class_level_segmente}{Level\-Segmente} $\ast$ \hyperlink{class_world_a277b8c9ea049b36eff31b0e9b9324295}{p\-\_\-\-Segmente}
+\item 
+S\-D\-L\-\_\-\-Rect \hyperlink{class_world_a47489c465efb92fb238c0ebc05a56c15}{Camera}
+\item 
+\hyperlink{globals_8h_a3951bd57665e2e4c8a4411c2a5477207}{L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D} \hyperlink{class_world_ae8611da95b21e3f88a929a71a848c46a}{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L}
+\item 
+bool \hyperlink{class_world_a11f6309cf175e5c89c54c1408067bf06}{Level\-To\-Set}
+\end{DoxyCompactItemize}
 
 
 \subsection{Ausführliche Beschreibung}
@@ -86,8 +101,7 @@ void \hyperlink{class_world_a227f2998664ae3586190752920ee2713}{try\-\_\-swap\-Le
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_ae324f881eae678d166eb81321dc8cbab}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -98,8 +112,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -124,8 +137,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_affdfa76f27683180d8103b297ae6972c}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -143,8 +155,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_world_af0d1ca602664a0a005cf1521b6aee784}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -162,8 +173,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_world_a6e9d1717aae39babd17d801a7de6486d}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -174,8 +184,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -197,8 +206,7 @@ initialisierungsfunktionen der einzelnen Level
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -209,8 +217,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -235,8 +242,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_world_aae955513a6b43da75bebbaf0022efcc3}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -247,8 +253,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -267,8 +272,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_world_a15a2d4bb5a4f26400a6c1365d8eb4875}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -279,8 +283,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -298,8 +301,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_world_a9164eb25c327d3c1153deb6a6fd89a83}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -317,8 +319,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 )}}\label{class_world_a149a22406179d656aea426c32577bed9}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -329,8 +330,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -352,8 +352,7 @@ Aendern des aktuellen Levels.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -364,8 +363,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -383,8 +381,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_world_aac8c1fde63c06577ffc648aaefdb37f0}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -395,8 +392,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -405,6 +401,27 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \end{figure}
 
 
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_world_a47489c465efb92fb238c0ebc05a56c15}{\index{World@{World}!Camera@{Camera}}
+\index{Camera@{Camera}!World@{World}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Rect World\-::\-Camera\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_a47489c465efb92fb238c0ebc05a56c15}
+\hypertarget{class_world_ae8611da95b21e3f88a929a71a848c46a}{\index{World@{World}!C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L@{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L}}
+\index{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L@{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L}!World@{World}}
+\subsubsection[{C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D} World\-::\-C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_ae8611da95b21e3f88a929a71a848c46a}
+\hypertarget{class_world_a4f32e82a26dac5cc9ce72bfe0d596340}{\index{World@{World}!even@{even}}
+\index{even@{even}!World@{World}}
+\subsubsection[{even}]{\setlength{\rightskip}{0pt plus 5cm}S\-D\-L\-\_\-\-Event World\-::even\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_a4f32e82a26dac5cc9ce72bfe0d596340}
+\hypertarget{class_world_a11f6309cf175e5c89c54c1408067bf06}{\index{World@{World}!Level\-To\-Set@{Level\-To\-Set}}
+\index{Level\-To\-Set@{Level\-To\-Set}!World@{World}}
+\subsubsection[{Level\-To\-Set}]{\setlength{\rightskip}{0pt plus 5cm}bool World\-::\-Level\-To\-Set\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_a11f6309cf175e5c89c54c1408067bf06}
+Hier entsteht eine Enumeration die gesetzt wird um zu ueberpruefen, welches Level geladen ist \hypertarget{class_world_ab37dcbf81f1120451fb908ec2dfbb816}{\index{World@{World}!p\-\_\-\-Player1@{p\-\_\-\-Player1}}
+\index{p\-\_\-\-Player1@{p\-\_\-\-Player1}!World@{World}}
+\subsubsection[{p\-\_\-\-Player1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Player}$\ast$ World\-::p\-\_\-\-Player1\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_ab37dcbf81f1120451fb908ec2dfbb816}
+\hypertarget{class_world_a277b8c9ea049b36eff31b0e9b9324295}{\index{World@{World}!p\-\_\-\-Segmente@{p\-\_\-\-Segmente}}
+\index{p\-\_\-\-Segmente@{p\-\_\-\-Segmente}!World@{World}}
+\subsubsection[{p\-\_\-\-Segmente}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Level\-Segmente}$\ast$ World\-::p\-\_\-\-Segmente\hspace{0.3cm}{\ttfamily [private]}}}\label{class_world_a277b8c9ea049b36eff31b0e9b9324295}
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

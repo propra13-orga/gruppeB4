@@ -1,3 +1,5 @@
 <map id="Endboss" name="Endboss">
-<area shape="rect" id="node2" href="$class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="5,5,120,195"/>
+<area shape="rect" id="node2" href="$class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="154,236,269,425"/>
+<area shape="rect" id="node4" href="$structs___vector.html" title="Das ist der Basisvektor." alt="" coords="38,6,113,109"/>
+<area shape="rect" id="node7" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="293,193,423,469"/>
 </map>

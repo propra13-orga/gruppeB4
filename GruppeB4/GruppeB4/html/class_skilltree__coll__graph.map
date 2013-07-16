@@ -1,2 +1,5 @@
 <map id="Skilltree" name="Skilltree">
+<area shape="rect" id="node2" href="$class_player.html" title="{Player\n|&#45; b_PlayerIsWalkingRight\l&#45; b_PlayerIsWalkingLeft\l&#45; b_PlayerIsWalkingUp\l&#45; b_PlayerIsWalkingDown\l&#45; rageModeToggled\l&#45; disableallabilities\l&#45; i_health\l&#45; i_lives\l&#45; i_mana\l&#45; i_maxhealth\l&#45; potsize\l&#45; i_frame\l&#45; e_currentwalkstatus\l|+ Player()\l+ Player()\l+ ~Player()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l+ set_Health()\l+ set_Mana()\l+ get_Health()\lund 15 mehr ...\l}" alt="" coords="61,365,235,832"/>
+<area shape="rect" id="node4" href="$structs___vector.html" title="Das ist der Basisvektor." alt="" coords="5,93,80,195"/>
+<area shape="rect" id="node6" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="160,6,291,282"/>
 </map>

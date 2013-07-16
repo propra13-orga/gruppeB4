@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pri-attribs">Private Attribute</a> &#124;
 <a href="class_world-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">World Klassenreferenz</div>  </div>
@@ -98,7 +99,7 @@ Zusammengehörigkeiten von World:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_world__coll__graph.png" border="0" usemap="#_world_coll__map" alt="Collaboration graph"/></div>
 <map name="_world_coll__map" id="_world_coll__map">
-</map>
+<area shape="rect" id="node2" href="class_level_segmente.html" title="{LevelSegmente\n|+ SegmentRect11\l+ SegmentRect12\l+ SegmentRect13\l+ SegmentRect14\l+ SegmentRect21\l+ SegmentRect22\l+ SegmentRect31\l+ SegmentRect32\l+ SegmentRect33\l|+ init_Segmente()\l}" alt="" coords="5,487,133,711"/><area shape="rect" id="node4" href="class_player.html" title="{Player\n|&#45; b_PlayerIsWalkingRight\l&#45; b_PlayerIsWalkingLeft\l&#45; b_PlayerIsWalkingUp\l&#45; b_PlayerIsWalkingDown\l&#45; rageModeToggled\l&#45; disableallabilities\l&#45; i_health\l&#45; i_lives\l&#45; i_mana\l&#45; i_maxhealth\l&#45; potsize\l&#45; i_frame\l&#45; e_currentwalkstatus\l|+ Player()\l+ Player()\l+ ~Player()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l+ set_Health()\l+ set_Mana()\l+ get_Health()\lund 15 mehr ...\l}" alt="" coords="157,365,331,832"/><area shape="rect" id="node6" href="structs___vector.html" title="Das ist der Basisvektor." alt="" coords="143,93,217,195"/><area shape="rect" id="node8" href="class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="241,6,372,282"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -115,7 +116,7 @@ Zusammengehörigkeiten von World:</div>
 <tr class="separator:a9164eb25c327d3c1153deb6a6fd89a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac8c1fde63c06577ffc648aaefdb37f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#aac8c1fde63c06577ffc648aaefdb37f0">update</a> ()</td></tr>
 <tr class="separator:aac8c1fde63c06577ffc648aaefdb37f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e9d1717aae39babd17d801a7de6486d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a6e9d1717aae39babd17d801a7de6486d">handle_Event</a> (SDL_Event &amp;even)</td></tr>
+<tr class="memitem:a6e9d1717aae39babd17d801a7de6486d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a6e9d1717aae39babd17d801a7de6486d">handle_Event</a> (SDL_Event &amp;<a class="el" href="class_world.html#a4f32e82a26dac5cc9ce72bfe0d596340">even</a>)</td></tr>
 <tr class="separator:a6e9d1717aae39babd17d801a7de6486d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a15a2d4bb5a4f26400a6c1365d8eb4875"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a15a2d4bb5a4f26400a6c1365d8eb4875">render</a> (bool *tempmenue, <a class="el" href="class_timer.html">Timer</a> *deltaTime)</td></tr>
 <tr class="separator:a15a2d4bb5a4f26400a6c1365d8eb4875"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,6 +136,21 @@ Zusammengehörigkeiten von World:</div>
 <tr class="memitem:a227f2998664ae3586190752920ee2713"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a227f2998664ae3586190752920ee2713">try_swapLevel</a> ()</td></tr>
 <tr class="memdesc:a227f2998664ae3586190752920ee2713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aendern des aktuellen Levels.  <a href="#a227f2998664ae3586190752920ee2713">Mehr ...</a><br/></td></tr>
 <tr class="separator:a227f2998664ae3586190752920ee2713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attribute</h2></td></tr>
+<tr class="memitem:a4f32e82a26dac5cc9ce72bfe0d596340"><td class="memItemLeft" align="right" valign="top">SDL_Event&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a4f32e82a26dac5cc9ce72bfe0d596340">even</a></td></tr>
+<tr class="separator:a4f32e82a26dac5cc9ce72bfe0d596340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37dcbf81f1120451fb908ec2dfbb816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ab37dcbf81f1120451fb908ec2dfbb816">p_Player1</a></td></tr>
+<tr class="separator:ab37dcbf81f1120451fb908ec2dfbb816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277b8c9ea049b36eff31b0e9b9324295"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_level_segmente.html">LevelSegmente</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a277b8c9ea049b36eff31b0e9b9324295">p_Segmente</a></td></tr>
+<tr class="separator:a277b8c9ea049b36eff31b0e9b9324295"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47489c465efb92fb238c0ebc05a56c15"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a47489c465efb92fb238c0ebc05a56c15">Camera</a></td></tr>
+<tr class="separator:a47489c465efb92fb238c0ebc05a56c15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8611da95b21e3f88a929a71a848c46a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#ae8611da95b21e3f88a929a71a848c46a">CURRENTLEVEL</a></td></tr>
+<tr class="separator:ae8611da95b21e3f88a929a71a848c46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11f6309cf175e5c89c54c1408067bf06"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_world.html#a11f6309cf175e5c89c54c1408067bf06">LevelToSet</a></td></tr>
+<tr class="separator:a11f6309cf175e5c89c54c1408067bf06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p><a class="el" href="class_world.html" title="World merge test.">World</a> merge test. </p>
@@ -612,6 +628,128 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="a47489c465efb92fb238c0ebc05a56c15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Rect World::Camera</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae8611da95b21e3f88a929a71a848c46a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="globals_8h.html#a3951bd57665e2e4c8a4411c2a5477207">LEVEL_LOADED</a> World::CURRENTLEVEL</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4f32e82a26dac5cc9ce72bfe0d596340"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Event World::even</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11f6309cf175e5c89c54c1408067bf06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool World::LevelToSet</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Hier entsteht eine Enumeration die gesetzt wird um zu ueberpruefen, welches Level geladen ist </p>
+
+</div>
+</div>
+<a class="anchor" id="ab37dcbf81f1120451fb908ec2dfbb816"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a>* World::p_Player1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a277b8c9ea049b36eff31b0e9b9324295"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_level_segmente.html">LevelSegmente</a>* World::p_Segmente</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li><a class="el" href="_world_8h_source.html">World.h</a></li>
 <li><a class="el" href="_world_8cpp.html">World.cpp</a></li>
@@ -619,7 +757,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 16:40:56 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 17:11:30 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

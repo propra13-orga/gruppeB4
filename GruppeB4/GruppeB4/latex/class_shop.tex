@@ -12,7 +12,7 @@ Zusammengeh√∂rigkeiten von Shop\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=166pt]{class_shop__coll__graph}
+\includegraphics[width=202pt]{class_shop__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{√ñffentliche Methoden}
@@ -27,6 +27,43 @@ void \hyperlink{class_shop_ab351ada15116901f29a2d35474883894}{handle\-\_\-\-Inpu
 \item 
 static \hyperlink{class_shop}{Shop} \& \hyperlink{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}{get\-\_\-\-Shop} ()
 \end{DoxyCompactItemize}
+\subsection*{Private Methoden}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_shop_a579ed9f949f7db3f90c22dfe10b25797}{Shop} ()
+\item 
+\hyperlink{class_shop_a36bf69bdc0da1b7258acc63a5fe89d40}{$\sim$\-Shop} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_shop_ac533f13ba433da28b0da910ceebca880}{money}
+\item 
+bool \hyperlink{class_shop_afc928a66739e72551b854ecf7cc5c0e3}{renderbuy}
+\item 
+bool \hyperlink{class_shop_a38a00268486745ee747407a41eac994b}{nomoney}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_shop_a31b8634b55f628c837ec7840c23773ab}{Buy\-Timer}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_shop_a252660cc268d0b15c97ae2b8824d6f46}{No\-Money\-Timer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Beschreibung der Konstruktoren und Destruktoren}
+\hypertarget{class_shop_a579ed9f949f7db3f90c22dfe10b25797}{\index{Shop@{Shop}!Shop@{Shop}}
+\index{Shop@{Shop}!Shop@{Shop}}
+\subsubsection[{Shop}]{\setlength{\rightskip}{0pt plus 5cm}Shop\-::\-Shop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_shop_a579ed9f949f7db3f90c22dfe10b25797}
+\hypertarget{class_shop_a36bf69bdc0da1b7258acc63a5fe89d40}{\index{Shop@{Shop}!$\sim$\-Shop@{$\sim$\-Shop}}
+\index{$\sim$\-Shop@{$\sim$\-Shop}!Shop@{Shop}}
+\subsubsection[{$\sim$\-Shop}]{\setlength{\rightskip}{0pt plus 5cm}Shop\-::$\sim$\-Shop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}}\label{class_shop_a36bf69bdc0da1b7258acc63a5fe89d40}
 
 
 \subsection{Dokumentation der Elementfunktionen}
@@ -39,8 +76,7 @@ static \hyperlink{class_shop}{Shop} \& \hyperlink{class_shop_a4b36d3cd90162ce239
 )\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_shop_a4b36d3cd90162ce239b5f7c81d277ca8}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -65,8 +101,7 @@ $<$Wenn 'e' gedr¸ckt wird schlieﬂt sich der shop(siehe \hyperlink{main_8cpp}{mai
 
 Wenn genug Geld vorhanden + Talente im \hyperlink{class_skilltree}{Skilltree} abgefragt( da diese auf den Shop Auswirkungen haben) Gibt mehrere Varianten f¸r einen Kaufe im \hyperlink{class_shop}{Shop}, je nachdem ob oder wieviele Talente true sind. 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -77,8 +112,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -96,8 +130,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_shop_a6c1786f48bc976b2c7a45dde48ec36ae}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -108,8 +141,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -118,6 +150,24 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \end{figure}
 
 
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_shop_a31b8634b55f628c837ec7840c23773ab}{\index{Shop@{Shop}!Buy\-Timer@{Buy\-Timer}}
+\index{Buy\-Timer@{Buy\-Timer}!Shop@{Shop}}
+\subsubsection[{Buy\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Shop\-::\-Buy\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_shop_a31b8634b55f628c837ec7840c23773ab}
+\hypertarget{class_shop_ac533f13ba433da28b0da910ceebca880}{\index{Shop@{Shop}!money@{money}}
+\index{money@{money}!Shop@{Shop}}
+\subsubsection[{money}]{\setlength{\rightskip}{0pt plus 5cm}int Shop\-::money\hspace{0.3cm}{\ttfamily [private]}}}\label{class_shop_ac533f13ba433da28b0da910ceebca880}
+\hypertarget{class_shop_a38a00268486745ee747407a41eac994b}{\index{Shop@{Shop}!nomoney@{nomoney}}
+\index{nomoney@{nomoney}!Shop@{Shop}}
+\subsubsection[{nomoney}]{\setlength{\rightskip}{0pt plus 5cm}bool Shop\-::nomoney\hspace{0.3cm}{\ttfamily [private]}}}\label{class_shop_a38a00268486745ee747407a41eac994b}
+\hypertarget{class_shop_a252660cc268d0b15c97ae2b8824d6f46}{\index{Shop@{Shop}!No\-Money\-Timer@{No\-Money\-Timer}}
+\index{No\-Money\-Timer@{No\-Money\-Timer}!Shop@{Shop}}
+\subsubsection[{No\-Money\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Shop\-::\-No\-Money\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_shop_a252660cc268d0b15c97ae2b8824d6f46}
+\hypertarget{class_shop_afc928a66739e72551b854ecf7cc5c0e3}{\index{Shop@{Shop}!renderbuy@{renderbuy}}
+\index{renderbuy@{renderbuy}!Shop@{Shop}}
+\subsubsection[{renderbuy}]{\setlength{\rightskip}{0pt plus 5cm}bool Shop\-::renderbuy\hspace{0.3cm}{\ttfamily [private]}}}\label{class_shop_afc928a66739e72551b854ecf7cc5c0e3}
 
 
 Die Dokumentation f√ºr diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pri-attribs">Private Attribute</a> &#124;
 <a href="class_pfleger-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">Pfleger Klassenreferenz</div>  </div>
@@ -98,7 +99,7 @@ Zusammengehörigkeiten von Pfleger:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_pfleger__coll__graph.png" border="0" usemap="#_pfleger_coll__map" alt="Collaboration graph"/></div>
 <map name="_pfleger_coll__map" id="_pfleger_coll__map">
-</map>
+<area shape="rect" id="node2" href="class_spritze.html" title="Dieses Klasse wird vom Pfleger benutzt." alt="" coords="127,229,268,470"/><area shape="rect" id="node4" href="structs___vector.html" title="Das ist der Basisvektor." alt="" coords="36,6,111,109"/><area shape="rect" id="node7" href="class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="292,211,423,487"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -117,6 +118,17 @@ Zusammengehörigkeiten von Pfleger:</div>
 <tr class="separator:ab16f8907843415401742d8def572da73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ae72e0182e9d909358755769447681d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pfleger.html#a4ae72e0182e9d909358755769447681d">render</a> (SDL_Rect camera)</td></tr>
 <tr class="separator:a4ae72e0182e9d909358755769447681d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attribute</h2></td></tr>
+<tr class="memitem:a3a6c03fba601a546cfa61c47748216df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structs___vector.html">s_Vector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pfleger.html#a3a6c03fba601a546cfa61c47748216df">p_s_Position</a></td></tr>
+<tr class="separator:a3a6c03fba601a546cfa61c47748216df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab2e0da3e825ef510b1e6574e93dbd7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_timer.html">Timer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pfleger.html#aab2e0da3e825ef510b1e6574e93dbd7b">p_AnimationTimer</a></td></tr>
+<tr class="separator:aab2e0da3e825ef510b1e6574e93dbd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf59b4f8130b1432948b597c8b6cf8d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_spritze.html">Spritze</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pfleger.html#acf59b4f8130b1432948b597c8b6cf8d0">p_Spritze</a></td></tr>
+<tr class="separator:acf59b4f8130b1432948b597c8b6cf8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513623fc5968b93fccfa5490fa62ea36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_pfleger.html#a513623fc5968b93fccfa5490fa62ea36">shootisactive</a></td></tr>
+<tr class="separator:a513623fc5968b93fccfa5490fa62ea36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Ausführliche Beschreibung</h2>
 <div class="textblock"><p>Diese Klasse erstellt einen Spritzenschie�enden Gegner, die <a class="el" href="class_spritze.html" title="Dieses Klasse wird vom Pfleger benutzt.">Spritze</a> ist dabei ein eigenes Objekt und testet KOllision selbst. </p>
@@ -327,6 +339,87 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="aab2e0da3e825ef510b1e6574e93dbd7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_timer.html">Timer</a>* Pfleger::p_AnimationTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3a6c03fba601a546cfa61c47748216df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structs___vector.html">s_Vector</a>* Pfleger::p_s_Position</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acf59b4f8130b1432948b597c8b6cf8d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_spritze.html">Spritze</a>* Pfleger::p_Spritze</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a513623fc5968b93fccfa5490fa62ea36"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Pfleger::shootisactive</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li><a class="el" href="_pfleger_8h_source.html">Pfleger.h</a></li>
 <li><a class="el" href="_pfleger_8cpp.html">Pfleger.cpp</a></li>
@@ -334,7 +427,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 16:40:56 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 17:11:30 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

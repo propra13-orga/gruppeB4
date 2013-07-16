@@ -12,7 +12,7 @@ Zusammengehörigkeiten von Final\-Boss\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=188pt]{class_final_boss__coll__graph}
+\includegraphics[height=550pt]{class_final_boss__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Öffentliche Methoden}
@@ -37,6 +37,39 @@ void \hyperlink{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}{render} (S\-
 void \hyperlink{class_final_boss_a201e58c54ae09fbfd97bf6ef4fb2843f}{update} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Player, S\-D\-L\-\_\-\-Rect camera)
 \item 
 void \hyperlink{class_final_boss_a1579fd9da81da66bbed75799f7113be9}{weaken\-\_\-\-Endboss} (\hyperlink{class_player}{Player} $\ast$p\-\_\-\-Temp\-Player)
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_final_boss_a3358e45bfff33ea01c3be43f9793ffc6}{p\-\_\-s\-\_\-\-Position}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_final_boss_aaf6995cae7ba5231e13b7ff9aa9f4d33}{p\-\_\-s\-\_\-\-Start\-Position}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_final_boss_a0f297f611b1ffb5ac07c9bc60361900a}{p\-\_\-s\-\_\-\-Velocity}
+\item 
+\hyperlink{globals_8h_a015eb90e0de9f16e87bd149d4b9ce959}{status} \hyperlink{class_final_boss_a6fc89543b9381f89286223d77c89bc5d}{e\-\_\-walkstatus}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_final_boss_a0a5394a3c3202914a2aaf3f80cc89b77}{Animation\-Timer}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_final_boss_a51782ed6b05ffd27a37dbbb4255da480}{Attack\-Timer}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_final_boss_a5608dc60df229b811de1db353ca2c69e}{Overlay\-Timer}
+\item 
+bool \hyperlink{class_final_boss_af35eab748c9638f361848b2ab2e05f4e}{transformed}
+\item 
+bool \hyperlink{class_final_boss_a8fac01359d5104f2707577e1872d7cf8}{isactivated}
+\item 
+bool \hyperlink{class_final_boss_ae03958c8fd33c1e01be3391e4dd7dc1b}{raged}
+\item 
+bool \hyperlink{class_final_boss_a8a20a34a6d12893b7a68fced0a89fdbb}{finishmovedoneonce}
+\item 
+bool \hyperlink{class_final_boss_aef3b377d03f1b620702d5240763f1bab}{isdead}
+\item 
+\hyperlink{globals_8h_a5475104070b0bfa8f8b8780dd51fe83e}{E\-N\-D\-B\-O\-S\-S\-S\-T\-A\-T\-E\-S} \hyperlink{class_final_boss_ac54aa7f4deaf40f519e02f0a565973d2}{H\-U\-R\-T\-S\-T\-A\-T\-E}
+\item 
+int \hyperlink{class_final_boss_a8769aa90c675cce6af3711d7875ca733}{i\-\_\-health}
+\item 
+int \hyperlink{class_final_boss_a0a4f0f0ba89c151c79609e520888319e}{i\-\_\-frames}
 \end{DoxyCompactItemize}
 
 
@@ -67,8 +100,7 @@ void \hyperlink{class_final_boss_a1579fd9da81da66bbed75799f7113be9}{weaken\-\_\-
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_final_boss_aa0baaf57ed8bacb2174fbcc65b75cec9}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -86,8 +118,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_final_boss_abacad04a4ff64dd94b3338b7cab122f2}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -105,8 +136,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_final_boss_a6c30600b7492a40d2ec99874d41296b0}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -124,8 +154,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_final_boss_a0dfe88f2e430bd3a8760801809ab7c01}
 apply\-\_\-\-Image(0,0,\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Win\char`\"{}),\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Screen\char`\"{})); S\-D\-L\-\_\-\-Flip(\hyperlink{class_s___resourcemanager_a785fd4b8631a35647823bd41c28ae2d0}{S\-\_\-\-Resourcemanager\-::get\-\_\-\-Resourcemanager()}-\/$>$get\-\_\-\-Surface(\char`\"{}\-Screen\char`\"{})); S\-D\-L\-\_\-\-Delay(5000); tempplayer-\/$>$set\-\_\-\-Health(100); tempplayer-\/$>$set\-\_\-\-Position(0,0); $\ast$tempmenue = true; 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -136,8 +165,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -155,8 +183,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_final_boss_aa9ee8f4ddea7ecfc2d7b9bbaf6ca73a6}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -187,8 +214,7 @@ E\-N\-D\-E B\-Ewegungsteil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-
 
 Anfang Schadenssetzungsteil\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\-\-\_\- 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -199,8 +225,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -218,8 +243,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_final_boss_a1579fd9da81da66bbed75799f7113be9}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -230,8 +254,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -240,6 +263,54 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \end{figure}
 
 
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_final_boss_a0a5394a3c3202914a2aaf3f80cc89b77}{\index{Final\-Boss@{Final\-Boss}!Animation\-Timer@{Animation\-Timer}}
+\index{Animation\-Timer@{Animation\-Timer}!FinalBoss@{Final\-Boss}}
+\subsubsection[{Animation\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Final\-Boss\-::\-Animation\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a0a5394a3c3202914a2aaf3f80cc89b77}
+\hypertarget{class_final_boss_a51782ed6b05ffd27a37dbbb4255da480}{\index{Final\-Boss@{Final\-Boss}!Attack\-Timer@{Attack\-Timer}}
+\index{Attack\-Timer@{Attack\-Timer}!FinalBoss@{Final\-Boss}}
+\subsubsection[{Attack\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Final\-Boss\-::\-Attack\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a51782ed6b05ffd27a37dbbb4255da480}
+\hypertarget{class_final_boss_a6fc89543b9381f89286223d77c89bc5d}{\index{Final\-Boss@{Final\-Boss}!e\-\_\-walkstatus@{e\-\_\-walkstatus}}
+\index{e\-\_\-walkstatus@{e\-\_\-walkstatus}!FinalBoss@{Final\-Boss}}
+\subsubsection[{e\-\_\-walkstatus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf status} Final\-Boss\-::e\-\_\-walkstatus\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a6fc89543b9381f89286223d77c89bc5d}
+\hypertarget{class_final_boss_a8a20a34a6d12893b7a68fced0a89fdbb}{\index{Final\-Boss@{Final\-Boss}!finishmovedoneonce@{finishmovedoneonce}}
+\index{finishmovedoneonce@{finishmovedoneonce}!FinalBoss@{Final\-Boss}}
+\subsubsection[{finishmovedoneonce}]{\setlength{\rightskip}{0pt plus 5cm}bool Final\-Boss\-::finishmovedoneonce\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a8a20a34a6d12893b7a68fced0a89fdbb}
+\hypertarget{class_final_boss_ac54aa7f4deaf40f519e02f0a565973d2}{\index{Final\-Boss@{Final\-Boss}!H\-U\-R\-T\-S\-T\-A\-T\-E@{H\-U\-R\-T\-S\-T\-A\-T\-E}}
+\index{H\-U\-R\-T\-S\-T\-A\-T\-E@{H\-U\-R\-T\-S\-T\-A\-T\-E}!FinalBoss@{Final\-Boss}}
+\subsubsection[{H\-U\-R\-T\-S\-T\-A\-T\-E}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\-N\-D\-B\-O\-S\-S\-S\-T\-A\-T\-E\-S} Final\-Boss\-::\-H\-U\-R\-T\-S\-T\-A\-T\-E\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_ac54aa7f4deaf40f519e02f0a565973d2}
+\hypertarget{class_final_boss_a0a4f0f0ba89c151c79609e520888319e}{\index{Final\-Boss@{Final\-Boss}!i\-\_\-frames@{i\-\_\-frames}}
+\index{i\-\_\-frames@{i\-\_\-frames}!FinalBoss@{Final\-Boss}}
+\subsubsection[{i\-\_\-frames}]{\setlength{\rightskip}{0pt plus 5cm}int Final\-Boss\-::i\-\_\-frames\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a0a4f0f0ba89c151c79609e520888319e}
+\hypertarget{class_final_boss_a8769aa90c675cce6af3711d7875ca733}{\index{Final\-Boss@{Final\-Boss}!i\-\_\-health@{i\-\_\-health}}
+\index{i\-\_\-health@{i\-\_\-health}!FinalBoss@{Final\-Boss}}
+\subsubsection[{i\-\_\-health}]{\setlength{\rightskip}{0pt plus 5cm}int Final\-Boss\-::i\-\_\-health\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a8769aa90c675cce6af3711d7875ca733}
+\hypertarget{class_final_boss_a8fac01359d5104f2707577e1872d7cf8}{\index{Final\-Boss@{Final\-Boss}!isactivated@{isactivated}}
+\index{isactivated@{isactivated}!FinalBoss@{Final\-Boss}}
+\subsubsection[{isactivated}]{\setlength{\rightskip}{0pt plus 5cm}bool Final\-Boss\-::isactivated\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a8fac01359d5104f2707577e1872d7cf8}
+\hypertarget{class_final_boss_aef3b377d03f1b620702d5240763f1bab}{\index{Final\-Boss@{Final\-Boss}!isdead@{isdead}}
+\index{isdead@{isdead}!FinalBoss@{Final\-Boss}}
+\subsubsection[{isdead}]{\setlength{\rightskip}{0pt plus 5cm}bool Final\-Boss\-::isdead\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_aef3b377d03f1b620702d5240763f1bab}
+\hypertarget{class_final_boss_a5608dc60df229b811de1db353ca2c69e}{\index{Final\-Boss@{Final\-Boss}!Overlay\-Timer@{Overlay\-Timer}}
+\index{Overlay\-Timer@{Overlay\-Timer}!FinalBoss@{Final\-Boss}}
+\subsubsection[{Overlay\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Final\-Boss\-::\-Overlay\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a5608dc60df229b811de1db353ca2c69e}
+\hypertarget{class_final_boss_a3358e45bfff33ea01c3be43f9793ffc6}{\index{Final\-Boss@{Final\-Boss}!p\-\_\-s\-\_\-\-Position@{p\-\_\-s\-\_\-\-Position}}
+\index{p\-\_\-s\-\_\-\-Position@{p\-\_\-s\-\_\-\-Position}!FinalBoss@{Final\-Boss}}
+\subsubsection[{p\-\_\-s\-\_\-\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Final\-Boss\-::p\-\_\-s\-\_\-\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a3358e45bfff33ea01c3be43f9793ffc6}
+\hypertarget{class_final_boss_aaf6995cae7ba5231e13b7ff9aa9f4d33}{\index{Final\-Boss@{Final\-Boss}!p\-\_\-s\-\_\-\-Start\-Position@{p\-\_\-s\-\_\-\-Start\-Position}}
+\index{p\-\_\-s\-\_\-\-Start\-Position@{p\-\_\-s\-\_\-\-Start\-Position}!FinalBoss@{Final\-Boss}}
+\subsubsection[{p\-\_\-s\-\_\-\-Start\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Final\-Boss\-::p\-\_\-s\-\_\-\-Start\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_aaf6995cae7ba5231e13b7ff9aa9f4d33}
+\hypertarget{class_final_boss_a0f297f611b1ffb5ac07c9bc60361900a}{\index{Final\-Boss@{Final\-Boss}!p\-\_\-s\-\_\-\-Velocity@{p\-\_\-s\-\_\-\-Velocity}}
+\index{p\-\_\-s\-\_\-\-Velocity@{p\-\_\-s\-\_\-\-Velocity}!FinalBoss@{Final\-Boss}}
+\subsubsection[{p\-\_\-s\-\_\-\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Final\-Boss\-::p\-\_\-s\-\_\-\-Velocity\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_a0f297f611b1ffb5ac07c9bc60361900a}
+\hypertarget{class_final_boss_ae03958c8fd33c1e01be3391e4dd7dc1b}{\index{Final\-Boss@{Final\-Boss}!raged@{raged}}
+\index{raged@{raged}!FinalBoss@{Final\-Boss}}
+\subsubsection[{raged}]{\setlength{\rightskip}{0pt plus 5cm}bool Final\-Boss\-::raged\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_ae03958c8fd33c1e01be3391e4dd7dc1b}
+\hypertarget{class_final_boss_af35eab748c9638f361848b2ab2e05f4e}{\index{Final\-Boss@{Final\-Boss}!transformed@{transformed}}
+\index{transformed@{transformed}!FinalBoss@{Final\-Boss}}
+\subsubsection[{transformed}]{\setlength{\rightskip}{0pt plus 5cm}bool Final\-Boss\-::transformed\hspace{0.3cm}{\ttfamily [private]}}}\label{class_final_boss_af35eab748c9638f361848b2ab2e05f4e}
 
 
 Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}
