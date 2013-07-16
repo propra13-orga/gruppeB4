@@ -96,7 +96,7 @@ void S_ResourceManager::ApplyPicture(int positionX, int positionY, SDL_Surface* 
 
 void S_ResourceManager::LoadContent() {
 	cout << "Loading pictures..." << endl;
-	LoadImage(key_background, "background.jpg");
+	LoadImage(key_background, "background.png");
 
 	cout << "Loading music..." << endl;
 	//LoadMusic();

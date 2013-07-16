@@ -18,3 +18,33 @@ void MultiplayerHighClass::S_Eventhandler::screenResize(SDL_Event& Event)
 		MultiplayerHighClass::S_ResourceManager::get_Instance()->SetScreen(Event.resize.w, Event.resize.h);
 	}
 }
+
+void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event)
+{
+	//Behandle die Events des Spielers
+
+	if(Event.type == SDL_KEYDOWN)
+	{
+		switch(Event.key.keysym.sym)
+		{
+		case(SDLK_UP): break;
+		case(SDLK_DOWN):break;
+		case(SDLK_LEFT):break;
+		case(SDLK_RIGHT):break;
+		}
+	}
+
+	if(Event.type == SDL_KEYUP)
+	{
+		switch(Event.key.keysym.sym)
+		{
+		case(SDLK_UP):break;
+		case(SDLK_DOWN):break;
+		case(SDLK_LEFT):break;
+		case(SDLK_RIGHT):break;
+		}
+	}
+
+
+
+}

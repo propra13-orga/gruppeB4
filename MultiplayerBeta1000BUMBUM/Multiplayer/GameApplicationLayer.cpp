@@ -23,7 +23,7 @@ void MultiplayerHighClass::GameApplicationLayer::main_Loop()
 
 void MultiplayerHighClass::GameApplicationLayer::initialize_GameResources()
 {
-	S_ResourceManager::get_Instance()->SetScreen( 300,300 );
+	S_ResourceManager::get_Instance()->SetScreen( 900,600 );
 	S_ResourceManager::get_Instance()->SetCaption( "Multiplayer" );
 	S_ResourceManager::get_Instance()->SetTextColor( 255,255,255 );
 	S_ResourceManager::get_Instance()->LoadContent();

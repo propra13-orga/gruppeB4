@@ -20,7 +20,7 @@ namespace MultiplayerHighClass
 		bool is_GameToQuit(SDL_Event & TempEvent);
 		void screenResize(SDL_Event & Event);
 		void initialize(){}
-		void HandleInputEvents(SDL_Event & Event){}
+		void HandleInputEvents(SDL_Event & Event);
 
 	};
 

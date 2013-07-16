@@ -11,5 +11,7 @@ int main(int arg, char ** argv)
 
 	p_GameInstance->close_GameResources();
 
+	delete p_GameInstance;
+
 	return 0;
 }
