@@ -70,4 +70,79 @@ void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event,M
 	
 
 	}
+
+//____________________________________Lobby__________
+
+	if(Event.type == SDL_MOUSEBUTTONDOWN)
+	{
+	
+
+	if(Event.button.button == SDL_BUTTON_LEFT)
+	{
+	
+		// Der Spieler(ich) wird bei klicken auf bereit auf ready gesetzt
+
+		if(Event.button.x >= 110 && Event.button.x <= 230 && Event.button.y >=20 && Event.button.y <=80) 
+		{
+			
+			MultiplayerHighClass::S_Lobby::get_Instance()->set_b_player1_rdy(true);
+			
+		}
+
+
+
+
+	}
+
+	
 }
+
+
+
+
+if(Event.type == SDL_MOUSEBUTTONDOWN)			// Abfrage für Maus-Koords um  zu sehen was geklickt wurde(welcher Button)
+	{
+	
+
+	if(Event.button.button == SDL_BUTTON_LEFT)
+	{
+	
+			if(Event.button.x >= 400 && Event.button.x <= 800 && Event.button.y >=50 && Event.button.y <=150) 
+		{
+
+		
+			if(MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player1_rdy() == true && MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player2_rdy() == true)
+		{
+			cout << "Spiel wird gestartet" << endl;
+			//b_gamestart = true;
+		}
+
+		else if(MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player1_rdy() == true && MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player2_rdy() == false)
+		{
+		cout << "Spieler2 nicht bereit!" << endl;
+		
+		
+		MultiplayerHighClass::S_Lobby::get_Instance()->set_b_player2_rdy_overlay(true);
+	//	OverlayTimer->start();
+		MultiplayerHighClass::S_Lobby::get_Instance()->start_OverlayTimer();
+	
+		}
+
+		else if(MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player1_rdy() == false && MultiplayerHighClass::S_Lobby::get_Instance()->get_b_player2_rdy() == true)
+		{
+		cout << "Du bist nicht bereit!!" << endl;
+		
+		
+		MultiplayerHighClass::S_Lobby::get_Instance()->set_b_player1_rdy_overlay(true);
+		//OverlayTimer->start();
+		MultiplayerHighClass::S_Lobby::get_Instance()->start_OverlayTimer();
+	
+		}
+
+	}
+	}
+	
+}
+
+
+	}

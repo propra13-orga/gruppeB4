@@ -29,7 +29,7 @@ namespace MultiplayerHighClass
 		{
 			key_background,key_Lobby,key_CBlock,key_electric_player_down,key_electric_player_up,key_electric_player_right,
 			key_electric_player_left,key_fire_player_up,key_fire_player_down,key_fire_player_right,key_fire_player_left,
-			key_water_player_down,key_water_player_up,key_water_player_right,key_water_player_left
+			key_water_player_down,key_water_player_up,key_water_player_right,key_water_player_left,key_not_rdy,key_rdy,key_player1_not_rdy,key_player2_not_rdy
 		};
 
 		enum e_Audio 

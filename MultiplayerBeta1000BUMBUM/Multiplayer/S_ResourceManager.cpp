@@ -111,6 +111,11 @@ void S_ResourceManager::LoadContent() {
 	LoadImage(key_water_player_up,"wasser-o.png");
 	LoadImage(key_water_player_right,"wasser-r.png");
 	LoadImage(key_water_player_left,"wasser-l.png");
+	LoadImage(key_not_rdy,"notready.png");
+	LoadImage(key_rdy,"ready.png");
+	LoadImage(key_player1_not_rdy,"player1_not_rdy.png");
+	LoadImage(key_player2_not_rdy,"player2_not_rdy.png");
+
 
 	cout << "Loading music..." << endl;
 	//LoadMusic();
