@@ -1,0 +1,5 @@
+<map id="MultiplayerLowClass::Player" name="MultiplayerLowClass::Player">
+<area shape="rect" id="node2" href="$class_multiplayer_low_class_1_1_a___animation.html" title="{MultiplayerLowClass\l::A_Animation\n|# animationframe\l|+ A_Animation()\l+ ~A_Animation()\l+ render()\l}" alt="" coords="8,366,149,503"/>
+<area shape="rect" id="node4" href="$class_multiplayer_high_class_1_1_timer.html" title="{MultiplayerHighClass\l::Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="5,5,152,299"/>
+<area shape="rect" id="node6" href="$struct_multiplayer_structs_1_1_vector2_d.html" title="{MultiplayerStructs\l::Vector2D\n|+ X\l+ Y\l|}" alt="" coords="173,375,299,495"/>
+</map>

@@ -1,0 +1,32 @@
+<map id="Vector2D.h" name="Vector2D.h">
+<area shape="rect" id="node3" href="$_player_8h.html" title="Player.h" alt="" coords="291,83,360,112"/>
+<area shape="rect" id="node19" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="481,160,561,189"/>
+<area shape="rect" id="node27" href="$_collidable_01_object_8h.html" title="Collidable Object.h" alt="" coords="560,83,691,112"/>
+<area shape="rect" id="node54" href="$_gamer_8h.html" title="Gamer.h" alt="" coords="1005,83,1077,112"/>
+<area shape="rect" id="node5" href="$_armor_manager_8h.html" title="ArmorManager.h" alt="" coords="19,160,136,189"/>
+<area shape="rect" id="node9" href="$_item_manager_8h.html" title="ItemManager.h" alt="" coords="167,160,276,189"/>
+<area shape="rect" id="node14" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="307,237,437,267"/>
+<area shape="rect" id="node24" href="$_player_8cpp.html" title="Player.cpp" alt="" coords="375,160,457,189"/>
+<area shape="rect" id="node7" href="$_armor_manager_8cpp.html" title="ArmorManager.cpp" alt="" coords="5,237,136,267"/>
+<area shape="rect" id="node12" href="$_item_manager_8cpp.html" title="ItemManager.cpp" alt="" coords="160,237,283,267"/>
+<area shape="rect" id="node17" href="$_weapon_manager_8cpp.html" title="WeaponManager.cpp" alt="" coords="300,315,444,344"/>
+<area shape="rect" id="node22" href="$_weapon_8cpp.html" title="Weapon.cpp" alt="" coords="461,237,555,267"/>
+<area shape="rect" id="node29" href="$_c___block_8h.html" title="C_Block.h" alt="" coords="585,160,668,189"/>
+<area shape="rect" id="node31" href="$_c___block_8cpp.html" title="C_Block.cpp" alt="" coords="579,237,675,267"/>
+<area shape="rect" id="node33" href="$_collidable_object_manager_8h.html" title="CollidableObjectManager.h" alt="" coords="749,237,928,267"/>
+<area shape="rect" id="node35" href="$_collidable_object_manager_8cpp.html" title="CollidableObjectManager.cpp" alt="" coords="736,315,928,344"/>
+<area shape="rect" id="node37" href="$_s___collision_manager_8h.html" title="S_CollisionManager.h" alt="" coords="563,315,712,344"/>
+<area shape="rect" id="node43" href="$_update_8h.html" title="Update.h" alt="" coords="1104,315,1179,344"/>
+<area shape="rect" id="node45" href="$_game_application_layer_8h.html" title="GameApplicationLayer.h" alt="" coords="985,392,1148,421"/>
+<area shape="rect" id="node39" href="$_collision_manager_8cpp.html" title="CollisionManager.cpp" alt="" coords="564,392,711,421"/>
+<area shape="rect" id="node41" href="$_gamer_8cpp.html" title="Gamer.cpp" alt="" coords="805,392,891,421"/>
+<area shape="rect" id="node51" href="$_update_8cpp.html" title="Update.cpp" alt="" coords="1172,392,1260,421"/>
+<area shape="rect" id="node47" href="$_game_application_layer_8cpp.html" title="GameApplicationLayer.cpp" alt="" coords="901,469,1080,499"/>
+<area shape="rect" id="node49" href="$_main_8cpp.html" title="Main.cpp" alt="" coords="1104,469,1179,499"/>
+<area shape="rect" id="node57" href="$_damage_handler_8h.html" title="DamageHandler.h" alt="" coords="1137,160,1263,189"/>
+<area shape="rect" id="node61" href="$_s___event_handler_8h.html" title="S_EventHandler.h" alt="" coords="1295,237,1423,267"/>
+<area shape="rect" id="node59" href="$_damage_handler_8cpp.html" title="DamageHandler.cpp" alt="" coords="1129,237,1271,267"/>
+<area shape="rect" id="node65" href="$_lobby_8h.html" title="Lobby.h" alt="" coords="1309,315,1376,344"/>
+<area shape="rect" id="node69" href="$_s___eventhandler_8cpp.html" title="S_Eventhandler.cpp" alt="" coords="1391,392,1529,421"/>
+<area shape="rect" id="node67" href="$_lobby_8cpp.html" title="Lobby.cpp" alt="" coords="1284,392,1367,421"/>
+</map>

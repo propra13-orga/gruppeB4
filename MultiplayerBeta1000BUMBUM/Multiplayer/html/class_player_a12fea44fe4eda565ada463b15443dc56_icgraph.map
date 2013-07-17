@@ -1,0 +1,5 @@
+<map id="Player::set_Velocity" name="Player::set_Velocity">
+<area shape="rect" id="node3" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="389,24,531,54"/>
+<area shape="rect" id="node5" href="$class_player.html#a82c3476f3e65a4e2ac6bcd040771bdd4" title="Player::update" alt="" coords="213,23,320,52"/>
+<area shape="rect" id="node7" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="193,76,340,106"/>
+</map>

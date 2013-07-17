@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>My Project: Lobby.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="namespaces.html"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>AufzÃ¤hlungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>AufzÃ¤hlungswerte</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Lobby.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_lobby_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s___resource_manager_8h.html">S_ResourceManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_s___event_handler_8h.html">S_EventHandler.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span>MultiplayerHighClass</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html">    8</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html">S_Lobby</a></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a05d8a2bc13905b06850b857fc33fc34e">   11</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a05d8a2bc13905b06850b857fc33fc34e">b_isLobbyRequested</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a948ee277bf8db187c6192b69fb8013d8">   12</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a948ee277bf8db187c6192b69fb8013d8">b_quitLobby</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aaa31fb0728d20ee5bf5033fb182f4a6a">   14</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aaa31fb0728d20ee5bf5033fb182f4a6a">b_player2</a>;         <span class="comment">//Bools zur Netzwerk-Simulation</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a1352175c36b4dda4d1781d1fe8db6846">   15</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a1352175c36b4dda4d1781d1fe8db6846">b_player1_rdy</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8abc659faae5b3c046d3052597c9e719">   16</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8abc659faae5b3c046d3052597c9e719">b_player2_rdy</a>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8bdfe75a0fa2fb15bd2d7607aa573eb7">   17</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8bdfe75a0fa2fb15bd2d7607aa573eb7">b_player1_rdy_overlay</a>; <span class="comment">// Overlay Bool für die SDL</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a43f0460bc6ae9d33fec42bf951f096ff">   18</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a43f0460bc6ae9d33fec42bf951f096ff">b_player2_rdy_overlay</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8737875ba2537d163d02431f222c22bc">   19</a></span>&#160;    <a class="code" href="class_multiplayer_high_class_1_1_timer.html">Timer</a> * <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8737875ba2537d163d02431f222c22bc">OverlayTimer</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aba97021c9e0de3c5fb6768f3d0ac4204">   21</a></span>&#160;    <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aba97021c9e0de3c5fb6768f3d0ac4204">S_Lobby</a>():<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a05d8a2bc13905b06850b857fc33fc34e">b_isLobbyRequested</a>(1),<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a948ee277bf8db187c6192b69fb8013d8">b_quitLobby</a>(0){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a1352175c36b4dda4d1781d1fe8db6846">b_player1_rdy</a> = <span class="keyword">false</span>;<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8abc659faae5b3c046d3052597c9e719">b_player2_rdy</a> = <span class="keyword">true</span>;<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aaa31fb0728d20ee5bf5033fb182f4a6a">b_player2</a> = <span class="keyword">true</span>;<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8737875ba2537d163d02431f222c22bc">OverlayTimer</a> = <span class="keyword">new</span> <a class="code" href="class_multiplayer_high_class_1_1_timer.html">Timer</a>;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aee8be3010917d9bdbcbc74d74e69f504">   22</a></span>&#160;        <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aee8be3010917d9bdbcbc74d74e69f504">~S_Lobby</a>(){}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a221f660590f00e9550643d638515fc88">   26</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a221f660590f00e9550643d638515fc88">get_isLobbyRequested</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a05d8a2bc13905b06850b857fc33fc34e">b_isLobbyRequested</a>;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ad916611a46b38a798b125df01de431d3">   27</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ad916611a46b38a798b125df01de431d3">set_isLobbyRequested</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a05d8a2bc13905b06850b857fc33fc34e">b_isLobbyRequested</a> = b;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aab726f0e42d941f67beff4c0c1fa0463">   29</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aab726f0e42d941f67beff4c0c1fa0463">get_quitLobby</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a948ee277bf8db187c6192b69fb8013d8">b_quitLobby</a>;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a9484dc53699564fb63d4d766e9b45c5d">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a9484dc53699564fb63d4d766e9b45c5d">set_quitLobby</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a948ee277bf8db187c6192b69fb8013d8">b_quitLobby</a> = b;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a3c43418b797241365e32773ad2482600">Lobby_Loop</a>(SDL_Event &amp; Event);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a369cf8271e4608622c9b3b7de3adb007">render</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a82400f888c4c46644165eab2dd914eb7">   33</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a82400f888c4c46644165eab2dd914eb7">start_OverlayTimer</a>(){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8737875ba2537d163d02431f222c22bc">OverlayTimer</a>-&gt;<a class="code" href="class_multiplayer_high_class_1_1_timer.html#a3a8b5272198d029779dc9302a54305a8">start</a>();}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">//bool Funktionen für ausserhalb der Klasse(Eventmanager)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ac8f62eaad46d7447307668fb741d6e53">   36</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ac8f62eaad46d7447307668fb741d6e53">get_b_player2</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aaa31fb0728d20ee5bf5033fb182f4a6a">b_player2</a>;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ac73e8cc2cee9ad5528d977ab31dab30b">   37</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ac73e8cc2cee9ad5528d977ab31dab30b">set_b_player2</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#aaa31fb0728d20ee5bf5033fb182f4a6a">b_player2</a> = b;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a6b9a2c21bd5d7614923928f04c09e49b">   39</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a6b9a2c21bd5d7614923928f04c09e49b">get_b_player1_rdy</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a1352175c36b4dda4d1781d1fe8db6846">b_player1_rdy</a>;}</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a0cea90555cbdfafc6f8f4589f234f691">   40</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a0cea90555cbdfafc6f8f4589f234f691">set_b_player1_rdy</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a1352175c36b4dda4d1781d1fe8db6846">b_player1_rdy</a> = b;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ab9791f9f2c42740a0fde980a9ea11f0e">   42</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#ab9791f9f2c42740a0fde980a9ea11f0e">get_b_player2_rdy</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8abc659faae5b3c046d3052597c9e719">b_player2_rdy</a>;}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a9b79538df2e23c9ecea791aa1306478b">   43</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a9b79538df2e23c9ecea791aa1306478b">set_b_player2_rdy</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8abc659faae5b3c046d3052597c9e719">b_player2_rdy</a> = b;}</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a96b0b86771e70e930b86fd2a0934d77f">   45</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a96b0b86771e70e930b86fd2a0934d77f">get_b_player1_rdy_overlay</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8bdfe75a0fa2fb15bd2d7607aa573eb7">b_player1_rdy_overlay</a>;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8378d848332c5cc7c1bc44bc796aabcf">   46</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8378d848332c5cc7c1bc44bc796aabcf">set_b_player1_rdy_overlay</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a8bdfe75a0fa2fb15bd2d7607aa573eb7">b_player1_rdy_overlay</a> = b;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#afddb12ac770bef7538f69a048869ede0">   48</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#afddb12ac770bef7538f69a048869ede0">get_b_player2_rdy_overlay</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a43f0460bc6ae9d33fec42bf951f096ff">b_player2_rdy_overlay</a>;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#af520e8c8022c2bb231cf87b3fe480f84">   49</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#af520e8c8022c2bb231cf87b3fe480f84">set_b_player2_rdy_overlay</a>(<span class="keywordtype">bool</span> b){<a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a43f0460bc6ae9d33fec42bf951f096ff">b_player2_rdy_overlay</a> = b;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        </div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a09b685f7f975f38d82b8948f06e1ceeb">   54</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html">S_Lobby</a> * <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html#a09b685f7f975f38d82b8948f06e1ceeb">get_Instance</a>(){<span class="keyword">static</span> <a class="code" href="class_multiplayer_high_class_1_1_s___lobby.html">S_Lobby</a> Instance;<span class="keywordflow">return</span> &amp;Instance;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    };</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jul 17 2013 23:25:26 fÃ¼r My Project von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

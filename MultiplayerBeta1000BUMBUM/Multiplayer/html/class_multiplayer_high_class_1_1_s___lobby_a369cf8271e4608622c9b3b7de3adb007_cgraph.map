@@ -1,0 +1,4 @@
+<map id="MultiplayerHighClass::S_Lobby::render" name="MultiplayerHighClass::S_Lobby::render">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a3f5b8f71420630e2105fc49a3e58eb16" title="MultiplayerHighClass\l::S_ResourceManager::\lget_Instance" alt="" coords="200,5,360,69"/>
+<area shape="rect" id="node5" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a23770f45c07b35855beb29d5aebe6bba" title="MultiplayerHighClass\l::S_ResourceManager::\lApplyPicture" alt="" coords="200,93,360,157"/>
+</map>

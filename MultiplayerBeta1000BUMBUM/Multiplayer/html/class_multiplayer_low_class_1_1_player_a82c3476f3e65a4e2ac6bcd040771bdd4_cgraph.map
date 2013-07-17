@@ -1,0 +1,6 @@
+<map id="MultiplayerLowClass::Player::update" name="MultiplayerLowClass::Player::update">
+<area shape="rect" id="node3" href="$class_multiplayer_low_class_1_1_player.html#ad83608fd440e7214dbbc979b1a8541b8" title="MultiplayerLowClass\l::Player::set_Position" alt="" coords="197,5,344,51"/>
+<area shape="rect" id="node5" href="$class_multiplayer_low_class_1_1_player.html#a5c007e3787fc72e08211037e61a3642d" title="MultiplayerLowClass\l::Player::get_Position" alt="" coords="197,74,344,121"/>
+<area shape="rect" id="node7" href="$class_multiplayer_low_class_1_1_player.html#a688b387212963dbda84c90bbd5dbafcd" title="MultiplayerLowClass\l::Player::get_Velocity" alt="" coords="197,143,344,190"/>
+<area shape="rect" id="node9" href="$class_multiplayer_high_class_1_1_s___collision_manager.html#a462ec3d59e0ab1c48b10cd101c67841c" title="MultiplayerHighClass\l::S_CollisionManager\l::get_Instance" alt="" coords="197,213,344,277"/>
+</map>

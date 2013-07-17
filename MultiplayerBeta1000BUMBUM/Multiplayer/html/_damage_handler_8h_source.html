@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.3.1"/>
+<title>My Project: DamageHandler.h Quellcode</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">My Project
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Erzeugt von Doxygen 1.8.3.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Hauptseite</span></a></li>
+      <li><a href="namespaces.html"><span>Namensbereiche</span></a></li>
+      <li><a href="annotated.html"><span>Klassen</span></a></li>
+      <li class="current"><a href="files.html"><span>Dateien</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Suchen" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Auflistung&#160;der&#160;Dateien</span></a></li>
+      <li><a href="globals.html"><span>Datei-Elemente</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Alle</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klassen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Namensbereiche</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Dateien</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Funktionen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Variablen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Aufzählungen</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Aufzählungswerte</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DamageHandler.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_damage_handler_8h.html">gehe zur Dokumentation dieser Datei</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &quot;<a class="code" href="_timer_8h.html">Timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_gamer_8h.html">Gamer.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">namespace </span>MultiplayerLowClass</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html">    7</a></span>&#160;    <span class="keyword">class </span><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html">DamageHandler</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#ade1fa25ee19e31a1cf39f1899edb69fa">   10</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#ade1fa25ee19e31a1cf39f1899edb69fa">healthPlayer1</a>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a0d1bb5e5ac1842b0fe567220b7a00abd">   11</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a0d1bb5e5ac1842b0fe567220b7a00abd">healthPlayer2</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#acd9af319e252aae254b9a72e82fb84fc">   12</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#acd9af319e252aae254b9a72e82fb84fc">PlayerOneIsAttacking</a>;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#aeb284e964145ed3bf2a8de35336ac442">   13</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#aeb284e964145ed3bf2a8de35336ac442">PlayerTwoIsAttacking</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a8784a5ca5c033938cc636b2ed5174721">   14</a></span>&#160;        <a class="code" href="class_multiplayer_high_class_1_1_timer.html">MultiplayerHighClass::Timer</a> * <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a8784a5ca5c033938cc636b2ed5174721">AttackTimerPlayer1</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a2cc8cbb0386aaed350b4f32c2a7ef822">   15</a></span>&#160;        <a class="code" href="class_multiplayer_high_class_1_1_timer.html">MultiplayerHighClass::Timer</a> * <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a2cc8cbb0386aaed350b4f32c2a7ef822">AttackTimerPlayer2</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#acc9c56045ff7e0b3946e9f73103070f2">   16</a></span>&#160;        <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#acc9c56045ff7e0b3946e9f73103070f2">DamageHandler</a>():<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#ade1fa25ee19e31a1cf39f1899edb69fa">healthPlayer1</a>(400),<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a0d1bb5e5ac1842b0fe567220b7a00abd">healthPlayer2</a>(400),<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#acd9af319e252aae254b9a72e82fb84fc">PlayerOneIsAttacking</a>(0),<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#aeb284e964145ed3bf2a8de35336ac442">PlayerTwoIsAttacking</a>(0){<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a8784a5ca5c033938cc636b2ed5174721">AttackTimerPlayer1</a> = <span class="keyword">new</span> <a class="code" href="class_multiplayer_high_class_1_1_timer.html">MultiplayerHighClass::Timer</a>();<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a2cc8cbb0386aaed350b4f32c2a7ef822">AttackTimerPlayer2</a> = <span class="keyword">new</span> <a class="code" href="class_multiplayer_high_class_1_1_timer.html">MultiplayerHighClass::Timer</a>();}</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a48eb1fb0c618b1c429397e199e825970">   17</a></span>&#160;        <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a48eb1fb0c618b1c429397e199e825970">~DamageHandler</a>(){<span class="keyword">delete</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a8784a5ca5c033938cc636b2ed5174721">AttackTimerPlayer1</a>;<span class="keyword">delete</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a2cc8cbb0386aaed350b4f32c2a7ef822">AttackTimerPlayer2</a>;}</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a4f9cc819be008c84c0ce70f9685fb938">   20</a></span>&#160;        <span class="keyword">static</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html">DamageHandler</a> &amp; <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a4f9cc819be008c84c0ce70f9685fb938">get_Instance</a>(){<span class="keyword">static</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html">DamageHandler</a> Instance;<span class="keywordflow">return</span> Instance;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#aa7eff0395dc3b3f6310dfbbc9b4254b9">   21</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#aa7eff0395dc3b3f6310dfbbc9b4254b9">get_PlayerHealth1</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#ade1fa25ee19e31a1cf39f1899edb69fa">healthPlayer1</a>;}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a574034ef0cb6c2fcfab6fd6347992789">   22</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a574034ef0cb6c2fcfab6fd6347992789">set_PlayerHealth1</a>(<span class="keywordtype">int</span> a){<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#ade1fa25ee19e31a1cf39f1899edb69fa">healthPlayer1</a> = a;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a498633a5e70379b87074900e755df9d7">   23</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a498633a5e70379b87074900e755df9d7">get_PlayerHealth</a>(){<span class="keywordflow">return</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a0d1bb5e5ac1842b0fe567220b7a00abd">healthPlayer2</a>;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a33f60707af1d410fc5033e821ceea139">   24</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a33f60707af1d410fc5033e821ceea139">set_PlayerHealth</a>(<span class="keywordtype">int</span> a){<a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a0d1bb5e5ac1842b0fe567220b7a00abd">healthPlayer2</a> = a;}</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#af619ad2d4f74c285123ba480690bf748">PlayerOneAttack</a>(<a class="code" href="class_multiplayer_low_class_1_1_player.html">MultiplayerLowClass::Player</a> * p_TempPlayer,<a class="code" href="class_multiplayer_low_class_1_1_player.html">MultiplayerLowClass::Player</a> * p_TempPlayer2);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a906014c6f846dcf34e18afb5875c335d">PlayerTwoAttack</a>(<a class="code" href="class_multiplayer_low_class_1_1_player.html">MultiplayerLowClass::Player</a> * p_TempPlayer,<a class="code" href="class_multiplayer_low_class_1_1_player.html">MultiplayerLowClass::Player</a> * p_TempPlayer2);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a5e97287f17d69a6d1301ae707ca555fc">render</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_multiplayer_low_class_1_1_damage_handler.html#a6d10cadd2e8e475c872a89757b446f21">update</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Erzeugt am Mit Jul 17 2013 23:25:26 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.3.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="Player::get_Mana" name="Player::get_Mana">
+<area shape="rect" id="node3" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="179,5,301,35"/>
+<area shape="rect" id="node5" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="349,5,491,35"/>
+</map>

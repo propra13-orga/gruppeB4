@@ -1,0 +1,8 @@
+<map id="MultiplayerLowClass::Update::render_AllFilesRenderFunctions" name="MultiplayerLowClass::Update::render_AllFilesRenderFunctions">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a3f5b8f71420630e2105fc49a3e58eb16" title="MultiplayerHighClass\l::S_ResourceManager::\lget_Instance" alt="" coords="488,5,648,69"/>
+<area shape="rect" id="node5" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a23770f45c07b35855beb29d5aebe6bba" title="MultiplayerHighClass\l::S_ResourceManager::\lApplyPicture" alt="" coords="488,148,648,212"/>
+<area shape="rect" id="node7" href="$class_s___collisibal_object_manager.html#a70d0b1b2690c555c01989700c4484cdd" title="S_CollisibalObjectManager\l::get_CManager" alt="" coords="261,113,440,159"/>
+<area shape="rect" id="node9" href="$class_s___collisibal_object_manager.html#ad6460c9bcbe34a69f1d141ed64907c12" title="S_CollisibalObjectManager\l::render" alt="" coords="261,182,440,229"/>
+<area shape="rect" id="node11" href="$class_multiplayer_low_class_1_1_player.html#afe3ff7815f9366b4c4fffa2cf6556ad5" title="MultiplayerLowClass\l::Player::render" alt="" coords="280,43,421,90"/>
+<area shape="rect" id="node15" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a46c7430e982e95960272a599f3caea69" title="MultiplayerHighClass\l::S_ResourceManager::\lUpadteScreen" alt="" coords="271,303,431,367"/>
+</map>

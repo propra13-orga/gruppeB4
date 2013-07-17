@@ -1,0 +1,6 @@
+<map id="MultiplayerHighClass::S_ResourceManager::SetScreen" name="MultiplayerHighClass::S_ResourceManager::SetScreen">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_game_application_layer.html#a7647585ff922cb11234aa4e5b241b1ca" title="MultiplayerHighClass\l::GameApplicationLayer\l::initialize_GameResources" alt="" coords="473,5,655,69"/>
+<area shape="rect" id="node7" href="$class_multiplayer_high_class_1_1_s___eventhandler.html#afbf8ac71df4d25e46e5d9a55e15ab73c" title="MultiplayerHighClass\l::S_Eventhandler::screenResize" alt="" coords="213,89,424,135"/>
+<area shape="rect" id="node5" href="$_main_8cpp.html#afd3e3975efd153dae6c452371eb0769c" title="main" alt="" coords="704,67,755,96"/>
+<area shape="rect" id="node9" href="$class_multiplayer_high_class_1_1_game_application_layer.html#a1eba8c1f5d8334f1cf463297881cfe33" title="MultiplayerHighClass\l::GameApplicationLayer\l::main_Loop" alt="" coords="484,93,644,157"/>
+</map>

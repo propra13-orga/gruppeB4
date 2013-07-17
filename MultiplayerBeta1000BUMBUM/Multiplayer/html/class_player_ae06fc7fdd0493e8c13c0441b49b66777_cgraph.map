@@ -1,0 +1,6 @@
+<map id="Player::loadMana" name="Player::loadMana">
+<area shape="rect" id="node3" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="177,5,383,35"/>
+<area shape="rect" id="node5" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="203,59,357,88"/>
+<area shape="rect" id="node7" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="219,112,341,141"/>
+<area shape="rect" id="node9" href="$class_player.html#a352a8894a05f649fb236ae99cd9da3e9" title="Player::get_Mana" alt="" coords="219,165,341,195"/>
+</map>
