@@ -4,8 +4,7 @@ void MultiplayerHighClass::S_Lobby::Lobby_Loop(SDL_Event & Event)
 {
 	while(this->b_quitLobby != true)
 	{
-		S_ResourceManager::get_Instance()->ApplyPicture(0,0,S_ResourceManager::get_Instance()->GetPicture(S_ResourceManager::e_Image::key_Lobby),S_ResourceManager::get_Instance()->GetScreen());
-
+		this->render();
 		if(SDL_PollEvent(&Event))
 		{
 			if(Event.type == SDL_QUIT)
@@ -18,7 +17,14 @@ void MultiplayerHighClass::S_Lobby::Lobby_Loop(SDL_Event & Event)
 
 		S_ResourceManager::get_Instance()->UpadteScreen();
 
-	}
+	};
 
 
-};
+}
+
+
+void MultiplayerHighClass::S_Lobby::render()
+{
+S_ResourceManager::get_Instance()->ApplyPicture(0,0,S_ResourceManager::get_Instance()->GetPicture(S_ResourceManager::e_Image::key_Lobby),S_ResourceManager::get_Instance()->GetScreen());
+
+}
