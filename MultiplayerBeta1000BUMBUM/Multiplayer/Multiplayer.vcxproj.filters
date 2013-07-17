@@ -54,6 +54,9 @@
     <ClInclude Include="S_CollisionManager.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="DamageHandler.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameApplicationLayer.cpp">
@@ -87,6 +90,9 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="CollisionManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="DamageHandler.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

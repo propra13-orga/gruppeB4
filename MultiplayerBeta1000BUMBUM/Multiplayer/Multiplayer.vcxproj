@@ -83,6 +83,7 @@
     <ClInclude Include="Collidable Object.h" />
     <ClInclude Include="CollidableObjectManager.h" />
     <ClInclude Include="C_Block.h" />
+    <ClInclude Include="DamageHandler.h" />
     <ClInclude Include="GameApplicationLayer.h" />
     <ClInclude Include="Gamer.h" />
     <ClInclude Include="Lobby.h" />
@@ -97,6 +98,7 @@
     <ClCompile Include="CollidableObjectManager.cpp" />
     <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="C_Block.cpp" />
+    <ClCompile Include="DamageHandler.cpp" />
     <ClCompile Include="GameApplicationLayer.cpp" />
     <ClCompile Include="Gamer.cpp" />
     <ClCompile Include="Lobby.cpp" />

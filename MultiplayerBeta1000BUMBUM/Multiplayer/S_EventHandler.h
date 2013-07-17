@@ -2,6 +2,7 @@
 
 #include "S_ResourceManager.h"
 #include "Gamer.h"
+#include "DamageHandler.h"
 
 class Lobby;
 

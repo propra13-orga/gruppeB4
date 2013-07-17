@@ -34,7 +34,7 @@ void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event,M
 			case(SDLK_DOWN):tempPlayer->set_Velocity(0,2);tempPlayer->directionUp = false;tempPlayer->directionDown = true;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
 			case(SDLK_LEFT):tempPlayer->set_Velocity(-2,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = true;break;
 			case(SDLK_RIGHT):tempPlayer->set_Velocity(2,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = true;tempPlayer->directionLeft = false;break;
-			
+			case(SDLK_RCTRL):MultiplayerLowClass::DamageHandler::get_Instance().PlayerOneAttack(tempPlayer,tempPlayer2);break;
 			case(SDLK_w): tempPlayer2->set_Velocity(0,-2);tempPlayer2->directionUp = true;tempPlayer2->directionDown = false;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = false;break;
 			case(SDLK_s):tempPlayer2->set_Velocity(0,2);tempPlayer2->directionUp = false;tempPlayer2->directionDown = true;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = false;break;
 			case(SDLK_a):tempPlayer2->set_Velocity(-2,0);tempPlayer2->directionUp = false;tempPlayer2->directionDown = false;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = true;break;
@@ -50,6 +50,7 @@ void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event,M
 			case(SDLK_DOWN):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
 			case(SDLK_LEFT):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
 			case(SDLK_RIGHT):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_LCTRL):MultiplayerLowClass::DamageHandler::get_Instance().PlayerTwoAttack(tempPlayer,tempPlayer2);
 			case(SDLK_w): tempPlayer2->set_Velocity(0,0);tempPlayer2->directionUp = false;tempPlayer2->directionDown = false;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = false;break;
 			case(SDLK_s):tempPlayer2->set_Velocity(0,0);tempPlayer2->directionUp = false;tempPlayer2->directionDown = false;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = false;break;
 			case(SDLK_a):tempPlayer2->set_Velocity(0,0);tempPlayer2->directionUp = false;tempPlayer2->directionDown = false;tempPlayer2->directionRight = false;tempPlayer2->directionLeft = false;break;
