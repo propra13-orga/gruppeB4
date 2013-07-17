@@ -66,5 +66,8 @@ void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event,M
 			case(SDLK_ESCAPE):S_Lobby::get_Instance()->set_isLobbyRequested(false);this->CURRENTMODE = GAME;S_Lobby::get_Instance()->set_quitLobby(true);break;
 			}
 		}
+	
+	
+
 	}
 }

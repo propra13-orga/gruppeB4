@@ -19,6 +19,8 @@ namespace MultiplayerHighClass
 		bool get_quitLobby(){return b_quitLobby;}
 		void set_quitLobby(bool b){b_quitLobby = b;}
 		void Lobby_Loop(SDL_Event & Event);
+		void render();
+		
 		static S_Lobby * get_Instance(){static S_Lobby Instance;return &Instance;}
 	};
 
