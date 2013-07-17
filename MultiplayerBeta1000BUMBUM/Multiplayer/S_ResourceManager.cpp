@@ -11,7 +11,7 @@ void S_ResourceManager::LoadImage(e_Image key, string filename) {
 			throw "<RessourceManager::LoadImage>: Cannot find image. Maybe a wrong filename?";
 		}
 
-		optimizedImage = SDL_DisplayFormat(loadedImage);
+		optimizedImage = SDL_DisplayFormatAlpha(loadedImage);
 		if(optimizedImage == NULL) {
 			throw "<RessourceManager::LoadImage>: cannot optimize image";
 		}
@@ -97,6 +97,9 @@ void S_ResourceManager::ApplyPicture(int positionX, int positionY, SDL_Surface* 
 void S_ResourceManager::LoadContent() {
 	cout << "Loading pictures..." << endl;
 	LoadImage(key_background, "background.png");
+	LoadImage(key_Lobby,"Lobby.png");
+	LoadImage(key_CBlock,"100x100Block.png");
+	LoadImage(key_electric_player_down,"gummiu.png");
 
 	cout << "Loading music..." << endl;
 	//LoadMusic();
@@ -106,6 +109,36 @@ void S_ResourceManager::LoadContent() {
 
 	cout << "Loading fonts..." << endl;
 	//LoadFont();
+
+	PlayerClips[0].h = 60;
+	PlayerClips[0].w = 60;
+	PlayerClips[0].x = 0;
+	PlayerClips[0].y = 0;
+
+	PlayerClips[1].h = 60;
+	PlayerClips[1].w = 60;
+	PlayerClips[1].x = 60;
+	PlayerClips[1].y = 0;
+
+	PlayerClips[2].h = 60;
+	PlayerClips[2].w = 60;
+	PlayerClips[2].x = 120;
+	PlayerClips[2].y = 0;
+
+	PlayerClips[3].h = 60;
+	PlayerClips[3].w = 60;
+	PlayerClips[3].x = 180;
+	PlayerClips[3].y = 0;
+
+	PlayerClips[4].h = 60;
+	PlayerClips[4].w = 60;
+	PlayerClips[4].x = 240;
+	PlayerClips[4].y = 0;
+
+	PlayerClips[5].h = 60;
+	PlayerClips[5].w = 60;
+	PlayerClips[5].x = 300;
+	PlayerClips[5].y = 0;
 }
 
 

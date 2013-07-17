@@ -11,7 +11,7 @@ namespace MultiplayerLowClass
 {
 	class A_Animation
 	{
-	private:
+	protected:
 		int animationframe;//Das ist der Frame, der an die ApplyPicture Funktion mit einem Array übergeben wird, um das richtige Animationsbild auszuschneiden
 		MultiplayerHighClass::Timer * p_AnimationTimer;// Der AnimationTimer, der für das Timing der Animation zuständig ist
 	public:

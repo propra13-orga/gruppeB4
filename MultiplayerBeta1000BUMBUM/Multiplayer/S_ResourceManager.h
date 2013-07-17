@@ -27,7 +27,7 @@ namespace MultiplayerHighClass
 		// Key enums
 		enum e_Image 
 		{
-			key_background
+			key_background,key_Lobby,key_CBlock,key_electric_player_down,key_electric_player_up
 		};
 
 		enum e_Audio 
@@ -35,6 +35,7 @@ namespace MultiplayerHighClass
 			key_temp
 		};
 
+		SDL_Rect PlayerClips[6];
 	private:
 		// Pictures
 		SDL_Surface * screen;	// A pointer to the SDL_Surface that saves the screen

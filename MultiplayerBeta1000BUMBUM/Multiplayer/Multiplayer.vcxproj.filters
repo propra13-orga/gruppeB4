@@ -39,6 +39,18 @@
     <ClInclude Include="Gamer.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
+    <ClInclude Include="Lobby.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="Collidable Object.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="C_Block.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
+    <ClInclude Include="CollidableObjectManager.h">
+      <Filter>Headerdateien</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameApplicationLayer.cpp">
@@ -57,6 +69,18 @@
       <Filter>Quelldateien</Filter>
     </ClCompile>
     <ClCompile Include="S_Eventhandler.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Lobby.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="CollidableObjectManager.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="C_Block.cpp">
+      <Filter>Quelldateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Gamer.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
   </ItemGroup>

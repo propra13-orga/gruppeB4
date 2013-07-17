@@ -80,8 +80,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="A_Animation.h" />
+    <ClInclude Include="Collidable Object.h" />
+    <ClInclude Include="CollidableObjectManager.h" />
+    <ClInclude Include="C_Block.h" />
     <ClInclude Include="GameApplicationLayer.h" />
     <ClInclude Include="Gamer.h" />
+    <ClInclude Include="Lobby.h" />
     <ClInclude Include="S_EventHandler.h" />
     <ClInclude Include="S_ResourceManager.h" />
     <ClInclude Include="Timer.h" />
@@ -89,7 +93,11 @@
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CollidableObjectManager.cpp" />
+    <ClCompile Include="C_Block.cpp" />
     <ClCompile Include="GameApplicationLayer.cpp" />
+    <ClCompile Include="Gamer.cpp" />
+    <ClCompile Include="Lobby.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="S_Eventhandler.cpp" />
     <ClCompile Include="S_ResourceManager.cpp" />

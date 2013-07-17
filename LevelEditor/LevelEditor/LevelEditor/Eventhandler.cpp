@@ -96,4 +96,22 @@ void S_EventHandler::updateEditorsEvents()
 			KeyPressTimer->start();
 		}
 	}
+
+	if(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x <= 0)
+	{
+		S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(0,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y);
+	}
+	 if(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x >= 900 - 100)
+	{
+		S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(900 - 100,S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y);
+	}
+	 if(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y <= 0)
+	{
+		S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x,0);
+	}
+	 if(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->y >= 600 - 100)
+	{
+		S_LevelEditor::get_LevelEditor().get_MainEditorSource()->set_Position(S_LevelEditor::get_LevelEditor().get_MainEditorSource()->get_Position()->x,600 - 100);
+	}
+
 }

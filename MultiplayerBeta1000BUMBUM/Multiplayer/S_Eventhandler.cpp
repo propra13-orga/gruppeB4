@@ -1,4 +1,5 @@
 #include "S_EventHandler.h"
+#include "Lobby.h"
 
 bool MultiplayerHighClass::S_Eventhandler::is_GameToQuit(SDL_Event & tempEvent)
 {
@@ -19,32 +20,43 @@ void MultiplayerHighClass::S_Eventhandler::screenResize(SDL_Event& Event)
 	}
 }
 
-void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event)
+void MultiplayerHighClass::S_Eventhandler::HandleInputEvents(SDL_Event & Event,MultiplayerLowClass::Player * tempPlayer)
 {
 	//Behandle die Events des Spielers
-
-	if(Event.type == SDL_KEYDOWN)
+	if(this->CURRENTMODE == GAME)
 	{
-		switch(Event.key.keysym.sym)
+
+		if(Event.type == SDL_KEYDOWN)
 		{
-		case(SDLK_UP): break;
-		case(SDLK_DOWN):break;
-		case(SDLK_LEFT):break;
-		case(SDLK_RIGHT):break;
+			switch(Event.key.keysym.sym)
+			{
+			case(SDLK_UP): tempPlayer->set_Velocity(0,-2);tempPlayer->directionUp = true;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_DOWN):tempPlayer->set_Velocity(0,2);tempPlayer->directionUp = false;tempPlayer->directionDown = true;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_LEFT):tempPlayer->set_Velocity(-2,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = true;break;
+			case(SDLK_RIGHT):tempPlayer->set_Velocity(2,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = true;tempPlayer->directionLeft = false;break;
+			case(SDLK_ESCAPE):S_Lobby::get_Instance()->set_isLobbyRequested(true);this->CURRENTMODE = LOBBY;S_Lobby::get_Instance()->set_quitLobby(false);cout << "I Am Here" << endl;break;
+			}
+		}
+
+		if(Event.type == SDL_KEYUP)
+		{
+			switch(Event.key.keysym.sym)
+			{
+			case(SDLK_UP): tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_DOWN):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_LEFT):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			case(SDLK_RIGHT):tempPlayer->set_Velocity(0,0);tempPlayer->directionUp = false;tempPlayer->directionDown = false;tempPlayer->directionRight = false;tempPlayer->directionLeft = false;break;
+			}
 		}
 	}
-
-	if(Event.type == SDL_KEYUP)
+	else if(this->CURRENTMODE == LOBBY)
 	{
-		switch(Event.key.keysym.sym)
+		if(Event.type == SDL_KEYDOWN)
 		{
-		case(SDLK_UP):break;
-		case(SDLK_DOWN):break;
-		case(SDLK_LEFT):break;
-		case(SDLK_RIGHT):break;
+			switch(Event.key.keysym.sym)
+			{
+			case(SDLK_ESCAPE):S_Lobby::get_Instance()->set_isLobbyRequested(false);this->CURRENTMODE = GAME;S_Lobby::get_Instance()->set_quitLobby(true);break;
+			}
 		}
 	}
-
-
-
 }

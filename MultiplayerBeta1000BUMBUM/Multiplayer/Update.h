@@ -8,20 +8,21 @@
 
 #include "S_ResourceManager.h"
 #include "S_EventHandler.h"
+#include "CollidableObjectManager.h"
+#include "Gamer.h"
 
 namespace MultiplayerLowClass
 {
 	class Update
 	{
 	private:
-
 	public:
 		Update(){}
 		~Update(){}
 		Update(const Update & that){}
 		Update& operator=(const Update & that){}
-		void render_AllFilesRenderFunctions();//Hierein kommen sämtliche render Funktionen aller Klassen
-		void update_AllFilesUpdateFunctions(SDL_Event & tempEvent);//HIerein kommen alle update Funktionen sämtlicher Klassen
+		void render_AllFilesRenderFunctions(Player * p_TempPlayer);//Hierein kommen sämtliche render Funktionen aller Klassen
+		void update_AllFilesUpdateFunctions(SDL_Event & tempEvent,Player * p_TempPlayer);//HIerein kommen alle update Funktionen sämtlicher Klassen
 	};
 
 }

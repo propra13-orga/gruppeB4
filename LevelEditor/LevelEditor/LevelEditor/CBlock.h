@@ -11,8 +11,6 @@ public:
 	C_Block(int x,int y):CollisibalObject(x,y){}
 	void update(){};
 	void render();
-
 };
-
 
 #endif
