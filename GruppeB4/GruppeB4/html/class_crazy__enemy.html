@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Öffentliche Methoden</a> &#124;
+<a href="#pri-attribs">Private Attribute</a> &#124;
 <a href="class_crazy__enemy-members.html">Aufstellung aller Elemente</a>  </div>
   <div class="headertitle">
 <div class="title">Crazy_enemy Klassenreferenz</div>  </div>
@@ -95,14 +96,14 @@ Klassendiagramm für Crazy_enemy:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_crazy__enemy__inherit__graph.png" border="0" usemap="#_crazy__enemy_inherit__map" alt="Inheritance graph"/></div>
 <map name="_crazy__enemy_inherit__map" id="_crazy__enemy_inherit__map">
-<area shape="rect" id="node2" href="class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="13,5,128,195"/></map>
+<area shape="rect" id="node2" href="class_enemy.html" title="{Enemy\n|&#45; p_s_Position\l&#45; p_s_Velocity\l|+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="15,6,129,213"/></map>
 </div>
 <div class="dynheader">
 Zusammengehörigkeiten von Crazy_enemy:</div>
 <div class="dyncontent">
 <div class="center"><img src="class_crazy__enemy__coll__graph.png" border="0" usemap="#_crazy__enemy_coll__map" alt="Collaboration graph"/></div>
 <map name="_crazy__enemy_coll__map" id="_crazy__enemy_coll__map">
-<area shape="rect" id="node2" href="class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="13,5,128,195"/></map>
+<area shape="rect" id="node2" href="class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="156,236,270,425"/><area shape="rect" id="node4" href="structs___vector.html" title="Das ist der Basisvektor." alt="" coords="40,6,114,109"/><area shape="rect" id="node8" href="class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="294,193,425,469"/></map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -148,6 +149,19 @@ Zusammengehörigkeiten von Crazy_enemy:</div>
 <tr class="separator:a01024ba4588c4ab2efc9a9e0a960c983 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab026b4302720f1676653285b27babd59 inherit pub_methods_class_enemy"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_enemy.html#ab026b4302720f1676653285b27babd59">set_Velocity</a> (int i_x, int i_y)</td></tr>
 <tr class="separator:ab026b4302720f1676653285b27babd59 inherit pub_methods_class_enemy"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attribute</h2></td></tr>
+<tr class="memitem:a64c8866f36ddf2b2c5c6673593bf1eb5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structs___vector.html">s_Vector</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crazy__enemy.html#a64c8866f36ddf2b2c5c6673593bf1eb5">p_S_SafePosition</a></td></tr>
+<tr class="separator:a64c8866f36ddf2b2c5c6673593bf1eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9be76b8a081630aa75205e435ec490dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_timer.html">Timer</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crazy__enemy.html#a9be76b8a081630aa75205e435ec490dd">AnimationTimer</a></td></tr>
+<tr class="separator:a9be76b8a081630aa75205e435ec490dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a416d9725b313da32b2eb5e764511c0e4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crazy__enemy.html#a416d9725b313da32b2eb5e764511c0e4">frames</a></td></tr>
+<tr class="separator:a416d9725b313da32b2eb5e764511c0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e1799bb04eb0fbb6beb17067960fdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crazy__enemy.html#a44e1799bb04eb0fbb6beb17067960fdd">WALK_STATUS</a></td></tr>
+<tr class="separator:a44e1799bb04eb0fbb6beb17067960fdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47ff0ca4dfccd844401f0529936bde69"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_crazy__enemy.html#a47ff0ca4dfccd844401f0529936bde69">health</a></td></tr>
+<tr class="separator:a47ff0ca4dfccd844401f0529936bde69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Beschreibung der Konstruktoren und Destruktoren</h2>
 <a class="anchor" id="a6043a9ef2ac21fe19481106fc5d32193"></a>
@@ -422,6 +436,107 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 
 </div>
 </div>
+<h2 class="groupheader">Dokumentation der Datenelemente</h2>
+<a class="anchor" id="a9be76b8a081630aa75205e435ec490dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_timer.html">Timer</a>* Crazy_enemy::AnimationTimer</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a416d9725b313da32b2eb5e764511c0e4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Crazy_enemy::frames</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a47ff0ca4dfccd844401f0529936bde69"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Crazy_enemy::health</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a64c8866f36ddf2b2c5c6673593bf1eb5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structs___vector.html">s_Vector</a>* Crazy_enemy::p_S_SafePosition</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a44e1799bb04eb0fbb6beb17067960fdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="globals_8h.html#a015eb90e0de9f16e87bd149d4b9ce959">status</a> Crazy_enemy::WALK_STATUS</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>Die Dokumentation für diese Klasse wurde erzeugt aufgrund der Dateien:<ul>
 <li><a class="el" href="_crazy__enemy_8cpp.html">Crazy_enemy.cpp</a></li>
 <li><a class="el" href="_verr_xC3_xBCckter_8h_source.html">Verrückter.h</a></li>
@@ -431,7 +546,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 17:11:29 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

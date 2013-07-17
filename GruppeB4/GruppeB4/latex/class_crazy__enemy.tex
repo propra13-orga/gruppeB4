@@ -12,7 +12,7 @@ Klassendiagramm fÃ¼r Crazy\-\_\-enemy\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{class_crazy__enemy__inherit__graph}
+\includegraphics[width=180pt]{class_crazy__enemy__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -22,7 +22,7 @@ ZusammengehÃ¶rigkeiten von Crazy\-\_\-enemy\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=178pt]{class_crazy__enemy__coll__graph}
+\includegraphics[height=550pt]{class_crazy__enemy__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Ã–ffentliche Methoden}
@@ -50,6 +50,19 @@ void \hyperlink{class_crazy__enemy_a4fc63fd437c01b6522beaf468c218f4a}{render} (S
 \begin{DoxyCompactList}\small\item\em Siehe Verrückter.\-cpp. \end{DoxyCompactList}\item 
 void \hyperlink{class_crazy__enemy_adf3b3ef132ca7c300a223af3b4fb4fc7}{update} ()
 \begin{DoxyCompactList}\small\item\em Siehe Verrückter.\-cpp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_crazy__enemy_a64c8866f36ddf2b2c5c6673593bf1eb5}{p\-\_\-\-S\-\_\-\-Safe\-Position}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_crazy__enemy_a9be76b8a081630aa75205e435ec490dd}{Animation\-Timer}
+\item 
+int \hyperlink{class_crazy__enemy_a416d9725b313da32b2eb5e764511c0e4}{frames}
+\item 
+\hyperlink{globals_8h_a015eb90e0de9f16e87bd149d4b9ce959}{status} \hyperlink{class_crazy__enemy_a44e1799bb04eb0fbb6beb17067960fdd}{W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S}
+\item 
+int \hyperlink{class_crazy__enemy_a47ff0ca4dfccd844401f0529936bde69}{health}
+\end{DoxyCompactItemize}
 
 
 \subsection{Beschreibung der Konstruktoren und Destruktoren}
@@ -84,8 +97,7 @@ void \hyperlink{class_crazy__enemy_adf3b3ef132ca7c300a223af3b4fb4fc7}{update} ()
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_crazy__enemy_a190c30bf8cc3c818698b3fab6273305a}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -124,8 +136,7 @@ Fragt Gesundheit ab.
 )}}\label{class_crazy__enemy_ab3f0fd1c099d35b9a10aaa51064030cc}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -147,8 +158,7 @@ Siehe Verrückter.\-cpp.
 
 Rendert den Verrueckten. 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -186,6 +196,24 @@ Verwaltet die Bewegung des Verrueckten \hypertarget{class_crazy__enemy_adf3b3ef1
 
 Siehe Verrückter.\-cpp. 
 
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_crazy__enemy_a9be76b8a081630aa75205e435ec490dd}{\index{Crazy\-\_\-enemy@{Crazy\-\_\-enemy}!Animation\-Timer@{Animation\-Timer}}
+\index{Animation\-Timer@{Animation\-Timer}!Crazy_enemy@{Crazy\-\_\-enemy}}
+\subsubsection[{Animation\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Crazy\-\_\-enemy\-::\-Animation\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_crazy__enemy_a9be76b8a081630aa75205e435ec490dd}
+\hypertarget{class_crazy__enemy_a416d9725b313da32b2eb5e764511c0e4}{\index{Crazy\-\_\-enemy@{Crazy\-\_\-enemy}!frames@{frames}}
+\index{frames@{frames}!Crazy_enemy@{Crazy\-\_\-enemy}}
+\subsubsection[{frames}]{\setlength{\rightskip}{0pt plus 5cm}int Crazy\-\_\-enemy\-::frames\hspace{0.3cm}{\ttfamily [private]}}}\label{class_crazy__enemy_a416d9725b313da32b2eb5e764511c0e4}
+\hypertarget{class_crazy__enemy_a47ff0ca4dfccd844401f0529936bde69}{\index{Crazy\-\_\-enemy@{Crazy\-\_\-enemy}!health@{health}}
+\index{health@{health}!Crazy_enemy@{Crazy\-\_\-enemy}}
+\subsubsection[{health}]{\setlength{\rightskip}{0pt plus 5cm}int Crazy\-\_\-enemy\-::health\hspace{0.3cm}{\ttfamily [private]}}}\label{class_crazy__enemy_a47ff0ca4dfccd844401f0529936bde69}
+\hypertarget{class_crazy__enemy_a64c8866f36ddf2b2c5c6673593bf1eb5}{\index{Crazy\-\_\-enemy@{Crazy\-\_\-enemy}!p\-\_\-\-S\-\_\-\-Safe\-Position@{p\-\_\-\-S\-\_\-\-Safe\-Position}}
+\index{p\-\_\-\-S\-\_\-\-Safe\-Position@{p\-\_\-\-S\-\_\-\-Safe\-Position}!Crazy_enemy@{Crazy\-\_\-enemy}}
+\subsubsection[{p\-\_\-\-S\-\_\-\-Safe\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Crazy\-\_\-enemy\-::p\-\_\-\-S\-\_\-\-Safe\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_crazy__enemy_a64c8866f36ddf2b2c5c6673593bf1eb5}
+\hypertarget{class_crazy__enemy_a44e1799bb04eb0fbb6beb17067960fdd}{\index{Crazy\-\_\-enemy@{Crazy\-\_\-enemy}!W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S@{W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S}}
+\index{W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S@{W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S}!Crazy_enemy@{Crazy\-\_\-enemy}}
+\subsubsection[{W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf status} Crazy\-\_\-enemy\-::\-W\-A\-L\-K\-\_\-\-S\-T\-A\-T\-U\-S\hspace{0.3cm}{\ttfamily [private]}}}\label{class_crazy__enemy_a44e1799bb04eb0fbb6beb17067960fdd}
 
 
 Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

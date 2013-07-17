@@ -1,3 +1,5 @@
 <map id="Crazy_enemy" name="Crazy_enemy">
-<area shape="rect" id="node2" href="$class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="13,5,128,195"/>
+<area shape="rect" id="node2" href="$class_enemy.html" title="{Enemy\n||+ Enemy()\l+ ~Enemy()\l+ Enemy()\l+ get_Position()\l+ set_Position()\l+ get_Velocity()\l+ set_Velocity()\l}" alt="" coords="156,236,270,425"/>
+<area shape="rect" id="node4" href="$structs___vector.html" title="Das ist der Basisvektor." alt="" coords="40,6,114,109"/>
+<area shape="rect" id="node8" href="$class_timer.html" title="{Timer\n|&#45; m_tStartTicks\l&#45; m_tPausedTicks\l&#45; m_bTimerPaused\l&#45; m_bTimerStarted\l|+ Timer()\l+ ~Timer()\l+ start()\l+ stop()\l+ pause()\l+ unpause()\l+ Getticks()\l+ IsTimerStarted()\l+ IsTimerPaused()\l}" alt="" coords="294,193,425,469"/>
 </map>

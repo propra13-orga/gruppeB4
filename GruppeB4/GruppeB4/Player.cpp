@@ -539,7 +539,7 @@ void Player::loadMana()
 }
 
 void Player::attack()
-{
+{  
 	AgentManager::get_AgentManager().weaken_Bots(this);
 }
 

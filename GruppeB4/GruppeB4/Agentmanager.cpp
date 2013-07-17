@@ -65,7 +65,7 @@ void AgentManager::weaken_Bots(Player * p_tempPlayer)
 		cout << "Keine Attacke" << endl;
 	}
 	else if(WeaponManager::get_WeaponManager().CURRENT_WEAPON2 == MELEE)
-	{
+	{Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("Elektro"),0);
 		if(p_tempPlayer->get_WalkStatus() == PSY_UP)
 		{
 			for(vector<Crazy_enemy*>::iterator i = crazy_enemies.begin();i != crazy_enemies.end();++i)

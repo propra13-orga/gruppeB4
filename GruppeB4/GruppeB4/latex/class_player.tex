@@ -12,7 +12,7 @@ ZusammengehÃ¶rigkeiten von Player\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=166pt]{class_player__coll__graph}
+\includegraphics[height=550pt]{class_player__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Ã–ffentliche Methoden}
@@ -52,7 +52,7 @@ int \hyperlink{class_player_a6d09b9e7f5e5bcc1bae2d6134c22bf81}{health\-\_\-cap} 
 \item 
 void \hyperlink{class_player_ab321d07e6272a7a7168bf411eed105c0}{set\-\_\-health\-\_\-cap} (int max)
 \item 
-void \hyperlink{class_player_a82c2af081cd2891be248459b4015be56}{heal} (int potsize)
+void \hyperlink{class_player_a82c2af081cd2891be248459b4015be56}{heal} (int \hyperlink{class_player_a398ecd526b604b2710faafebf8c18e77}{potsize})
 \begin{DoxyCompactList}\small\item\em Itembenutzung. \end{DoxyCompactList}\item 
 void \hyperlink{class_player_ae06fc7fdd0493e8c13c0441b49b66777}{load\-Mana} ()
 \item 
@@ -67,6 +67,41 @@ void \hyperlink{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}{update} ()
 void \hyperlink{class_player_ad911072980c4a07dc37ececee2bfbca4}{render} (bool $\ast$tempmenue, \hyperlink{class_timer}{Timer} $\ast$delta\-Time, S\-D\-L\-\_\-\-Rect cam, \hyperlink{globals_8h_a3951bd57665e2e4c8a4411c2a5477207}{L\-E\-V\-E\-L\-\_\-\-L\-O\-A\-D\-E\-D} C\-U\-R\-R\-E\-N\-T\-L\-E\-V\-E\-L, \hyperlink{class_world}{World} $\ast$p\-\_\-\-Temp\-World)
 \item 
 void \hyperlink{class_player_af44299a346f97deb829bea5abed63d20}{handle\-\_\-\-Input} (S\-D\-L\-\_\-\-Event \&\hyperlink{main_8cpp_af6a41c81a6372a814ffae9ba6615e1e7}{even})
+\end{DoxyCompactItemize}
+\subsection*{Private Attribute}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_player_af3cbabb3f4ad1c853ae577484721ad4b}{p\-\_\-s\-\_\-\-Position}
+\item 
+\hyperlink{structs___vector}{s\-\_\-\-Vector} $\ast$ \hyperlink{class_player_add7bd54af160e143f944c06083562910}{p\-\_\-s\-\_\-\-Velocity}
+\item 
+bool \hyperlink{class_player_a1fbcb53dc832c8f96f6f634e398f6137}{b\-\_\-\-Player\-Is\-Walking\-Right}
+\item 
+bool \hyperlink{class_player_aca326c0d9f95192e63b0ddbd887e63b4}{b\-\_\-\-Player\-Is\-Walking\-Left}
+\item 
+bool \hyperlink{class_player_a8474dfbae41abf3087147489df0466d9}{b\-\_\-\-Player\-Is\-Walking\-Up}
+\item 
+bool \hyperlink{class_player_a4cb1172a5429a5db86e2bbc547282beb}{b\-\_\-\-Player\-Is\-Walking\-Down}
+\item 
+bool \hyperlink{class_player_a39f0e95b2ba11658912aff5d193b352b}{rage\-Mode\-Toggled}
+\item 
+bool \hyperlink{class_player_a041e3bd3beb42eb73093fd9aa1d2ebe0}{disableallabilities}
+\item 
+\hyperlink{class_timer}{Timer} $\ast$ \hyperlink{class_player_af5a2a45fd82f58563e49d65f17804d1a}{Rage\-Mode\-Timer}
+\item 
+int \hyperlink{class_player_aa61a155a8a3624b7785a2f8bceef55ab}{i\-\_\-health}
+\item 
+int \hyperlink{class_player_af394509149f96eaa0cff2d8083fb267a}{i\-\_\-lives}
+\item 
+int \hyperlink{class_player_ac72d64c0a33bce2b41ceadbd76170347}{i\-\_\-mana}
+\item 
+int \hyperlink{class_player_a31fd26b4f483d22b7103f1818295668b}{i\-\_\-maxhealth}
+\item 
+int \hyperlink{class_player_a398ecd526b604b2710faafebf8c18e77}{potsize}
+\item 
+int \hyperlink{class_player_a706a6990b1a79a6610ac6327ca37916a}{i\-\_\-frame}
+\item 
+\hyperlink{globals_8h_a015eb90e0de9f16e87bd149d4b9ce959}{status} \hyperlink{class_player_af9c7d27ad9772df1d17c2fc529f998f6}{e\-\_\-currentwalkstatus}
 \end{DoxyCompactItemize}
 
 
@@ -109,8 +144,7 @@ Konstruktoren.
 )}}\label{class_player_aeea45f839f224a5320dfadfd2ff3ebe9}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -121,8 +155,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -241,8 +274,7 @@ Wand links\-:
 
 Wand rechts\-: 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -253,8 +285,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -279,8 +310,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a8684c93430c1a9d3827071e00bcdc0d2}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -298,8 +328,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 ) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a352a8894a05f649fb236ae99cd9da3e9}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -317,8 +346,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a50f12c89f28826db8191f76ed915d788}
 simple F\-Unktionen für den Zugriff auf den privaten Bereich 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -336,8 +364,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a0b3564dce7078dee4733a2af2460fae1}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -355,8 +382,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_ae2b606a4cc6b7f3f1147c117fbfa82ce}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -374,8 +400,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_player_af44299a346f97deb829bea5abed63d20}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -386,8 +411,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -411,8 +435,7 @@ Funktion Heilt den Spieler falls in der Liste der catched\-Items des Itemmanager
 
 $<$anschliesend muss das benutzte item wieder gelöscht werden 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -423,8 +446,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -451,8 +473,7 @@ Funktion laed mana des spielers, falls in der Liste der Catched items ein Manatr
 
 $<$anschliesend muss das benutzte item wieder gelöscht werden 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -463,8 +484,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -482,8 +502,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_player_a5f3457c6aaf834b83d35d9085b46e31d}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -494,8 +513,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -517,8 +535,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_player_ad911072980c4a07dc37ececee2bfbca4}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -529,8 +546,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -548,8 +564,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_add9dfdb430f9e78178e43a8bf78fa7a3}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -567,8 +582,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a25da073f8c291a56b482d8005b2476d1}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -593,8 +607,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_af0ddd345e35423723ce460c64cd9a7b6}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -613,8 +626,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a3615907f803845ff9b37dee94944b09b}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -633,8 +645,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_player_a12fea44fe4eda565ada463b15443dc56}
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -656,8 +667,7 @@ Hier wird der Rage\-Mode des Spielers angestellt.
 
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -668,8 +678,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -687,8 +696,7 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 )}}\label{class_player_a82c3476f3e65a4e2ac6bcd040771bdd4}
 
 
-Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
-\nopagebreak
+Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -699,8 +707,7 @@ Hier ist ein Graph, der zeigt, was diese Funktion aufruft\-:
 
 
 
-Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
-\nopagebreak
+Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -709,6 +716,57 @@ Hier ist ein Graph der zeigt, wo diese Funktion aufgerufen wird\-:
 \end{figure}
 
 
+
+
+\subsection{Dokumentation der Datenelemente}
+\hypertarget{class_player_a4cb1172a5429a5db86e2bbc547282beb}{\index{Player@{Player}!b\-\_\-\-Player\-Is\-Walking\-Down@{b\-\_\-\-Player\-Is\-Walking\-Down}}
+\index{b\-\_\-\-Player\-Is\-Walking\-Down@{b\-\_\-\-Player\-Is\-Walking\-Down}!Player@{Player}}
+\subsubsection[{b\-\_\-\-Player\-Is\-Walking\-Down}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::b\-\_\-\-Player\-Is\-Walking\-Down\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a4cb1172a5429a5db86e2bbc547282beb}
+\hypertarget{class_player_aca326c0d9f95192e63b0ddbd887e63b4}{\index{Player@{Player}!b\-\_\-\-Player\-Is\-Walking\-Left@{b\-\_\-\-Player\-Is\-Walking\-Left}}
+\index{b\-\_\-\-Player\-Is\-Walking\-Left@{b\-\_\-\-Player\-Is\-Walking\-Left}!Player@{Player}}
+\subsubsection[{b\-\_\-\-Player\-Is\-Walking\-Left}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::b\-\_\-\-Player\-Is\-Walking\-Left\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_aca326c0d9f95192e63b0ddbd887e63b4}
+\hypertarget{class_player_a1fbcb53dc832c8f96f6f634e398f6137}{\index{Player@{Player}!b\-\_\-\-Player\-Is\-Walking\-Right@{b\-\_\-\-Player\-Is\-Walking\-Right}}
+\index{b\-\_\-\-Player\-Is\-Walking\-Right@{b\-\_\-\-Player\-Is\-Walking\-Right}!Player@{Player}}
+\subsubsection[{b\-\_\-\-Player\-Is\-Walking\-Right}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::b\-\_\-\-Player\-Is\-Walking\-Right\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a1fbcb53dc832c8f96f6f634e398f6137}
+\hypertarget{class_player_a8474dfbae41abf3087147489df0466d9}{\index{Player@{Player}!b\-\_\-\-Player\-Is\-Walking\-Up@{b\-\_\-\-Player\-Is\-Walking\-Up}}
+\index{b\-\_\-\-Player\-Is\-Walking\-Up@{b\-\_\-\-Player\-Is\-Walking\-Up}!Player@{Player}}
+\subsubsection[{b\-\_\-\-Player\-Is\-Walking\-Up}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::b\-\_\-\-Player\-Is\-Walking\-Up\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a8474dfbae41abf3087147489df0466d9}
+\hypertarget{class_player_a041e3bd3beb42eb73093fd9aa1d2ebe0}{\index{Player@{Player}!disableallabilities@{disableallabilities}}
+\index{disableallabilities@{disableallabilities}!Player@{Player}}
+\subsubsection[{disableallabilities}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::disableallabilities\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a041e3bd3beb42eb73093fd9aa1d2ebe0}
+\hypertarget{class_player_af9c7d27ad9772df1d17c2fc529f998f6}{\index{Player@{Player}!e\-\_\-currentwalkstatus@{e\-\_\-currentwalkstatus}}
+\index{e\-\_\-currentwalkstatus@{e\-\_\-currentwalkstatus}!Player@{Player}}
+\subsubsection[{e\-\_\-currentwalkstatus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf status} Player\-::e\-\_\-currentwalkstatus\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_af9c7d27ad9772df1d17c2fc529f998f6}
+\hypertarget{class_player_a706a6990b1a79a6610ac6327ca37916a}{\index{Player@{Player}!i\-\_\-frame@{i\-\_\-frame}}
+\index{i\-\_\-frame@{i\-\_\-frame}!Player@{Player}}
+\subsubsection[{i\-\_\-frame}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::i\-\_\-frame\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a706a6990b1a79a6610ac6327ca37916a}
+\hypertarget{class_player_aa61a155a8a3624b7785a2f8bceef55ab}{\index{Player@{Player}!i\-\_\-health@{i\-\_\-health}}
+\index{i\-\_\-health@{i\-\_\-health}!Player@{Player}}
+\subsubsection[{i\-\_\-health}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::i\-\_\-health\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_aa61a155a8a3624b7785a2f8bceef55ab}
+\hypertarget{class_player_af394509149f96eaa0cff2d8083fb267a}{\index{Player@{Player}!i\-\_\-lives@{i\-\_\-lives}}
+\index{i\-\_\-lives@{i\-\_\-lives}!Player@{Player}}
+\subsubsection[{i\-\_\-lives}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::i\-\_\-lives\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_af394509149f96eaa0cff2d8083fb267a}
+\hypertarget{class_player_ac72d64c0a33bce2b41ceadbd76170347}{\index{Player@{Player}!i\-\_\-mana@{i\-\_\-mana}}
+\index{i\-\_\-mana@{i\-\_\-mana}!Player@{Player}}
+\subsubsection[{i\-\_\-mana}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::i\-\_\-mana\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_ac72d64c0a33bce2b41ceadbd76170347}
+\hypertarget{class_player_a31fd26b4f483d22b7103f1818295668b}{\index{Player@{Player}!i\-\_\-maxhealth@{i\-\_\-maxhealth}}
+\index{i\-\_\-maxhealth@{i\-\_\-maxhealth}!Player@{Player}}
+\subsubsection[{i\-\_\-maxhealth}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::i\-\_\-maxhealth\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a31fd26b4f483d22b7103f1818295668b}
+\hypertarget{class_player_af3cbabb3f4ad1c853ae577484721ad4b}{\index{Player@{Player}!p\-\_\-s\-\_\-\-Position@{p\-\_\-s\-\_\-\-Position}}
+\index{p\-\_\-s\-\_\-\-Position@{p\-\_\-s\-\_\-\-Position}!Player@{Player}}
+\subsubsection[{p\-\_\-s\-\_\-\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Player\-::p\-\_\-s\-\_\-\-Position\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_af3cbabb3f4ad1c853ae577484721ad4b}
+\hypertarget{class_player_add7bd54af160e143f944c06083562910}{\index{Player@{Player}!p\-\_\-s\-\_\-\-Velocity@{p\-\_\-s\-\_\-\-Velocity}}
+\index{p\-\_\-s\-\_\-\-Velocity@{p\-\_\-s\-\_\-\-Velocity}!Player@{Player}}
+\subsubsection[{p\-\_\-s\-\_\-\-Velocity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf s\-\_\-\-Vector}$\ast$ Player\-::p\-\_\-s\-\_\-\-Velocity\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_add7bd54af160e143f944c06083562910}
+\hypertarget{class_player_a398ecd526b604b2710faafebf8c18e77}{\index{Player@{Player}!potsize@{potsize}}
+\index{potsize@{potsize}!Player@{Player}}
+\subsubsection[{potsize}]{\setlength{\rightskip}{0pt plus 5cm}int Player\-::potsize\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a398ecd526b604b2710faafebf8c18e77}
+\hypertarget{class_player_af5a2a45fd82f58563e49d65f17804d1a}{\index{Player@{Player}!Rage\-Mode\-Timer@{Rage\-Mode\-Timer}}
+\index{Rage\-Mode\-Timer@{Rage\-Mode\-Timer}!Player@{Player}}
+\subsubsection[{Rage\-Mode\-Timer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Timer}$\ast$ Player\-::\-Rage\-Mode\-Timer\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_af5a2a45fd82f58563e49d65f17804d1a}
+\hypertarget{class_player_a39f0e95b2ba11658912aff5d193b352b}{\index{Player@{Player}!rage\-Mode\-Toggled@{rage\-Mode\-Toggled}}
+\index{rage\-Mode\-Toggled@{rage\-Mode\-Toggled}!Player@{Player}}
+\subsubsection[{rage\-Mode\-Toggled}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\-::rage\-Mode\-Toggled\hspace{0.3cm}{\ttfamily [private]}}}\label{class_player_a39f0e95b2ba11658912aff5d193b352b}
 
 
 Die Dokumentation fÃ¼r diese Klasse wurde erzeugt aufgrund der Dateien\-:\begin{DoxyCompactItemize}

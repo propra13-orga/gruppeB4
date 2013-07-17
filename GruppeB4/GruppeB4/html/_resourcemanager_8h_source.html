@@ -100,108 +100,108 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>(){}</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>(<span class="keyword">const</span> <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp;){}</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp; operator= (<span class="keyword">const</span> <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp;) {<span class="keywordflow">return</span> *<span class="keyword">this</span>;}</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>(){}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    Mix_Music * music;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    SDL_Surface * p_screen;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    SDL_Surface * p_player;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    SDL_Surface * p_player_up;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    SDL_Surface * p_player_left;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    SDL_Surface * p_player_right;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    SDL_Surface * p_background;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    SDL_Surface * p_menue;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    SDL_Surface * p_crazy_enemy;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    SDL_Surface * p_crazy_enemy_up;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    SDL_Surface * p_crazy_enemy_left;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    SDL_Surface * p_crazy_enemy_right;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    SDL_Surface * p_princess;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    SDL_Surface * p_game_over;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    SDL_Surface * p_win;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    SDL_Surface * p_MainMenue;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    SDL_Surface * p_main_menue;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    SDL_Surface * p_trans;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    SDL_Surface * p_hirn1;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    SDL_Surface * p_hirn2;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    SDL_Surface * p_hirn3;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    SDL_Surface * p_hirn4;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    SDL_Surface * p_Pfleger;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    SDL_Surface * p_tot;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    SDL_Surface * p_pille;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    SDL_Surface * p_heiltrank;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    SDL_Surface * p_elektrode;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    SDL_Surface * p_spritze;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    SDL_Surface * p_shop;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    SDL_Surface * p_npc1;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    SDL_Surface * p_npc2;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    SDL_Surface * p_qabfrage;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    SDL_Surface * p_qbelohnung;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    SDL_Surface * p_manaspritze;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    SDL_Surface * p_map2;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    SDL_Surface * p_map3;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    SDL_Surface * p_mana_leer;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    SDL_Surface * p_mana_halbvoll;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    SDL_Surface * p_mana_voll;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    SDL_Surface * p_Aufforderung_e;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    SDL_Surface * p_gekauft;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    SDL_Surface * p_nichtgekauft;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    SDL_Surface * p_weak;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    SDL_Surface * p_tut;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    SDL_Surface * p_ep_empty;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    SDL_Surface * p_ep_10;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    SDL_Surface * p_ep_20;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    SDL_Surface * p_ep_30;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    SDL_Surface * p_ep_40;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    SDL_Surface * p_ep_50;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    SDL_Surface * p_ep_60;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    SDL_Surface * p_ep_70;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    SDL_Surface * p_ep_80;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    SDL_Surface * p_ep_90;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    SDL_Surface * p_ep_100;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    SDL_Surface * p_ep_110;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    SDL_Surface * p_ep_120;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    SDL_Surface * p_ep_125;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    SDL_Surface * p_skilltree;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    SDL_Surface * p_t1_1;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    SDL_Surface * p_t1_2;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    SDL_Surface * p_t1_3;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    SDL_Surface * p_t1_4;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    SDL_Surface * p_t1_5;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    SDL_Surface * p_check;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    SDL_Surface * p_nopoints;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    SDL_Surface * p_skilled;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    SDL_Surface * p_t2_1;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    SDL_Surface * p_t2_2;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    SDL_Surface * p_t2_3;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    SDL_Surface * p_t3_1;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    SDL_Surface * p_t3_2;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    SDL_Surface * p_lvl1;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    SDL_Surface * p_lvl2;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    SDL_Surface * p_lvl3;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    SDL_Surface * p_lvl4;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    SDL_Surface * p_lvl5;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    SDL_Surface * p_lvl6;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    SDL_Surface * p_lvl7;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    SDL_Surface * p_lvl8;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    SDL_Surface * p_lvl9;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    SDL_Surface * p_lvl10;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    SDL_Surface * p_not_yet;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    SDL_Surface * p_tp_0;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    SDL_Surface * p_tp_1;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    SDL_Surface * p_tp_2;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    SDL_Surface * p_tp_3;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    SDL_Surface * p_tp_4;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    SDL_Surface * p_tp_5;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    SDL_Surface * p_tp_gt5;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    SDL_Surface * p_not_skillable;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    SDL_Surface * p_lvl_up;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    SDL_Surface * p_Baer;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    SDL_Surface * p_Baer_spricht;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a9f50937d800ee9b9b8022ff6865e66b6">   21</a></span>&#160;    <a class="code" href="class_s___resourcemanager.html#a9f50937d800ee9b9b8022ff6865e66b6">S_Resourcemanager</a>(){}</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad8d79221e2eef53ec2c7573058113bb3">   22</a></span>&#160;    <a class="code" href="class_s___resourcemanager.html#ad8d79221e2eef53ec2c7573058113bb3">S_Resourcemanager</a>(<span class="keyword">const</span> <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp;){}</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aaeda6950bc2edd929f7b0043809edc01">   23</a></span>&#160;    <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp; operator= (<span class="keyword">const</span> <a class="code" href="class_s___resourcemanager.html">S_Resourcemanager</a>&amp;) {<span class="keywordflow">return</span> *<span class="keyword">this</span>;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#abe54f7442c1c0fb604ce4f98c9ad2b83">   24</a></span>&#160;    <a class="code" href="class_s___resourcemanager.html#abe54f7442c1c0fb604ce4f98c9ad2b83">~S_Resourcemanager</a>(){}</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a62be4d513433534f4dc9ad7fd528a760">   26</a></span>&#160;    Mix_Music * <a class="code" href="class_s___resourcemanager.html#a62be4d513433534f4dc9ad7fd528a760">music</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aad90048643bc5038a5c3d539225c434a">   27</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aad90048643bc5038a5c3d539225c434a">p_screen</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa889cb8b62e7ab1dcdb8e2d568d8527c">   28</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa889cb8b62e7ab1dcdb8e2d568d8527c">p_player</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a86b8c07dc6956b6305a941eaa30c5618">   29</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a86b8c07dc6956b6305a941eaa30c5618">p_player_up</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a2c7c2ac255c986e1e45db0febe168564">   30</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a2c7c2ac255c986e1e45db0febe168564">p_player_left</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a5766c35ede1978cbfa917229fbe0d065">   31</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a5766c35ede1978cbfa917229fbe0d065">p_player_right</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a8481c552923ec00a940c83f9f69ab804">   32</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a8481c552923ec00a940c83f9f69ab804">p_background</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#adf485939e100fd0aa5012232b5d83ec4">   33</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#adf485939e100fd0aa5012232b5d83ec4">p_menue</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a156239020daf04b3dd7ef803e9775afe">   34</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a156239020daf04b3dd7ef803e9775afe">p_crazy_enemy</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a766ee8dd36cb62da021723636c4ba2c2">   35</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a766ee8dd36cb62da021723636c4ba2c2">p_crazy_enemy_up</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a6d4b8392e0118bad7067b460bdbcebaf">   36</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a6d4b8392e0118bad7067b460bdbcebaf">p_crazy_enemy_left</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa58fa0b5493efc28655cd7f4b9fcc2fb">   37</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa58fa0b5493efc28655cd7f4b9fcc2fb">p_crazy_enemy_right</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#acda40eea21c8b01ae5cd822e99bd8dee">   38</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#acda40eea21c8b01ae5cd822e99bd8dee">p_princess</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a0740288a6d4ef7e5845cf9ac7ef52727">   39</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a0740288a6d4ef7e5845cf9ac7ef52727">p_game_over</a>;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aac006054a8414f4831f443be5e58933d">   40</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aac006054a8414f4831f443be5e58933d">p_win</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a342edd30c5e4e6c058c2f7d84d4637ae">   41</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a342edd30c5e4e6c058c2f7d84d4637ae">p_MainMenue</a>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a448689154d99d60f6b45ec830b99317e">   42</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a448689154d99d60f6b45ec830b99317e">p_main_menue</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a25fd7fc7f4761c2c8db4db967f1bdcfd">   43</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a25fd7fc7f4761c2c8db4db967f1bdcfd">p_trans</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a7532602bf0da43483c3a44d2aa0d5866">   44</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a7532602bf0da43483c3a44d2aa0d5866">p_hirn1</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a209ba866b7bc46ea7107f743568029a5">   45</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a209ba866b7bc46ea7107f743568029a5">p_hirn2</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a75ce16494a0af72207ddc125ac3463b5">   46</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a75ce16494a0af72207ddc125ac3463b5">p_hirn3</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a18cd75084287aa2365ea5ca08db231b7">   47</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a18cd75084287aa2365ea5ca08db231b7">p_hirn4</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a4188a95bd4697af2dafd9267074e03dc">   48</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a4188a95bd4697af2dafd9267074e03dc">p_Pfleger</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab4feba203f3505f179a7015c63aa922a">   49</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab4feba203f3505f179a7015c63aa922a">p_tot</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a38cfd49660c1dffdf1926e9e2be9a09a">   50</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a38cfd49660c1dffdf1926e9e2be9a09a">p_pille</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab1cddb70bf69307e74d748b6ba127cb4">   51</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab1cddb70bf69307e74d748b6ba127cb4">p_heiltrank</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a95b128130ef9e29ba41347a16d84824b">   52</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a95b128130ef9e29ba41347a16d84824b">p_elektrode</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a90eec1e2d90bc52b5e6d84165db237a8">   53</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a90eec1e2d90bc52b5e6d84165db237a8">p_spritze</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab2dc6f56f089751591bed5f9117359ec">   54</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab2dc6f56f089751591bed5f9117359ec">p_shop</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aad377fb9fc5ce73b6fe1853b3f865a44">   55</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aad377fb9fc5ce73b6fe1853b3f865a44">p_npc1</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a90177e6b3bebbdce558364d9a5d41307">   56</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a90177e6b3bebbdce558364d9a5d41307">p_npc2</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a1b5e5d41ab95ebd440f37de0c91a6ca1">   57</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a1b5e5d41ab95ebd440f37de0c91a6ca1">p_qabfrage</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a30ce5d2150d89fe3981df6bf684424ea">   58</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a30ce5d2150d89fe3981df6bf684424ea">p_qbelohnung</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a5f235a0ff6a04cdc486a20edc18f5ee1">   59</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a5f235a0ff6a04cdc486a20edc18f5ee1">p_manaspritze</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ac7cca178dbb4eb0014d80cccf8cfb836">   60</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ac7cca178dbb4eb0014d80cccf8cfb836">p_map2</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a29db10adc5dfde4adeb378eb2dd35a85">   61</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a29db10adc5dfde4adeb378eb2dd35a85">p_map3</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#af85a0e2f72f4e9da60f66fe7b439c0b4">   62</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#af85a0e2f72f4e9da60f66fe7b439c0b4">p_mana_leer</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a1f39d9ce92b08d678fb702c190fdc6a0">   63</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a1f39d9ce92b08d678fb702c190fdc6a0">p_mana_halbvoll</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad214bc0e182f5bebbff8aa754062151f">   64</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ad214bc0e182f5bebbff8aa754062151f">p_mana_voll</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#af31d378482008a9b2d67e533c8cf7d03">   65</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#af31d378482008a9b2d67e533c8cf7d03">p_Aufforderung_e</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#abb501ca131dd297535dd920ac6279a8e">   66</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#abb501ca131dd297535dd920ac6279a8e">p_gekauft</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa01d1c6c46e5ba35dec1935169b610f8">   67</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa01d1c6c46e5ba35dec1935169b610f8">p_nichtgekauft</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a1693aee42ae78e964ea0f694260a1388">   68</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a1693aee42ae78e964ea0f694260a1388">p_weak</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a135ec993f54d479ea0cc72dcc0edf1cb">   69</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a135ec993f54d479ea0cc72dcc0edf1cb">p_tut</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a0025252a6e26bc7094b1330f58782739">   70</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a0025252a6e26bc7094b1330f58782739">p_ep_empty</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a6fa95e7028b19676ad8be5675b2b1c79">   71</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a6fa95e7028b19676ad8be5675b2b1c79">p_ep_10</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#af06da6aaa149ddd1c037cfd977f03a4c">   72</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#af06da6aaa149ddd1c037cfd977f03a4c">p_ep_20</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad5f1b7c7dafbc488df0ec8c238451807">   73</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ad5f1b7c7dafbc488df0ec8c238451807">p_ep_30</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a2a2a29b8f3cacd801043fa90be5e6561">   74</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a2a2a29b8f3cacd801043fa90be5e6561">p_ep_40</a>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa5a6f75d0b06f0b4672cd9fb65b32525">   75</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa5a6f75d0b06f0b4672cd9fb65b32525">p_ep_50</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a3c20367511854b8c11625176ee380a93">   76</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a3c20367511854b8c11625176ee380a93">p_ep_60</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ae746301b12e67a6eb7b1cb520fddc2cc">   77</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ae746301b12e67a6eb7b1cb520fddc2cc">p_ep_70</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a9fa48ab51237b17cb336a3ff9bcaaca1">   78</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a9fa48ab51237b17cb336a3ff9bcaaca1">p_ep_80</a>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a2e992582f1abfd33cc59569351318fec">   79</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a2e992582f1abfd33cc59569351318fec">p_ep_90</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a4ac6d812091babf40dfcfc85862f6311">   80</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a4ac6d812091babf40dfcfc85862f6311">p_ep_100</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a5f1823111536058f5f9dab7ba4e273db">   81</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a5f1823111536058f5f9dab7ba4e273db">p_ep_110</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab50a7ab806b46596d3ce8236aae02082">   82</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab50a7ab806b46596d3ce8236aae02082">p_ep_120</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a4a7fb83572050bb7858906e3f491e879">   83</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a4a7fb83572050bb7858906e3f491e879">p_ep_125</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a7b2d0c76fc935d7980d9b9fbb63c607f">   84</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a7b2d0c76fc935d7980d9b9fbb63c607f">p_skilltree</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab9055de09b5a1ba66c1b5f1b04622739">   85</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab9055de09b5a1ba66c1b5f1b04622739">p_t1_1</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a21d22134ab9ab0ea69e200389d6f35e7">   86</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a21d22134ab9ab0ea69e200389d6f35e7">p_t1_2</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a210636d2afc331555e869b2cf3254e08">   87</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a210636d2afc331555e869b2cf3254e08">p_t1_3</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab50da9bbfc2ea663af112bbe51b6ec8e">   88</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab50da9bbfc2ea663af112bbe51b6ec8e">p_t1_4</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aac3c1d87a10fe1da30f0ca9b04f1655b">   89</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aac3c1d87a10fe1da30f0ca9b04f1655b">p_t1_5</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa4f71dd995645a59548713ce01f38308">   90</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa4f71dd995645a59548713ce01f38308">p_check</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a3367561e0913cc198e9d649bcf004089">   91</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a3367561e0913cc198e9d649bcf004089">p_nopoints</a>;</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a853ed4ebec5f5a18736afc58310dba07">   92</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a853ed4ebec5f5a18736afc58310dba07">p_skilled</a>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#abff80520002f06cbb0009d9a3568346b">   93</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#abff80520002f06cbb0009d9a3568346b">p_t2_1</a>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ac3c8290d41f5f242d1e47c52a72b9dfb">   94</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ac3c8290d41f5f242d1e47c52a72b9dfb">p_t2_2</a>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aae393cf6a6ccab786b26b0a18088be84">   95</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aae393cf6a6ccab786b26b0a18088be84">p_t2_3</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a8ff1b4a4ae2fb17c52fbcfc1344ea3db">   96</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a8ff1b4a4ae2fb17c52fbcfc1344ea3db">p_t3_1</a>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#adc5120cbfde218c2a3ba6992187264a3">   97</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#adc5120cbfde218c2a3ba6992187264a3">p_t3_2</a>;</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a269b93ada32f38206d391e494ffa60cb">   98</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a269b93ada32f38206d391e494ffa60cb">p_lvl1</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad311ad5e740757129b3b9028d852f94e">   99</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ad311ad5e740757129b3b9028d852f94e">p_lvl2</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a45397812a69c50cf73f790d2ae3fcb38">  100</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a45397812a69c50cf73f790d2ae3fcb38">p_lvl3</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a938ffac91ea98571ceb32abd30719fd6">  101</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a938ffac91ea98571ceb32abd30719fd6">p_lvl4</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ab8403519cb783b456c8f263295798ad0">  102</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ab8403519cb783b456c8f263295798ad0">p_lvl5</a>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a9a0f8f2bdefa740320e83a3d6d801d09">  103</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a9a0f8f2bdefa740320e83a3d6d801d09">p_lvl6</a>;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a3c9ea8fecd9b596f532a7874c2cf2b26">  104</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a3c9ea8fecd9b596f532a7874c2cf2b26">p_lvl7</a>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a2e7b4c6e44b5fe0e7d3d6c9b6e558368">  105</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a2e7b4c6e44b5fe0e7d3d6c9b6e558368">p_lvl8</a>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a0f046f04ae2c2e82d6afa530771ff6f3">  106</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a0f046f04ae2c2e82d6afa530771ff6f3">p_lvl9</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a960d4cac74bfa71344d49db3c7a203f7">  107</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a960d4cac74bfa71344d49db3c7a203f7">p_lvl10</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ad9de002bacd361edb78e4ce20bf439a1">  108</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ad9de002bacd361edb78e4ce20bf439a1">p_not_yet</a>;</div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aeee94b5a961c1f3fa9841074ba7074ee">  109</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aeee94b5a961c1f3fa9841074ba7074ee">p_tp_0</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#ae16b46a6e82b0725814ebdc4480aa1ff">  110</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#ae16b46a6e82b0725814ebdc4480aa1ff">p_tp_1</a>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a514d5971e75f1fd02d0cfe84a39cb679">  111</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a514d5971e75f1fd02d0cfe84a39cb679">p_tp_2</a>;</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a06f80880c416536f98dddcb2db4ea4a6">  112</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a06f80880c416536f98dddcb2db4ea4a6">p_tp_3</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a4b0e1d3ea4ad60e1efd4eebede83d891">  113</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a4b0e1d3ea4ad60e1efd4eebede83d891">p_tp_4</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aa4b2967d79f6ff4eb58d8ce012b8ab12">  114</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#aa4b2967d79f6ff4eb58d8ce012b8ab12">p_tp_5</a>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#abbfbf60b5e290df30d35cd1eda1dab8f">  115</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#abbfbf60b5e290df30d35cd1eda1dab8f">p_tp_gt5</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a4ded646a265682057817d891c7009eea">  116</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a4ded646a265682057817d891c7009eea">p_not_skillable</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a010ff69b92ba1bd8022c362aa02ea70a">  117</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a010ff69b92ba1bd8022c362aa02ea70a">p_lvl_up</a>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a6b026e78f94769a7bfa2979b425c7bd1">  118</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a6b026e78f94769a7bfa2979b425c7bd1">p_Baer</a>;</div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a67a8d51b39a5faad05eddf864e3b5ecf">  119</a></span>&#160;    SDL_Surface * <a class="code" href="class_s___resourcemanager.html#a67a8d51b39a5faad05eddf864e3b5ecf">p_Baer_spricht</a>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    map&lt;string,Mix_Chunk*&gt;SoundEffectMap;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    map&lt;string,Mix_Music*&gt; MusicFiles;</div>
+<div class="line"><a name="l00122"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#a7484b6cd869f2338c5427f0b72e77468">  122</a></span>&#160;    map&lt;string,Mix_Chunk*&gt;<a class="code" href="class_s___resourcemanager.html#a7484b6cd869f2338c5427f0b72e77468" title="Verwaltet die Musik dateien.">SoundEffectMap</a>;</div>
+<div class="line"><a name="l00123"></a><span class="lineno"><a class="code" href="class_s___resourcemanager.html#aafb01ec635853f23f9cf6f2d3cea824e">  123</a></span>&#160;    map&lt;string,Mix_Music*&gt; <a class="code" href="class_s___resourcemanager.html#aafb01ec635853f23f9cf6f2d3cea824e">MusicFiles</a>;</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    </div>
@@ -235,7 +235,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Suchen');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Erzeugt am Don Jul 11 2013 16:40:55 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
+Erzeugt am Don Jul 11 2013 17:11:29 für My Project von &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -14,5 +14,6 @@ var searchData=
   ['timer',['Timer',['../class_timer.html',1,'Timer'],['../class_timer.html#a5f16e8da27d2a5a5242dead46de05d97',1,'Timer::Timer()']]],
   ['timer_2ecpp',['Timer.cpp',['../_timer_8cpp.html',1,'']]],
   ['timer_2eh',['Timer.h',['../_timer_8h.html',1,'']]],
+  ['transformed',['transformed',['../class_final_boss.html#af35eab748c9638f361848b2ab2e05f4e',1,'FinalBoss']]],
   ['try_5fswaplevel',['try_swapLevel',['../class_world.html#a227f2998664ae3586190752920ee2713',1,'World']]]
 ];
