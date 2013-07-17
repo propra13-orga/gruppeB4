@@ -13,7 +13,7 @@ void MultiplayerHighClass::S_Lobby::Lobby_Loop(SDL_Event & Event)
 				b_quitLobby = true;
 				this->b_isLobbyRequested = false;
 			}
-			S_Eventhandler::get_Instance()->HandleInputEvents(Event,NULL);
+			S_Eventhandler::get_Instance()->HandleInputEvents(Event,NULL,NULL);
 		}
 
 		S_ResourceManager::get_Instance()->UpadteScreen();

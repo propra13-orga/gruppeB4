@@ -25,14 +25,14 @@ void MultiplayerHighClass::GameApplicationLayer::main_Loop()
 				b_GameShutDown = true;
 			}
 
-			MultiplayerHighClass::S_Eventhandler::get_Instance()->HandleInputEvents(GameMainEvent,this->p_Player1);
+			MultiplayerHighClass::S_Eventhandler::get_Instance()->HandleInputEvents(GameMainEvent,this->p_Player1,this->p_Player2);
 	
 			// Poll for screen resize event
 			MultiplayerHighClass::S_Eventhandler::get_Instance()->screenResize(GameMainEvent);
 		}
 
-		this->p_GameUpdateSource->update_AllFilesUpdateFunctions(this->GameMainEvent,p_Player1);
-		this->p_GameUpdateSource->render_AllFilesRenderFunctions(this->p_Player1);
+		this->p_GameUpdateSource->update_AllFilesUpdateFunctions(this->GameMainEvent,p_Player1,p_Player2);
+		this->p_GameUpdateSource->render_AllFilesRenderFunctions(this->p_Player1,p_Player2);
 
 		if( ( GameFpsTimer->Getticks() < 1000 / 100 ) ) 
 		{

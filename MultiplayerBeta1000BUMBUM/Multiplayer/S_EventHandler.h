@@ -25,7 +25,7 @@ namespace MultiplayerHighClass
 		bool is_GameToQuit(SDL_Event & TempEvent);
 		void screenResize(SDL_Event & Event);
 		void initialize(){}
-		void HandleInputEvents(SDL_Event & Event,MultiplayerLowClass::Player * tempPlayer);
+		void HandleInputEvents(SDL_Event & Event,MultiplayerLowClass::Player * tempPlayer,MultiplayerLowClass::Player * tempPlayer2);
 		EventHandlerMode get_CurrentMode(){return CURRENTMODE;}
 		void set_CurrentMode(EventHandlerMode TempMode){this->CURRENTMODE = TempMode;}
 

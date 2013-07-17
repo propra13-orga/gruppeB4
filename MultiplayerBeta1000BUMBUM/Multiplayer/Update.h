@@ -21,8 +21,8 @@ namespace MultiplayerLowClass
 		~Update(){}
 		Update(const Update & that){}
 		Update& operator=(const Update & that){}
-		void render_AllFilesRenderFunctions(Player * p_TempPlayer);//Hierein kommen sämtliche render Funktionen aller Klassen
-		void update_AllFilesUpdateFunctions(SDL_Event & tempEvent,Player * p_TempPlayer);//HIerein kommen alle update Funktionen sämtlicher Klassen
+		void render_AllFilesRenderFunctions(Player * p_TempPlayer,Player * p_TempPlayer2);//Hierein kommen sämtliche render Funktionen aller Klassen
+		void update_AllFilesUpdateFunctions(SDL_Event & tempEvent,Player * p_TempPlayer,Player * p_TempPlayer2);//HIerein kommen alle update Funktionen sämtlicher Klassen
 	};
 
 }

@@ -86,6 +86,7 @@
     <ClInclude Include="GameApplicationLayer.h" />
     <ClInclude Include="Gamer.h" />
     <ClInclude Include="Lobby.h" />
+    <ClInclude Include="S_CollisionManager.h" />
     <ClInclude Include="S_EventHandler.h" />
     <ClInclude Include="S_ResourceManager.h" />
     <ClInclude Include="Timer.h" />
@@ -94,6 +95,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CollidableObjectManager.cpp" />
+    <ClCompile Include="CollisionManager.cpp" />
     <ClCompile Include="C_Block.cpp" />
     <ClCompile Include="GameApplicationLayer.cpp" />
     <ClCompile Include="Gamer.cpp" />

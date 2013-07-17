@@ -100,6 +100,17 @@ void S_ResourceManager::LoadContent() {
 	LoadImage(key_Lobby,"Lobby.png");
 	LoadImage(key_CBlock,"100x100Block.png");
 	LoadImage(key_electric_player_down,"gummiu.png");
+	LoadImage(key_electric_player_up,"gummio.png");
+	LoadImage(key_electric_player_right,"gummir.png");
+	LoadImage(key_electric_player_left,"gummil.png");
+	LoadImage(key_fire_player_down,"feuer-u.png");
+	LoadImage(key_fire_player_up,"feuer-o.png");
+	LoadImage(key_fire_player_right,"feuer-r.png");
+	LoadImage(key_fire_player_left,"feuer-l.png");
+	LoadImage(key_water_player_down,"wasser-u.png");
+	LoadImage(key_water_player_up,"wasser-o.png");
+	LoadImage(key_water_player_right,"wasser-r.png");
+	LoadImage(key_water_player_left,"wasser-l.png");
 
 	cout << "Loading music..." << endl;
 	//LoadMusic();
