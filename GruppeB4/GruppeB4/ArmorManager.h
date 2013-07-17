@@ -10,6 +10,7 @@
 #include "EPManager.h"
 using namespace std;
 
+/**  Der ArmorManager kümmert sich um die Verwaltung der Ruestungen*/
 
 class ArmorManager{
 
@@ -31,14 +32,14 @@ public:
 	}
 
 
-	bool find(ARMOR_TYPE CURRENT_ARMOR); ///<Gibt aktuellen Ruestungstyp zurueck			
-	void render(SDL_Rect camera);		///<Ruestung auf den Boden rendern
+	bool find(ARMOR_TYPE CURRENT_ARMOR); ///Überprüft ob die aktuelle Rüstung sich im Inventar des Spielers befindet.	
+	void render(SDL_Rect camera);		///<Ruestung auf den Boden rendern.
 	void update(s_Vector * p_Position);			///<Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im Player gehts weiter
-	void kill_armor(ARMOR_TYPE CURRENT_ARMOR);		///<Ruestung zerstoeren
-	void reinitialize(){catchedarmors.clear();uncatchedarmors.clear();} ///Loescht Ruestungslisten
-	void show(){for(list<Armor>::iterator myIter = uncatchedarmors.begin();myIter != uncatchedarmors.end();++myIter){ cout << "Element" << endl;}} ///<Geht Ruestungslisten durch
-	void set_Armor(ARMOR_TYPE TEMPARMOR,int x, int y){uncatchedarmors.push_back(Armor(x,y,TEMPARMOR));} ///<Setzt Ruestungstyp
-	ARMOR_TYPE get_Armor();
+	void kill_armor(ARMOR_TYPE CURRENT_ARMOR);		///<Ruestung zerstoeren.
+	void reinitialize(){catchedarmors.clear();uncatchedarmors.clear();} ///Loescht Ruestungslisten.
+	void show(){for(list<Armor>::iterator myIter = uncatchedarmors.begin();myIter != uncatchedarmors.end();++myIter){ cout << "Element" << endl;}} ///<Geht Ruestungslisten durch.
+	void set_Armor(ARMOR_TYPE TEMPARMOR,int x, int y){uncatchedarmors.push_back(Armor(x,y,TEMPARMOR));} ///<Setzt Ruestungstyp.
+	ARMOR_TYPE get_Armor(); ///<zieht die benoetigte Ruestung aus der Liste der aufgehobene Ruestungen.
 
 
 
