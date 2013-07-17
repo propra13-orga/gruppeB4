@@ -215,7 +215,7 @@ int main(int argc ,char ** argv)
 		
 		p_World->render(&b_menueistoggled,deltaTime);
 		SDL_Flip(S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		if( ( b_cap == true ) && ( Fps.Getticks() < 1000 / 100 ) ) 
+		if( ( Fps.Getticks() < 1000 / 100 ) ) 
 		{
 			///Sleep the remaining frame time
 			SDL_Delay( ( 1000 / 100) - Fps.Getticks() ); 
