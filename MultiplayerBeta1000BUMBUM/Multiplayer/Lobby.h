@@ -25,6 +25,7 @@ namespace MultiplayerHighClass
 	public:
 		bool get_isLobbyRequested(){return b_isLobbyRequested;}
 		void set_isLobbyRequested(bool b){b_isLobbyRequested = b;}
+		
 		bool get_quitLobby(){return b_quitLobby;}
 		void set_quitLobby(bool b){b_quitLobby = b;}
 		void Lobby_Loop(SDL_Event & Event);
