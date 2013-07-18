@@ -22,7 +22,7 @@ void NPC2::render(SDL_Rect camera,Player * p_TempPlayer)
 		if(b_finish == true)
 		{
 			EPManager::get_EPManager().Set_Ep(100);
-			/*MoneyManager::get_MoneyManager().(20);*/		
+			MoneyManager::get_MoneyManager().insert_Money(20);		
 		}
 		b_finish = false;
 	}
@@ -64,7 +64,6 @@ void  NPC2::playerclosetobaer(Player * p_TempPlayer)
 		cout << "bin da" << endl;
 		this->b_questende = true;
 		this->b_finish = true;
-		cout << b_finish << endl;
 	}
 }
 void NPC2::baer_spricht()
@@ -72,7 +71,7 @@ void NPC2::baer_spricht()
 	if(b_finish == true)
 		{
 			cout <<"bär spricht"<< endl;
-			apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer_spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+			apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("qbelohnug"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 		}		
 }
 bool NPC2::PlayerCloseToBaer(Player * p_TempPlayer)

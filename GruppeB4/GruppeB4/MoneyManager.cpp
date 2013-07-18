@@ -37,3 +37,7 @@ void MoneyManager::set_Coin(int x, int y)
 {
 	this->uncatchedmoney.push_back(RenableObject(x,y,MONEY));
 }
+void MoneyManager::insert_Money(int b)
+{
+	money = b + money;
+}
