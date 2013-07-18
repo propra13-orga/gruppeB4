@@ -203,7 +203,7 @@ void Player::render(bool * tempmenue, Timer* deltaTime,SDL_Rect cam,LEVEL_LOADED
 bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURRENTLEVEL)
 {
 	///LVL1
-	/*if(CURRENTLEVEL == LEVEL1)
+	if(CURRENTLEVEL == LEVEL1)
 	{
 	///fuer den ersten Quadranten:
 	if(this->get_Position()->i_x <=968 && this->get_Position()->i_y >= 630)
@@ -501,7 +501,7 @@ bool Player::collision_Detection(LevelSegmente * p_TempSegment,LEVEL_LOADED CURR
 				return true;
 			}
 		}
-	}*/
+	}
 		return false;
 }
 	

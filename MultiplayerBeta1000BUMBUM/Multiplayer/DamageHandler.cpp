@@ -21,7 +21,7 @@ void MultiplayerLowClass::DamageHandler::PlayerOneAttack(MultiplayerLowClass::Pl
 				(p_TempPlayer->get_Position()->X > p_TempPlayer2->get_Position()->X && p_TempPlayer->get_Direction() == 3) ||
 				(p_TempPlayer->get_Position()->Y < p_TempPlayer2->get_Position()->Y && p_TempPlayer->get_Direction() == 1) ||
 				(p_TempPlayer->get_Position()->Y > p_TempPlayer2->get_Position()->Y && p_TempPlayer->get_Direction() == 2)) {
-					this->set_PlayerHealth1(this->get_PlayerHealth1() - 20);
+					this->set_PlayerHealth1(this->get_PlayerHealth1() - 40);
 					this->PlayerOneIsAttacking = true;
 					cout << "Player 2 health: " << this->get_PlayerHealth1() << endl;
 		}
