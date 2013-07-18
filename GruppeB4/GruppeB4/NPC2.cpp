@@ -61,13 +61,20 @@ void  NPC2::playerclosetobaer(Player * p_TempPlayer)
 {
 	if(p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x <= 50 && p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x >= -50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y <= 50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y >= -50)
 	{
-		apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer_spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
-		cout <<"bär spricht"<< endl;
+		cout << "bin da" << endl;
 		this->b_questende = true;
-		b_finish = true;
+		this->b_finish = true;
+		cout << b_finish << endl;
 	}
 }
-
+void NPC2::baer_spricht()
+{
+	if(b_finish == true)
+		{
+			cout <<"bär spricht"<< endl;
+			apply_Image(400,400,S_Resourcemanager::get_Resourcemanager()->get_Surface("Baer_spricht"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
+		}		
+}
 bool NPC2::PlayerCloseToBaer(Player * p_TempPlayer)
 {
 	if(p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x <= 50 && p_TempPlayer->get_Position()->i_x - this->p_s_baerposition->i_x >= -50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y <= 50 && p_TempPlayer->get_Position()->i_y - this->p_s_baerposition->i_y >= -50)

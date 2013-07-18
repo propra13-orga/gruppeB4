@@ -31,7 +31,7 @@ public:
 		return Instance;
 	}
 
-	NPC2(){p_s_Position = new s_Vector;p_s_baerposition = new s_Vector;p_s_baerposition->i_x = 1850;p_s_baerposition->i_y = 1100; p_s_Position->i_x = 120; p_s_Position->i_y = 450;p_QuestTimer = new Timer();b_questanfang = false;b_questende = false;}
+	NPC2(){p_s_Position = new s_Vector;p_s_baerposition = new s_Vector;p_s_baerposition->i_x = 1850;p_s_baerposition->i_y = 1100; p_s_Position->i_x = 120; p_s_Position->i_y = 450;p_QuestTimer = new Timer();b_questanfang = false;b_questende = false;b_finish = false;}
 	~NPC2(){delete p_s_Position;delete p_QuestTimer;}
 
 	s_Vector* get_Position()
@@ -48,6 +48,7 @@ public:
 	bool PlayCloseToBot(Player * p_TempPlayer);
 	void questanfrage(Player * p_TempPlayer,SDL_Event even);
 	void questloeschen();
+	void baer_spricht();
 	void set_QuestEnde(bool b);
 	void playerclosetobaer(Player *);
 	bool PlayerCloseToBaer(Player *);
