@@ -118,6 +118,7 @@ int main(int argc ,char ** argv)
 		NPC2::get_NPC2().questanfrage(p_World->get_Player(),even);
 		NPC2::get_NPC2().questloeschen();
 		NPC2::get_NPC2().playerclosetobaer(p_World->get_Player());
+		NPC2::get_NPC2().baer_spricht();
 			///SHOP_______________________________________________Anfang________________________________________________________________
 
 			

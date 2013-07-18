@@ -21,6 +21,7 @@ public:
 	void set_Coin(s_Vector * p_TempPosition);
 	void set_Coin(int x, int y);
 	void render(SDL_Rect camera);
+	void insert_Money(int);
 	void update(s_Vector * p_TempPosition);
 	void reinitialize(){uncatchedmoney.clear();}
 	void show(){cout << money << endl;}
