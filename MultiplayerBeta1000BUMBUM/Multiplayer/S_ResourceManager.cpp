@@ -118,7 +118,7 @@ void S_ResourceManager::LoadContent() {
 
 
 	cout << "Loading music..." << endl;
-	//LoadMusic();
+	LoadMusic(key_backgroundsound,"background.wav");
 
 	cout << "Loading sound files..." << endl;
 	//LoadSound();

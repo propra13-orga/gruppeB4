@@ -128,14 +128,14 @@ void Shop::handle_Input(SDL_Event &even,bool * quitshop,bool *b_shopisopen,Playe
 	}
 
 }
-void Shop::render(){
+void Shop::render(){Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("shop"),0);
 
 	apply_Image(0,0,S_Resourcemanager::get_Resourcemanager()->get_Surface("shop"),S_Resourcemanager::get_Resourcemanager()->get_Surface("Screen"));
 
 	if(renderbuy == true){
 	
 		if(BuyTimer->Getticks() >= 500)
-		{
+		{Mix_PlayChannel(-1, S_Resourcemanager::get_Resourcemanager()->get_SoundEffect("Succes"),0);
 			BuyTimer->stop();
 			renderbuy = false;
 		}
