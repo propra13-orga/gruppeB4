@@ -1,0 +1,5 @@
+<map id="MultiplayerHighClass::GameApplicationLayer::load_MapFile" name="MultiplayerHighClass::GameApplicationLayer::load_MapFile">
+<area shape="rect" id="node3" href="$class_s___collisibal_object_manager.html#a70d0b1b2690c555c01989700c4484cdd" title="S_CollisibalObjectManager\l::get_CManager" alt="" coords="216,5,395,51"/>
+<area shape="rect" id="node5" href="$class_s___collisibal_object_manager.html#a7063e19a36ffeef804319ff17325d544" title="S_CollisibalObjectManager\l::set_Object" alt="" coords="216,74,395,121"/>
+<area shape="rect" id="node7" href="$class_s___collisibal_object_manager.html#af25ce6dda48853812344ed27ddffa551" title="S_CollisibalObjectManager\l::delete_lastMember" alt="" coords="216,143,395,190"/>
+</map>

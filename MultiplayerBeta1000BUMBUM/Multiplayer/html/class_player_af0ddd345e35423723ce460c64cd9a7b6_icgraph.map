@@ -1,0 +1,6 @@
+<map id="Player::set_Mana" name="Player::set_Mana">
+<area shape="rect" id="node3" href="$class_player.html#a5f3457c6aaf834b83d35d9085b46e31d" title="Player::reinitialize" alt="" coords="179,5,304,35"/>
+<area shape="rect" id="node7" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="180,59,303,88"/>
+<area shape="rect" id="node5" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="372,5,473,35"/>
+<area shape="rect" id="node9" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="352,59,493,88"/>
+</map>

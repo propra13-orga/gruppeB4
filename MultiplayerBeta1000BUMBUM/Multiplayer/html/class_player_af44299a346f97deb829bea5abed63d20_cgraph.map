@@ -1,0 +1,16 @@
+<map id="Player::handle_Input" name="Player::handle_Input">
+<area shape="rect" id="node3" href="$class_player.html#a12fea44fe4eda565ada463b15443dc56" title="Player::set_Velocity" alt="" coords="437,5,576,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="229,192,320,221"/>
+<area shape="rect" id="node15" href="$class_weapon_manager.html#a43dc0489aed7aad37a65a0e6d687f06c" title="WeaponManager::get\l_WeaponManager" alt="" coords="201,245,348,291"/>
+<area shape="rect" id="node17" href="$class_weapon_manager.html#ad2d37307f38fc2ae493d0ee804c9842f" title="WeaponManager::swap\l_weapon" alt="" coords="196,314,353,361"/>
+<area shape="rect" id="node19" href="$class_weapon_manager.html#a815b728b877f0f1fefceec97c1a6a7e9" title="WeaponManager::show\l_currentWeapon" alt="" coords="196,383,353,430"/>
+<area shape="rect" id="node21" href="$class_player.html#aeea45f839f224a5320dfadfd2ff3ebe9" title="Player::attack" alt="" coords="224,453,325,483"/>
+<area shape="rect" id="node23" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="213,139,336,168"/>
+<area shape="rect" id="node31" href="$class_player.html#a500a169debe3d89456f57e4c13fef28d" title="Hier wird der RageMode des Spielers angestellt." alt="" coords="201,71,348,100"/>
+<area shape="rect" id="node7" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="404,219,609,248"/>
+<area shape="rect" id="node9" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="429,165,584,195"/>
+<area shape="rect" id="node11" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="441,325,572,355"/>
+<area shape="rect" id="node13" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="441,272,572,301"/>
+<area shape="rect" id="node27" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="445,112,568,141"/>
+<area shape="rect" id="node29" href="$class_player.html#a352a8894a05f649fb236ae99cd9da3e9" title="Player::get_Mana" alt="" coords="445,59,568,88"/>
+</map>

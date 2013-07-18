@@ -1,0 +1,10 @@
+<map id="MultiplayerHighClass::GameApplicationLayer::initialize_GameResources" name="MultiplayerHighClass::GameApplicationLayer::initialize_GameResources">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a3f5b8f71420630e2105fc49a3e58eb16" title="MultiplayerHighClass\l::S_ResourceManager::\lget_Instance" alt="" coords="247,5,407,69"/>
+<area shape="rect" id="node5" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a45f9c554c14294e4944b9d8ae451c89d" title="MultiplayerHighClass\l::S_ResourceManager::\lSetScreen" alt="" coords="247,93,407,157"/>
+<area shape="rect" id="node7" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#ae8c64f5dff6ccb36c61e9beac0cb2bbb" title="MultiplayerHighClass\l::S_ResourceManager::\lSetCaption" alt="" coords="247,181,407,245"/>
+<area shape="rect" id="node9" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#aa34ab547c415a71e961e3148c29a4da6" title="MultiplayerHighClass\l::S_ResourceManager::\lSetTextColor" alt="" coords="247,269,407,333"/>
+<area shape="rect" id="node11" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a0e081c8c32b7c1e895580f3994cc436c" title="MultiplayerHighClass\l::S_ResourceManager::\lLoadContent" alt="" coords="247,357,407,421"/>
+<area shape="rect" id="node15" href="$class_multiplayer_high_class_1_1_s___eventhandler.html#ac4ea90088bd2d772d7afb590a7e326f7" title="MultiplayerHighClass\l::S_Eventhandler::get\l_Instance" alt="" coords="253,445,400,509"/>
+<area shape="rect" id="node17" href="$class_multiplayer_high_class_1_1_s___eventhandler.html#a9357587af226deecc25de56bd86cf7d8" title="MultiplayerHighClass\l::S_Eventhandler::initialize" alt="" coords="239,533,415,579"/>
+<area shape="rect" id="node13" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a16a1ad9adce72ec4838efaecfecf37c9" title="MultiplayerHighClass\l::S_ResourceManager::\lLoadImage" alt="" coords="464,357,624,421"/>
+</map>

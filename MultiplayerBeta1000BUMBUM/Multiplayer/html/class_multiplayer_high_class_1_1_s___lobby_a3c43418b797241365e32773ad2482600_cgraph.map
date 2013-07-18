@@ -1,0 +1,20 @@
+<map id="MultiplayerHighClass::S_Lobby::Lobby_Loop" name="MultiplayerHighClass::S_Lobby::Lobby_Loop">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_s___lobby.html#a369cf8271e4608622c9b3b7de3adb007" title="MultiplayerHighClass\l::S_Lobby::render" alt="" coords="240,102,387,149"/>
+<area shape="rect" id="node5" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a3f5b8f71420630e2105fc49a3e58eb16" title="MultiplayerHighClass\l::S_ResourceManager::\lget_Instance" alt="" coords="493,5,653,69"/>
+<area shape="rect" id="node9" href="$class_multiplayer_high_class_1_1_s___eventhandler.html#ac4ea90088bd2d772d7afb590a7e326f7" title="MultiplayerHighClass\l::S_Eventhandler::get\l_Instance" alt="" coords="240,295,387,359"/>
+<area shape="rect" id="node11" href="$class_multiplayer_high_class_1_1_s___eventhandler.html#af8c6a6f11ba31e1046f0ebf340df506d" title="MultiplayerHighClass\l::S_Eventhandler::HandleInput\lEvents" alt="" coords="213,505,413,569"/>
+<area shape="rect" id="node38" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a46c7430e982e95960272a599f3caea69" title="MultiplayerHighClass\l::S_ResourceManager::\lUpadteScreen" alt="" coords="233,593,393,657"/>
+<area shape="rect" id="node7" href="$class_multiplayer_high_class_1_1_s___resource_manager.html#a23770f45c07b35855beb29d5aebe6bba" title="MultiplayerHighClass\l::S_ResourceManager::\lApplyPicture" alt="" coords="493,93,653,157"/>
+<area shape="rect" id="node13" href="$class_multiplayer_low_class_1_1_player.html#ac6b2afea076986ffa3757a0f05ec354a" title="MultiplayerLowClass\l::Player::set_Velocity" alt="" coords="500,181,647,227"/>
+<area shape="rect" id="node15" href="$class_multiplayer_low_class_1_1_damage_handler.html#a4f9cc819be008c84c0ce70f9685fb938" title="MultiplayerLowClass\l::DamageHandler::get\l_Instance" alt="" coords="499,251,648,315"/>
+<area shape="rect" id="node17" href="$class_multiplayer_low_class_1_1_damage_handler.html#af619ad2d4f74c285123ba480690bf748" title="MultiplayerLowClass\l::DamageHandler::PlayerOne\lAttack" alt="" coords="477,339,669,403"/>
+<area shape="rect" id="node19" href="$class_multiplayer_low_class_1_1_damage_handler.html#a906014c6f846dcf34e18afb5875c335d" title="MultiplayerLowClass\l::DamageHandler::PlayerTwo\lAttack" alt="" coords="476,427,671,491"/>
+<area shape="rect" id="node21" href="$class_multiplayer_high_class_1_1_s___lobby.html#a09b685f7f975f38d82b8948f06e1ceeb" title="MultiplayerHighClass\l::S_Lobby::get_Instance" alt="" coords="492,514,655,561"/>
+<area shape="rect" id="node23" href="$class_multiplayer_high_class_1_1_s___lobby.html#a0cea90555cbdfafc6f8f4589f234f691" title="MultiplayerHighClass\l::S_Lobby::set_b_player1_rdy" alt="" coords="476,583,671,630"/>
+<area shape="rect" id="node25" href="$class_multiplayer_high_class_1_1_s___lobby.html#a9484dc53699564fb63d4d766e9b45c5d" title="MultiplayerHighClass\l::S_Lobby::set_quitLobby" alt="" coords="488,653,659,699"/>
+<area shape="rect" id="node27" href="$class_multiplayer_high_class_1_1_s___lobby.html#ad916611a46b38a798b125df01de431d3" title="MultiplayerHighClass\l::S_Lobby::set_isLobbyRequested" alt="" coords="463,722,684,769"/>
+<area shape="rect" id="node29" href="$class_multiplayer_high_class_1_1_s___lobby.html#af520e8c8022c2bb231cf87b3fe480f84" title="MultiplayerHighClass\l::S_Lobby::set_b_player2\l_rdy_overlay" alt="" coords="488,792,659,856"/>
+<area shape="rect" id="node31" href="$class_multiplayer_high_class_1_1_s___lobby.html#a82400f888c4c46644165eab2dd914eb7" title="MultiplayerHighClass\l::S_Lobby::start_OverlayTimer" alt="" coords="473,879,673,926"/>
+<area shape="rect" id="node35" href="$class_multiplayer_high_class_1_1_s___lobby.html#a8378d848332c5cc7c1bc44bc796aabcf" title="MultiplayerHighClass\l::S_Lobby::set_b_player1\l_rdy_overlay" alt="" coords="488,949,659,1013"/>
+<area shape="rect" id="node33" href="$class_multiplayer_high_class_1_1_timer.html#a3a8b5272198d029779dc9302a54305a8" title="MultiplayerHighClass\l::Timer::start" alt="" coords="733,879,880,926"/>
+</map>

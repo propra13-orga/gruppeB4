@@ -10,6 +10,7 @@ namespace MultiplayerHighClass
 	private:
 	bool b_isLobbyRequested;
 	bool b_quitLobby;
+	bool b_quitGame;
 
 	bool b_player2;			//Bools zur Netzwerk-Simulation
 	bool b_player1_rdy;
@@ -18,11 +19,15 @@ namespace MultiplayerHighClass
 	bool b_player2_rdy_overlay;
 	Timer * OverlayTimer;
 
-	S_Lobby():b_isLobbyRequested(1),b_quitLobby(0){b_player1_rdy = false;b_player2_rdy = true;b_player2 = true;OverlayTimer = new Timer;}
+	S_Lobby():b_isLobbyRequested(1),b_quitLobby(0),b_quitGame(0){b_player1_rdy = false;b_player2_rdy = true;b_player2 = true;OverlayTimer = new Timer;}
 		~S_Lobby(){}
 		
 
 	public:
+		// Matthias
+		bool get_quitGame(){return b_quitGame;}
+		void set_quitGame(bool set){b_quitGame = set;}
+
 		bool get_isLobbyRequested(){return b_isLobbyRequested;}
 		void set_isLobbyRequested(bool b){b_isLobbyRequested = b;}
 		

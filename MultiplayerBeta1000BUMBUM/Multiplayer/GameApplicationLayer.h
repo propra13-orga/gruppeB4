@@ -13,6 +13,8 @@
 #include "Update.h"
 #include "CollidableObjectManager.h"
 #include "Gamer.h"
+#include "DamageHandler.h" // Matthias
+#include "Lobby.h" // Matthias
 
 namespace MultiplayerHighClass
 {

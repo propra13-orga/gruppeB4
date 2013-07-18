@@ -1,0 +1,6 @@
+<map id="ItemManager::get_ItemManager" name="ItemManager::get_ItemManager">
+<area shape="rect" id="node3" href="$class_player.html#ad911072980c4a07dc37ececee2bfbca4" title="Player::render" alt="" coords="272,5,373,35"/>
+<area shape="rect" id="node5" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="277,59,368,88"/>
+<area shape="rect" id="node9" href="$class_player.html#ae06fc7fdd0493e8c13c0441b49b66777" title="Player::loadMana" alt="" coords="261,112,384,141"/>
+<area shape="rect" id="node7" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="432,85,573,115"/>
+</map>

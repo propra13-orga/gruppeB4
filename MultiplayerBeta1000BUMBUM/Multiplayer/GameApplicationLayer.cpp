@@ -19,8 +19,8 @@ void MultiplayerHighClass::GameApplicationLayer::main_Loop()
 	{
 		if(SDL_PollEvent(&GameMainEvent))
 		{
-			// Poll for quit button being clicked
-			if(MultiplayerHighClass::S_Eventhandler::get_Instance()->is_GameToQuit(GameMainEvent))
+			// Poll for quit button being clicked												
+			if(MultiplayerHighClass::S_Eventhandler::get_Instance()->is_GameToQuit(GameMainEvent) || MultiplayerHighClass::S_Lobby::get_Instance()->get_quitGame())
 			{
 				b_GameShutDown = true;
 			}
@@ -29,6 +29,24 @@ void MultiplayerHighClass::GameApplicationLayer::main_Loop()
 	
 			// Poll for screen resize event
 			MultiplayerHighClass::S_Eventhandler::get_Instance()->screenResize(GameMainEvent);
+		}
+
+		if(MultiplayerLowClass::DamageHandler::get_Instance().get_PlayerHealth() == 0 || MultiplayerLowClass::DamageHandler::get_Instance().get_PlayerHealth1() == 0) {
+			
+			if(MultiplayerLowClass::DamageHandler::get_Instance().get_PlayerHealth() == 0)
+				cout << "Player One wins!" << endl;
+			else if(MultiplayerLowClass::DamageHandler::get_Instance().get_PlayerHealth1() == 0) {
+				cout << "Player Two wins!" << endl;
+			}
+			
+			MultiplayerHighClass::S_Lobby::get_Instance()->set_quitLobby(false);
+			MultiplayerHighClass::S_Eventhandler::get_Instance()->set_CurrentMode(MultiplayerHighClass::S_Eventhandler::LOBBY);
+			MultiplayerHighClass::S_Lobby::get_Instance()->set_isLobbyRequested(true);
+			MultiplayerHighClass::S_Lobby::get_Instance()->set_b_player1_rdy(false);
+			MultiplayerLowClass::DamageHandler::get_Instance().set_PlayerHealth(400);
+			MultiplayerLowClass::DamageHandler::get_Instance().set_PlayerHealth1(400);
+			this->p_Player1->set_Position(200,200);
+			this->p_Player2->set_Position(200,200);
 		}
 
 		this->p_GameUpdateSource->update_AllFilesUpdateFunctions(this->GameMainEvent,p_Player1,p_Player2);

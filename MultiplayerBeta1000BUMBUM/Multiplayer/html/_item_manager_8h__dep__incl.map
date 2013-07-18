@@ -1,0 +1,11 @@
+<map id="ItemManager.h" name="ItemManager.h">
+<area shape="rect" id="node3" href="$_player_8h.html" title="Player.h" alt="" coords="191,83,260,112"/>
+<area shape="rect" id="node22" href="$_item_manager_8cpp.html" title="ItemManager.cpp" alt="" coords="284,83,407,112"/>
+<area shape="rect" id="node5" href="$_armor_manager_8h.html" title="ArmorManager.h" alt="" coords="35,160,152,189"/>
+<area shape="rect" id="node10" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="160,237,291,267"/>
+<area shape="rect" id="node15" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="275,160,355,189"/>
+<area shape="rect" id="node20" href="$_player_8cpp.html" title="Player.cpp" alt="" coords="379,160,461,189"/>
+<area shape="rect" id="node7" href="$_armor_manager_8cpp.html" title="ArmorManager.cpp" alt="" coords="5,237,136,267"/>
+<area shape="rect" id="node13" href="$_weapon_manager_8cpp.html" title="WeaponManager.cpp" alt="" coords="153,315,297,344"/>
+<area shape="rect" id="node18" href="$_weapon_8cpp.html" title="Weapon.cpp" alt="" coords="315,237,408,267"/>
+</map>

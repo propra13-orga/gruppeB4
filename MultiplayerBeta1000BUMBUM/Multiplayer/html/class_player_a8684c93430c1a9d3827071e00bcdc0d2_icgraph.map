@@ -1,0 +1,4 @@
+<map id="Player::get_Health" name="Player::get_Health">
+<area shape="rect" id="node3" href="$class_player.html#a82c2af081cd2891be248459b4015be56" title="Itembenutzung." alt="" coords="184,5,275,35"/>
+<area shape="rect" id="node5" href="$class_player.html#af44299a346f97deb829bea5abed63d20" title="Player::handle_Input" alt="" coords="323,5,464,35"/>
+</map>

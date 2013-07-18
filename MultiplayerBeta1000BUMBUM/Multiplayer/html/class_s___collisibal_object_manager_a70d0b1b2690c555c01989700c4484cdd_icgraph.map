@@ -1,0 +1,7 @@
+<map id="S_CollisibalObjectManager::get_CManager" name="S_CollisibalObjectManager::get_CManager">
+<area shape="rect" id="node3" href="$class_multiplayer_high_class_1_1_s___collision_manager.html#adedb4bfc8cc4120e0eac95fa5a15266b" title="MultiplayerHighClass\l::S_CollisionManager\l::collisionOfTwoPlayerLocal" alt="" coords="244,5,428,69"/>
+<area shape="rect" id="node5" href="$class_multiplayer_high_class_1_1_game_application_layer.html#a1eba8c1f5d8334f1cf463297881cfe33" title="MultiplayerHighClass\l::GameApplicationLayer\l::main_Loop" alt="" coords="489,144,649,208"/>
+<area shape="rect" id="node9" href="$class_multiplayer_high_class_1_1_game_application_layer.html#a8a1ecc3a1b093e2c0f87ef953e588f14" title="MultiplayerHighClass\l::GameApplicationLayer\l::load_MapFile" alt="" coords="256,144,416,208"/>
+<area shape="rect" id="node12" href="$class_multiplayer_low_class_1_1_update.html#ae6614824eeb300fe6edcfe5ddd296d2b" title="MultiplayerLowClass\l::Update::render_AllFilesRender\lFunctions" alt="" coords="232,232,440,296"/>
+<area shape="rect" id="node7" href="$_main_8cpp.html#afd3e3975efd153dae6c452371eb0769c" title="main" alt="" coords="699,161,749,191"/>
+</map>

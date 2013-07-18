@@ -1,0 +1,29 @@
+<map id="Timer.h" name="Timer.h">
+<area shape="rect" id="node3" href="$_a___animation_8h.html" title="A_Animation.h" alt="" coords="329,83,436,112"/>
+<area shape="rect" id="node13" href="$_damage_handler_8h.html" title="DamageHandler.h" alt="" coords="412,237,537,267"/>
+<area shape="rect" id="node42" href="$_player_8h.html" title="Player.h" alt="" coords="692,83,761,112"/>
+<area shape="rect" id="node66" href="$_timer_8cpp.html" title="Timer.cpp" alt="" coords="785,83,865,112"/>
+<area shape="rect" id="node5" href="$_gamer_8h.html" title="Gamer.h" alt="" coords="288,160,360,189"/>
+<area shape="rect" id="node7" href="$_s___collision_manager_8h.html" title="S_CollisionManager.h" alt="" coords="137,237,287,267"/>
+<area shape="rect" id="node11" href="$_gamer_8cpp.html" title="Gamer.cpp" alt="" coords="31,315,116,344"/>
+<area shape="rect" id="node17" href="$_s___event_handler_8h.html" title="S_EventHandler.h" alt="" coords="361,315,489,344"/>
+<area shape="rect" id="node19" href="$_game_application_layer_8h.html" title="GameApplicationLayer.h" alt="" coords="88,469,251,499"/>
+<area shape="rect" id="node25" href="$_update_8h.html" title="Update.h" alt="" coords="264,392,339,421"/>
+<area shape="rect" id="node9" href="$_collision_manager_8cpp.html" title="CollisionManager.cpp" alt="" coords="140,315,287,344"/>
+<area shape="rect" id="node15" href="$_damage_handler_8cpp.html" title="DamageHandler.cpp" alt="" coords="513,315,655,344"/>
+<area shape="rect" id="node30" href="$_lobby_8h.html" title="Lobby.h" alt="" coords="413,392,480,421"/>
+<area shape="rect" id="node34" href="$_s___eventhandler_8cpp.html" title="S_Eventhandler.cpp" alt="" coords="493,469,632,499"/>
+<area shape="rect" id="node21" href="$_game_application_layer_8cpp.html" title="GameApplicationLayer.cpp" alt="" coords="5,547,184,576"/>
+<area shape="rect" id="node23" href="$_main_8cpp.html" title="Main.cpp" alt="" coords="208,547,283,576"/>
+<area shape="rect" id="node28" href="$_update_8cpp.html" title="Update.cpp" alt="" coords="275,469,363,499"/>
+<area shape="rect" id="node32" href="$_lobby_8cpp.html" title="Lobby.cpp" alt="" coords="387,469,469,499"/>
+<area shape="rect" id="node44" href="$_armor_manager_8h.html" title="ArmorManager.h" alt="" coords="987,160,1104,189"/>
+<area shape="rect" id="node48" href="$_item_manager_8h.html" title="ItemManager.h" alt="" coords="568,160,677,189"/>
+<area shape="rect" id="node53" href="$_weapon_manager_8h.html" title="WeaponManager.h" alt="" coords="708,237,839,267"/>
+<area shape="rect" id="node58" href="$_weapon_8h.html" title="Weapon.h" alt="" coords="776,160,856,189"/>
+<area shape="rect" id="node63" href="$_player_8cpp.html" title="Player.cpp" alt="" coords="880,160,963,189"/>
+<area shape="rect" id="node46" href="$_armor_manager_8cpp.html" title="ArmorManager.cpp" alt="" coords="980,237,1111,267"/>
+<area shape="rect" id="node51" href="$_item_manager_8cpp.html" title="ItemManager.cpp" alt="" coords="561,237,684,267"/>
+<area shape="rect" id="node56" href="$_weapon_manager_8cpp.html" title="WeaponManager.cpp" alt="" coords="701,315,845,344"/>
+<area shape="rect" id="node61" href="$_weapon_8cpp.html" title="Weapon.cpp" alt="" coords="863,237,956,267"/>
+</map>

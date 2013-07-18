@@ -9,8 +9,10 @@ void MultiplayerHighClass::S_Lobby::Lobby_Loop(SDL_Event & Event)
 		{
 			if(Event.type == SDL_QUIT)
 			{
-				b_quitLobby = true;
 				this->b_isLobbyRequested = false;
+				this->b_quitLobby = true;
+				// Matthias
+				this->b_quitGame = true;
 			}
 			S_Eventhandler::get_Instance()->HandleInputEvents(Event,NULL,NULL);
 		}

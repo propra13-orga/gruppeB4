@@ -1,0 +1,7 @@
+<map id="EPManager::clear_Ep" name="EPManager::clear_Ep">
+<area shape="rect" id="node3" href="$class_e_p_manager.html#a300554dc6cd44d47ece8ebe6d8ed2daa" title="EPManager::Set_Ep" alt="" coords="203,85,344,115"/>
+<area shape="rect" id="node5" href="$class_armor_manager.html#a6f608963c4a1efb31b2d658ee5246459" title="Spieler kann Ruestung aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="399,5,553,35"/>
+<area shape="rect" id="node7" href="$class_item_manager.html#a17e930f7669eb96bdcb49684f2254abb" title="ItemManager::update" alt="" coords="404,59,548,88"/>
+<area shape="rect" id="node9" href="$class_money_manager.html#a2732c50d4ab200fa9aa89881ddaafe9b" title="MoneyManager::update" alt="" coords="397,112,555,141"/>
+<area shape="rect" id="node11" href="$class_weapon_manager.html#a59cc9e0d6cb21105cf00ac419ea2a573" title="Spieler kann Waffe aufheben und benutzen, render wird abgebrochen und im Player gehts weiter..." alt="" coords="393,165,559,195"/>
+</map>

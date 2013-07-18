@@ -1,0 +1,9 @@
+<map id="Player::render" name="Player::render">
+<area shape="rect" id="node3" href="$class_player.html#a5935e9f00c82591f72259983ee43e8d4" title="Player::get_Position" alt="" coords="192,5,331,35"/>
+<area shape="rect" id="node5" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="159,59,364,88"/>
+<area shape="rect" id="node7" href="$class_item_manager.html#a8365907614865dc5190627381e954c91" title="ItemManager::reinitialize" alt="" coords="180,112,343,141"/>
+<area shape="rect" id="node9" href="$class_player.html#a5f3457c6aaf834b83d35d9085b46e31d" title="Player::reinitialize" alt="" coords="199,165,324,195"/>
+<area shape="rect" id="node11" href="$class_player.html#a3615907f803845ff9b37dee94944b09b" title="Player::set_Position" alt="" coords="413,112,552,141"/>
+<area shape="rect" id="node13" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="417,165,548,195"/>
+<area shape="rect" id="node15" href="$class_player.html#af0ddd345e35423723ce460c64cd9a7b6" title="Player::set_Mana" alt="" coords="421,219,544,248"/>
+</map>

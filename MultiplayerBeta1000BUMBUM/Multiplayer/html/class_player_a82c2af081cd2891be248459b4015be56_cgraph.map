@@ -1,0 +1,6 @@
+<map id="Player::heal" name="Player::heal">
+<area shape="rect" id="node3" href="$class_item_manager.html#a8ab85b998d783ff05a811445f6133173" title="ItemManager::get_ItemManager" alt="" coords="145,5,351,35"/>
+<area shape="rect" id="node5" href="$class_item_manager.html#a640397ad936bbeee930fe36c2a4d26aa" title="ItemManager::kill_Item" alt="" coords="171,59,325,88"/>
+<area shape="rect" id="node7" href="$class_player.html#a25da073f8c291a56b482d8005b2476d1" title="Player::set_Health" alt="" coords="183,112,313,141"/>
+<area shape="rect" id="node9" href="$class_player.html#a8684c93430c1a9d3827071e00bcdc0d2" title="Player::get_Health" alt="" coords="183,165,313,195"/>
+</map>

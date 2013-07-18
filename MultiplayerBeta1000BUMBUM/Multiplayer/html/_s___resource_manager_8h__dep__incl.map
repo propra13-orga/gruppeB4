@@ -1,0 +1,18 @@
+<map id="S_ResourceManager.h" name="S_ResourceManager.h">
+<area shape="rect" id="node3" href="$_gamer_8h.html" title="Gamer.h" alt="" coords="280,83,352,112"/>
+<area shape="rect" id="node15" href="$_s___event_handler_8h.html" title="S_EventHandler.h" alt="" coords="518,237,646,267"/>
+<area shape="rect" id="node23" href="$_update_8h.html" title="Update.h" alt="" coords="278,315,353,344"/>
+<area shape="rect" id="node28" href="$_lobby_8h.html" title="Lobby.h" alt="" coords="620,315,686,344"/>
+<area shape="rect" id="node43" href="$_s___resource_manager_8cpp.html" title="S_ResourceManager.cpp" alt="" coords="721,83,889,112"/>
+<area shape="rect" id="node5" href="$_s___collision_manager_8h.html" title="S_CollisionManager.h" alt="" coords="78,160,228,189"/>
+<area shape="rect" id="node9" href="$_gamer_8cpp.html" title="Gamer.cpp" alt="" coords="193,237,278,267"/>
+<area shape="rect" id="node11" href="$_damage_handler_8h.html" title="DamageHandler.h" alt="" coords="361,160,486,189"/>
+<area shape="rect" id="node17" href="$_game_application_layer_8h.html" title="GameApplicationLayer.h" alt="" coords="224,392,386,421"/>
+<area shape="rect" id="node7" href="$_collision_manager_8cpp.html" title="CollisionManager.cpp" alt="" coords="22,237,169,267"/>
+<area shape="rect" id="node13" href="$_damage_handler_8cpp.html" title="DamageHandler.cpp" alt="" coords="353,237,494,267"/>
+<area shape="rect" id="node32" href="$_s___eventhandler_8cpp.html" title="S_Eventhandler.cpp" alt="" coords="522,392,661,421"/>
+<area shape="rect" id="node19" href="$_game_application_layer_8cpp.html" title="GameApplicationLayer.cpp" alt="" coords="141,469,320,499"/>
+<area shape="rect" id="node21" href="$_main_8cpp.html" title="Main.cpp" alt="" coords="344,469,418,499"/>
+<area shape="rect" id="node26" href="$_update_8cpp.html" title="Update.cpp" alt="" coords="410,392,498,421"/>
+<area shape="rect" id="node30" href="$_lobby_8cpp.html" title="Lobby.cpp" alt="" coords="685,392,768,421"/>
+</map>
