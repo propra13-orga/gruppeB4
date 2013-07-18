@@ -34,7 +34,7 @@ namespace MultiplayerHighClass
 
 		enum e_Audio 
 		{
-			key_temp
+			key_temp,key_backgroundsound
 		};
 
 		SDL_Rect PlayerClips[6];
